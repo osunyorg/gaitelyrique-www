@@ -1,15 +1,17 @@
-@include media-breakpoint-up(desktop)
-    .hero
-        &--with-image
-            margin-bottom: 0
-            .content
-                flex-direction: column
-                border-bottom: solid $border-width $color-text
-                padding-bottom: $spacing-5
-                .hero-text
-                    width: 100%
-                figure
-                    margin-top: $spacing-5
+// @include media-breakpoint-up(desktop)
+//     .hero
+//         &--with-image
+//             margin-bottom: 0
+//             .content
+//                 flex-direction: column
+//                 border-bottom: solid $border-width $color-text
+//                 padding-bottom: $spacing-5
+//                 .hero-text
+//                     width: 100%
+//                 figure
+//                     margin-top: $spacing-5
 
-.breadcrumb-nav
-    border-bottom: solid $border-width $color-text
+.hero
+    .breadcrumb-nav + .content
+        border-top: solid $border-width $color-text
+        padding-top: $spacing-5
