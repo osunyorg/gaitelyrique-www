@@ -39,10 +39,25 @@
             padding-bottom: $spacing-2
     figure + .event-practicals
         margin-top: $vertical-space-1
+    .programme-btn-container
+        .btn
+            &, &:hover
+                margin-left: offset(4)
+                margin-bottom: $vertical-space-1
+                text-transform: none
+                background: none
+                text-decoration: underline
+                color: var(--color-text)
+                padding: 0
+                border: 0
+            &::after
+                content: ' ↓'
     .event-practicals
         display: flex
         flex-direction: column
         gap: $vertical-space-1
+        > h2
+            @extend .sr-only
         .btn
             --btn-font-size: 4.8vw
             --btn-line-height: 4.8vw

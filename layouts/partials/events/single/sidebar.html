@@ -1,5 +1,3 @@
-{{ $events := partial "GetObjectsFromPathSlice" .Params.children }}
-
 <div class="section-sidebar event-sidebar">
   <div>
     {{ partial "commons/agenda/aside.html" . }}
@@ -8,8 +6,7 @@
         "toc" "toc/default.html"
         "context" .
       )}}
-    {{ if $events }}
-      <a href="#programme" class="btn programme-btn">{{ i18n "events.see_programme" }}</a>
-    {{ end }}
+
+    {{/*  Call orga block  */}}
   </div>
 </div>
