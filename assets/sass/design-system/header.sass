@@ -1,2 +1,17 @@
 header#document-header
     padding-bottom: $spacing-3
+    display: flex
+    .change-color-mode-button
+        @include button-reset
+        @include h5
+        min-width: pxToRem(150)
+        text-align: right
+        span:first-child
+            display: block
+        span:last-child
+            display: none
+        &.is-color-mode
+            span:first-child
+                display: none
+            span:last-child
+                display: block
