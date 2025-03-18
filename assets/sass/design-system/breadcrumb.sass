@@ -1,0 +1,8 @@
+.breadcrumb
+    li
+        &:where(:not(.active))
+            a, span
+                font-weight: bold
+        &:not(:first-child)
+            &::before
+                content: url("/assets/icons/arrow.svg")

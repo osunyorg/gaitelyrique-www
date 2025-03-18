@@ -8,3 +8,16 @@ params:
   logo:
     header: '/assets/images/logo.svg'
     footer: ''
+  events:
+    share_links:
+      enabled: false
+  exhibitions:
+    share_links:
+      enabled: false
+  image_sizes:
+    sections:
+      agenda:
+        hero_single:
+          mobile:   400
+          tablet:   800
+          desktop:  512

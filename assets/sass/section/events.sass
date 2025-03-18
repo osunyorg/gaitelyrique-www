@@ -1,5 +1,26 @@
 .events__page,
 .exhibitions__page
+    .hero
+        .hero-text
+            flex-direction: column
+            margin-top: 0
+            > h1, > hgroup
+                width: auto !important
+                max-width: none !important
+                margin-right: 0 !important
+                span
+                    @include h4
+                    color: var(--color-text)
+                    display: block
+        figure
+            display: none
+        .taxonomies-single
+            margin-top: 0
+            margin-bottom: $spacing-2
+            order: -1
+            a
+                text-decoration: none
+                color: var(--color-text)
     .event-access
         .parent-event
             .events-slots-title

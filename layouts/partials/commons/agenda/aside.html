@@ -1,0 +1,13 @@
+<div class="events-aside">
+  {{ with .Params.image }}
+    {{ partial "commons/image-figure.html" (dict
+      "image" .
+      "sizes" site.Params.image_sizes.sections.agenda.hero_single
+      "lazy" false
+      )
+    }}
+  {{ end }}
+  {{ if or .Params.text .Params.notes .Params.header_cta.display }}
+    {{ partial "commons/agenda/practicals.html" . }}
+  {{ end }}
+</div>
