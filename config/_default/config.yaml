@@ -1,10 +1,14 @@
 theme: osuny
 _merge: deep
 params:
+  debug:
+    productionUrl: https://www.gaitelyrique.osuny.site
   summary:
     position: hero
   search:
     active: true
+    positions:
+      - footer
   logo:
     header: '/assets/images/logo.svg'
     footer: ''
