@@ -1,0 +1,53 @@
+.events__page,
+.exhibitions__page
+    .hero
+        .hero-text
+            flex-direction: column
+            margin-top: 0
+            > h1, > hgroup
+                width: auto !important
+                max-width: none !important
+                margin-right: 0 !important
+                span
+                    @include h4
+                    color: var(--color-text)
+                    display: block
+            .taxonomies-single
+                margin-top: 0
+                margin-bottom: $spacing-2
+                order: -1
+                column-gap: $spacing-3 
+                a
+                    text-decoration: none
+                    color: var(--color-text)
+        figure
+            display: none
+    .document-content
+        margin-top: $vertical-space-1
+    .event-access
+        .events-slots-title
+            display: none !important
+        .event-summary
+            .date
+                font-family: $sans-condensed
+                width: auto
+        > div:first-child
+            border-top-color: $color-text
+            padding-top: $spacing-2
+        > div:last-child
+            border-bottom-color: $color-text
+            padding-bottom: $spacing-2
+    figure + .event-practicals
+        margin-top: $vertical-space-1
+    .event-practicals
+        display: flex
+        flex-direction: column
+        gap: $vertical-space-1
+        .btn
+            --btn-font-size: 4.8vw
+            --btn-line-height: 4.8vw
+            display: block
+            order: -1
+            &[target="_blank"]
+                &::after
+                    display: none
