@@ -67,3 +67,16 @@
             &[target="_blank"]
                 &::after
                     display: none
+
+.events__section
+    .agenda-exhibitions
+        background: transparent
+        padding-bottom: 0
+        h2
+            @include h2
+
+.event, .exhibition
+    &,
+    .events--agenda &
+        &-title
+            @include h2
