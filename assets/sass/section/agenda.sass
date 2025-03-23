@@ -18,8 +18,9 @@
                 order: -1
                 column-gap: $spacing-3 
                 a
-                    text-decoration: none
                     color: var(--color-text)
+                    &:not(:hover)
+                        text-decoration-color: transparent
         figure
             display: none
     .document-content
@@ -53,6 +54,10 @@
                 border: 0
             &::after
                 content: ' ↓'
+                display: inline-block
+                position: relative
+            &:hover::after
+                animation: bounce-down $bounce-duration $bounce-ease-transition infinite
     .event-practicals
         display: flex
         flex-direction: column
@@ -67,7 +72,12 @@
             &[target="_blank"]
                 &::after
                     display: none
-
+    .event-summary
+        .dropdown-calendar
+            > button
+                &:hover
+                    background: var(--color-text)
+                    color: var(--color-background)
 .events__section
     .agenda-exhibitions
         background: transparent

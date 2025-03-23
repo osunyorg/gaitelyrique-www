@@ -53,3 +53,16 @@ $vertical-space-1: space(9)
 $block-space-y: $vertical-space-1 
 $block-space-y-desktop: $vertical-space-1
 $block-space-y-with-sidebar: $vertical-space-1
+
+
+// Animations
+$default-duration: 0
+// $arrow-duration: 0
+$bounce-ease-transition: cubic-bezier(0, 0.85, 0.7, 1)
+$bounce-duration: 1.2s
+
+@keyframes bounce-down
+  0%, 30%
+    transform: translateY(0)
+  15%
+    transform: translateY(5px)
