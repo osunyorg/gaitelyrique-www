@@ -18,6 +18,9 @@ params:
   exhibitions:
     share_links:
       enabled: false
+  organizations:
+    single:
+      backlinks: true
   image_sizes:
     sections:
       agenda:
