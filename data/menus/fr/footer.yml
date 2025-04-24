@@ -1,4 +1,18 @@
 ---
 title: Footer
-items: []
+items:
+- title: Privatisation
+  target: "/privatisation/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/privatisation"
+  file: content/fr/pages/privatisation/_index.html
+- title: Soutenir la Fabrique
+  target: "/soutenir-la-fabrique/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/soutenir-la-fabrique"
+  file: content/fr/pages/soutenir-la-fabrique/_index.html
 
