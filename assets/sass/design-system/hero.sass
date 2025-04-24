@@ -5,6 +5,59 @@
         padding-top: $spacing-3
     .content
         padding-top: $spacing-3
+        figure
+            @include media-breakpoint-up(desktop)
+                figcaption
+                    left: unset
+                    &, &::before
+                        background-color: $color-background
+                        transform: translateY(-100%)
+                    .credit,
+                    &::before
+                        line-height: 1
+                        padding-bottom: 1px
+                        padding-top: 1px
+                        padding-left: pxToRem(5)
+                    .credit
+                        padding-right: $spacing-2
+                    &::before
+                        display: flex
+                        align-items: center
+                &:hover figcaption::before
+                    transform: none
     .taxonomies-single
         .terms a
             @include h4
+    
+    body:not(.events__page) &,
+    body:not(.exhibitions__page) &
+        .content
+            flex-direction: column
+            gap: var(--grid-gutter)
+            .hero-text
+                @include lead-hero
+        &.hero--with-image
+            @include media-breakpoint-up(desktop)
+                .hero-content
+                    display: flex
+                    gap: var(--grid-gutter)
+                .hero-text
+                    width: 100%
+                figure
+                    width: columns(6)
+                &:not(.hero--with-summary)
+                    figure
+                        width: columns(12)
+        &:not(.hero--with-image)
+            @include media-breakpoint-up(desktop)
+                .has-lead > p
+                    width: columns(6)
+        .hero-actions
+            .btn
+                @include button-reset
+                @include icon(arrow-right-line, after, true)
+                @include hover-translate-icon
+                color: $color-text
+                padding: 0
+                text-decoration: underline
+                text-transform: none
