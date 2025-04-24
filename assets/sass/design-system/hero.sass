@@ -19,7 +19,7 @@
                         padding-top: 1px
                         padding-left: pxToRem(5)
                     .credit
-                        padding-right: $spacing-2
+                        padding-right: $spacing-3
                     &::before
                         display: flex
                         align-items: center
@@ -36,6 +36,10 @@
             gap: var(--grid-gutter)
             .hero-text
                 @include lead-hero
+        &.hero--with-summary // new class in `hero-gl.html`
+            @include media-breakpoint-up(desktop)
+                .lead
+                    width: columns(8)
         &.hero--with-image
             @include media-breakpoint-up(desktop)
                 .hero-content
@@ -45,12 +49,7 @@
                     width: 100%
                 figure
                     width: columns(6)
-                &:not(.hero--with-summary)
-                    figure
-                        width: columns(12)
-        &:not(.hero--with-image)
-            @include media-breakpoint-up(desktop)
-                .has-lead > p
+                .lead
                     width: columns(6)
         .hero-actions
             .btn
