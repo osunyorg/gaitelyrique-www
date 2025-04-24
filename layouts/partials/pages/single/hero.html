@@ -1,0 +1,99 @@
+
+{{ $direction := "" }}
+{{ $breadcrumb_is_after_hero := eq site.Params.breadcrumb.position "after-hero" }}
+{{ $display_breadcrumb := .Params.breadcrumb | default true }}
+{{ $subtitle := .Params.subtitle }}
+{{ $description := .Params.description }}
+{{ if .Params.image }}
+  {{ $direction = partial "GetImageDirection" .Params.image }}
+{{ end }}
+
+{{ $summary := .Params.summary | safeHTML }}
+{{ $subtitle_is_summary := false }}
+
+{{ $button := .Params.button | default (cond .Params.header_cta.display .Params.header_cta nil) }}
+
+{{ $title_attribute := "" | safeHTMLAttr }}
+{{ if site.Params.search.active }}
+  {{ $title_attribute = "data-pagefind-weight='10'" | safeHTMLAttr }}
+{{ end }}
+
+{{ if not $subtitle }}
+  {{ $summary_position := partial "GetSummaryPosition" . }}
+
+  {{ if and (eq $summary_position "hero") $summary }}
+    {{ $subtitle = $summary }}
+    {{ $subtitle_is_summary = true }}
+  {{ end }}
+{{ end }}
+
+{{ $breadcrumb_class := printf "has-breadcrumb-%s" site.Params.breadcrumb.position }}
+
+<header class="hero {{- if $summary }} hero--with-summary {{ end }} {{ if .Params.image }}hero--with-image hero--image-{{- $direction }}{{ end }} {{ if $breadcrumb_is_after_hero }} hero--no-margin {{ end }} {{ $breadcrumb_class }} ">
+  <div class="container">
+    {{ if and $display_breadcrumb (eq site.Params.breadcrumb.position "hero-start") }}
+      {{ partial "header/breadcrumbs.html" .Params.context }}
+    {{ end }}
+    <div class="content">
+      <div class="hero-text">
+        <h1 {{ $title_attribute }}>{{ partial "PrepareHTML" .Params.title }}</h1>
+
+        {{ if .Params.hero_text_complement }}
+          {{ partial .Params.hero_text_complement .Params.context }}
+        {{ end }}
+      </div>
+      <div class="hero-content">
+        <div>
+          {{ if .Params.image }}
+            <!-- TODO Peut etre aligner la stucture des données avec les autres cas d'images -->
+            {{ partial "commons/image-figure.html" (dict
+              "image"    .Params.image
+              "sizes"    ( .Params.sizes | default site.Params.image_sizes.design_system.hero )
+              "lazy"      false
+              )
+            }}
+          {{ end }}
+          {{ if or $button .Params.share }}
+            <div class="hero-actions">
+              {{ with $button }}
+                {{ partial "header/cta.html" . }}
+              {{ end }}
+              {{ if .Params.share }}
+                {{ partial "commons/share/dropdown.html" . }}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+        <div class="lead">
+          {{ with $subtitle }}
+            {{ safeHTML . }}
+          {{ end }}
+        </div>
+      </div>
+
+      {{ if .Params.hero_content_complement }}
+        {{ partial .Params.hero_content_complement .Params.context }}
+      {{ end }}
+
+      {{ if .Params.hero_after_image_complement }}
+        {{ partial .Params.hero_after_image_complement .Params.context }}
+      {{ end }}
+    </div>
+  </div>
+
+  {{ if .Params.hero_complement }}
+    {{ partial .Params.hero_complement .Params.context }}
+  {{ end }}
+
+  {{ if and $display_breadcrumb (eq site.Params.breadcrumb.position "hero-end") }}
+    <div class="container breadcrumb-container">
+      {{ partial "header/breadcrumbs.html" .Params.context }}
+    </div>
+  {{ end }}
+</header>
+
+{{ if and $display_breadcrumb $breadcrumb_is_after_hero }}
+  <div class="container breadcrumb-container">
+    {{ partial "header/breadcrumbs.html" .Params.context }}
+  </div>
+{{ end }}

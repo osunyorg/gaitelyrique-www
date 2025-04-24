@@ -21,7 +21,15 @@ params:
   organizations:
     single:
       backlinks: true
+  posts:
+    index:
+      layout: grid
+      options:
+        subtitle: false
   image_sizes:
+    design_system:
+      hero:
+        desktop:  1792
     sections:
       agenda:
         hero_single:
