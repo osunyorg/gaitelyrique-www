@@ -9,6 +9,27 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      social_networks:
+        facebook:
+          label: >-
+            gaitelyrique
+          value: >-
+            https://www.facebook.com/gaitelyrique
+        instagram:
+          label: >-
+            gaitelyrique
+          value: >-
+            https://instagram.com/gaitelyrique
+        linkedin:
+          label: >-
+            2042251
+          value: >-
+            https://www.linkedin.com/company/2042251
+        tiktok:
+          label: >-
+            gaitelyrique
+          value: >-
+            https://www.tiktok.com/@gaitelyrique
 
   permalinks:
     events: /agenda/:year/:slug/
