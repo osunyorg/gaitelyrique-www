@@ -8,10 +8,10 @@ params:
   search:
     active: true
     positions:
-      - footer
+      - primary
   logo:
     header: '/assets/images/logo.svg'
-    footer: ''
+    footer: '/assets/images/logo-footer.svg'
   events:
     share_links:
       enabled: false
