@@ -18,6 +18,8 @@ params:
   exhibitions:
     share_links:
       enabled: false
+  # posts:
+  #   truncate 200
   image_sizes:
     sections:
       agenda:
