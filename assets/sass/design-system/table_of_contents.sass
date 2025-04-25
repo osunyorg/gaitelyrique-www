@@ -1,3 +1,12 @@
-.toc-pages
-    a.active
-        font-weight: bold
+.toc-container
+    .toc-title
+        text-transform: uppercase
+    .toc-pages
+        @include meta
+        li
+            display: flex
+            gap: space()
+            &::before
+                content: '—' / ""
+        a.active
+                font-weight: bold
