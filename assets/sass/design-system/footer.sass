@@ -2,12 +2,22 @@ footer#document-footer
     .container:first-child::before,
     .footer-menu
         border-top: 4px solid var(--color-text)
-    .container:first-child::before
-        content: ''
-        position: absolute
-        left: var(--grid-gutter)
-        right: var(--grid-gutter)
-        top: 0
+    .container:first-child
+        &::before
+            content: ''
+            position: absolute
+            left: var(--grid-gutter)
+            right: var(--grid-gutter)
+            top: 0
+        @include media-breakpoint-down(desktop)
+            display: flex
+            flex-direction: column
+            > .footer-social
+                order: -1
+                margin-top: 0
+                margin-bottom: $spacing-3
+                .site-links
+                    margin-top: 0
     .container + .container
         flex-direction: column
         align-items: flex-start
@@ -18,8 +28,8 @@ footer#document-footer
         > div
             width: 100%
         .footer-partners
+            display: flex
             @include media-breakpoint-up(desktop)
-                display: flex
                 align-items: flex-end
                 justify-content: space-between
                 img
@@ -27,8 +37,10 @@ footer#document-footer
                 + .footer-menu
                     margin-top: $spacing-5
             @include media-breakpoint-down(desktop)
-                img + img
-                    margin-top: $spacing-4
+                flex-wrap: wrap
+                gap: $spacing-4 space(10)
+                img
+                    max-width: space(35)
         .footer-menu
             padding-top: $spacing-2
             li
@@ -49,6 +61,7 @@ footer#document-footer
         .site-links
             display: flex
             gap: $spacing-2
+            justify-content: space-between
             @include media-breakpoint-up(desktop)
                 justify-content: flex-end
             li
@@ -74,7 +87,7 @@ footer#document-footer
     .footer-legals // todo or to erase
         margin-top: $spacing-4
     @include media-breakpoint-down(desktop)
-        padding-top: $spacing-4
+        padding-top: $spacing-3
     @include media-breakpoint-up(desktop)
         .container:first-child
             gap: var(--grid-gutter)

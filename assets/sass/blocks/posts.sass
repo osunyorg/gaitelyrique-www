@@ -1,5 +1,42 @@
+.block-posts,
+.posts
+    .post
+        .post-content
+            display: flex
+            flex-direction: column
+        .post-title
+            @include lead
+        .post-meta
+            time::before
+                content: '—' / ""
+                margin-right: space(2)
+        .post-categories
+            order: -1
+            margin-top: 0
+            a
+                @include h4
+                color: var(--color-text)
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
+.posts
+    &--grid
+        [itemprop="abstract"]
+            margin-top: $spacing-2
+            order: 2
+
 .block-posts
     &--large
-        @include media-breakpoint-up(desktop)
-            .media
-                width: columns(8)
+        .post
+            .post-meta
+                display: flex
+                flex-direction: column
+            @include media-breakpoint-up(desktop)
+                .post-categories
+                    order: -1
+                    margin-top: $spacing-2
+                .media
+                    width: columns(8)
+            @include media-breakpoint-down(desktop)
+                .post-meta + div
+                    margin-top: $spacing-2
