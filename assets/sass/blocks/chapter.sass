@@ -19,9 +19,15 @@
                         width: columns(7)
                     .notes
                         position: absolute
+                        margin-top: $spacing-3
                     figure
-                        width: columns(8)
-                        margin-left: offset(4)
+                        margin-top: $spacing-3
+                        margin-left: auto
+                        width: columns(10)
+                        button,
+                        img
+                            margin: 0
+                            width: 100%
             @include media-breakpoint-down(desktop)
                 figure
                     order: 2

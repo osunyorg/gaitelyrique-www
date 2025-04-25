@@ -27,9 +27,9 @@ params:
       options:
         subtitle: false
   image_sizes:
-    design_system:
-      hero:
-        desktop:  1792
+    blocks:
+      chapter:
+        desktop:  1483
     sections:
       agenda:
         hero_single:
