@@ -1,0 +1,28 @@
+.block-chapter
+    .page-the-place.full-width &
+        .chapter
+            .block-title
+                @include h2
+            .text
+                width: 100%
+            .top
+                border-bottom: 4px solid var(--color-text)
+                margin-bottom: $spacing-3
+                padding-bottom: $spacing-2
+            .notes p
+                @include h3
+                a
+                    text-decoration-color: var(--color-text)
+            @include media-breakpoint-up(desktop)
+                    flex-direction: column
+                    .rich-text
+                        width: columns(7)
+                    .notes
+                        position: absolute
+                    figure
+                        width: columns(8)
+                        margin-left: offset(4)
+            @include media-breakpoint-down(desktop)
+                figure
+                    order: 2
+                    margin-top: $spacing-3

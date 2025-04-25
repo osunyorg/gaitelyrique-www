@@ -51,6 +51,9 @@
                     width: columns(6)
                 .lead
                     width: columns(6)
+            @include media-breakpoint-down(desktop)
+                .lead
+                    margin-top: var(--grid-gutter)
         .hero-actions
             .btn
                 @include button-reset
