@@ -1,0 +1,13 @@
+.block-gallery
+    &--carousel
+        .slider-arrows
+            position: absolute
+            top: 0
+            right: calc(var(--grid-gutter) - #{$spacing-3})
+            // TODO: right icons
+            .slider-arrow-previous
+                padding-right: space()
+            .slider-arrow-next
+                padding-left: space()
+            .slider-progression
+                @extend .sr-only

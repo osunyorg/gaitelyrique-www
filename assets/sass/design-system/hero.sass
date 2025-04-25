@@ -1,5 +1,7 @@
 .hero
     padding-bottom: $spacing-3
+    h1
+        word-break: break-word
     .breadcrumb-nav + .content
         border-top: var(--border-width) solid var(--color-text)
         padding-top: $spacing-3
@@ -36,10 +38,6 @@
             gap: var(--grid-gutter)
             .hero-text
                 @include lead-hero
-        &.hero--with-summary // new class in `hero-gl.html`
-            @include media-breakpoint-up(desktop)
-                .lead
-                    width: columns(8)
         &.hero--with-image
             @include media-breakpoint-up(desktop)
                 .hero-content
@@ -54,6 +52,14 @@
             @include media-breakpoint-down(desktop)
                 .lead
                     margin-top: var(--grid-gutter)
+        &.hero--with-summary // new class in `hero-gl.html`
+            @include media-breakpoint-up(desktop)
+                .lead
+                    width: columns(8)
+        &:not(.hero--with-summary)
+            @include media-breakpoint-up(desktop)
+                figure
+                    width: columns(8)
         .hero-actions
             .btn
                 @include button-reset

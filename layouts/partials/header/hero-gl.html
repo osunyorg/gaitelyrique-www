@@ -66,11 +66,11 @@
             {{ end }}
           </div>
         {{ end }}
-        <div class="lead">
-          {{ with $subtitle }}
+        {{ with $subtitle }}
+          <div class="lead">
             {{ safeHTML . }}
-          {{ end }}
-        </div>
+          </div>
+        {{ end }}
       </div>
 
       {{ if .hero_content_complement }}

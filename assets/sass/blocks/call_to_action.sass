@@ -1,14 +1,14 @@
 .block-call_to_action
     @include in-page-without-sidebar
+        margin-bottom: $block-space-y-desktop
         .block-content
             padding-bottom: 0
-        margin-bottom: $block-space-y-desktop
     &--accent_background
         @include in-page-without-sidebar
             background: none
         .call_to_action
             background-color: $block-call-to-action-accent-background
-            @include media-breakpoint-up(desktop)
+            @include in-page-without-sidebar
                 padding: var(--grid-gutter)
     .call_to_action
         .top
