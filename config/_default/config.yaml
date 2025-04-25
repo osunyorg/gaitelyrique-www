@@ -36,6 +36,9 @@ params:
           mobile:   400
           tablet:   800
           desktop:  512
+      pages:
+        item:
+          desktop:  864
       posts:
         item:
           desktop:  864

@@ -1,0 +1,52 @@
+.block-call_to_action
+    @include in-page-without-sidebar
+        .block-content
+            padding-bottom: 0
+        margin-bottom: $block-space-y-desktop
+    &--accent_background
+        @include in-page-without-sidebar
+            background: none
+        .call_to_action
+            background-color: $block-call-to-action-accent-background
+            @include media-breakpoint-up(desktop)
+                padding: var(--grid-gutter)
+    .call_to_action
+        .top
+            .block-title
+                @include h2
+            .description p
+                @include body-text
+        .actions
+            a
+                @include body-text
+                --btn-font-size: $body-font-size
+                font-family: $sans-condensed
+                text-decoration: underline
+                text-decoration-thickness: 1px
+                &:first-child
+                    --btn-padding: 0
+                    --btn-min-width: 0
+                    text-decoration: underline
+                    text-transform: none
+                    text-decoration-thickness: 1px
+                &::after
+                // TODO : arrow icon
+                + a
+                    margin-top: $spacing-1
+                @include media-breakpoint-down(desktop)
+                    margin-right: 0
+                    text-align: left
+                    &:first-child
+                        margin-top: $spacing-1
+                        text-align: left
+            @include media-breakpoint-up(desktop)
+                grid-column: 1 / 13 !important
+                grid-row: unset !important
+                margin-top: $spacing-3 !important
+                a
+                    margin-top: 0
+        &.call_to_action--without-image:not(.call_to_action--without-text)
+            @include in-page-without-sidebar
+                > div
+                    .actions a + a
+                        margin-top: $spacing-2
