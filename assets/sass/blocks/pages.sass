@@ -1,0 +1,17 @@
+.block.block-pages
+    .grid
+        article
+            .page-title
+                @include h2
+                @include media-breakpoint-up(desktop)
+                    + p
+                        margin-top: $spacing-3
+        @include in-page-without-sidebar
+            grid-gap: $spacing-6 var(--grid-gutter)
+        @include media-breakpoint-down(desktop)
+            article + article
+                margin-top: $spacing-4
+    .page
+        .page-title
+            a::after
+                display: none
