@@ -1,8 +1,10 @@
 {{- $title := or .Params.header_text .Title -}}
+{{- $date := .Params.date  | time.Format ":date_long" -}}
 
 {{- partial "header/hero-gl.html" (dict
     "title" $title
     "image" .Params.image
     "sizes" site.Params.image_sizes.sections.posts.hero
     "context" .
+    "hero_text_complement" $date
   ) -}}

@@ -1,17 +1,27 @@
+.title-with-border
+    @include h2
+    position: relative
+    margin-bottom: $spacing-3
+    padding-bottom: $spacing-2
+    &::after
+        content: ''
+        background: var(--color-text)
+        position: absolute
+        height: 4px
+        left: 0
+        right: 0
+        bottom: 0
+    @include in-page-without-sidebar
+        max-width: 100%
+
+body:not(.posts__page) .heading.block-title h2
+    max-width: 100%
+body:not(.posts__page) .heading.block-title h2,
+body.page-the-place .block .block-title,
+body.posts__page .block .block-title
+    @extend .title-with-border
+
 .heading.block-title
-    h2
-        position: relative
-        margin-bottom: $spacing-3
-        padding-bottom: $spacing-2
-        &::after
-            content: ''
-            background: var(--color-text)
-            position: absolute
-            height: 4px
-            left: 0
-            right: 0
-            bottom: 0
-            @include in-page-with-sidebar
-                left: offset(4)
-        @include in-page-without-sidebar
-            max-width: 100%
+    body.posts__page &
+        h2
+            @include lead

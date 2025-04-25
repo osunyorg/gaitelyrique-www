@@ -37,8 +37,9 @@
       <div class="hero-text">
         <h1 {{ $title_attribute }}>{{ partial "PrepareHTML" .title }}</h1>
 
-        {{ if .hero_text_complement }}
-          {{ partial .hero_text_complement .context }}
+        <!--  DISPLAY DATE | COMPLEMENT IS ORIGINALLY CALLING A PARTIAL (OK?) -->
+        {{ with .hero_text_complement }}
+          <p class="hero-complement">{{ . }}</p>
         {{ end }}
       </div>
       <div class="hero-content">

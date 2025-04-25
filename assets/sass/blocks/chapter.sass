@@ -1,34 +1,31 @@
 .block-chapter
-    .page-the-place.full-width &
+    .page-the-place &
         .chapter
-            .block-title
-                @include h2
-            .text
-                width: 100%
-            .top
-                border-bottom: 4px solid var(--color-text)
-                margin-bottom: $spacing-3
-                padding-bottom: $spacing-2
             .notes p
                 @include h3
                 a
                     text-decoration-color: var(--color-text)
-            @include media-breakpoint-up(desktop)
-                    flex-direction: column
-                    .rich-text
-                        width: columns(7)
-                    .notes
-                        position: absolute
-                        margin-top: $spacing-4
-                    figure
-                        margin-top: $spacing-4
-                        margin-left: auto
-                        width: columns(10)
-                        button,
-                        img
-                            margin: 0
-                            width: 100%
             @include media-breakpoint-down(desktop)
                 figure
                     order: 2
                     margin-top: $spacing-3
+    .page-the-place.full-width &
+        @include media-breakpoint-up(desktop)
+            .chapter
+                flex-direction: column
+                .text
+                    width: 100%
+                .rich-text
+                    width: columns(7)
+                .notes
+                    position: absolute
+                    margin-top: $spacing-4
+                figure
+                    margin-top: $spacing-4
+                    margin-left: auto
+                    width: columns(10)
+                    order: 2
+                    button,
+                    img
+                        margin: 0
+                        width: 100%

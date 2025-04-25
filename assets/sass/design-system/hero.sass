@@ -63,3 +63,17 @@
                 padding: 0
                 text-decoration: underline
                 text-transform: none
+
+    // posts with date under title
+    .posts__page &
+        .content
+            border-bottom: 4px solid var(--color-text)
+            padding-bottom: $spacing-4
+            row-gap: $spacing-3 !important
+
+    // new class
+    &-complement
+        @include body-text
+        &::before
+            content: '—' / ""
+            margin-right: space(2)
