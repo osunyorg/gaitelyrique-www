@@ -1,4 +1,19 @@
 .block.block-pages
+    .top .block-title,
+    .page .page-title,
+        a::after
+            display: none
+    &.block-class-background-alt
+        background-color: var(--color-background-alt)
+        .block-content
+            padding-bottom: $spacing-4
+            padding-top: $spacing-4
+    @include in-page-without-sidebar
+        .top
+            display: block
+            .block-title
+                width: 100%
+    // GRID
     .grid
         article
             .page-title
@@ -11,7 +26,3 @@
         @include media-breakpoint-down(desktop)
             article + article
                 margin-top: $spacing-4
-    .page
-        .page-title
-            a::after
-                display: none

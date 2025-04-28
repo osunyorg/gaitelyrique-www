@@ -52,7 +52,7 @@
             @include media-breakpoint-down(desktop)
                 .lead
                     margin-top: var(--grid-gutter)
-        &.hero--with-summary // new class in `hero-gl.html`
+        &:not(.hero--with-image)
             @include media-breakpoint-up(desktop)
                 .lead
                     width: columns(8)

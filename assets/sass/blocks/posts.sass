@@ -40,3 +40,20 @@
             @include media-breakpoint-down(desktop)
                 .post-meta + div
                     margin-top: $spacing-2
+    &--highlight
+        .list,
+        .post:not(:last-child)
+            border-color: rgba($color-border, .3)
+            border-width: 1px
+        @include media-breakpoint-up(desktop)
+            .highlight-post
+                position: relative
+                &::after
+                    background-color: rgba($color-border, .3)
+                    content: ''
+                    height: 100%
+                    position: absolute
+                    right: 0
+                    top: 0
+                    width: 1px
+                    transform: translateX(calc(var(--grid-gutter) / 2))
