@@ -45,6 +45,9 @@
         .post:not(:last-child)
             border-color: rgba($color-border, .3)
             border-width: 1px
+        .list .post
+            .post-title
+                @include lead
         @include media-breakpoint-up(desktop)
             .highlight-post
                 position: relative

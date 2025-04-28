@@ -71,6 +71,8 @@
             {{ safeHTML . }}
           </div>
         {{ end }}
+
+        {{ partial "hooks/before-hero-content-end.html" .context }}
       </div>
 
       {{ if .hero_content_complement }}

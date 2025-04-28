@@ -1,13 +1,21 @@
 .block-gallery
     &--carousel
+        @include in-page-without-sidebar
+            .top
+                display: block
+                .block-title
+                    width: 100%
+        .block-content
+            position: relative
         .slider-arrows
             position: absolute
             top: 0
-            right: calc(var(--grid-gutter) - #{$spacing-3})
+            right: 0
             // TODO: right icons
             .slider-arrow-previous
                 padding-right: space()
             .slider-arrow-next
                 padding-left: space()
+                margin-right: -$spacing-3
             .slider-progression
                 @extend .sr-only

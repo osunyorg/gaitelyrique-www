@@ -3,33 +3,68 @@ $color-text-alt: $color-text
 $color-border: $color-text
 // $color-accent: 
 
+// TYPOGRAPHY
 $sans-expanded: "ABCGravity-Expanded", sans-serif
 $sans-condensed: "ABCGravity-SemiCondensed", sans-serif
 $serif: "RhetorikSerif", serif
 
-$heading-font-family: $serif
-$body-font-family: $serif
-$body-size: pxToRem(22)
-$body-line-height: pxToRem(30)
+$heading-font-family: $sans-condensed
+$heading-font-weight: bold
 
-$h1-font-family: $sans-condensed
+$body-font-family: $serif
+$body-size: pxToRem(18)
+$body-line-height: pxToRem(25)
+$body-size-desktop: pxToRem(22)
+$body-line-height-desktop: pxToRem(30)
+
+// h1
+$h1-size: pxToRem(50)
+$h1-line-height: 90%
 $h1-size-desktop: calc(Min(#{pxToRem(170)}, 10vw))
-$h1-line-height: 100%
-$h2-font-family: $sans-condensed
-$h2-size-desktop: pxToRem(40)
-$h3-font-family: $sans-condensed
-$h3-size-desktop: $body-size
-$h4-font-family: $sans-condensed
-$h4-size-desktop: $body-size
-$h5-font-family: $serif
-$h5-size-desktop: pxToRem(20)
+$h1-line-height-desktop: 95%
+
+// h2
+$h2-size: pxToRem(40)
+$h2-line-height: 90%
+$h2-size-desktop: pxToRem(80)
+$h2-line-height: 95%
+$h2-weight: $heading-font-weight
+
+// h3
+$h3-font-family: $heading-font-family
+$h3-size: pxToRem(28)
+$h3-line-height: 110%
+$h3-size-desktop: pxToRem(60)
+$h3-line-height-desktop: 95%
+
+// h4
+$h4-size: pxToRem(28)
+$h4-line-height: 110%
+$h4-size-desktop: pxToRem(40)
+$h4-line-height-desktop: 90%
+
+// h5 or Section
+$h5-size: pxToRem(26)
+$h5-line-height: 110%
+$h5-size-desktop: pxToRem(25)
+$h5-line-height-desktop: 115%
 $h5-text-transform: none
 
-$large-title-size: pxToRem(40)
-$large-title-size-desktop: pxToRem(80)
+// h6 or Tab
+$h6-size: pxToRem(20)
+$h6-line-height: 110%
+$h6-size-desktop: pxToRem(22)
+$h6-line-height-desktop: 120%
+$h6-text-transform: none
 
+// lead
 $lead-font-family: $serif
+// $lead-size: $lead-size
 $lead-size-desktop: pxToRem(36)
+// $lead-line-height: $lead-sidebar-line-height
+$lead-line-height-desktop: 120%
+$lead-weight: normal
+
 
 $border-width: 4px
 $block-timeline-border-width: 1px

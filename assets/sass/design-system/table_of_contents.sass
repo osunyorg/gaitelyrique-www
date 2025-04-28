@@ -1,12 +1,15 @@
 .toc-container
     .toc-title
         text-transform: uppercase
+        font-family: $serif
     .toc-pages
         @include meta
+        font-family: $serif
+        font-weight: normal
         li
             display: flex
             gap: space()
             &::before
                 content: '—' / ""
         a.active
-                font-weight: bold
+            font-weight: bold

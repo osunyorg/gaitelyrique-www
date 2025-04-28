@@ -1,0 +1,23 @@
+
+    
+body.ancestor-the-place
+    .hero
+        .hero-content
+            flex-wrap: wrap
+            .lead
+                width: columns(8) !important
+                order: -1
+            .blocks
+                width: columns(6)
+                .block
+                    --block-space-y: #{$spacing-4}
+                    .container
+                        padding: 0
+                .block-chapter:first-child
+                    @include lead
+    .chapter
+        .top
+            .block-title
+                @include lead
+                &::after
+                    content: none

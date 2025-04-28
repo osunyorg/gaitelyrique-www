@@ -31,13 +31,11 @@
                         width: 100%
     &--alt_background
         .top .block-title
-            font-size: $large-title-size
-            @include media-breakpoint-up(desktop)
-                font-size: $large-title-size-desktop
+            @include h2
             &::after
                 content: none
         .notes p > a
-            @include h3
+            @include meta
             // TODO : gaitée icon
             @include icon(arrow-right-line, after, true)
             @include hover-translate-icon
