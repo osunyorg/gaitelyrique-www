@@ -99,3 +99,36 @@
         tbody
             a, span
                 line-height: space(9.5)
+
+.exhibitions--agenda,
+.events--agenda
+    .exhibition,
+    .event
+        .exhibition-dates,
+        .event-hours,
+        &-subtitle
+            @include h6
+        &-title
+            @include h4
+        &-categories
+            order: -1
+            margin-bottom: $spacing-2
+            margin-top: 0
+        .more
+            padding-top: $spacing-2
+    .events-date-title
+        &, &.is-down
+            @include h4
+    .event
+        .event-content
+            display: flex
+            flex-direction: column
+
+// ARCHIVES
+.events-archives-years
+    margin-bottom: -$spacing-5
+    ol
+        li:last-child
+            border: none
+        p
+            @include h6
