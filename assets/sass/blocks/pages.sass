@@ -26,3 +26,22 @@
         @include media-breakpoint-down(desktop)
             article + article
                 margin-top: $spacing-4
+    // LARGE
+    &--large
+        .page
+            .page-content
+                flex: 1
+            .page-title
+                font-family: $sans-condensed
+                font-size: $large-title-size
+                a
+                    text-decoration: none
+                @include media-breakpoint-up(desktop)
+                    font-size: $large-title-size-desktop
+            &:hover .page-title a
+                text-decoration: none
+            .media
+                img
+                    aspect-ratio: unset
+                @include media-breakpoint-up(desktop)
+                    order: 2

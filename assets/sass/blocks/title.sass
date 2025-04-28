@@ -34,3 +34,7 @@ body:not(.posts__page) .heading.block-title h2,
     body.posts__page &
         h2
             @include lead
+
+// remove arrow from titles
+.block .block-title a::after
+    content: none
