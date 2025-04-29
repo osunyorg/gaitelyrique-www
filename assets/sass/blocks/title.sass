@@ -36,5 +36,8 @@ body:not(.posts__page) .heading.block-title h2,
             @include lead
 
 // remove arrow from titles
-.block .block-title a::after
-    content: none
+.block .block-title a
+    &::after
+        opacity: 0
+    &:hover::after
+        opacity: 1
