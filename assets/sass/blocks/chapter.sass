@@ -2,9 +2,11 @@
     .page-the-place &
         .chapter
             .notes p
-                @include h3
+                @include h5
                 a
+                    text-decoration: underline
                     text-decoration-color: var(--color-text)
+                    text-decoration-thickness: 1px
             @include media-breakpoint-down(desktop)
                 figure
                     order: 2
