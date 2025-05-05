@@ -27,19 +27,28 @@
 
 .block-posts
     &--large
-        .post
-            .post-meta
-                display: flex
-                flex-direction: column
-            @include media-breakpoint-up(desktop)
-                .post-categories
-                    order: -1
-                    margin-top: $spacing-2
-                .media
-                    width: columns(8)
-            @include media-breakpoint-down(desktop)
-                .post-meta + div
-                    margin-top: $spacing-2
+        .large
+            .post
+                .post-meta
+                    display: flex
+                    flex-direction: column
+                .post-title a
+                    @include h2
+                @include media-breakpoint-up(desktop)
+                    .post-categories
+                        order: -1
+                        margin-top: $spacing-2
+                    .media
+                        width: columns(8)
+                @include media-breakpoint-down(desktop)
+                    .post-meta + div
+                        margin-top: $spacing-2
+            @include in-page-with-or-without-sidebar
+                &.without-images
+                    .post
+                        margin-left: 0
+                        .post-content
+                            width: columns(8)
     &--highlight
         .list,
         .post:not(:last-child)

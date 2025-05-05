@@ -3,17 +3,18 @@
         margin-bottom: $block-space-y-desktop
         .block-content
             padding-bottom: 0
+            padding-top: 0
     &--accent_background
         @include in-page-without-sidebar
             background: none
         .call_to_action
             background-color: $block-call-to-action-accent-background
             @include in-page-without-sidebar
-                padding: var(--grid-gutter)
+                padding: space(9) var(--grid-gutter)
     .call_to_action
         .top
             .block-title
-                @include h3
+                @include h4
             .description p
                 @include body-text
         .actions

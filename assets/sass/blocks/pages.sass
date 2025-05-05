@@ -39,6 +39,8 @@
                 text-decoration: none
             .media
                 img
-                    aspect-ratio: unset
+                    aspect-ratio: 16/9
                 @include media-breakpoint-up(desktop)
                     order: 2
+            @include in-page-without-sidebar
+                align-items: flex-start
