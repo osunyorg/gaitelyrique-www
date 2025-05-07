@@ -31,6 +31,8 @@ footer#document-footer
             width: 100%
         .footer-partners
             display: flex
+            a::after
+                content: none
             @include media-breakpoint-up(desktop)
                 align-items: flex-end
                 justify-content: space-between

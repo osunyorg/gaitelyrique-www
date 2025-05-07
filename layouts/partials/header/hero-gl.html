@@ -71,6 +71,10 @@
             {{ safeHTML . }}
           </div>
         {{ end }}
+        
+        {{ with .context.Params.contents }}
+          {{ partial "blocks/ignored" . }}
+        {{ end }}
 
         {{/*  {{ partial "hooks/before-hero-content-end.html" .context }}  */}}
       </div>

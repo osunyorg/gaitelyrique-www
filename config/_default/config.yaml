@@ -12,7 +12,13 @@ params:
   logo:
     header: '/assets/images/logo.svg'
     footer: '/assets/images/logo-footer.svg'
+  blocks:
+    ignored:
+      - block-class-in-hero
   events:
+    single:
+      time_slots:
+        date_format: ":date_full"
     share_links:
       enabled: false
   exhibitions:
