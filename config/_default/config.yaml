@@ -1,6 +1,7 @@
 theme: osuny
 _merge: deep
 params:
+  plausible: gaite-lyrique.net
   debug:
     productionUrl: https://www.gaitelyrique.osuny.site
   summary:
