@@ -153,7 +153,8 @@
                 padding-bottom: 0
                 margin-bottom: 0
         .document-content > .blocks
-            --block-space-y: #{space(24)}
+            .block:not(.block-title)
+                --block-space-y: #{space(24)}
             .block-chapter
                 + .block-title
                     margin-top: space(10)

@@ -40,6 +40,9 @@ header#document-header
                 height: space(4)
                 right: 2px
                 width: space(4)
+        &:not(.is-color-mode)
+            span:not(:first-child)::after
+                right: calc(#{space(10)} - #{space(4)} - 2px)
         @include media-breakpoint-up(md)
             .label
                 position: absolute
