@@ -1,6 +1,13 @@
 ---
 title: Footer
 items:
+- title: Presse
+  target: "/presse/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/presse"
+  file: content/fr/pages/presse/_index.html
 - title: Privatisation
   target: "/privatisation/"
   kind: page
@@ -29,11 +36,4 @@ items:
   children: []
   path: "/pages/faq"
   file: content/fr/pages/faq/_index.html
-- title: Presse
-  target: "/presse/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/presse"
-  file: content/fr/pages/presse/_index.html
 
