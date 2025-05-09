@@ -19,7 +19,14 @@ items:
   target: "/infos-pratiques/"
   kind: page
   new_tab: false
-  children: []
+  children:
+  - title: Privatisation
+    target: "/privatisation/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/privatisation"
+    file: content/fr/pages/privatisation/_index.html
   path: "/pages/infos-pratiques"
   file: content/fr/pages/infos-pratiques/_index.html
 
