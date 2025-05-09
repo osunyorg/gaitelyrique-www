@@ -22,7 +22,7 @@ items:
   children: []
   path: "/pages/infos-pratiques"
   file: content/fr/pages/infos-pratiques/_index.html
-- title: Infos pratiques (mobile)
+- title: mobile-infos
   target: ''
   kind: blank
   new_tab: false
