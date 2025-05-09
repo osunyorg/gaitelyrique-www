@@ -34,6 +34,13 @@ items:
     children: []
     path: "/pages/recrutements"
     file: content/fr/pages/recrutements/_index.html
+  - title: Soutenir la Fabrique
+    target: "/soutenir-la-fabrique/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/soutenir-la-fabrique"
+    file: content/fr/pages/soutenir-la-fabrique/_index.html
   path: "/pages/infos-pratiques"
   file: content/fr/pages/infos-pratiques/_index.html
 
