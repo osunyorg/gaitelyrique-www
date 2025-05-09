@@ -2,11 +2,6 @@
   <div>
     {{ partial "commons/agenda/aside.html" . }}
 
-    {{ partial "toc/container.html" (dict
-        "toc" "toc/default.html"
-        "context" .
-      )}}
-
     {{/*  Call orga block  */}}
     {{ with .Params.contents }}
       {{ partial "blocks/ignored" (dict
@@ -14,5 +9,10 @@
           "templates" "organizations"
         )}}
     {{ end }}
+
+    {{ partial "toc/container.html" (dict
+        "toc" "toc/default.html"
+        "context" .
+      )}}
   </div>
 </div>

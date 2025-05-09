@@ -152,6 +152,14 @@
             @include media-breakpoint-down(desktop)
                 padding-bottom: 0
                 margin-bottom: 0
+        .document-content > .blocks
+            --block-space-y: #{space(24)}
+            .block-chapter
+                + .block-title
+                    margin-top: space(10)
+                    margin-bottom: $spacing-2
+                    + .block
+                        margin-top: $spacing-2
 
 .events__section
     .agenda-exhibitions
