@@ -1,6 +1,12 @@
 commons:
   more: Découvrir
   more_aria: Découvrir “{{ .Title }}“
+  # specifics
+  header:
+    modes:
+      label: "Affichage :"
+      colors: mode couleurs
+      normal: mode lecture
   footer:
     text:  >-
       Lieu de création artistique et d’engagement, la Gaîté lyrique est un établissement culturel de la Ville de Paris porté par ArtyFarty, arte, make sense, Singa et Acte Sud.

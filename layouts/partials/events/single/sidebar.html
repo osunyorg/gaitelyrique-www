@@ -8,5 +8,11 @@
       )}}
 
     {{/*  Call orga block  */}}
+    {{ with .Params.contents }}
+      {{ partial "blocks/ignored" (dict
+          "context" .
+          "templates" "organizations"
+        )}}
+    {{ end }}
   </div>
 </div>

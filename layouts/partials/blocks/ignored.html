@@ -1,9 +1,11 @@
+{{ $context := .context | default . }}
+{{ $templates := .templates | default (slice "chapter" "organizations") }}
+
 <div class="blocks">
-  {{ range $index, $content := . }}
+  {{ range $index, $content := $context }}
     {{ if in site.Params.blocks.ignored .html_class }}
-      {{ if eq .template (or "chapter" "call_to_action" "organizations") }}
+      {{ if in .template $templates }}
         {{ $template := printf "blocks/templates/%s.html" .template }}
-  
         {{ if templates.Exists ( printf "partials/%s" $template ) }}
           {{ partial $template (dict
               "block" $content

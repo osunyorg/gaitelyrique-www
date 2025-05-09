@@ -23,6 +23,14 @@
                         text-decoration-color: transparent
         figure
             display: none
+        @include media-breakpoint-up(desktop)
+            &.hero--image-portrait,
+            &.hero--image-landscape,
+            &.hero--image-square
+                .hero-text
+                    width: columns(10)
+        @include media-breakpoint-down(desktop)
+            margin-bottom: 0 !important
     .document-content
         margin-top: $vertical-space-1
     .event-access
@@ -34,8 +42,6 @@
         .event-summary
             &, .type
                 @include h5
-            @include media-breakpoint-down(xl)
-                align-items: center
         .event-summary
             .date
                 width: auto
@@ -85,6 +91,68 @@
                 &:hover
                     background: var(--color-text)
                     color: var(--color-background)
+    .dropdown-calendar
+        > button
+            @include meta
+            font-family: $body-font-family
+            font-weight: normal
+    @include media-breakpoint-down(desktop)
+        .event-access
+            .event-time-slot,
+            .event-summary
+                .dropdown-calendar
+                    background: var(--color-text)
+                    color: var(--color-background)
+    &:not(.full-width)
+        .event-sidebar
+            padding-bottom: $spacing-3
+            figure
+                margin-bottom: $spacing-3
+                position: relative
+                figcaption
+                    @include meta
+                    opacity: 0
+                    background: var(--color-background)
+                    bottom: 0
+                    margin-top: space()
+                    padding: 0 space()
+                    position: absolute
+                    right: 0
+                &:hover figcaption
+                    opacity: 1
+            .blocks
+                .block-content,
+                .container
+                    padding: 0
+                .top
+                    margin-bottom: 0
+                    .block-title
+                        @include h6
+                .block-organizations
+                    margin-top: space(14)
+                    .grid
+                        @include grid(3)
+                        .organization-content
+                            @extend .sr-only
+                        .media
+                            filter: grayscale(1)
+                            margin-bottom: 0
+                            width: space(15)
+                            @include media-breakpoint-up(desktop)
+                                width: space(35)
+                                figure
+                                    margin-bottom: 0
+
+            .event-practicals
+                padding-bottom: space(10)
+                p
+                    @include small
+                    + p
+                        margin-top: space(2)
+            @include media-breakpoint-down(desktop)
+                padding-bottom: 0
+                margin-bottom: 0
+
 .events__section
     .agenda-exhibitions
         background: transparent
@@ -108,7 +176,9 @@
                 line-height: space(9.5)
 
 .exhibitions--agenda,
-.events--agenda
+.events--agenda,
+.organizations__page,
+.persons__page
     .exhibition,
     .event
         .exhibition-dates,
@@ -139,3 +209,12 @@
             border: none
         p
             @include h6
+
+.organizations__page,
+.persons__page
+    &.full-width
+        .events--list
+            .event-dates
+                @include h4
+            .event-time
+                @include h6

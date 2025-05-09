@@ -16,6 +16,7 @@ params:
   blocks:
     ignored:
       - block-class-in-hero
+      - block-class-in-sidebar
   events:
     single:
       time_slots:

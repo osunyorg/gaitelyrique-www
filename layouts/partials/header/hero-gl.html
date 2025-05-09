@@ -73,9 +73,9 @@
         {{ end }}
         
         {{ with .context.Params.contents }}
-          {{ partial "blocks/ignored" . }}
+          {{ partial "blocks/ignored" (dict "context" .) }}
         {{ end }}
-
+            
         {{/*  {{ partial "hooks/before-hero-content-end.html" .context }}  */}}
       </div>
 

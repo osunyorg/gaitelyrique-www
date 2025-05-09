@@ -31,8 +31,7 @@
         .terms a
             @include h4
     
-    body:not(.events__page) &,
-    body:not(.exhibitions__page) &
+    body:not(.events__page):not(.exhibitions__page):not(.persons__page) &
         .content
             flex-direction: column
             gap: var(--grid-gutter)
