@@ -20,13 +20,6 @@ items:
   kind: page
   new_tab: false
   children:
-  - title: Privatisation
-    target: "/privatisation/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/privatisation"
-    file: content/fr/pages/privatisation/_index.html
   - title: Recrutements
     target: "/recrutements/"
     kind: page
@@ -48,4 +41,11 @@ items:
   kind: blank
   new_tab: false
   children: []
+- title: Privatisation
+  target: "/privatisation/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/privatisation"
+  file: content/fr/pages/privatisation/_index.html
 
