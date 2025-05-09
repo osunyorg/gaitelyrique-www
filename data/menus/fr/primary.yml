@@ -41,13 +41,13 @@ items:
     children: []
     path: "/pages/recrutements"
     file: content/fr/pages/recrutements/_index.html
-- title: Privatisation
-  target: "/privatisation/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/privatisation"
-  file: content/fr/pages/privatisation/_index.html
+  - title: Privatisation
+    target: "/privatisation/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/privatisation"
+    file: content/fr/pages/privatisation/_index.html
 - title: Soutenir la Fabrique
   target: "/soutenir-la-fabrique/"
   kind: page
