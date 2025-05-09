@@ -26,7 +26,14 @@ items:
   target: ''
   kind: blank
   new_tab: false
-  children: []
+  children:
+  - title: Presse
+    target: "/presse/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/presse"
+    file: content/fr/pages/presse/_index.html
 - title: Recrutements
   target: "/recrutements/"
   kind: page
