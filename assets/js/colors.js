@@ -29,7 +29,7 @@ window.gaite.init = function () {
     this.button.addEventListener('click', this.toggleMode.bind(this));
   }
 
-  if (colorMode) {
+  if (colorMode == "true") {
     this.toggleMode();
   }
 };
@@ -39,15 +39,15 @@ window.gaite.toggleMode = function () {
 
   this.button.classList.remove('is-color-mode');
 
-  this.isColorMode = !this.isColorMode;
-  if (this.isColorMode) {
+  this.isColorMode = this.isColorMode == "true" ? "false" : "true";
+  if (this.isColorMode === "true") {
     colors = this.getRandomColors();
     this.button.classList.add('is-color-mode');
   }
 
   this.setColors(colors);
 
-  localStorage.setItem(window.gaite.colorLocalKey, this.isColorMode);
+  localStorage.setItem(window.gaite.colorLocalKey, this.isColorMode.toString());
 };
 
 window.gaite.getRandomColors = function () {
