@@ -19,21 +19,7 @@ items:
   target: "/infos-pratiques/"
   kind: page
   new_tab: false
-  children:
-  - title: Recrutements
-    target: "/recrutements/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/recrutements"
-    file: content/fr/pages/recrutements/_index.html
-  - title: Soutenir la Fabrique
-    target: "/soutenir-la-fabrique/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/soutenir-la-fabrique"
-    file: content/fr/pages/soutenir-la-fabrique/_index.html
+  children: []
   path: "/pages/infos-pratiques"
   file: content/fr/pages/infos-pratiques/_index.html
 - title: Infos pratiques (mobile)
@@ -41,6 +27,13 @@ items:
   kind: blank
   new_tab: false
   children: []
+- title: Recrutements
+  target: "/recrutements/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/recrutements"
+  file: content/fr/pages/recrutements/_index.html
 - title: Privatisation
   target: "/privatisation/"
   kind: page
@@ -48,4 +41,11 @@ items:
   children: []
   path: "/pages/privatisation"
   file: content/fr/pages/privatisation/_index.html
+- title: Soutenir la Fabrique
+  target: "/soutenir-la-fabrique/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/soutenir-la-fabrique"
+  file: content/fr/pages/soutenir-la-fabrique/_index.html
 
