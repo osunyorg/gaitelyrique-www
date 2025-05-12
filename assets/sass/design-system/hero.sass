@@ -61,13 +61,23 @@
                     width: columns(8)
         .hero-actions
             .btn
+                --btn-min-width: none
                 @include button-reset
                 @include icon(arrow-right-line, after, true)
                 @include hover-translate-icon
                 color: $color-text
+                justify-content: flex-start
                 padding: 0
+                position: relative
                 text-decoration: underline
                 text-transform: none
+                &::after
+                    position: absolute
+                    content: "→"
+                    font-family: $heading-font-family
+                    font-size: 110%
+                    text-decoration: none
+                    right: -(space(4))
 
     // posts with date under title
     .posts__page &

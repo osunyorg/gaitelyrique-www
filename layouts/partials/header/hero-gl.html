@@ -10,7 +10,7 @@
 {{ $summary := .context.Params.summary | safeHTML }}
 {{ $subtitle_is_summary := false }}
 
-{{ $button := .button | default (cond .header_cta.display .header_cta nil) }}
+{{ $button := .context.Params.button | default (cond .context.Params.header_cta.display .context.Params.header_cta nil) }}
 
 {{ $title_attribute := "" | safeHTMLAttr }}
 {{ if site.Params.search.active }}
@@ -76,7 +76,7 @@
           {{ partial "blocks/ignored" (dict "context" .) }}
         {{ end }}
             
-        {{/*  {{ partial "hooks/before-hero-content-end.html" .context }}  */}}
+        {{ partial "hooks/before-hero-content-end.html" .context }}
       </div>
 
       {{ if .hero_content_complement }}

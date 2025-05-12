@@ -4,7 +4,7 @@
 <div class="blocks">
   {{ range $index, $content := $context }}
     {{ if in site.Params.blocks.ignored .html_class }}
-      {{ if in .template $templates }}
+      {{ if in $templates .template }}
         {{ $template := printf "blocks/templates/%s.html" .template }}
         {{ if templates.Exists ( printf "partials/%s" $template ) }}
           {{ partial $template (dict

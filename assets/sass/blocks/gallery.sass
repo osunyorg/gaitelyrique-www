@@ -11,11 +11,17 @@
             position: absolute
             top: 0
             right: 0
-            // TODO: right icons
+            transform: translateY(-$spacing-3)
             .slider-arrow-previous
                 padding-right: space()
+                &::before
+                    content: "←"
+                    font-family: $heading-font-family
             .slider-arrow-next
                 padding-left: space()
                 margin-right: -$spacing-3
+                &::before
+                    content: "→"
+                    font-family: $heading-font-family
             .slider-progression
                 @extend .sr-only
