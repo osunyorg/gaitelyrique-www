@@ -31,7 +31,16 @@ window.gaite.init = function () {
 
   if (colorMode == "true") {
     this.toggleMode();
+  } else {
+    this.setRandomAccentColor();
   }
+};
+
+window.gaite.setRandomAccentColor = function () {
+  var randomColors = this.getRandomColors(),
+      colors = ["#FFFFFF", randomColors[1]];
+
+  this.setColors(colors);
 };
 
 window.gaite.toggleMode = function () {
@@ -40,6 +49,7 @@ window.gaite.toggleMode = function () {
   this.button.classList.remove('is-color-mode');
 
   this.isColorMode = this.isColorMode == "true" ? "false" : "true";
+
   if (this.isColorMode === "true") {
     colors = this.getRandomColors();
     this.button.classList.add('is-color-mode');
