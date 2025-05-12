@@ -1,0 +1,13 @@
+.block-persons
+    .persons
+        .person
+            .person-name
+                @include h6
+            @include media-breakpoint-up(desktop)
+                flex-direction: column
+                max-width: columns(3)
+            @include media-breakpoint-down(desktop)
+                .description
+                    margin-top: $spacing-1
+                .avatar
+                    order: -1
