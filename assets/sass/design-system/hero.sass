@@ -26,7 +26,9 @@
                         display: flex
                         align-items: center
                 &:hover figcaption::before
-                    transform: none
+                    transform: none    
+        .hero-text
+            margin-top: 0
     .taxonomies-single
         .terms a
             @include h4
@@ -51,8 +53,6 @@
             @include media-breakpoint-down(desktop)
                 .lead
                     margin-top: var(--grid-gutter)
-                .hero-text
-                    margin-top: 0
         &:not(.hero--with-image)
             @include media-breakpoint-up(desktop)
                 .lead
