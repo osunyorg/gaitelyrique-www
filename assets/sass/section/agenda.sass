@@ -56,7 +56,7 @@
     .programme-btn-container
         .btn
             &, &:hover
-                @include h4
+                @include h6
                 margin-left: offset(4)
                 margin-bottom: $vertical-space-1
                 text-transform: none
@@ -96,6 +96,10 @@
             @include meta
             font-family: $body-font-family
             font-weight: normal
+    // agenda/programme button
+    .programme-btn-container
+        .programme-btn
+            @include h6
     @include media-breakpoint-down(desktop)
         .event-access
             .event-time-slot,
@@ -209,6 +213,7 @@
         .event-content
             display: flex
             flex-direction: column
+
 
 // ARCHIVES
 .events-archives-years
