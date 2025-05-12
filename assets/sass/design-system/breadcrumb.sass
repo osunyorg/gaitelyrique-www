@@ -1,4 +1,4 @@
-.breadcrumb
+ol.breadcrumb
     li
         &, a
             @include small
@@ -8,4 +8,9 @@
         &:not(:first-child)
             &::before
                 @include icon-site(icon-arrow)
-                font-size: pxToRem(10)
+                font-size: pxToRem(6)
+                @include media-breakpoint-up(desktop)
+                    font-size: pxToRem(10)
+    @include media-breakpoint-down(desktop)
+        height: unset
+        padding-bottom: space(3)

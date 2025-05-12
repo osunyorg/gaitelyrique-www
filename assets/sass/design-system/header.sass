@@ -2,8 +2,20 @@ header#document-header
     align-items: center
     display: flex
     justify-content: center
+    nav.primary-menu .header-button
+        &[aria-expanded="false"]
+            span:last-of-type::before
+                @include icon-site("icon-menu")
+        &[aria-expanded="true"]
+            span:last-of-type::before
+                @include icon-site("icon-close")
     .nav-search
-        display: none
+        .search-button
+            justify-content: flex-start
+            &::after
+                order: -1
+        @include media-breakpoint-up(desktop)
+            display: none
     .additional-menu
         display: flex
         justify-content: flex-end
@@ -13,6 +25,10 @@ header#document-header
             padding: 0
             width: auto
             line-height: var(--meta-line-height)
+            @include media-breakpoint-down(desktop)
+                display: none
+        @include media-breakpoint-down(desktop)
+            width: 100%
     .change-color-mode-button
         @include button-reset
         @include h5
@@ -73,7 +89,7 @@ header#document-header
             margin-left: var(--grid-gutter-negative)
             margin-right: var(--grid-gutter-negative)
             padding: $spacing-2 var(--grid-gutter)
-            margin-top: $spacing-1
+            margin-top: space()
             width: calc(100% + calc(var(--grid-gutter) * 2))
             span + span
                 margin-left: $spacing-1

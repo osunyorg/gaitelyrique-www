@@ -51,6 +51,8 @@
             @include media-breakpoint-down(desktop)
                 .lead
                     margin-top: var(--grid-gutter)
+                .hero-text
+                    margin-top: 0
         &:not(.hero--with-image)
             @include media-breakpoint-up(desktop)
                 .lead
@@ -78,7 +80,7 @@
                     font-size: 110%
                     text-decoration: none
                     right: -(space(4))
-
+                    
     // posts with date under title
     .posts__page &
         .content

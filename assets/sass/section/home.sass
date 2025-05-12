@@ -18,6 +18,10 @@
             @include media-breakpoint-up(desktop)
                 &.image-landscape
                     width: columns(12) !important
+        @include media-breakpoint-down(desktop)
+            .content
+                display: flex
+                flex-direction: column
 
     .blocks
         .block
