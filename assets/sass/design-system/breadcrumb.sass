@@ -1,8 +1,11 @@
 .breadcrumb
     li
+        &, a
+            @include small
         &:where(:not(.active))
             a, span
                 font-weight: bold
         &:not(:first-child)
             &::before
-                content: url("/assets/icons/arrow.svg")
+                @include icon-site(icon-arrow)
+                font-size: pxToRem(10)

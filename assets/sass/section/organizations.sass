@@ -4,8 +4,11 @@
             background: $organization-background-color
             padding: 0
 
-.organization 
+.organization
     .organization-title
         @extend .sr-only
     .media--logo
-        filter: grayscale(1)
+        margin-bottom: 0
+    body:not(.organizations__section)
+        .media--logo
+            filter: grayscale(1)

@@ -1,8 +1,19 @@
-<button class="change-color-mode-button">
-  <span class="label">{{ i18n "commons.header.modes.label" }}</span>
-  <span class="color-mode">{{ i18n "commons.header.modes.colors" }}</span>
-  <span class="reading-mode">{{ i18n "commons.header.modes.normal" }}</span>
-</button>
+<div class="additional-menu">
+  {{ partial "commons/search/button.html" "primary" }}
+
+  {{ if in site.Params.i18n.positions "primary" }}
+    {{ partial "commons/i18n.html" (dict
+        "context" .
+        "position" "primary"
+      )}}
+  {{ end }}
+
+  <button class="change-color-mode-button">
+    <span class="label">{{ i18n "commons.header.modes.label" }}</span>
+    <span class="color-mode">{{ i18n "commons.header.modes.colors" }}</span>
+    <span class="reading-mode">{{ i18n "commons.header.modes.normal" }}</span>
+  </button>
+</div>
 
 <div class="menu-socials">
   {{ with (or site.Params.contact_details site.Data.website.social) }}

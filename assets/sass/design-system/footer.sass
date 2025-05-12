@@ -69,19 +69,28 @@ footer#document-footer
             justify-content: space-between
             @include media-breakpoint-up(desktop)
                 justify-content: flex-end
+            .tiktok
+                order: -1
+                &::after
+                    @include icon-site(icon-tiktok)
+            // .linkedin
+            //     order: 0
+            //     &::after
+            //         @include icon-site(icon-linkedin)
+            // .instagram
+            //     order: 1
+            //     &::after
+            //         @include icon-site(icon-instagram)
+            // .facebook
+            //     order: 2
+            //     &::after
+            //         @include icon-site(icon-facebook)
             li
                 + li
                     margin-top: 0
                 &::after
                     margin-left: 0
-            .tiktok
-                order: -1
-            .linkedin
-                order: 0
-            .instagram
-                order: 1
-            .facebook
-                order: 2
+                    font-size: pxToRem(44) !important
         @include media-breakpoint-down(desktop)
             margin-top: $spacing-3
     .footer-logo

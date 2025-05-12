@@ -3,20 +3,22 @@ header#document-header
     display: flex
     justify-content: center
     .nav-search
-        .search-button
-            display: flex
-            &::after
-                order: -1
-        @include media-breakpoint-down(desktop)
-            justify-content: flex-start
-        @include media-breakpoint-up(desktop)
-            margin-left: var(--grid-gutter)
+        display: none
+    .additional-menu
+        display: flex
+        justify-content: flex-end
+        min-width: columns(3)
+        gap: space(9)
+        .search-button--primary
+            padding: 0
+            width: auto
+            line-height: var(--meta-line-height)
     .change-color-mode-button
         @include button-reset
         @include h5
-        min-width: columns(3)
         padding: 0
         text-align: right
+        flex: 1
         span
             @include small
             justify-content: flex-end
