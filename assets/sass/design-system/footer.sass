@@ -10,7 +10,7 @@ footer#document-footer
                 position: absolute
                 left: var(--grid-gutter)
                 right: var(--grid-gutter)
-                top: -$spacing-5
+                top: -(space(8))
             @include media-breakpoint-down(desktop)
                 display: flex
                 flex-direction: column
@@ -21,7 +21,7 @@ footer#document-footer
                     .site-links
                         margin-top: 0
                 &::before
-                    top: -$spacing-3
+                    top: -$spacing-4
     .container + .container
         flex-direction: column
         align-items: flex-start
@@ -103,6 +103,7 @@ footer#document-footer
     @include media-breakpoint-down(desktop)
         padding-top: $spacing-3
     @include media-breakpoint-up(desktop)
+        padding-top: 0
         .container:first-child
             gap: var(--grid-gutter)
             .footer-logo
