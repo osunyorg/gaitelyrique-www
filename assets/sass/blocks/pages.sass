@@ -26,6 +26,12 @@
         @include media-breakpoint-down(desktop)
             article + article
                 margin-top: $spacing-4
+                .pages__section
+    // block grid with 2 item on a row
+    &--grid
+        .pages__section.full-width &
+            .grid
+                @include grid(2, desktop)
     // LARGE
     &--large
         .page
