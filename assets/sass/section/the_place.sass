@@ -2,23 +2,34 @@
     
 body.ancestor-the-place
     .hero
+        .hero-actions a
+            min-width: unset
         figure
             picture
                 filter: greyscale(1)
                 mix-blend-mode: multiply
         .hero-content
             flex-wrap: wrap
+            row-gap: $spacing-4 !important
             .lead
-                width: columns(8) !important
+                @include h4
+                border-bottom: 4px solid var((--color-text))
+                padding-bottom: $spacing-3
                 order: -1
+                @include media-breakpoint-up(desktop)
+                    width: columns(12) !important
+                @include media-breakpoint-down(desktop)
+                    margin-bottom: $spacing-3
             .blocks
-                width: columns(6)
+                @include media-breakpoint-up(desktop)
+                    width: columns(6)
                 .block
                     --block-space-y: #{$spacing-4}
                     .container
                         padding: 0
                 .block-chapter:first-child
                     @include lead
+            
     .chapter
         .top
             .block-title
