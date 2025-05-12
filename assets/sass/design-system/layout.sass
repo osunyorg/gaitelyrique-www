@@ -1,0 +1,24 @@
+.block
+    .page .more::after,
+    .post .more::after
+        content: "→"
+        font-family: $heading-font-family
+        font-size: 110%
+        margin-left: space()
+    .post
+        &-content
+            align-items: flex-start
+    .post .more,
+    .call_to_action .actions a,
+        position: relative
+        display: flex
+        align-items: center
+        &::after
+            position: absolute
+            content: "→"
+            font-family: $heading-font-family
+            font-size: 110%
+            text-decoration: none
+            right: -(space(4))
+    .call_to_action .actions a::after
+        right: -(space(6))

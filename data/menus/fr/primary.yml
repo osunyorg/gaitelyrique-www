@@ -22,4 +22,37 @@ items:
   children: []
   path: "/pages/infos-pratiques"
   file: content/fr/pages/infos-pratiques/_index.html
+- title: mobile-infos
+  target: ''
+  kind: blank
+  new_tab: false
+  children:
+  - title: Presse
+    target: "/presse/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/presse"
+    file: content/fr/pages/presse/_index.html
+  - title: Recrutements
+    target: "/recrutements/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/recrutements"
+    file: content/fr/pages/recrutements/_index.html
+  - title: Privatisation
+    target: "/privatisation/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/privatisation"
+    file: content/fr/pages/privatisation/_index.html
+  - title: Soutenir la Fabrique
+    target: "/soutenir-la-fabrique/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/soutenir-la-fabrique"
+    file: content/fr/pages/soutenir-la-fabrique/_index.html
 

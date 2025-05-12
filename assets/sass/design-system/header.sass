@@ -2,13 +2,24 @@ header#document-header
     align-items: center
     display: flex
     justify-content: center
+    .nav-search
+        .search-button
+            display: flex
+            &::after
+                order: -1
+        @include media-breakpoint-down(desktop)
+            justify-content: flex-start
+        @include media-breakpoint-up(desktop)
+            margin-left: var(--grid-gutter)
     .change-color-mode-button
         @include button-reset
         @include h5
-        min-width: pxToRem(150)
+        min-width: columns(3)
+        padding: 0
         text-align: right
         span
             @include small
+            justify-content: flex-end
         .color-mode
             display: flex
         .reading-mode
@@ -42,30 +53,87 @@ header#document-header
         &:not(.is-color-mode)
             span:not(:first-child)::after
                 right: calc(#{space(10)} - #{space(4)} - 2px)
-        @include media-breakpoint-up(md)
+        @include media-breakpoint-up(desktop)
             .label
                 position: absolute
                 width: 1
                 height: 1
                 opacity: 0
         @include media-breakpoint-down(desktop)
-            @include media-breakpoint-up(md)
+            @include media-breakpoint-up(desktop)
                 width: 100%
                 span:not(:first-child)
                     width: columns(2.2)
-        @include media-breakpoint-down(md)
-            border-bottom: 1px solid var(--color-border)
-            border-top: 1px solid var(--color-border)
+        @include media-breakpoint-down(desktop)
+            border-bottom: 1px solid var(--color-background-alt)
+            border-top: 1px solid var(--color-background-alt)
             display: flex
-            flex: 1
             margin-left: var(--grid-gutter-negative)
             margin-right: var(--grid-gutter-negative)
-            padding-bottom: $spacing-2
-            padding-top: $spacing-2
+            padding: $spacing-2 var(--grid-gutter)
+            margin-top: $spacing-1
+            width: calc(100% + calc(var(--grid-gutter) * 2))
             span + span
                 margin-left: $spacing-1
-
+    @include media-breakpoint-up(desktop)
+        .menu-socials
+            display: none
+    @include media-breakpoint-down(desktop)
+        html:not(.has-menu-opened) &
+            .menu-socials
+                display: none
+        html.has-menu-opened &
+            align-items: flex-start
+            height: 100%
+            .change-color-mode-button
+                order: 1
+            .menu
+                order: 2
+                margin-top: 0
+            .menu-socials
+                display: block
+                order: 3
+                width: 100%
+                .nav-social,
+                .site-links
+                    display: flex
+                    padding: 0
+                    margin-top: 0
+                    li::after
+                        margin-right: 0
+                    li + li
+                        margin-top: 0
+                    @include media-breakpoint-down(desktop)
+                        justify-content: space-between
 
     .header-button
         span:first-child
             @extend .sr-only
+
+    // only display dropdown infos for mobile
+    .nav-level-1 
+        li.has-children
+            #dropdown-mobile-infos
+                @extend .sr-only
+            @include media-breakpoint-up(desktop)
+                display: none
+        @include media-breakpoint-down(desktop)
+            #dropdown-mobile-infos + .dropdown-menu
+                display: block
+                padding-bottom: 0
+                a
+                    @include meta
+                    padding-top: $spacing-2
+                    padding-bottom: $spacing-2
+                li:last-child a
+                    padding-bottom: 0
+            li
+                a
+                    @include h4
+                    padding-bottom: $spacing-1
+                &:not(:last-child)
+                    border-bottom: 0
+            .search-button
+                span
+                    @include small
+                    font-weight: bold

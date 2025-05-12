@@ -30,8 +30,6 @@
                     text-decoration: underline
                     text-transform: none
                     text-decoration-thickness: 1px
-                &::after
-                // TODO : arrow icon
                 + a
                     margin-top: $spacing-1
                 @include media-breakpoint-down(desktop)
@@ -46,6 +44,9 @@
                 margin-top: $spacing-3 !important
                 a
                     margin-top: 0
+        &.call_to_action--without-text
+            .actions
+                margin-top: 0 !important
         &.call_to_action--without-image:not(.call_to_action--without-text)
             @include in-page-without-sidebar
                 > div
