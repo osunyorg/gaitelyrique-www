@@ -22,3 +22,14 @@
             right: -(space(4))
     .call_to_action .actions a::after
         right: -(space(6))
+
+// page like 'infos pratiques' ending with 2 pages full width
+.page-ending-with-full-width-pages
+    @include media-breakpoint-up(desktop)
+        .blocks .block
+            &:last-child.block-pages
+                background-color: var(--color-background)
+                position: relative
+                z-index: 50
+                .block-content
+                    padding-left: 0
