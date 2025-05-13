@@ -1,0 +1,23 @@
+.categories--grid
+    [class$="-title"]
+        @include h4
+
+.children-categories
+    ul 
+        border-bottom: 4px solid var(--color-text)
+        border-top: 4px solid var(--color-text)
+        padding-top: space(2)
+        padding-bottom: space(1)
+        li 
+            a
+                @include meta
+                text-decoration: none
+                &:hover
+                    text-decoration: 1px solid inherit
+                @include media-breakpoint-up(desktop)
+                    @include h5
+        @include media-breakpoint-up(desktop)
+            padding-top: space(5)
+            padding-bottom: space(4)
+            gap: space(20)
+            margin-bottom: space(24)
