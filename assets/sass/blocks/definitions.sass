@@ -1,0 +1,11 @@
+.block-definitions
+    details
+        &:after
+            border-width: 1px
+            border-color: $color-border-alt
+        summary
+            @include body-text
+            padding-bottom: space(5)
+            padding-top: space(5)
+            + div
+                padding-left: var(--grid-gutter)
