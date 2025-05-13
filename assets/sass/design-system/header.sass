@@ -98,6 +98,16 @@ header#document-header
         .menu-socials
             display: none
     @include media-breakpoint-down(desktop)
+        nav.primary-menu
+            padding-bottom: 0
+            > .container
+                align-items: flex-start
+            .header-button
+                span:last-of-type::before
+                    font-size: pxToRem(25) !important
+                    margin-top: -$spacing-1
+        .additional-menu
+            margin-top: $spacing-1
         html:not(.has-menu-opened) &
             .menu-socials
                 display: none
