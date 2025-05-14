@@ -29,7 +29,21 @@
         .blocks .block
             &:last-child.block-pages
                 background-color: var(--color-background)
+                margin-top: $spacing-5
                 position: relative
                 z-index: 50
                 .block-content
                     padding-left: 0
+
+
+// slider
+.slider
+    .slider-arrows
+        .slider-arrow-previous
+            &::before
+                content: "←"
+                font-family: $heading-font-family
+        .slider-arrow-next
+            &::before
+                content: "→"
+                font-family: $heading-font-family

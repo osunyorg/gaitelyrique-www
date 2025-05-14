@@ -32,6 +32,8 @@
                     width: columns(10)
         @include media-breakpoint-down(desktop)
             margin-bottom: 0 !important
+    main.page-with-blocks
+        padding-bottom: calc(#{$spacing-5} + #{space(8)})
     .document-content
         margin-top: $vertical-space-1
     .event-access
@@ -175,6 +177,36 @@
         padding-bottom: 0
         h2
             @include h3
+    .events--agenda
+        .events-date
+            &:where(:not(:first-child))
+                border: none
+            .events-date-title
+                + .event
+                    margin-top: space()
+                    border-top: 4px solid var(--color-text)
+                    padding-top: $spacing-4
+                    .event-hours
+                        top: $spacing-4
+
+        .event
+            @include media-breakpoint-up(desktop)
+                &:not(.event--child)
+                    padding-left: offset(2)
+                    .media
+                        width: columns(4)
+                &.event--child
+                    margin-left: offset(2)
+                    padding-left: columns(2)
+                    .media
+                        width: calc(#{columns(2)} + var(--grid-gutter))
+                .event-hours
+                    margin-top: 0
+            .event-categories a
+                @include h6
+            + .event
+                border: none
+                padding-top: 0
 
 .event, .exhibition
     &,
@@ -235,3 +267,27 @@
                 @include h4
             .event-time
                 @include h6
+
+// Parent event
+.events__page
+    .event-parent
+        .event-parent__title
+            @extend .title-with-border
+            @include h4
+            margin-bottom: $spacing-4
+        .event-content
+            .event-subtitle
+                @include h6
+            .more
+                position: relative
+                &:after
+                    position: absolute
+                    content: "→"
+                    font-family: $heading-font-family
+                    font-size: 110%
+                    margin-left: space()
+        .event--with-image
+            .media
+                order: -1
+                @include media-breakpoint-up(desktop)
+                    width: columns(6)
