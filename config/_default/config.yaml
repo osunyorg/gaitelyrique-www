@@ -53,3 +53,7 @@ params:
       posts:
         item:
           desktop:  864
+      home:
+        hero:
+          tablet:   1200
+          desktop:  1792
