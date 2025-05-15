@@ -1,0 +1,45 @@
+#search
+    .search__close
+        @include small
+        &::after
+            @include icon-site('icon-close')
+            @include media-breakpoint-up(desktop)
+                font-size: 120%
+    .pagefind-ui
+        &__search-input
+            @include h3
+        &__form::after
+            color: var(--color-text)
+        ol
+            padding-left: 0
+        @include media-breakpoint-up(desktop)
+            &::before
+                height: space(36)
+            &__form
+                width: columns(12)
+                &::after
+                    content: none
+            &__search-input
+                @include h2
+                width: columns(12)
+                color: var(--color-text)
+            &__results-area
+                position: relative
+            &__message
+                @include small
+                top: calc(#{space(20)} + #{$h2-size-desktop} + #{$spacing-6})
+                text-align: left
+                width: columns(3)
+            &__drawer
+                margin-top: space(18)
+            &__results
+                padding-top: space(10)
+                padding-left: offset(3)
+            &__result
+                display: flex
+                &-thumb
+                    width: columns(4)
+                    img
+                        width: 100%
+                &-inner
+                    flex: 1
