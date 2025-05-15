@@ -10,13 +10,28 @@
                 width: pxToRem(48)
             figcaption
                 @include small
+    // specific icons
+    &.block-class-icon-menu,
+    &.block-class-icon-public
+        .files
+            li::before
+                line-height: pxToRem(48)
+                border: none
+                outline: var(--border-width) solid var(--color-border)
+                outline-offset: -4px
+    // people icon
+    &.block-class-icon-public
+        .files li::before
+            @include icon-site('icon-public')
+            font-size: pxToRem(48)
     // drink icon
     &.block-class-icon-menu
         .files
             li
                 align-items: center
                 &::before
-                    // content: 'TODO'
+                    @include icon-site('icon-carte')
+                    font-size: pxToRem(48)
                 figure
                     display: flex
                     align-items: baseline
