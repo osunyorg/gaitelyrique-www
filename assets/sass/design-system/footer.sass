@@ -32,15 +32,20 @@ footer#document-footer
                 img
                     max-width: space(35)
         .footer-menu
-            padding-top: $spacing-2
+            padding-top: space(5)
             li
                 @include h6
             @include media-breakpoint-up(desktop)
                 align-items: baseline
                 display: flex
-                gap: var(--grid-gutter)
+                flex-wrap: wrap
+                gap: $spacing-2 var(--grid-gutter)
                 justify-content: space-between
                 width: 100%
+                li
+                    white-space: nowrap
+                    + li
+                        margin-top: 0
             @include media-breakpoint-down(desktop)
                 margin-top: $spacing-4
                 padding-top: $spacing-4

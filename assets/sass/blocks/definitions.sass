@@ -9,3 +9,9 @@
             padding-top: space(5)
             + div
                 padding-left: var(--grid-gutter)
+            &::after
+                content: "↑"
+                font-family: $body-font-family
+            &[aria-expanded="false"]
+                &::after
+                    transform: rotate(180deg)
