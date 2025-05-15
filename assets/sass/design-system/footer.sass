@@ -1,27 +1,11 @@
 footer#document-footer
-    .container:first-child::before,
+    .container:first-child > div,
     .footer-menu
         border-top: 4px solid var(--color-text)
-    .container
-        &:first-child
-            position: relative
-            &::before
-                content: ''
-                position: absolute
-                left: var(--grid-gutter)
-                right: var(--grid-gutter)
-                top: -(space(8))
-            @include media-breakpoint-down(desktop)
-                display: flex
-                flex-direction: column
-                > .footer-social
-                    order: -1
-                    margin-top: 0
-                    margin-bottom: $spacing-3
-                    .site-links
-                        margin-top: 0
-                &::before
-                    top: -$spacing-4
+    .container:first-child > div
+        width: 100%
+        @include media-breakpoint-up(desktop)
+            display: flex
     .container + .container
         flex-direction: column
         align-items: flex-start
@@ -65,7 +49,7 @@ footer#document-footer
     .footer-social
         .site-links
             display: flex
-            gap: $spacing-2
+            gap: space(4)
             justify-content: space-between
             @include media-breakpoint-up(desktop)
                 justify-content: flex-end
@@ -73,18 +57,18 @@ footer#document-footer
                 order: -1
                 &::after
                     @include icon-site(icon-tiktok)
-            // .linkedin
-            //     order: 0
-            //     &::after
-            //         @include icon-site(icon-linkedin)
-            // .instagram
-            //     order: 1
-            //     &::after
-            //         @include icon-site(icon-instagram)
-            // .facebook
-            //     order: 2
-            //     &::after
-            //         @include icon-site(icon-facebook)
+            .linkedin
+                order: 0
+                &::after
+                    @include icon-site(icon-linkedin)
+            .instagram
+                order: 1
+                &::after
+                    @include icon-site(icon-instagram)
+            .facebook
+                order: 2
+                &::after
+                    @include icon-site(icon-facebook)
             li
                 + li
                     margin-top: 0
@@ -98,15 +82,26 @@ footer#document-footer
             margin-top: $spacing-2
             @include media-breakpoint-up(desktop)
                 margin-top: $spacing-3
-    .footer-legals // todo or to erase
-        margin-top: $spacing-4
+    .footer-legals
+        margin-top: $spacing-3
     @include media-breakpoint-down(desktop)
         padding-top: $spacing-3
     @include media-breakpoint-up(desktop)
         padding-top: 0
         .container:first-child
             gap: var(--grid-gutter)
+            > div
+                padding-top: space(8)
             .footer-logo
                 width: columns(7)
             .footer-social
                 flex: 1
+        .footer-legals
+            .nav-legal
+                display: flex
+                gap: space(4)
+                li + li
+                    margin-top: 0
+                a
+                    @include small
+                    font-weight: bold
