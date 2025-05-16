@@ -212,6 +212,14 @@
                     padding-top: $spacing-4
                     .event-hours
                         top: $spacing-4
+            // remove sticky
+            .event-hours span,
+            .events-date-title
+                position: relative
+                top: unset !important
+                transition: none
+                bottom: unset
+                padding-top: unset
 
         .event
             @include media-breakpoint-up(desktop)
