@@ -1,0 +1,11 @@
+// for section and blocks, when available
+.exhibitions
+    &--grid
+        .exhibition
+            [class$="-content"]
+                display: flex
+                flex-direction: column
+                [class$="-categories"]
+                    order: -1
+            [class$="-subtitle"]
+                @include h5

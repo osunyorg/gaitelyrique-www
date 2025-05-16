@@ -17,6 +17,7 @@ header#document-header
         @include media-breakpoint-up(desktop)
             display: none
     .additional-menu
+        align-items: baseline
         display: flex
         justify-content: flex-end
         min-width: columns(3)
@@ -32,6 +33,7 @@ header#document-header
     .change-color-mode-button
         @include button-reset
         @include h5
+        color: var(--color-text)
         padding: 0
         text-align: right
         flex: 1
@@ -97,6 +99,18 @@ header#document-header
         .menu-socials
             display: none
     @include media-breakpoint-down(desktop)
+        nav.primary-menu
+            padding-bottom: 0
+            > .container
+                align-items: flex-start
+            .header-button
+                span:last-of-type::before
+                    font-size: pxToRem(25) !important
+                    margin-top: -$spacing-1
+        .additional-menu
+            margin-top: $spacing-1
+            span:not(:first-of-type)
+                width: columns(6)
         html:not(.has-menu-opened) &
             .menu-socials
                 display: none

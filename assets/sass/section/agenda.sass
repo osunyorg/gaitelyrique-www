@@ -32,6 +32,8 @@
                     width: columns(10)
         @include media-breakpoint-down(desktop)
             margin-bottom: 0 !important
+    main.page-with-blocks
+        padding-bottom: $spacing-5
     .document-content
         margin-top: $vertical-space-1
     .event-access
@@ -170,11 +172,86 @@
                         margin-top: $spacing-2
 
 .events__section
+    .hero 
+        margin-bottom: 0
+        .content
+            border-bottom: 4px solid var(--color-text)
+            padding-bottom: $spacing-3
+            margin-bottom: -4px
     .agenda-exhibitions
         background: transparent
         padding-bottom: 0
+        padding-top: $spacing-3
         h2
-            @include h3
+            @include h4
+            padding-bottom: $spacing-2
+            border-bottom: 4px solid var(--color-text)
+        .exhibition
+            .exhibition-schedule
+                order: -1
+            .more::after
+                content: "→"
+                font-family: $heading-font-family
+                font-size: 110%
+            &--with-image
+                .more
+                    margin-top: unset
+            @include media-breakpoint-down(desktop)
+                .more
+                    font-size: $body-size-desktop
+                    &::after
+                        margin-left: $spacing-1
+    .events--agenda
+        .events-date
+            &:where(:not(:first-child))
+                border: none
+            .events-date-title
+                + .event
+                    margin-top: space()
+                    border-top: 4px solid var(--color-text)
+                    padding-top: $spacing-4
+                    .event-hours
+                        top: $spacing-4
+            // remove sticky
+            .event-hours span,
+            .events-date-title
+                position: relative
+                top: unset !important
+                transition: none
+                bottom: unset
+                padding-top: unset
+
+        .event
+            @include media-breakpoint-up(desktop)
+                &:not(.event--child)
+                    padding-left: offset(2)
+                    .media
+                        width: columns(4)
+                &.event--child
+                    margin-left: offset(2)
+                    padding-left: columns(2)
+                    .media
+                        width: calc(#{columns(2)} + var(--grid-gutter))
+                .event-hours
+                    margin-top: 0
+            .event-categories a
+                @include h6
+            + .event
+                border: none
+                padding-top: 0
+            @include media-breakpoint-down(desktop)
+                &--parent
+                    .media
+                        margin-left: 0
+                        margin-right: 0
+                &--child
+                    flex-direction: column
+                    border-left: 1px solid $color-border-alt !important
+                    padding-left: $spacing-3
+                    padding-bottom: 0
+                    .media
+                        order: -1
+                        width: 100%
     .events-archives-years
         margin-top: $spacing-4
         margin-bottom: $spacing-5
@@ -242,3 +319,27 @@
                 @include h4
             .event-time
                 @include h6
+
+// Parent event
+.events__page
+    .event-parent
+        .event-parent__title
+            @extend .title-with-border
+            @include h4
+            margin-bottom: $spacing-4
+        .event-content
+            .event-subtitle
+                @include h6
+            .more
+                position: relative
+                &:after
+                    position: absolute
+                    content: "→"
+                    font-family: $heading-font-family
+                    font-size: 110%
+                    margin-left: space()
+        .event--with-image
+            .media
+                order: -1
+                @include media-breakpoint-up(desktop)
+                    width: columns(6)
