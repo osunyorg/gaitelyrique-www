@@ -18,6 +18,8 @@ params:
       - block-class-in-hero
       - block-class-in-sidebar
   events:
+    index:
+      archives: false
     single:
       time_slots:
         date_format: ":date_full"
