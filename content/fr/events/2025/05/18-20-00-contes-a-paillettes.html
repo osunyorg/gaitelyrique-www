@@ -66,34 +66,34 @@ summary: >-
   <p>Le collectif Paillettes est de retour à la Gaîté Lyrique ! Dex dimanche par mois, nos drag queens préférées proposent une lecture de contes qui interrogent l'époque.</p>
 
 events_categories:
-  - "jeune-public"
-  - "performance"
-  - "lieu/forum"
   - "lecture"
+  - "performance"
+  - "jeune-public"
+  - "lieu/forum"
 taxonomies:
   - name: >-
       Catégories
     slug: ""
     path: ""
     categories:
-      - permalink: "/agenda/jeune-public/"
-        path: "/events_categories/jeune-public"
-        slug: "jeune-public"
-        file: "content/fr/events_categories/jeune-public/_index.html"
-        name: >-
-          Jeune public
-      - permalink: "/agenda/performance/"
-        path: "/events_categories/performance"
-        slug: "performance"
-        file: "content/fr/events_categories/performance/_index.html"
-        name: >-
-          Performance
       - permalink: "/agenda/lecture/"
         path: "/events_categories/lecture"
         slug: "lecture"
         file: "content/fr/events_categories/lecture/_index.html"
         name: >-
           Lecture
+      - permalink: "/agenda/performance/"
+        path: "/events_categories/performance"
+        slug: "performance"
+        file: "content/fr/events_categories/performance/_index.html"
+        name: >-
+          Performance
+      - permalink: "/agenda/jeune-public/"
+        path: "/events_categories/jeune-public"
+        slug: "jeune-public"
+        file: "content/fr/events_categories/jeune-public/_index.html"
+        name: >-
+          Jeune public
 
   - name: >-
       Lieu
@@ -411,12 +411,16 @@ contents:
         link: true
         logo: true
         summary: false
+        address: false
 
       organizations:
         - permalink: "/organisations/les-paillettes/"
           path: "/organizations/les-paillettes"
           slug: "les-paillettes"
           file: "content/fr/organizations/les-paillettes.html"
+          role: >-
+            
+
       quantity: 1
 
   - kind: block
