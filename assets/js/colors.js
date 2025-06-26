@@ -8,6 +8,14 @@ window.gaite.colorsBackground = [
   "#79FE42"
 ];
 
+window.gaite.colorsBackgroundAlt = [
+  "#EB9DEB",
+  "#E3EB01",
+  "#EBA40C",
+  "#19D5EB",
+  "#70EB3D",
+];
+
 window.gaite.colorsAccent = [
   "#870095",
   "#575a01",
@@ -62,13 +70,13 @@ window.gaite.toggleMode = function () {
 
 window.gaite.getRandomColors = function () {
   var index = Math.floor(Math.random() * this.colorsBackground.length);
-
-  return [this.colorsBackground[index], this.colorsAccent[index]];
+  return [this.colorsBackground[index], this.colorsAccent[index], this.colorsBackgroundAlt[index]];
 };
 
 window.gaite.setColors = function (colors) {
   document.documentElement.style.setProperty("--color-background", colors[0]);
   document.documentElement.style.setProperty("--color-accent", colors[1]);
+  document.documentElement.style.setProperty("--color-background-alt", colors[2]);
 };
 
 window.gaite.init();
