@@ -1,38 +1,26 @@
 footer#document-footer
-    .container:first-child > div,
-    .footer-menu
+    .container:first-child > div
         border-top: 4px solid var(--color-text)
+    .footer-menu
+        border-bottom: 4px solid var(--color-text)
+        padding-bottom: space(5)
     .container:first-child > div
         width: 100%
+        display: flex
         @include media-breakpoint-up(desktop)
-            display: flex
+            flex-wrap: wrap
+            align-items: flex-end
+            gap: space(18)
     .container + .container
         flex-direction: column
         align-items: flex-start
-        padding-top: $spacing-3
+        padding-top: 0
         @include media-breakpoint-down(desktop)
-            padding-top: $spacing-4
+            padding-top: space(5)
             margin-top: 0
         > div
             width: 100%
-        .footer-partners
-            display: flex
-            a::after
-                content: none
-            @include media-breakpoint-up(desktop)
-                align-items: flex-end
-                justify-content: space-between
-                img
-                    max-width: columns(2)
-                + .footer-menu
-                    margin-top: $spacing-5
-            @include media-breakpoint-down(desktop)
-                flex-wrap: wrap
-                gap: $spacing-4 space(10)
-                img
-                    max-width: space(35)
         .footer-menu
-            padding-top: space(5)
             li
                 @include h6
             @include media-breakpoint-up(desktop)
@@ -47,10 +35,32 @@ footer#document-footer
                     + li
                         margin-top: 0
             @include media-breakpoint-down(desktop)
-                margin-top: $spacing-4
-                padding-top: $spacing-4
                 li + li
                     margin-top: $spacing-3
+    .footer-presentation
+        margin-top: space(10)
+        order: 3
+        @include media-breakpoint-up(desktop)
+            margin-top: $spacing-3
+            width: columns(7)
+    .footer-partners
+        display: flex
+        order: 4
+        width: 100%
+        a::after
+            content: none
+        @include media-breakpoint-up(desktop)
+            align-items: flex-end
+            justify-content: space-between
+            img
+                max-width: columns(2)
+            + .footer-menu
+                margin-top: $spacing-5
+        @include media-breakpoint-down(desktop)
+            flex-wrap: wrap
+            gap: $spacing-4 space(10)
+            img
+                max-width: space(35)
     .footer-social
         .site-links
             display: flex
@@ -82,26 +92,60 @@ footer#document-footer
                     font-size: pxToRem(44) !important
         @include media-breakpoint-down(desktop)
             margin-top: $spacing-3
-    .footer-logo
-        p
-            margin-top: $spacing-2
-            @include media-breakpoint-up(desktop)
-                margin-top: $spacing-3
     .footer-legals
-        margin-top: $spacing-3
+        margin-top: space(5)
+        .logo
+            margin-bottom: space(10)
+            &::after
+                content: none
+        .nav-legal aƒ
+            @include body-text
+            font-weight: bold
     @include media-breakpoint-down(desktop)
         padding-top: $spacing-3
+        padding-bottom: space(5)
+        .container:first-child > div
+            flex-direction: column
+        .footer-logo
+            margin-top: space(10)
+        .footer-partners
+            @include grid(3)
+            margin-top: space(8)
+            order: 3
+            align-items: center
+            img
+                max-width: 100%
+        div.footer-social
+            border-top: 4px solid var(--color-text)
+            margin-top: space(10)
+            order: 4
+            padding-top: space(10)
+            ul
+                margin-top: 0
+        .footer-legals .logo
+            width: 100%
     @include media-breakpoint-up(desktop)
         padding-top: 0
         .container:first-child
             gap: var(--grid-gutter)
+            padding-bottom: space(18)
             > div
                 padding-top: space(8)
             .footer-logo
                 width: columns(7)
+                img
+                    height: auto
             .footer-social
                 flex: 1
+        .footer-menu
+            border-top: 4px solid var(--color-text)
+            padding-top: space(5)
         .footer-legals
+            align-items: flex-end
+            display: flex
+            justify-content: space-between
+            .logo img
+                height: pxToRem(68)
             .nav-legal
                 display: flex
                 gap: space(4)
