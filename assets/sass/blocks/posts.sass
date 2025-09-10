@@ -27,7 +27,6 @@
         [itemprop="abstract"]
             margin-top: $spacing-2
             order: 2
-
 .block-posts
     &--large
         .large
@@ -72,3 +71,12 @@
                     top: 0
                     width: 1px
                     transform: translateX(calc(var(--grid-gutter) / 2))
+    &--grid
+        @include in-page-without-sidebar
+            grid-gap: $spacing-6 var(--grid-gutter)
+            .grid
+                display: flex
+                flex-wrap: wrap
+                .post
+                    flex: 1
+                    min-width: columns(4)
