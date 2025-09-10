@@ -46,14 +46,13 @@ window.gaite.init = function () {
 
 window.gaite.setRandomAccentColor = function () {
   var randomColors = this.getRandomColors(),
-      colors = ["#FFFFFF", randomColors[1]];
+      colors = ["#FFFFFF", randomColors[1], "#EBEBEB"];
 
   this.setColors(colors);
 };
 
 window.gaite.toggleMode = function () {
-  var colors = ["#FFFFFF", "#000000"];
-
+  var colors = ["#FFFFFF", "#000000", "#EBEBEB"];
   this.button.classList.remove('is-color-mode');
 
   this.isColorMode = this.isColorMode == "true" ? "false" : "true";

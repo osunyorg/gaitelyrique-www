@@ -23,15 +23,16 @@
                         margin-top: $spacing-3
         @include in-page-without-sidebar
             grid-gap: $spacing-6 var(--grid-gutter)
+            .grid
+                display: flex
+                flex-wrap: wrap
+                .page
+                    flex: 1
+                    min-width: columns(4)
         @include media-breakpoint-down(desktop)
             article + article
                 margin-top: $spacing-4
                 .pages__section
-    // block grid with 2 items on a row
-    &--grid
-        .pages__section.full-width &
-            .grid
-                @include grid(2, desktop)
     // LARGE
     &--large
         .page
