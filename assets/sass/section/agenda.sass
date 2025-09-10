@@ -2,13 +2,16 @@
 .exhibitions__page
     .hero
         padding-bottom: $spacing-3
+        &.hero--with-image
+            .hero-text
+                flex-direction: column
+                margin-top: 0
+                > h1, > hgroup
+                    width: auto !important
+                    max-width: none !important
+                    margin-right: 0 !important
         .hero-text
-            flex-direction: column
-            margin-top: 0
-            > h1, > hgroup
-                width: auto !important
-                max-width: none !important
-                margin-right: 0 !important
+            h1
                 span
                     @include h4
                     color: var(--color-text)
@@ -16,7 +19,7 @@
             .taxonomies-single
                 margin-top: 0
                 margin-bottom: $spacing-2
-                order: -1
+                order: -1 !important
                 column-gap: $spacing-3 
                 a
                     color: var(--color-text)
@@ -30,6 +33,9 @@
             &.hero--image-square
                 .hero-text
                     width: columns(10)
+            &:not(.hero--with-image)
+                .hero-text > h1
+                    width: columns(12)
         @include media-breakpoint-down(desktop)
             margin-bottom: 0 !important
     main.page-with-blocks
@@ -49,11 +55,21 @@
             .date
                 width: auto
         > div:first-child
-            border-top-color: $color-text
-            padding-top: $spacing-2
+            border-top: 4px solid $color-text
+            padding-top: $spacing-3
         > div:last-child
             border-bottom-color: $color-text
             padding-bottom: $spacing-3
+        .event-time-slot,
+        .event-summary
+            .dropdown-calendar
+                --dropdown-color: var(--color-background)
+                ul 
+                    background-color: var(--color-text)
+                > button
+                    @include small
+                    font-family: $body-font-family
+                    font-weight: normal
     figure + .event-practicals
         margin-top: $vertical-space-1
     .programme-btn-container
@@ -94,22 +110,53 @@
                 &:hover
                     background: var(--color-text)
                     color: var(--color-background)
-    .dropdown-calendar
-        > button
-            @include meta
-            font-family: $body-font-family
-            font-weight: normal
     // agenda/programme button
     .programme-btn-container
         .programme-btn
             @include h6
     @include media-breakpoint-down(desktop)
         .event-access
+            .event-slots .event-summary
+                flex-direction: row
+            .event-time-slot,
+            .event-slots .event-summary
+                .location,
+                .hours,
+                .date
+                    width: columns(10)
+                .date
+                    order: -2
+                .hours
+                    text-align: left
+            // dropdowns
             .event-time-slot,
             .event-summary
                 .dropdown-calendar
-                    background: var(--color-text)
-                    color: var(--color-background)
+                    padding: 0
+                    order: -1
+                    > button
+                        span
+                            // sr-only
+                            border: 0 !important
+                            clip: rect(1px,1px,1px,1px) !important
+                            clip-path: inset(50%) !important
+                            height: 1px !important
+                            overflow: hidden !important
+                            padding: 0 !important
+                            margin: 0 !important
+                            position: absolute !important
+                            width: 1px !important
+                            white-space: nowrap !important
+                        &::after
+                            margin-left: 0 !important
+                            font-size: pxToRem(32)
+                    .dropdown-menu 
+                        left: unset
+                        right: var(--grid-gutter-negative)
+                        ul
+                            background: var(--color-text)
+                            li > a
+                                color: var(--color-background)
     &:not(.full-width)
         .event-sidebar
             padding-bottom: $spacing-3
@@ -132,23 +179,26 @@
                 .container
                     padding: 0
                 .top
-                    margin-bottom: 0
+                    margin-bottom: space(6)
                     .block-title
                         @include h6
                 .block-organizations
                     margin-top: space(14)
                     .grid
-                        @include grid(3)
+                        display: flex
+                        flex-wrap: wrap
                         .organization-content
                             @extend .sr-only
                         .media
                             filter: grayscale(1)
                             margin-bottom: 0
-                            width: space(25)
+                            width: columns(3)
                             @include media-breakpoint-up(desktop)
-                                width: space(35)
+                                width: columns(1.2)
                                 figure
                                     margin-bottom: 0
+                            @include media-breakpoint-up(xxxl)
+                                width: columns(1)
 
             .event-practicals
                 padding-bottom: space(10)
@@ -170,6 +220,15 @@
                     margin-bottom: $spacing-2
                     + .block
                         margin-top: $spacing-2
+            @include media-breakpoint-up(desktop)
+                .block-persons
+                    .persons
+                        @include grid(3)
+                        .avatar
+                            width: offset(1)
+                .block-organizations
+                    .organizations
+                        @include grid(5)
 
 .events__section
     .hero 
