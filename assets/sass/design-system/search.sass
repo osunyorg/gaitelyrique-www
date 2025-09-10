@@ -12,11 +12,9 @@
             color: var(--color-text)
         &__result-link
             text-decoration: none
-        ol
-            padding-left: 0
+        // ol
+        //     padding-left: 0
         @include media-breakpoint-up(desktop)
-            &::before
-                height: space(36)
             &__form
                 width: columns(12)
                 &::after
@@ -25,17 +23,25 @@
                 @include h2
                 width: columns(12)
                 color: var(--color-text)
+                &::placeholder
+                    color: var(--color-text)
+                    opacity: 1
+                &::-webkit-input-placeholder
+                    color: var(--color-text)
+                &::-moz-placeholder
+                    color: var(--color-text)
+                &:-moz-placeholder
+                    color: var(--color-text)
             &__results-area
                 position: relative
+                padding-top: calc(#{$spacing-4} + #{$spacing-6})
             &__message
                 @include small
-                top: calc(#{space(20)} + #{$h2-size-desktop} + #{$spacing-6})
+                top: calc(#{$spacing-4} + #{$spacing-6})
+                margin-top: space(11)
                 text-align: left
                 width: columns(3)
-            &__drawer
-                margin-top: space(18)
             &__results
-                padding-top: space(10)
                 padding-left: offset(3)
             &__result
                 display: flex

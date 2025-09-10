@@ -43,6 +43,9 @@ params:
     blocks:
       chapter:
         desktop:  1483
+      events:
+        grid:
+          desktop:  864
     sections:
       agenda:
         hero_single:
