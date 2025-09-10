@@ -321,24 +321,33 @@
             li
                 a
                     @include h4
-    @include media-breakpoint-up(desktop)
-        .agenda-filters
-            --dropdown-background: var(--color-text)
-            .filter-taxonomies
-                max-width: columns(6)
-                margin-left: auto
-            .dropdown 
-                button
-                    @include small
-                    &[aria-expanded="true"]
+    .agenda-filters
+        .filter-taxonomies
+            .dropdown
+                ul 
+                    > li a 
+                        @include h6
+                        &::after
+                            content: '→'
+                            font-family: $heading-font-family
+                            margin-left: space()
+                    @include media-breakpoint-down(desktop)
+                        padding: 0
+        @include media-breakpoint-down(desktop)
+            .offcanvas
+                background-color: $color-background-alt
+        @include media-breakpoint-up(desktop)
+                --dropdown-background: var(--color-text)
+                .filter-taxonomies
+                    max-width: columns(6)
+                    margin-left: auto
+                .dropdown 
+                    button
+                        @include small
+                        &[aria-expanded="true"]
+                            color: var(--color-background)
+                    ul > li a
                         color: var(--color-background)
-                ul > li a 
-                    @include h6
-                    color: var(--color-background)
-                    &::after
-                        content: '→'
-                        font-family: $heading-font-family
-                        margin-left: space()
 .event, .exhibition
     &,
     .events--agenda &
