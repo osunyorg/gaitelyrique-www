@@ -20,6 +20,7 @@ params:
   events:
     index:
       archives: false
+      sticky_dates: false
     single:
       time_slots:
         date_format: ":date_full"

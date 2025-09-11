@@ -20,7 +20,9 @@ header#document-header
         align-items: baseline
         display: flex
         justify-content: flex-end
-        gap: space(9)
+        gap: space(6)
+        @include media-breakpoint-up(xxl)
+            gap: space(9)
         .search-button--primary
             padding: 0
             width: auto

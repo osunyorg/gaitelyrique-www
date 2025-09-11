@@ -280,14 +280,6 @@
                     padding-top: $spacing-4
                     .event-hours
                         top: $spacing-4
-            // remove sticky
-            .event-hours span,
-            .events-date-title
-                position: relative
-                top: unset !important
-                transition: none
-                bottom: unset
-                padding-top: unset
         .event
             @include media-breakpoint-up(desktop)
                 &:not(.event--child)
@@ -418,6 +410,10 @@
     .hero
         margin-bottom: $spacing-5
 
+.events__section-year
+    @include media-breakpoint-down(desktop)
+        .events-calendar .calendar-month tbody a
+            line-height: 2
 
 .organizations__page,
 .persons__page
