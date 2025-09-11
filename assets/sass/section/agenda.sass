@@ -50,7 +50,9 @@
                     @include h5
         .event-summary
             &, .type
-                @include h5
+                @include h6
+                @include media-breakpoint-up(desktop)
+                    @include h5
         .event-summary
             .date
                 width: auto
@@ -128,13 +130,19 @@
                     order: -2
                 .hours
                     text-align: left
+                .location
+                    @include body-text
+            .type
+                margin-top: $spacing-1
             // dropdowns
             .event-time-slot,
             .event-summary
                 .dropdown-calendar
+                    background: none
                     padding: 0
                     order: -1
                     > button
+                        padding-top: 0
                         span
                             // sr-only
                             border: 0 !important
