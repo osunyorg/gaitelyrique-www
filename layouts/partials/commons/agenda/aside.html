@@ -7,7 +7,7 @@
       )
     }}
   {{ end }}
-  {{ if or .Params.text .Params.notes .Params.header_cta.display }}
+  {{ if or .Params.text .Params.notes .Params.header_cta }}
     {{ partial "commons/agenda/practicals.html" . }}
   {{ end }}
 </div>
