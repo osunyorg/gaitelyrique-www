@@ -10,7 +10,7 @@
 {{ $summary := .context.Params.summary | safeHTML }}
 {{ $subtitle_is_summary := false }}
 
-{{ $button := .context.Params.button | default (cond .context.Params.header_cta.display .context.Params.header_cta nil) }}
+{{ $button := .context.Params.button | default .context.Params.header_cta }}
 
 {{ $title_attribute := "" | safeHTMLAttr }}
 {{ if site.Params.search.active }}
