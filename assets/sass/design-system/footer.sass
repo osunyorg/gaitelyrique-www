@@ -94,9 +94,7 @@ footer#document-footer
             margin-top: $spacing-3
     .footer-legals
         margin-top: space(5)
-        .logo
-            margin-bottom: space(10)
-            &::after
+        .logo::after
                 content: none
         .nav-legal aƒ
             @include body-text
@@ -123,6 +121,7 @@ footer#document-footer
             ul
                 margin-top: 0
         .footer-legals .logo
+            margin-bottom: space(10)
             width: 100%
     @include media-breakpoint-up(desktop)
         padding-top: 0
