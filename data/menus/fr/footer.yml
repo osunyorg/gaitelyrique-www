@@ -43,13 +43,6 @@ items:
   children: []
   path: "/pages/recrutements"
   file: content/fr/pages/recrutements/_index.html
-- title: Contact
-  target: "/infos-pratiques/contact/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/infos-pratiques/contact"
-  file: content/fr/pages/infos-pratiques/contact/_index.html
 - title: Newsletter
   target: "/newsletter/"
   kind: page
