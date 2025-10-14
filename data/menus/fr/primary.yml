@@ -8,7 +8,7 @@ items:
   children: []
   path: "/events"
   file: content/fr/events/_index.html
-- title: La fabrique de l'époque
+- title: La Fabrique de l'époque
   target: "/la-fabrique-de-lepoque/"
   kind: page
   new_tab: false
