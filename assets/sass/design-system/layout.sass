@@ -13,19 +13,17 @@
         &-content
             align-items: flex-start
     .post .more,
-    .call_to_action .actions a,
-        position: relative
-        display: flex
-        align-items: center
+    .call_to_action .actions a
         &::after
-            position: absolute
             content: "→"
+            display: inline-block
             font-family: $heading-font-family
             font-size: 110%
             text-decoration: none
-            right: -(space(4))
-    .call_to_action .actions a::after
-        right: -(space(6))
+            margin-left: space()
+            transition: transform 0.3s ease
+        &:hover::after
+            transform: translateX(10px)
 
 // no block should stick to footer
 main .blocks 
