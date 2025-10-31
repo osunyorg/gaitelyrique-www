@@ -1,22 +1,29 @@
 .block-gallery
     &--carousel
-        @include in-page-without-sidebar
-            .top
-                display: block
-                .block-title
-                    width: 100%
         .block-content
             position: relative
         .slider-arrows
             position: absolute
             top: 0
+            font-size: pxToRem(34)
             right: 0
             transform: translateY(-$spacing-3)
             .slider-arrow-previous
-                padding-right: space()
+                padding-right: space(5)
             .slider-arrow-next
                 padding-left: space()
                 margin-right: -$spacing-3
             .slider-progression
                 @extend .sr-only
                 .block-gallery
+        
+        body.full-width &,
+        body:not(.full-width) &
+            .top .block-title
+                @extend .title-with-border
+
+        @include in-page-without-sidebar
+            .top
+                display: block
+                .block-title
+                    width: 100%
