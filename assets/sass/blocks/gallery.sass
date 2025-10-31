@@ -1,7 +1,7 @@
 .block-gallery
     &--grid
-        figure > *
-            width: 100%
+        @include in-page-without-sidebar
+            @include flexbox-grid(4)
     &--carousel
         @include in-page-without-sidebar
             .top
