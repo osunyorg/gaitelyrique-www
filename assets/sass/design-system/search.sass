@@ -51,4 +51,22 @@
                         width: 100%
                 &-inner
                     flex: 1
+        
         @include media-breakpoint-down(desktop)
+            &::before
+                height: 28.5svh
+            &__search-input,
+            &__form::after
+                top: 15svh
+            &__form::after
+                transform: translateY(70%)
+            &__message
+                top: 24svh
+            &__result-thumb
+                display: block
+                margin-bottom: space(4)
+                img
+                    width: 100%
+            &__drawer
+                padding-top: 0
+                margin-top: -6px
