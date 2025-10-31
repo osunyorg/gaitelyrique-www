@@ -127,25 +127,36 @@ header#document-header
             align-items: flex-start
             height: 100%
             .container
-                min-height: 100vh
+                height: 100svh
             .additional-menu
-                margin-top: -($spacing-3)
                 .change-color-mode-button
                     margin-top: 0
                     order: 1
+                    span[class$="-mode"]
+                        margin-left: 0
             .menu
+                height: calc(100svh - calc(var(--header-height) * 2) - #{$spacing-2})
+                margin-top: -$spacing-2
                 order: 2
-                margin-top: 0
-                margin-top: -($spacing-3)
             .nav-level-1
                 display: flex
                 flex-direction: column
                 > li:first-of-type,
                 > li.has-children
                     border-top: 4px solid var(--color-text)
+                > li.has-children
+                    margin-top: calc(#{pxToRem(30)} - #{$spacing-1})
                 .nav-search
                     order: -1
                     margin-top: -($spacing-2)
+                > li.has-children
+                    order: 2
+                // li between borders
+                > li:not(.has-children, .nav-search)
+                    &:first-child a
+                        padding-top: pxToRem(30)
+                    &:laft-child a
+                        padding-bottom: pxToRem(30)
             .menu-socials
                 display: block
                 order: 3
@@ -178,7 +189,7 @@ header#document-header
             #dropdown-mobile-infos + .dropdown-menu
                 display: block
                 padding-bottom: 0
-                padding-top: space(8)
+                padding-top: pxToRem(30)
                 a
                     @include h6
                     padding: 0
