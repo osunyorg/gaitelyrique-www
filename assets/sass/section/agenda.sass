@@ -355,7 +355,12 @@
             .filter-taxonomies
                 flex: unset
                 button
-                    white-space: nowrap
+                    width: auto
+                    align-items: baseline
+                    display: flex
+            + .events-programme
+                .events
+                    margin-top: 0
         @include media-breakpoint-up(desktop)
             // align taxo with agenda title
             margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - 1px)
@@ -420,6 +425,7 @@
                 color: var(--color-text)
         .more
             padding-top: $spacing-2
+    
     .events-date-title
         &, &.is-down
             @include h4
@@ -427,8 +433,22 @@
         .event-content
             display: flex
             flex-direction: column
-
-
+    
+    @include media-breakpoint-down(desktop)
+        .events-date
+            padding-top: 0
+        .events-date-title
+            padding-bottom: $spacing-1
+            + .event
+                padding-top: space(6) !important
+        .event
+            &--with-image .media
+                margin-bottom: space(4)
+            .event-hours,
+            .event-description
+                margin-top: 0
+            .event-content > *:not(.event-description)
+                margin-bottom: pxToRem(10)
 // ARCHIVES
 .events-archives-years
     margin-bottom: -$spacing-5
