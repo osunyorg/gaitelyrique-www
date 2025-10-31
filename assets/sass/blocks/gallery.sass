@@ -1,7 +1,4 @@
 .block-gallery
-    &--grid
-        @include in-page-without-sidebar
-            @include flexbox-grid(4)
     &--carousel
         @include in-page-without-sidebar
             .top
@@ -22,3 +19,4 @@
                 margin-right: -$spacing-3
             .slider-progression
                 @extend .sr-only
+                .block-gallery
