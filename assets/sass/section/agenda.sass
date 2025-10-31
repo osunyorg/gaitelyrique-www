@@ -264,12 +264,13 @@
                     font-size: $body-size-desktop
                     &::after
                         margin-left: $spacing-1
-    .events--agenda
+    .events--agenda,
+    .exhibitions--agenda
         margin-top: $spacing-4
         .events-date
             &:first-child
                 border-top: 4px solid var(--color-text)
-                .events-date-title span
+                .events-date-title
                     padding-top: space(4)
             &:where(:not(:first-child))
                 border: none
@@ -332,6 +333,10 @@
                 --color-text: #{$color-background}
                 --color-background: #{$color-text}
                 color: var(--color-text)
+                h2
+                    @include h6
+            .slider-arrows button
+                color: #{$color-background}
         .filter-taxonomies
             .dropdown
                 ul 
@@ -345,11 +350,17 @@
                         padding: 0
         @include media-breakpoint-down(desktop)
             margin-top: $spacing-3
-        @include media-breakpoint-up(desktop)
-            --dropdown-background: var(--color-text)
+            .dropdown-dates,
             .filter-taxonomies
-                max-width: columns(6)
-                margin-left: auto
+                flex: unset
+                button
+                    white-space: nowrap
+        @include media-breakpoint-up(desktop)
+            // align taxo with agenda title
+            margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - 1px)
+            --dropdown-background: var(--color-text)
+            .container
+                padding-left: columns(5)
             .dropdown 
                 button
                     @include small
@@ -357,6 +368,9 @@
                         color: var(--color-background)
                 ul > li a
                     color: var(--color-background)
+        @include media-breakpoint-up(xxl)
+            // large screens
+            margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - #{space()})
 
 .event, .exhibition
     &,
@@ -367,7 +381,7 @@
 .calendar-month
     caption
         a
-            @include h3
+            @include h4
             color: var(--color-text)
             &:hover
                 color: var(--color-accent)
