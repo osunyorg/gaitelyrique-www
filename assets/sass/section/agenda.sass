@@ -368,9 +368,12 @@
                         color: var(--color-background)
                 ul > li a
                     color: var(--color-background)
-        @include media-breakpoint-up(xxl)
-            // large screens
-            margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - #{space()})
+            @include media-breakpoint-down(xl)
+                // medium screens
+                margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} + #{space()})
+            @include media-breakpoint-up(xxl)
+                // large screens
+                margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - #{space()})
 
 .event, .exhibition
     &,
