@@ -74,7 +74,9 @@ window.gaite.getRandomColors = function () {
 
 window.gaite.setColors = function (colors) {
   document.documentElement.style.setProperty("--color-background", colors[0]);
-  document.documentElement.style.setProperty("--color-accent", colors[1]);
+  if (this.isColorMode) {
+    document.documentElement.style.setProperty("--color-accent", colors[1]);
+  }
   document.documentElement.style.setProperty("--color-background-alt", colors[2]);
 };
 
