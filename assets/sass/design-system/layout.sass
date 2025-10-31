@@ -23,6 +23,11 @@
     .call_to_action .actions a::after
         right: -(space(6))
 
+// no block should stick to footer
+main .blocks 
+    .block:last-child:is([class*="--accent_background"], [class*="--alt_background"], .block-timeline--horizontal, .block-pages--cards)
+        margin-bottom: var(--block-space-y)
+
 // page like 'infos pratiques' ending with 2 pages full width
 .page-ending-with-full-width-pages
     @include media-breakpoint-up(desktop)
@@ -34,7 +39,6 @@
                 z-index: 50
                 .block-content
                     padding-left: 0
-
 
 // slider
 .slider
@@ -53,3 +57,7 @@
         row-gap: $spacing-1
         a:hover
             text-decoration: underline
+
+// more
+.more.meta
+    @include h6

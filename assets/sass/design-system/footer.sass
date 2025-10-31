@@ -10,13 +10,13 @@ footer#document-footer
         @include media-breakpoint-up(desktop)
             flex-wrap: wrap
             align-items: flex-end
-            gap: space(18)
+            column-gap: space(18)
     .container + .container
         flex-direction: column
         align-items: flex-start
         padding-top: 0
         @include media-breakpoint-down(desktop)
-            padding-top: space(5)
+            padding-top: space(7)
             margin-top: 0
         > div
             width: 100%
@@ -38,7 +38,7 @@ footer#document-footer
                 li + li
                     margin-top: $spacing-3
     .footer-presentation
-        margin-top: space(10)
+        margin-top: space(5)
         order: 3
         @include media-breakpoint-up(desktop)
             margin-top: $spacing-3
@@ -46,12 +46,14 @@ footer#document-footer
     .footer-partners
         display: flex
         order: 4
+        margin-top: space(7)
         width: 100%
         a::after
             content: none
         @include media-breakpoint-up(desktop)
             align-items: flex-end
             justify-content: space-between
+            margin-top: space(18)
             img
                 max-width: columns(2)
             + .footer-menu
@@ -96,9 +98,8 @@ footer#document-footer
         margin-top: space(5)
         .logo::after
                 content: none
-        .nav-legal aƒ
+        .nav-legal a
             @include body-text
-            font-weight: bold
     @include media-breakpoint-down(desktop)
         padding-top: $spacing-3
         padding-bottom: space(5)
