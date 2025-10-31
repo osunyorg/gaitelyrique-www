@@ -52,9 +52,6 @@
                 .taxonomies-single
                     margin-bottom: $spacing-3
     
-    main.page-with-blocks
-        padding-bottom: $spacing-5
-    
     .document-content
         margin-top: $vertical-space-1
         @include media-breakpoint-down(desktop)
@@ -365,12 +362,15 @@
                         order: -1
                         width: 100%
     .events-archives-years
+        margin-bottom: -$spacing-3
         margin-top: $spacing-4
-        margin-bottom: $spacing-5
         ol
             li
                 a
                     @include h4
+        @include media-breakpoint-up(desktop)
+            margin-bottom: $spacing-5
+    
     .agenda-filters
         .dates-filters, .dropdown-dates
             --dropdown-background: var(--color-text)
