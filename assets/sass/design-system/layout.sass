@@ -83,14 +83,14 @@ figure
                         font-size: var(--small-size)
                         &[aria-hidden]:first-child
                             margin-right: 0
-        &:hover
-            figcaption .credit p
-                font-size: var(--small-size)
-                gap: $spacing-1
         @include media-breakpoint-down(desktop)
             .block &
                 @include meta
                 text-align: right
+    &:hover
+        figcaption .credit p
+            font-size: var(--small-size)
+            gap: $spacing-1
 
 // more
 .more.meta
