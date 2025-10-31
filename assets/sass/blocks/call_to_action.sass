@@ -5,12 +5,15 @@
             padding-bottom: 0
             padding-top: 0
     &--accent_background
-        @include in-page-without-sidebar
-            background: none
         .call_to_action
             background-color: $block-call-to-action-accent-background
             @include in-page-without-sidebar
                 padding: space(9) var(--grid-gutter)
+        @include in-page-without-sidebar
+            background: none
+        @include in-page-with-sidebar
+            .call_to_action > div::after
+                content: none
     .call_to_action
         .top
             .block-title
