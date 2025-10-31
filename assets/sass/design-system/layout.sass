@@ -1,5 +1,5 @@
 \:root
-    --color-accent: #{$color-text}
+    --color-accent: #{alphaColor(#{$color-text}, 0.8)}
 
 .block
     .page .more::after,
@@ -60,6 +60,37 @@ main .blocks
         row-gap: $spacing-1
         a:hover
             text-decoration: underline
+
+// ficaption on images
+figure
+    figcaption
+        @include media-breakpoint-up(desktop)
+            position: absolute
+            bottom: 0
+            right: 0
+            max-width: 100%
+            .credit 
+                background: var(--color-background) !important
+                p:not(.sr-only)
+                    align-items: baseline
+                    color: var(--color-text)
+                    display: flex
+                    flex-direction: row-reverse
+                    font-size: 0
+                    line-height: 1
+                    padding: space() $spacing-1
+                    span
+                        font-size: var(--small-size)
+                        &[aria-hidden]:first-child
+                            margin-right: 0
+        &:hover
+            figcaption .credit p
+                font-size: var(--small-size)
+                gap: $spacing-1
+        @include media-breakpoint-down(desktop)
+            .block &
+                @include meta
+                text-align: right
 
 // more
 .more.meta

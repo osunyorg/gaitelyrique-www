@@ -10,23 +10,24 @@
         figure
             @include media-breakpoint-up(desktop)
                 figcaption
+                    align-items: baseline
+                    background: var(--color-background)
+                    color: var(--color-text)
+                    display: flex
+                    flex-direction: row-reverse
                     left: unset
-                    &, &::before
-                        background-color: var(--color-background)
-                        transform: translateY(-100%)
+                    &::before
+                        position: relative
+                        top: unset
+                        right: unset
                     .credit,
                     &::before
-                        line-height: 1
-                        padding-bottom: 1px
-                        padding-top: space()
-                        padding-left: pxToRem(5)
+                        @include small
+                        padding: space() $spacing-1
                     .credit
-                        padding-right: $spacing-3
-                    &::before
-                        display: flex
-                        align-items: center
-                &:hover figcaption::before
-                    transform: none    
+                        padding-right: 0
+                        p
+                            padding: 0
         .hero-text
             margin-top: 0
     .taxonomies-single
