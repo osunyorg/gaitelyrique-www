@@ -1,6 +1,7 @@
 \:root
     --color-accent: #{alphaColor(#{$color-text}, 0.8)}
 
+// blocks
 .block
     .page .more::after,
     .post .more::after
@@ -62,7 +63,7 @@ main .blocks
             text-decoration: underline
 
 // ficaption on images
-figure
+*:not(li) > figure
     figcaption
         @include media-breakpoint-up(desktop)
             position: absolute
@@ -72,6 +73,7 @@ figure
             .credit 
                 background: var(--color-background) !important
                 p:not(.sr-only)
+                    @include small
                     align-items: baseline
                     color: var(--color-text)
                     display: flex
