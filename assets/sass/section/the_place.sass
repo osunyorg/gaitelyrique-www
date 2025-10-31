@@ -30,3 +30,29 @@ body.ancestor-the-place
                 @include lead
                 &::after
                     content: none
+
+.page-the-place
+    &.full-width
+        .block-chapter
+            @include media-breakpoint-up(desktop)
+                .chapter
+                    flex-direction: column
+                    .text
+                        width: 100%
+                    .rich-text
+                        width: columns(7)
+                
+                &--with-image
+                    .chapter
+                        .notes
+                            position: absolute
+                            margin-top: $spacing-4
+                        figure
+                            margin-top: $spacing-4
+                            margin-left: auto
+                            width: columns(10)
+                            order: 2
+                            button,
+                            img
+                                margin: 0
+                                width: 100%

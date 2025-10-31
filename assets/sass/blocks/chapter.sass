@@ -11,26 +11,7 @@
                 figure
                     order: 2
                     margin-top: $spacing-3
-    .page-the-place.full-width &
-        @include media-breakpoint-up(desktop)
-            .chapter
-                flex-direction: column
-                .text
-                    width: 100%
-                .rich-text
-                    width: columns(7)
-                .notes
-                    position: absolute
-                    margin-top: $spacing-4
-                figure
-                    margin-top: $spacing-4
-                    margin-left: auto
-                    width: columns(10)
-                    order: 2
-                    button,
-                    img
-                        margin: 0
-                        width: 100%
+
     &--alt_background
         .top .block-title
             @include h2
@@ -41,10 +22,12 @@
             @include icon(arrow-right-line, after, true)
             @include hover-translate-icon
             text-decoration-color: var(--color-text)
+
     // notes (ex: 'food' in 'restauration' page)
     &.block-class-notes-as-lead
         .notes p
             @include lead
+    
     // with a list marker and a margin
     &.block-class-unique-list-marker
         .rich-text > ul:first-of-type 
