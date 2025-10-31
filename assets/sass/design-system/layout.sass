@@ -1,8 +1,10 @@
 \:root
-    --color-accent: #{alphaColor(#{$color-text}, 0.8)}
+    // --color-accent: #{alphaColor(#{$color-text}, 0.8)}
 
 // blocks
 .block
+    .block-title a::after
+        content: none
     .page .more::after,
     .post .more::after
         content: "→"
@@ -24,6 +26,29 @@
             transition: transform 0.3s ease
         &:hover::after
             transform: translateX(10px)
+
+// slider with arrows on top of slides
+[class*="--carousel"]
+    .block-content
+        position: relative
+    .slider-arrows
+        position: absolute
+        top: 0
+        font-size: pxToRem(34)
+        right: 0
+        transform: translateY(-$spacing-3)
+        .slider-arrow-previous
+            padding-right: space(5)
+        .slider-arrow-next
+            padding-left: space()
+            margin-right: -$spacing-3
+        .slider-progression
+            @extend .sr-only
+
+    // to see arrows when there is no title (overflow hidden)
+    &:not(.block-titled)
+        .block-content
+            padding-top: $spacing-5
 
 // no block should stick to footer
 main .blocks 

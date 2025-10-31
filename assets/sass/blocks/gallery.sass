@@ -1,22 +1,6 @@
 .block-gallery
     &--carousel
-        .block-content
-            position: relative
-        .slider-arrows
-            position: absolute
-            top: 0
-            font-size: pxToRem(34)
-            right: 0
-            transform: translateY(-$spacing-3)
-            .slider-arrow-previous
-                padding-right: space(5)
-            .slider-arrow-next
-                padding-left: space()
-                margin-right: -$spacing-3
-            .slider-progression
-                @extend .sr-only
-                .block-gallery
-        
+        // see 'layout.sass' for slider arrows behavior
         body.full-width &,
         body:not(.full-width) &
             .top .block-title

@@ -22,11 +22,13 @@
         .post-meta
             time
                 @include small
+
 .posts
     &--grid
         [itemprop="abstract"]
             margin-top: $spacing-2
             order: 2
+
 .block-posts
     &--large
         .large
@@ -51,6 +53,7 @@
                         margin-left: 0
                         .post-content
                             width: columns(8)
+    
     &--highlight
         .list,
         .post:not(:last-child)
@@ -71,6 +74,7 @@
                     top: 0
                     width: 1px
                     transform: translateX(calc(var(--grid-gutter) / 2))
+    
     &--grid
         @include in-page-without-sidebar
             .grid
@@ -79,3 +83,15 @@
                 .post
                     flex: 1
                     min-width: columns(4)
+    
+    &--carousel
+        // see 'layout.sass' for slider arrows behavior
+        @include in-page-without-sidebar
+            .block-content
+                flex-direction: column
+                .top
+                    width: 100%
+                .top, .block-title
+                    margin-bottom: 0
+            .slider-arrows
+                width: unset !important
