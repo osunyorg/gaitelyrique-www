@@ -47,6 +47,9 @@ params:
       events:
         grid:
           desktop:  864
+      gallery:
+        grid:
+          desktop:  864
     sections:
       agenda:
         hero_single:
