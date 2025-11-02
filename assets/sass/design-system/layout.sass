@@ -31,6 +31,12 @@ body[class*="__section"] main
         &:hover::after
             transform: translateX(10px)
 
+// items media
+article
+    @include media-breakpoint-down(desktop)
+        .media
+            margin-bottom: space(4) !important
+
 // slider with arrows on top of slides
 [class*="--carousel"]
     .block-content

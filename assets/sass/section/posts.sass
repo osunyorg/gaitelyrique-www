@@ -1,3 +1,16 @@
+
+// item
+.posts__section .posts--grid, 
+.posts_categories__term .posts--grid, 
+.persons__page .posts--grid,
+.block-posts--grid
+    @include media-breakpoint-down(desktop)
+        row-gap: $spacing-4
+        article + article,
+        > li + li
+            margin-top: $spacing-4
+
+// single
 .posts__page
     .hero
         .lead
