@@ -12,14 +12,18 @@
                 figcaption
                     align-items: baseline
                     background: var(--color-background)
+                    bottom: 0
                     color: var(--color-text)
                     display: flex
                     flex-direction: row-reverse
                     left: unset
+                    max-width: 100%
+                    position: absolute
+                    right: 0
                     &::before
                         position: relative
-                        top: unset
                         right: unset
+                        top: unset
                     .credit,
                     &::before
                         @include small

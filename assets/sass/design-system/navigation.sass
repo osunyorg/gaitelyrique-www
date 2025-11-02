@@ -1,1 +1,21 @@
 .block-siblings-navigation
+    @include media-breakpoint-down(desktop)
+        margin-bottom: 0
+        .siblings-navigation
+            ul 
+                padding-top: $spacing-3
+                li
+                    border-bottom: none
+                    a
+                        padding-top: 0
+                        padding-bottom: 0
+                .previous
+                    margin-top: $spacing-3
+
+.projects__page,
+.posts__page
+    @include media-breakpoint-down(desktop)
+        &:has(.block-siblings-navigation)
+            // use footer border as bottom border for navigation
+            footer#document-footer
+                padding-top: $spacing-3
