@@ -1,0 +1,11 @@
+.posts__page
+    .hero
+        .lead
+            @include lead-hero
+    
+    @include media-breakpoint-down(desktop)
+        .section-sidebar
+            margin-top: -$spacing-2
+            .post-infos
+                padding-left: var(--grid-gutter)
+                padding-right: var(--grid-gutter)
