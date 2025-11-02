@@ -92,10 +92,15 @@ main .blocks
 // ficaption on images for blocks
 .block
     figure
+        &:hover
+            figcaption .credit p
+                font-size: var(--small-size)
+                gap: $spacing-1
+
         figcaption
-            margin-top: 0
-            .credit 
-                @include media-breakpoint-up(desktop)
+            @include media-breakpoint-up(desktop)
+                margin-top: 0
+                .credit 
                     background: var(--color-background) !important
                     bottom: 0
                     max-width: 100%
@@ -114,18 +119,15 @@ main .blocks
                             font-size: var(--small-size)
                             &[aria-hidden]:first-child
                                 margin-right: 0
-            > div:not(.credit)
-                margin-top: $spacing-1
-                + .credit
-                    bottom: $spacing-2
-                    transform: translateY(-100%)
+                > div:not(.credit)
+                    margin-top: $spacing-1
+                    + .credit
+                        bottom: $spacing-2
+                        transform: translateY(-100%)
             @include media-breakpoint-down(desktop)
                 @include meta
                 text-align: right
-        &:hover
-            figcaption .credit p
-                font-size: var(--small-size)
-                gap: $spacing-1
+                margin-top: $spacing-1
 
 // more
 .more.meta
