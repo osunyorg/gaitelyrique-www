@@ -34,6 +34,12 @@ body.ancestor-the-place
 .page-the-place
     &.full-width
         .block-chapter
+            .notes
+                @include h6
+                a
+                    text-decoration: underline
+                    text-decoration-color: var(--color-text)
+                    text-decoration-thickness: 1px
             @include media-breakpoint-up(desktop)
                 .chapter
                     flex-direction: column
@@ -41,6 +47,8 @@ body.ancestor-the-place
                         width: 100%
                     .rich-text
                         width: columns(7)
+                    .notes
+                        @include h5
                 
                 &--with-image
                     .chapter
@@ -56,3 +64,7 @@ body.ancestor-the-place
                             img
                                 margin: 0
                                 width: 100%
+                    @include media-breakpoint-down(desktop)
+                        figure
+                            order: 2
+                            margin-top: $spacing-3

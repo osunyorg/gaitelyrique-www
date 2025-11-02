@@ -1,17 +1,4 @@
 .block-chapter
-    .page-the-place &
-        .chapter
-            .notes p
-                @include h5
-                a
-                    text-decoration: underline
-                    text-decoration-color: var(--color-text)
-                    text-decoration-thickness: 1px
-            @include media-breakpoint-down(desktop)
-                figure
-                    order: 2
-                    margin-top: $spacing-3
-
     &--alt_background
         .top .block-title
             @include h2

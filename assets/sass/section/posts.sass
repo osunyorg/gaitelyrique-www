@@ -19,6 +19,11 @@
     @include media-breakpoint-down(desktop)
         .section-sidebar
             margin-top: -$spacing-2
+        &.full-width
             .post-infos
                 padding-left: var(--grid-gutter)
                 padding-right: var(--grid-gutter)
+        &.full-width,
+        &:not(.full-width)
+            .post-sidebar
+                margin-bottom: $spacing-3
