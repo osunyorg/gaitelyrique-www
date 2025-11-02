@@ -90,6 +90,23 @@
                     text-decoration: none
                     right: -(space(4))
                     
+    @include media-breakpoint-down(desktop)
+        body:not(.page__home) &
+            margin-top: var(--grid-gutter)
+
+        &--image-portrait,
+        &--image-square
+            margin-bottom: $spacing-3
+            figure
+                margin-bottom: 0 !important
+
+        figure.image-landscape
+            margin-left: 0
+            margin-right: 0
+
+        .hero-content
+            margin-top: space(7)
+    
     // posts with date under title
     .posts__page &
         .content
@@ -103,14 +120,3 @@
         &::before
             content: '—' / ""
             margin-right: space(2)
-
-    @include media-breakpoint-down(desktop)
-        body:not(.page__home) &
-            margin-top: var(--grid-gutter)
-
-        .hero-content
-            margin-top: space(7)
-
-        figure.image-landscape
-            margin-left: 0
-            margin-right: 0

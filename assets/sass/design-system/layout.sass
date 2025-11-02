@@ -48,6 +48,12 @@ body[class*="__section"] main
             margin-right: -$spacing-3
         .slider-progression
             @extend .sr-only
+    @include media-breakpoint-down(desktop)
+        .block-title
+            padding-right: calc(#{columns(3)} + var(--grid-gutter))
+        .slider-arrows
+            transform: translateY(space(-7))
+            width: columns(3) !important
 
     // to see arrows when there is no title (overflow hidden)
     &:not(.block-titled)
