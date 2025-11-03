@@ -8,6 +8,11 @@ body[class*="__section"] main
 main:not(.page-with-blocks)
     margin-bottom: var(--block-space-y)
 
+.ancestor-ending-with-full-width-pages 
+    @include media-breakpoint-up(desktop)
+        main
+            margin-bottom: space(24)
+
 // blocks
 .block
     .block-title a::after
