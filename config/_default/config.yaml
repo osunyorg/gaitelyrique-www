@@ -41,6 +41,8 @@ params:
       options:
         subtitle: false
   image_sizes:
+    _default:
+      pagefind: "555"
     blocks:
       chapter:
         desktop:  1483
