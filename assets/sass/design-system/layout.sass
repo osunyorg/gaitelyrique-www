@@ -126,7 +126,7 @@ main .blocks
                     max-width: 100%
                     position: absolute
                     right: 0
-                    p:not(.sr-only)
+                    p:where(:not(.sr-only))
                         @include small
                         align-items: baseline
                         color: var(--color-text)
