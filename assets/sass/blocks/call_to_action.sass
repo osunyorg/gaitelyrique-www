@@ -4,16 +4,21 @@
         .block-content
             padding-bottom: 0
             padding-top: 0
+    
     &--accent_background
         .call_to_action
             background-color: $block-call-to-action-accent-background
+
             @include in-page-without-sidebar
                 padding: space(9) var(--grid-gutter)
+        
         @include in-page-without-sidebar
             background: none
+        
         @include in-page-with-sidebar
             .call_to_action > div::after
                 content: none
+    
     .call_to_action
         .top
             .block-title
@@ -21,6 +26,7 @@
                 margin-bottom: $spacing-1
             .description p
                 @include body-text
+        
         .actions
             display: flex
             flex-direction: column
@@ -40,21 +46,28 @@
                     text-decoration-thickness: 1px
                 + a
                     margin-top: $spacing-1
+                
                 @include media-breakpoint-down(desktop)
                     margin-right: 0
                     text-align: left
                     &:first-child
                         margin-top: $spacing-1
                         text-align: left
+            
             @include media-breakpoint-up(desktop)
                 grid-column: 1 / 13 !important
                 grid-row: unset !important
                 margin-top: $spacing-3 !important
                 a
                     margin-top: 0
+
+        figure > *
+            margin-left: auto
+        
         &.call_to_action--without-text
             .actions
                 margin-top: 0 !important
+        
         &.call_to_action--without-image:not(.call_to_action--without-text)
             @include in-page-without-sidebar
                 > div
