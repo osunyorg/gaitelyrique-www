@@ -383,6 +383,9 @@
             margin-bottom: $spacing-5
     
     .agenda-filters
+        .dropdown > button
+            font-weight: bold !important
+        
         .dates-filters, .dropdown-dates
             --dropdown-background: var(--color-text)
         .dropdown-dates
@@ -397,6 +400,7 @@
                     @include h6
             .slider-arrows button
                 color: #{$color-background}
+        
         .filter-taxonomies
             .dropdown
                 ul 
