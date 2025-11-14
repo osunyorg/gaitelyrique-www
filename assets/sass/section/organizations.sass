@@ -17,6 +17,7 @@
                 aspect-ratio: unset
 
 .block-organizations--grid.organizations--with-images
-    .organizations
-        @include media-breakpoint-down(desktop)
-            @include grid(3)
+    &:not(.with-summaries)
+        .organizations
+            @include media-breakpoint-down(desktop)
+                @include grid(3)
