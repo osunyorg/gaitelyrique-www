@@ -168,10 +168,29 @@ header#document-header
                     padding: 0
                     margin-top: 0
                     margin-bottom: 0
-                    li::after
-                        margin-right: 0
-                    li + li
-                        margin-top: 0
+                    li
+                        &::after
+                            margin-left: 0
+                            font-size: space(10) !important
+                            margin-right: 0
+                        + li
+                            margin-top: 0
+                    .tiktok
+                        order: -1
+                        &::after
+                            @include icon-site(icon-tiktok)
+                    .linkedin
+                        order: 0
+                        &::after
+                            @include icon-site(icon-linkedin)
+                    .instagram
+                        order: -2
+                        &::after
+                            @include icon-site(icon-instagram)
+                    .facebook
+                        order: 2
+                        &::after
+                            @include icon-site(icon-facebook)
                     @include media-breakpoint-down(desktop)
                         justify-content: space-between
 
