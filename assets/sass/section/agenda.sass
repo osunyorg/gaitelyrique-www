@@ -57,7 +57,13 @@
         @include media-breakpoint-down(desktop)
             &, .event-practicals
                 margin-top: space(7)
-    
+        @include media-breakpoint-up(desktop)
+            .block .block-content
+                padding-left: offset(6)
+            .block.heading h2
+                margin-left: offset(6)
+            .section-sidebar
+                width: columns(6)
     .event-access
         .events-slots-title
             @extend .sr-only
