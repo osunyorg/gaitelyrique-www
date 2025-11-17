@@ -15,13 +15,6 @@ items:
   children: []
   path: "/pages/privatisation"
   file: content/fr/pages/privatisation/_index.html
-- title: Partenaires
-  target: "/partenaires/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/partenaires"
-  file: content/fr/pages/partenaires/_index.html
 - title: Soutenir la Fabrique
   target: "/soutenir-la-fabrique/"
   kind: page
