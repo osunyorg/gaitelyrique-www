@@ -124,6 +124,9 @@
             display: block
             order: -1
             text-transform: uppercase
+            &:focus, &:focus-within
+                background: alphaColor($color-text, 0.8)
+                color: var(--color-background)
             &[target="_blank"]
                 &::after
                     display: none
