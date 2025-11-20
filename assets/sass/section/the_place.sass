@@ -21,9 +21,13 @@ body.ancestor-the-place
                     --block-space-y: #{$spacing-4}
                     .container
                         padding: 0
-                .block-chapter:first-child
-                    @include lead
-            
+                .block-chapter
+                    &:first-child
+                        @include lead
+                    .text,
+                    .notes,
+                    .rich-text
+                        width: 100%
     .chapter
         .top
             .block-title
