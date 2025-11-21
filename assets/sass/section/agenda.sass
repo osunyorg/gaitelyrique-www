@@ -124,6 +124,8 @@
             display: block
             order: -1
             text-transform: uppercase
+            overflow: hidden
+            white-space: wrap
             &:focus, &:focus-within
                 background: alphaColor($color-text, 0.8)
                 color: var(--color-background)
@@ -131,8 +133,8 @@
                 &::after
                     display: none
             @include media-breakpoint-down(desktop)
-                @include h1
-                --btn-padding: #{space(5)} #{space(7)}
+                @include h2
+                --btn-padding: #{space(5)} #{space(3)}
                 text-transform: uppercase
             @include media-breakpoint-up(desktop)
                 --btn-font-size: 4.8vw
@@ -187,10 +189,12 @@
             .event-summary
                 .dropdown-calendar
                     background: none
+                    width: 100%
                     padding: 0
-                    order: -1
                     > button
-                        transform: translateY($spacing-1)
+                        position: absolute
+                        right: 0
+                        bottom: 100%
                         span
                             // sr-only
                             border: 0 !important
