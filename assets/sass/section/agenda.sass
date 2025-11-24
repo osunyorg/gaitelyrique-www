@@ -182,14 +182,15 @@
             // dropdowns
             .event-time-slot,
             .event-summary
+                position: relative
                 .dropdown-calendar
                     background: none
                     width: 100%
                     padding: 0
+                    position: absolute
+                    right: 0
+                    text-align: right
                     > button
-                        position: absolute
-                        right: 0
-                        bottom: 100%
                         span
                             // sr-only
                             border: 0 !important
@@ -286,8 +287,6 @@
                     + .block
                         margin-top: $spacing-2
             @include media-breakpoint-up(desktop)
-                // .block:not(.block-title)
-                //     --block-space-y: #{space(24)}
                 .block-persons
                     .persons
                         @include grid(3)
