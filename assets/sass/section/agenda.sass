@@ -100,7 +100,6 @@
         .btn
             &, &:hover
                 @include h6
-                margin-left: offset(6)
                 margin-bottom: $vertical-space-1
                 text-transform: none
                 background: none
@@ -114,7 +113,7 @@
                 position: relative
             &:hover::after
                 animation: bounce-down $bounce-duration $bounce-ease-transition infinite
-    
+
     .event-practicals
         display: flex
         flex-direction: column
@@ -148,12 +147,7 @@
                 &:hover
                     background: var(--color-text)
                     color: var(--color-background)
-    
-    // agenda/programme button
-    .programme-btn-container
-        .programme-btn
-            @include h6
-    
+
     @include media-breakpoint-down(desktop)
         .event-access
             > div:first-child
@@ -302,6 +296,11 @@
                 .block-organizations
                     .organizations
                         @include grid(5)
+
+    @include media-breakpoint-up(desktop)
+        .programme-btn-container
+            .btn
+                margin-left: offset(6)
     footer#document-footer
         padding-top: 0
 
