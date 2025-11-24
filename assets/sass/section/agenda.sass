@@ -322,7 +322,6 @@
         .exhibition
             .exhibition-schedule
                 order: -1
-                width: columns(2)
             .more::after
                 content: "→"
                 font-family: $heading-font-family
@@ -330,6 +329,9 @@
             &--with-image
                 .more
                     margin-top: unset
+            @include media-breakpoint-up(desktop)
+                .exhibition-schedule
+                    width: columns(2)
             @include media-breakpoint-down(desktop)
                 .more
                     font-size: $body-size-desktop
