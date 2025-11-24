@@ -64,6 +64,7 @@
                 margin-left: offset(6)
             .section-sidebar
                 width: columns(6)
+                z-index: $zindex-aside
     .event-access
         .events-slots-title
             @extend .sr-only
@@ -99,7 +100,7 @@
         .btn
             &, &:hover
                 @include h6
-                margin-left: offset(4)
+                margin-left: offset(6)
                 margin-bottom: $vertical-space-1
                 text-transform: none
                 background: none

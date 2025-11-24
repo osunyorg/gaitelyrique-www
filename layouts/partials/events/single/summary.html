@@ -1,4 +1,5 @@
 {{- partial "commons/summary-in-content.html" . -}}
+
 <div class="container programme-btn-container">
   {{ $events := partial "GetObjectsFromPathSlice" .context.Params.children }}
   {{ if $events }}
