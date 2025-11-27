@@ -47,6 +47,8 @@ params:
       chapter:
         desktop:  1483
       events:
+        agenda:
+          mobile: 302
         grid:
           desktop:  864
       gallery:
