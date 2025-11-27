@@ -387,8 +387,6 @@
                             padding-left: columns(2)
                         .media
                             width: calc(#{columns(2)} + var(--grid-gutter))
-            .event-categories a
-                @include h6
             + .event
                 border: none
                 padding-top: 0
@@ -448,6 +446,7 @@
                             margin-left: space()
                     @include media-breakpoint-down(desktop)
                         padding: 0
+        
         @include media-breakpoint-down(desktop)
             margin-top: $spacing-3
             .dropdown-dates,
@@ -462,8 +461,10 @@
                 button
                     margin-left: 0 !important
             + .events-programme
+                margin-top: 0
                 .events
                     margin-top: 0
+        
         @include media-breakpoint-up(desktop)
             // align taxo with agenda title
             margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - 1px)
@@ -483,6 +484,11 @@
             @include media-breakpoint-up(xxl)
                 // large screens
                 margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - #{space()})
+
+.event__section
+    .event
+        .event-categories a
+            @include h6
 
 .event, .exhibition
     &,
@@ -552,6 +558,7 @@
                 margin-top: 0
             .event-content > *:not(.event-description)
                 margin-bottom: pxToRem(10)
+
 // ARCHIVES
 .events-archives-years
     margin-bottom: -$spacing-5
@@ -598,3 +605,35 @@
                 order: -1
                 @include media-breakpoint-up(desktop)
                     width: columns(6)
+
+// exhibitions
+.exhibition
+    &-title a::after
+        content: none !important
+    .more
+        &::after
+            content: '→' !important
+            font-family: $heading-font-family !important
+            margin-left: space()
+
+.exhibitions
+    &--agenda 
+        .exhibition
+            .exhibition-content
+                display: flex
+                flex-direction: column
+                > .exhibition-title,
+                hgroup
+                    order: -2
+                .event-categories
+                    order: -3
+                    a
+                        @include link(var(--color-accent))
+                @include media-breakpoint-down(desktop)
+                    .event-categories a,
+                    .meta
+                        @include meta
+    &--grid
+        .exhibition
+            .media 
+                margin-bottom: 0 !important

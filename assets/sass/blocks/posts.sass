@@ -88,10 +88,13 @@
         // see 'layout.sass' for slider arrows behavior
         @include in-page-without-sidebar
             .block-content
+                display: flex
+                gap: var(--grid-gutter)
                 flex-direction: column
                 .top
                     width: 100%
                 .top, .block-title
                     margin-bottom: 0
+            
             .slider-arrows
                 width: unset !important
