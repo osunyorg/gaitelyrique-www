@@ -31,6 +31,7 @@
                     margin-top: 0
             @include in-page-without-sidebar
                 align-items: flex-start
+                
     // for all layouts
     .event
         .media
@@ -38,13 +39,27 @@
                 aspect-ratio: 16/9
 
 // global
-.event
+.event,
+.exhibition
     .media
         img
             aspect-ratio: 16/9
             object-fit: cover
-    .event-categories
+    [class$="-categories"]
         a
             text-decoration: none
             &:hover
                 @include link
+
+// exhibitions
+.exhibition
+    &-title a,
+    .more
+        &::after
+            content: none !important
+
+.exhibitions
+    &--grid
+        .exhibition
+            .media 
+                margin-bottom: 0
