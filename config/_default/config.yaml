@@ -60,6 +60,9 @@ params:
           mobile:   400
           tablet:   800
           desktop:  512
+      events:
+        children_in_agenda:
+          mobile: 302
       pages:
         item:
           desktop:  864
