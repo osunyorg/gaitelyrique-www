@@ -35,12 +35,12 @@ items:
     path: "/pages/presse"
     file: content/fr/pages/presse/_index.html
   - title: Recrutements
-    target: "/recrutements/"
+    target: "/emploi/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/recrutements"
-    file: content/fr/pages/recrutements/_index.html
+    path: "/pages/emploi"
+    file: content/fr/pages/emploi/_index.html
   - title: Privatisation
     target: "/privatisation/"
     kind: page
