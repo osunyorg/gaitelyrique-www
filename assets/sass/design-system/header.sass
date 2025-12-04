@@ -9,6 +9,7 @@ header#document-header
         &[aria-expanded="true"]
             span:last-of-type::before
                 @include icon-site("icon-close")
+    
     .nav-search
         .search-button
             justify-content: flex-start
@@ -16,29 +17,38 @@ header#document-header
                 order: -1
         @include media-breakpoint-up(desktop)
             display: none
+    
     .additional-menu
         align-items: baseline
         display: flex
         justify-content: flex-end
         gap: space(6)
-        @include media-breakpoint-up(xxl)
-            gap: space(9)
         .search-button--primary
             padding: 0
             width: auto
             line-height: var(--meta-line-height)
             @include media-breakpoint-down(desktop)
                 display: none
+        
+        @include media-breakpoint-up(xxl)
+            gap: space(9)
+        
         @include media-breakpoint-down(desktop)
             width: 100%
+        
         @include media-breakpoint-up(desktop)
             min-width: offset(3)
+
+            // align additional menu on the right of the 2nd line in medium devices
+            @include media-breakpoint-down(xl)
+                margin-left: auto
     .search-button,
     .change-color-mode-button
         span
             @include small
             font-weight: bold
             white-space: nowrap
+    
     .change-color-mode-button
         @include button-reset
         @include h5
@@ -80,16 +90,17 @@ header#document-header
         &:not(.is-color-mode)
             span:not(:first-child)::after
                 right: calc(#{space(10)} - #{space(4)} - 2px)
+
         @include media-breakpoint-up(desktop)
             .label
-                position: absolute
-                width: 1
-                height: 1
-                opacity: 0
+                @include visually-hidden
+
+        @include media-breakpoint-up(xl)
             @include media-breakpoint-down(xxxl)
                 width: columns(2)
             @include media-breakpoint-up(xxxl)
                 width: offset(1.2)
+        
         @include media-breakpoint-down(desktop)
             border-bottom: 1px solid $color-border-alt
             border-top: 1px solid $color-border-alt
@@ -103,12 +114,14 @@ header#document-header
                 width: columns(2.2)
             span + span
                 margin-left: $spacing-1
+    
     @include media-breakpoint-up(desktop)
         .menu-socials
             display: none
         .nav-level-1
             > li > a
                 @include h5
+    
     @include media-breakpoint-down(desktop)
         nav.primary-menu
             padding-bottom: 0
