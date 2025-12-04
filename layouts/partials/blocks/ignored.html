@@ -1,18 +1,27 @@
 {{ $context := .context | default . }}
 {{ $templates := .templates | default (slice "chapter" "organizations") }}
+{{ $blocks := slice }}
 
-<div class="blocks">
-  {{ range $index, $content := $context }}
-    {{ if in site.Params.blocks.ignored .html_class }}
-      {{ if in $templates .template }}
-        {{ $template := printf "blocks/templates/%s.html" .template }}
-        {{ if templates.Exists ( printf "partials/%s" $template ) }}
-          {{ partial $template (dict
-              "block" $content
-              "index" $index
-            )}}
-        {{ end }}
-      {{ end }}
+{{ range $index, $content := $context }}
+  {{ if and (in site.Params.blocks.ignored .html_class) (in $templates .template) }}
+    {{ $template := printf "blocks/templates/%s.html" .template }}
+    {{ if templates.Exists (printf "partials/%s" $template) }}
+      {{ $blocks = $blocks | append (dict
+          "block"   $content
+          "index"   $index
+          "partial" $template
+      ) }}
     {{ end }}
   {{ end }}
-</div>
+{{ end }}
+
+{{ if gt (len $blocks) 0 }}
+  <div class="blocks">
+    {{ range $blocks }}
+      {{ partial .partial (dict
+        "block" .block
+        "index" .index
+      ) }}
+    {{ end }}
+  </div>
+{{ end }}
