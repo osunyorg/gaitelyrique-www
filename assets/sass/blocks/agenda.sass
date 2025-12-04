@@ -21,14 +21,28 @@
     &--large
         .event
             .event-content
+                display: flex
+                flex-direction: column
+                padding-right: 0
                 .event-title
                     @include h4
                 .event-subtitle,
                 .event-dates
                     @include h6
+                .event-schedule
+                    margin-top: space(5)
+                    margin-bottom: 0
+                    .event-dates
+                        margin-top: 0
                 .event-categories
-                    order: -1
+                    order: -2
                     margin-top: 0
+                    a
+                        @include link(var(--color-text))
+                        &:not(:hover)
+                            text-decoration-color: transparent
+                .more
+                    margin-top: $spacing-3
             @include in-page-without-sidebar
                 align-items: flex-start
                 
