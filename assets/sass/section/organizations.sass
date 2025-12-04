@@ -18,6 +18,12 @@
             picture
                 aspect-ratio: unset
 
+body.full-width,
+.organizations
+    &--grid
+        @include media-breakpoint-up(desktop)
+            grid-template-columns: repeat(6, 1fr) !important
+
 .block-organizations--grid.organizations--with-images
     &:not(.with-summaries)
         .organizations
