@@ -622,17 +622,28 @@
             .exhibition-content
                 display: flex
                 flex-direction: column
-                > .exhibition-title,
-                hgroup
-                    order: -2
-                .event-categories
-                    order: -3
+                [class*="-categories"]
                     a
-                        @include link(var(--color-accent))
+                        @include h6
+                        @include link(var(--color-text))
+                        text-decoration: none
+
                 @include media-breakpoint-down(desktop)
-                    .event-categories a,
+                    .exhibition-schedule
+                        margin-bottom: $spacing-2
+                        margin-top: 0
+                        order: -2
+                    [class*="-categories"]
+                        @include h6
                     .meta
                         @include meta
+
+                @include media-breakpoint-up(desktop)
+                    > .exhibition-title,
+                    hgroup
+                        order: -2
+                    [class*="-categories"]
+                        order: -3
     &--grid
         .exhibition
             .media 
