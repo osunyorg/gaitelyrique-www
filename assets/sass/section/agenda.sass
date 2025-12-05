@@ -373,6 +373,11 @@
         .event-children > li
             padding-top: 0
             border-top: 0
+
+        .events-scheduled > li + li
+            margin-top: $spacing-4
+            @include media-breakpoint-up(desktop)
+                margin-top: space(23)
             
         .event
             @include media-breakpoint-up(desktop)
