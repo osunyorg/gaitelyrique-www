@@ -1,3 +1,16 @@
+// exhibitions
+.exhibition
+    &-title a::after
+        content: none !important
+    .more
+        &::after
+            content: '→' !important
+            font-family: $heading-font-family !important
+            margin-left: space()
+    @include media-breakpoint-up(desktop)
+        .media
+            margin-bottom: 0 !important
+
 // for section and blocks, when available
 .exhibitions
     &--grid
@@ -9,3 +22,31 @@
                     order: -1
             [class$="-subtitle"]
                 @include h5
+
+    &--agenda 
+        .exhibition
+            .exhibition-content
+                display: flex
+                flex-direction: column
+                [class*="-categories"]
+                    a
+                        @include h6
+                        @include link(var(--color-text))
+                        text-decoration: none
+
+                @include media-breakpoint-down(desktop)
+                    .exhibition-schedule
+                        margin-bottom: $spacing-2
+                        margin-top: 0
+                        order: -2
+                    [class*="-categories"]
+                        @include h6
+                    .meta
+                        @include meta
+
+                @include media-breakpoint-up(desktop)
+                    > .exhibition-title,
+                    hgroup
+                        order: -2
+                    [class*="-categories"]
+                        order: -3

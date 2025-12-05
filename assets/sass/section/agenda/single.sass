@@ -1,0 +1,342 @@
+
+// Parent event
+.events__page
+    .event-parent
+        .event-parent__title
+            @extend .title-with-border
+            @include h4
+            margin-bottom: $spacing-4
+        .event-content
+            .event-subtitle
+                @include h6
+            .more
+                position: relative
+                &:after
+                    position: absolute
+                    content: "→"
+                    font-family: $heading-font-family
+                    font-size: 110%
+                    margin-left: space()
+        .event--with-image
+            .media
+                order: -1
+                @include media-breakpoint-up(desktop)
+                    width: columns(6)
+    @include media-breakpoint-down(desktop)
+        .event-programme
+            .events--agenda
+                .event--child
+                    padding-left: 0
+                    border-left: 0
+                    .media
+                        margin-bottom: 0 !important
+    @include media-breakpoint-up(desktop)
+        .event-programme
+            .events--agenda
+                .event--child
+                    padding-left: offset(2)
+                    .media
+                        width: columns(4)
+    
+.events__page,
+.exhibitions__page
+    .hero
+        padding-bottom: $spacing-3
+        &.hero--with-image
+            .hero-text
+                flex-direction: column
+                margin-top: 0
+                > h1, > hgroup
+                    margin-top: $spacing-2
+                    margin-right: 0 !important
+                    max-width: none !important
+                    width: auto !important
+        .hero-text
+            h1
+                span
+                    @include h4
+                    color: var(--color-text)
+                    display: block
+            .taxonomies-single
+                margin-top: 0
+                margin-bottom: $spacing-2
+                order: -1 !important
+                column-gap: $spacing-3 
+                a
+                    color: var(--color-text)
+                    &:not(:hover)
+                        text-decoration-color: transparent
+        figure
+            display: none
+        
+        @include media-breakpoint-up(desktop)
+            &.hero--image-portrait,
+            &.hero--image-landscape,
+            &.hero--image-square
+                .hero-text
+                    width: columns(10)
+            &:not(.hero--with-image)
+                .hero-text > h1
+                    width: columns(12)
+        
+        @include media-breakpoint-down(desktop)
+            margin-bottom: 0 !important
+            .hero-text
+                display: flex
+                flex-direction: column
+                margin-bottom: 0
+                h1
+                    margin-top: 0 !important
+                    span
+                        margin-top: $spacing-3
+                .taxonomies-single
+                    margin-bottom: $spacing-3
+    
+    .document-content
+        margin-top: $vertical-space-1
+        @include media-breakpoint-down(desktop)
+            &, .event-practicals
+                margin-top: space(7)
+        @include media-breakpoint-up(desktop)
+            .block .block-content
+                padding-left: offset(6)
+            .block.heading h2
+                margin-left: offset(6)
+            .section-sidebar
+                width: columns(6)
+                z-index: $zindex-aside
+
+    .event-access
+        .events-slots-title
+            @extend .sr-only
+            + .extendable-list
+                .event-time-slot
+                    @include h5
+        .event-summary
+            &, .type
+                @include h6
+                @include media-breakpoint-up(desktop)
+                    @include h5
+        .event-summary
+            .date
+                width: auto
+        > div:first-child
+            border-top: 4px solid $color-text
+            padding-top: $spacing-3
+        > div:last-child
+            border-bottom-color: $color-text
+            padding-bottom: $spacing-3
+        .event-time-slot,
+        .event-summary
+            .dropdown-calendar
+                --dropdown-color: var(--color-background)
+                ul 
+                    background-color: var(--color-text)
+                > button
+                    @include small
+                    font-family: $body-font-family
+                    font-weight: normal
+    
+    .programme-btn-container
+        .btn
+            &, &:hover
+                @include h6
+                margin-bottom: $vertical-space-1
+                text-transform: none
+                background: none
+                text-decoration: underline
+                color: var(--color-text)
+                padding: 0
+                border: 0
+            &::after
+                content: ' ↓'
+                display: inline-block
+                position: relative
+            &:hover::after
+                animation: bounce-down $bounce-duration $bounce-ease-transition infinite
+
+    .event-practicals
+        display: flex
+        flex-direction: column
+        gap: $vertical-space-1
+        > h2
+            @extend .sr-only
+        .btn
+            display: block
+            order: -1
+            text-transform: uppercase
+            overflow: hidden
+            white-space: wrap
+            &:focus, &:focus-within
+                background: alphaColor($color-text, 0.8)
+                color: var(--color-background)
+            &[target="_blank"]
+                &::after
+                    display: none
+            @include media-breakpoint-down(desktop)
+                @include h2
+                --btn-padding: #{space(5)} #{space(3)}
+                text-transform: uppercase
+            @include media-breakpoint-up(desktop)
+                --btn-font-size: 4.8vw
+                --btn-line-height: 4.8vw
+                text-transform: uppercase
+
+    .event-summary
+        .dropdown-calendar
+            > button
+                &:hover
+                    background: var(--color-text)
+                    color: var(--color-background)
+
+    @include media-breakpoint-down(desktop)
+        .event-access
+            > div:first-child
+                padding-top: space(5)
+            > div:last-child
+                padding-bottom: space(5)
+
+            .event-slots
+                .event-summary
+                    flex-direction: row
+            
+            .events-slots-title + .extendable-list 
+                .event-time-slot,
+                .location
+                    @include h6
+            
+            .event-time-slot,
+            .event-slots .event-summary
+                .location,
+                .hours,
+                .date
+                    width: columns(10)
+                .date
+                    order: -2
+                .hours
+                    text-align: left
+                .location
+                    @include body-text
+            .type
+                margin-top: space()
+
+            // dropdowns
+            .event-time-slot,
+            .event-summary
+                position: relative
+                .dropdown-calendar
+                    background: none
+                    width: 100%
+                    padding: 0
+                    position: absolute
+                    right: 0
+                    text-align: right
+                    > button
+                        span
+                            @include sr-only
+                        &::after
+                            margin-left: 0 !important
+                            font-size: pxToRem(32)
+                    .dropdown-menu 
+                        left: unset
+                        right: var(--grid-gutter-negative)
+                        ul
+                            background: var(--color-text)
+                            li > a
+                                color: var(--color-background)
+            .event-time-slot
+                row-gap: 0
+        
+        .event-practicals
+            gap: space(5)
+        
+
+    &:not(.full-width)
+        .event-sidebar
+            padding-bottom: $spacing-3
+            figure
+                margin-bottom: $spacing-3
+                position: relative
+                figcaption
+                    @include meta
+                    opacity: 0
+                    background: var(--color-background)
+                    bottom: 0
+                    margin-top: space()
+                    padding: 0 space()
+                    position: absolute
+                    right: 0
+                &:hover figcaption
+                    opacity: 1
+            .blocks
+                .block-content,
+                .container
+                    padding: 0
+                .top
+                    margin-bottom: space(6)
+                    .block-title
+                        @include h6
+                .block-organizations
+                    margin-top: space(14)
+                    .organizations
+                        display: flex
+                        flex-wrap: wrap
+                        .organization-content
+                            @extend .sr-only
+                        figure
+                            margin-bottom: 0
+                        .media
+                            filter: grayscale(1)
+                            margin-bottom: 0
+                            padding: 0
+                            width: columns(3)
+                            @include media-breakpoint-up(desktop)
+                                width: columns(1.2)
+                            @include media-breakpoint-up(xxxl)
+                                width: columns(1)
+                        
+                        @include media-breakpoint-down(desktop)
+                            @include grid(3)
+                            .media--logo
+                                padding: $spacing-1
+                                width: 100%
+
+            .event-practicals
+                p
+                    @include small
+            @include media-breakpoint-up(desktop)
+                .event-practicals
+                    padding-bottom: space(10)
+                    p + p
+                        margin-top: space(2)
+                    .btn
+                        padding-bottom: space(3)
+            @include media-breakpoint-down(desktop)
+                padding-bottom: 0
+                margin-bottom: 0
+                .event-practicals p
+                    @include body-text
+        
+        .document-content > .blocks
+            .block-chapter
+                + .block-title
+                    margin-top: space(10)
+                    margin-bottom: $spacing-2
+                    + .block
+                        margin-top: $spacing-2
+            @include media-breakpoint-up(desktop)
+                .block-persons
+                    .persons
+                        @include grid(3)
+                        .avatar
+                            width: offset(1)
+                .block-organizations
+                    .organizations
+                        @include grid(5)
+
+    @include media-breakpoint-up(desktop)
+        .programme-btn-container
+            .btn
+                margin-left: offset(6)
+    footer#document-footer
+        padding-top: 0
