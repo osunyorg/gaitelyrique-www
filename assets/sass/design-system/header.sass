@@ -78,18 +78,20 @@ header#document-header
             &::before
                 background: var(--color-text)
                 border-radius: 30px
-                height: space(5)
-                width: space(10)
+                height: pxToRem(22)
                 right: 0
+                bottom: 0
+                width: space(10)
             &::after
                 background: var(--color-background)
                 border-radius: 100%
-                height: space(4)
+                height: pxToRem(18)
                 right: 2px
-                width: space(4)
+                bottom: 2px
+                width: pxToRem(18)
         &:not(.is-color-mode)
             span:not(:first-child)::after
-                right: calc(#{space(10)} - #{space(4)} - 2px)
+                right: calc(#{space(10)} - #{pxToRem(18)} - 2px)
 
         @include media-breakpoint-up(desktop)
             .label
@@ -102,18 +104,21 @@ header#document-header
                 width: offset(1.2)
         
         @include media-breakpoint-down(desktop)
+            align-items: baseline
             border-bottom: 1px solid $color-border-alt
             border-top: 1px solid $color-border-alt
             display: flex
+            gap: $spacing-1 
             margin-left: var(--grid-gutter-negative)
             margin-right: var(--grid-gutter-negative)
             padding: $spacing-2 var(--grid-gutter)
-            margin-top: space()
             width: calc(100% + calc(var(--grid-gutter) * 2))
-            span:not(:first-child)
-                width: columns(2.2)
             span + span
-                margin-left: $spacing-1
+                width: columns(6.2)
+                justify-content: space-between
+
+            html:not(.has-menu-opened) &
+                margin-top: pxToRem(13)
     
     @include media-breakpoint-up(desktop)
         .menu-socials
@@ -131,27 +136,27 @@ header#document-header
                 span:last-of-type::before
                     font-size: space(5) !important
                     margin-top: -$spacing-1
-            .additional-menu
-                span:not(:first-of-type)
-                    width: columns(6)
+        
         html:not(.has-menu-opened) &
             .menu-socials
                 display: none
+
         html.has-menu-opened &
             align-items: flex-start
             height: 100%
             .container
                 height: 100svh
+                padding-bottom: var(--grid-gutter)
+
             .additional-menu
+                margin-top: space(-1)
                 .change-color-mode-button
                     margin-top: 0
                     order: 1
-                    span[class$="-mode"]
-                        margin-left: 0
             .menu
-                height: calc(100svh - calc(var(--header-height) * 2) - #{$spacing-2})
-                margin-top: -$spacing-2
+                margin-top: space(-4)
                 order: 2
+
             .nav-level-1
                 display: flex
                 flex-direction: column
@@ -162,7 +167,6 @@ header#document-header
                     margin-top: calc(#{pxToRem(30)} - #{$spacing-1})
                 .nav-search
                     order: -1
-                    margin-top: -($spacing-2)
                 > li.has-children
                     order: 2
                 // li between borders
@@ -171,6 +175,7 @@ header#document-header
                         padding-top: pxToRem(30)
                     &:laft-child a
                         padding-bottom: pxToRem(30)
+            
             .menu-socials
                 display: block
                 order: 3
@@ -216,8 +221,10 @@ header#document-header
         li.has-children
             #dropdown-mobile-infos
                 @extend .sr-only
+            
             @include media-breakpoint-up(desktop)
                 display: none
+            
         @include media-breakpoint-down(desktop)
             #dropdown-mobile-infos + .dropdown-menu
                 display: block
