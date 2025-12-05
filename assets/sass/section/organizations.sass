@@ -2,25 +2,25 @@
     .document-content 
         .organization-logo picture
             background: $organization-background-color
-            padding: 0
 
 .organization
     .organization-title
-        // @extend .sr-only
         font-size: 0 !important
 
     .media--logo
-        margin-bottom: 0
+        margin-bottom: 0 !important
+
     body:not(.organizations__section) &
         .media--logo
             filter: grayscale(1)
+    
+    @include media-breakpoint-down(desktop)
+        .media--logo
             padding: 0
-            picture
-                aspect-ratio: unset
 
 body.full-width,
-.organizations
-    &--grid
+.organizations__section
+    .organizations--grid
         @include media-breakpoint-up(desktop)
             grid-template-columns: repeat(6, 1fr) !important
 
