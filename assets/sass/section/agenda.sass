@@ -420,11 +420,6 @@
                 // large screens
                 margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - #{space()})
 
-.event__section
-    .event
-        .event-categories a
-            @include h6
-
 .events__section,
 .events__page
     .events--agenda,
@@ -502,6 +497,8 @@
     .events--agenda &
         &-title
             @include h3
+    .event-categories a
+        @include h6
 
 .calendar-month
     caption
