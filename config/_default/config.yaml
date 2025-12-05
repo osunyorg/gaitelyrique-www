@@ -54,16 +54,17 @@ params:
         hero_single:
           mobile:   400
           tablet:   800
-          desktop:  512
+          desktop:  894
       events:
         children_in_agenda:
           mobile: 302
-          layouts:
-            agenda:
-              mobile: 302
-              desktop: 575
-            grid:
-              desktop:  864
+          desktop:  319
+        layouts:
+          agenda:
+            mobile: 302
+            desktop: 575
+          grid:
+            desktop:  864
       pages:
         item:
           desktop:  864
