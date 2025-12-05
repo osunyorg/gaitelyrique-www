@@ -454,6 +454,8 @@
                 margin-top: $spacing-2
                 border-top: var(--border-width) solid var(--color-text)
                 padding-top: $spacing-4
+                @include media-breakpoint-down(desktop)
+                    margin-top: space()
             
         .events-scheduled > li + li,
         .event-children > li
@@ -497,7 +499,7 @@
                 
                 &--child
                     flex-direction: column
-                    border-left: 1px solid $color-border-alt !important
+                    border-left: 1px solid $color-border-alt
                     padding-left: $spacing-3
                     padding-bottom: 0
                     .media
@@ -619,12 +621,20 @@
                 order: -1
                 @include media-breakpoint-up(desktop)
                     width: columns(6)
+    @include media-breakpoint-down(desktop)
+        .event-programme
+            .events--agenda
+                .event--child
+                    padding-left: 0
+                    border-left: 0
     @include media-breakpoint-up(desktop)
         .event-programme
-            .event--child
-                padding-left: offset(2)
-                .media
-                    width: columns(4)
+            .events--agenda
+                .event--child
+                    padding-left: offset(2)
+                    .media
+                        width: columns(4)
+    
 
 // exhibitions
 .exhibition
