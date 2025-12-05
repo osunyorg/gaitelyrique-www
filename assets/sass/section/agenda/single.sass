@@ -7,9 +7,16 @@
             @include h4
             margin-bottom: $spacing-4
         .event-content
+            display: flex
+            flex-direction: column
+            .event-title
+                @include h4
             .event-subtitle
                 @include h6
+            .event-description
+                order: 1
             .more
+                order: 2
                 position: relative
                 &:after
                     position: absolute
@@ -340,5 +347,3 @@
         .programme-btn-container
             .btn
                 margin-left: offset(6)
-    footer#document-footer
-        padding-top: 0
