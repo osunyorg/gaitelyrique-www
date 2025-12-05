@@ -13,7 +13,7 @@
                     padding-top: space(4)
             &:where(:not(:first-child))
                 border: none
-            .events-date-title + ol:not(.event-children)
+            .events-date-title + ol:where(:not(.event-children))
                 margin-top: $spacing-2
                 border-top: var(--border-width) solid var(--color-text)
                 padding-top: $spacing-4
@@ -35,11 +35,11 @@
                 .event-hours
                     margin-top: 0
                 
-                &:not(.event--child)
+                &:where(:not(.event--child))
                     padding-left: offset(2)
                     .media
                         width: columns(4)
-                &:not(.event--with-image)
+                &:where(:not(.event--with-image))
                     .event-content
                         flex: unset
                 
@@ -119,7 +119,7 @@
             .event-hours,
             .event-description
                 margin-top: 0
-            .event-content > *:not(.event-description)
+            .event-content > *:where(:not(.event-description))
                 margin-bottom: pxToRem(10)
 
 .organizations__page,
@@ -130,3 +130,10 @@
                 @include h4
             .event-time
                 @include h6
+
+.event-programme,
+.events-programme
+    @include media-breakpoint-down(desktop)
+        .events-date
+            .events-date-title + ol:first-of-type
+                padding-top: space(8)
