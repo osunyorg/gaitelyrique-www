@@ -1,5 +1,6 @@
 .events__section,
 .events__page
+            
     .events--agenda,
     .exhibitions--agenda
         margin-top: $spacing-4
@@ -73,7 +74,7 @@
                     .media
                         order: -1
                         width: 100%
-    
+
 
 .event, .exhibition
     &,
@@ -112,6 +113,7 @@
     @include media-breakpoint-down(desktop)
         .events-date
             padding-top: 0
+            padding-bottom: space(18)
         .events-date-title
             padding-bottom: $spacing-1
             + .event
