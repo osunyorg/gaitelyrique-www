@@ -18,6 +18,41 @@
                 > li
                     flex: 1
                     min-width: columns(3)
+
+    &--list
+        .events
+            > li:last-child
+                padding-bottom: 0
+                margin-bottom: 0
+        .event
+            .event-categories
+                @include h5
+            
+            @include in-page-without-sidebar
+                .event-content
+                    display: flex
+                    flex-direction: column
+                    width: columns(6)
+                .event-schedule
+                    position: absolute
+                    left: 0
+                    width: columns(2)
+                    .event-dates
+                        @include h6
+                &--with-image
+                    .media
+                        order: -1
+                        margin-left: offset(2)
+                        width: columns(4)
+            
+            @include media-breakpoint-down(desktop)
+                .event-content
+                    > .event-parent
+                        margin-bottom: 0
+                &--with-image
+                    .media
+                        max-width: 100%
+    
     &--large
         .event
             .event-content

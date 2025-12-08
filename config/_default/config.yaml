@@ -70,6 +70,9 @@ params:
             desktop: 575
           grid:
             desktop:  864
+          list:
+            mobile: 327
+            desktop: 575
       pages:
         item:
           desktop:  864

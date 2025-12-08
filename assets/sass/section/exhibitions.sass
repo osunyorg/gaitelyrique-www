@@ -39,10 +39,11 @@
                         margin-bottom: $spacing-2
                         margin-top: 0
                         order: -2
-                    [class*="-categories"]
-                        @include h6
+                    .exhibition-subtitle
+                        margin-top: $spacing-2
+                    [class*="-categories"],
                     .meta
-                        @include meta
+                        @include h6
 
                 @include media-breakpoint-up(desktop)
                     > .exhibition-title,
