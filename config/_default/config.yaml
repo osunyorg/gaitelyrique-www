@@ -17,6 +17,11 @@ params:
     ignored:
       - block-class-in-hero
       - block-class-in-sidebar
+  components:
+    lightbox:
+      disabled: false
+      in_hero:
+        disabled: true
   events:
     index:
       archives: false
