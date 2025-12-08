@@ -119,20 +119,21 @@
             + .extendable-list
                 .event-time-slot
                     @include h5
+    
         .event-summary
             &, .type
                 @include h6
                 @include media-breakpoint-up(desktop)
                     @include h5
-        .event-summary
             .date
                 width: auto
+        
         > div:first-child
             border-top: 4px solid $color-text
-            padding-top: $spacing-3
+            padding-top: $spacing-2
         > div:last-child
             border-bottom-color: $color-text
-            padding-bottom: $spacing-3
+            padding-bottom: $spacing-1
         .event-time-slot,
         .event-summary
             .dropdown-calendar
@@ -189,12 +190,12 @@
                 --btn-line-height: 4.8vw
                 text-transform: uppercase
 
-    .event-summary
-        .dropdown-calendar
-            > button
-                &:hover
-                    background: var(--color-text)
-                    color: var(--color-background)
+    // .event-summary
+    //     .dropdown-calendar
+    //         > button
+    //             &:hover
+    //                 background: var(--color-text)
+    //                 color: var(--color-background)
 
     @include media-breakpoint-down(desktop)
         .event-access
