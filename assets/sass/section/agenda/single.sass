@@ -85,9 +85,19 @@
             &:not(.hero--with-image)
                 .hero-text > h1
                     width: columns(12)
+            .hero-text
+                .taxonomies-single
+                    margin-bottom: 0
+                h1 
+                    span
+                        margin-top: $spacing-1
         
         @include media-breakpoint-down(desktop)
+            --hero-spacing: #{pxToRem(30)}
             margin-bottom: 0 !important
+            padding-bottom: var(--hero-spacing)
+            .content
+                padding-top: 0
             .hero-text
                 display: flex
                 flex-direction: column
@@ -95,9 +105,11 @@
                 h1
                     margin-top: 0 !important
                     span
-                        margin-top: $spacing-3
+                        margin-top: var(--hero-spacing)
                 .taxonomies-single
-                    margin-bottom: $spacing-3
+                    margin-bottom: var(--hero-spacing)
+                    a
+                        @include h6
     
     .document-content
         margin-top: $vertical-space-1
