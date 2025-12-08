@@ -155,5 +155,11 @@ main .blocks
                 margin-top: $spacing-1
 
 // more
-.more.meta
-    @include h6
+.more
+    &::after
+        content: "→" !important
+        font-family: $heading-font-family !important
+        margin-left: space()
+
+    &.meta
+        @include h6
