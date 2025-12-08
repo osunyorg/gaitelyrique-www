@@ -56,6 +56,10 @@
             
             @include media-breakpoint-down(desktop)
                 &--parent
+                    .event-title
+                        @include h2
+                    .event-categories
+                        margin-bottom: space(4)
                     .media
                         margin-left: 0
                         margin-right: 0
@@ -65,6 +69,7 @@
                     border-left: 1px solid $color-border-alt
                     padding-left: $spacing-3
                     padding-bottom: 0
+                    gap: 0
                     .media
                         order: -1
                         width: 100%
