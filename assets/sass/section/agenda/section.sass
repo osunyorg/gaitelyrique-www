@@ -92,7 +92,6 @@
             margin-bottom: $spacing-5
     
     .agenda-filters
-
         .dates-filters
             .calendar-month
                 h2
@@ -102,19 +101,16 @@
             .dropdown-dates,
             .filter-taxonomies
                 flex: unset
-                button
+                > button, .offcanvas-button
                     width: auto
                     align-items: baseline
                     display: flex
-            .filter-taxonomies
-                margin-left: $spacing-2
-                button
-                    margin-left: 0 !important
+                    margin-left: $spacing-2
             + .events-programme
                 margin-top: 0
                 .events
                     margin-top: 0
-        
+
         @include media-breakpoint-up(desktop)
             // align taxo with agenda title
             margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - 1px) !important
