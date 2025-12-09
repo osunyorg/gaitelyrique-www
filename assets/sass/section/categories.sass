@@ -21,3 +21,21 @@
             padding-bottom: space(4)
             gap: space(20)
             margin-bottom: space(24)
+
+.section-taxonomies-container, .agenda-filters
+    .dropdown
+        > button
+            @include small
+            font-weight: bold
+    .taxonomies-list
+        .dropdown
+            .taxonomy-categories-list
+                > li 
+                    a, span
+                        @include h6
+                    a::after
+                        content: '→'
+                        font-family: $heading-font-family
+                        margin-left: space()
+                @include media-breakpoint-down(desktop)
+                    padding: 0

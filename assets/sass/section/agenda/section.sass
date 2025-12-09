@@ -92,36 +92,11 @@
             margin-bottom: $spacing-5
     
     .agenda-filters
-        .dropdown > button
-            font-weight: bold !important
-        
-        .dates-filters, .dropdown-dates
-            --dropdown-background: var(--color-text)
-        .dropdown-dates
-            button[aria-expanded="true"]
-                color: #{$color-background}
+
         .dates-filters
             .calendar-month
-                --color-text: #{$color-background}
-                --color-background: #{$color-text}
-                color: var(--color-text)
                 h2
                     @include h6
-            .slider-arrows button
-                color: #{$color-background}
-        
-        .filter-taxonomies
-            .dropdown
-                ul 
-                    > li a 
-                        @include h6
-                        &::after
-                            content: '→'
-                            font-family: $heading-font-family
-                            margin-left: space()
-                    @include media-breakpoint-down(desktop)
-                        padding: 0
-        
         @include media-breakpoint-down(desktop)
             margin-top: $spacing-3
             .dropdown-dates,
@@ -143,16 +118,8 @@
         @include media-breakpoint-up(desktop)
             // align taxo with agenda title
             margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} - 1px) !important
-            --dropdown-background: var(--color-text)
             .container
                 padding-left: columns(5)
-            .dropdown 
-                button
-                    @include small
-                    &[aria-expanded="true"]
-                        color: var(--color-background)
-                ul > li a
-                    color: var(--color-background)
             @include media-breakpoint-down(xl)
                 // medium screens
                 margin-top: calc(-1 * #{$spacing-3} - #{$spacing-3} + #{space()}) !important
