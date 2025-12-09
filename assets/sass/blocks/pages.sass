@@ -8,13 +8,15 @@
         .block-content
             padding-bottom: $spacing-4
             padding-top: $spacing-4
-    
     @include in-page-without-sidebar
         .top
             display: block
             .block-title
                 width: 100%
-    
+            .description
+                margin-left: 0
+                p
+                    @include body-text
     &--grid
         .pages
             article
