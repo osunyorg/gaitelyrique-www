@@ -13,7 +13,6 @@
         p
             @include h6
 
-
 .events__section
     main,
     .document-content > .container + .container
@@ -90,7 +89,6 @@
                     @include h4
         @include media-breakpoint-up(desktop)
             margin-bottom: $spacing-5
-    
     .agenda-filters
         .dates-filters
             .calendar-month
@@ -106,6 +104,11 @@
                     align-items: baseline
                     display: flex
                     margin-left: $spacing-2
+            .offcanvas-content
+                .taxonomies-list
+                    .dropdown
+                        button
+                            @include body-text
             + .events-programme
                 margin-top: 0
                 .events

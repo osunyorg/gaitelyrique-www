@@ -24,8 +24,10 @@
 
 .section-taxonomies-container, .agenda-filters
     .dropdown > button,
-    .filter-taxonomies .offcanvas-button
+    .filter-taxonomies .offcanvas-button,
+    .taxonomies-list .dropdown .taxonomy-categories-list > li span
         @include small
+        @include icon-chevron
         font-weight: bold
     .taxonomies-list
         .dropdown
@@ -37,5 +39,5 @@
                         content: '→'
                         font-family: $heading-font-family
                         margin-left: space()
-                @include media-breakpoint-down(desktop)
-                    padding: 0
+                // @include media-breakpoint-down(desktop)
+                //     padding: 0
