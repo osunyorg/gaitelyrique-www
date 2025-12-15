@@ -26,6 +26,8 @@ params:
     index:
       archives: false
       sticky_dates: false
+      options:
+        place: true
     single:
       time_slots:
         date_format: ":date_full"
@@ -45,6 +47,13 @@ params:
       layout: grid
       options:
         subtitle: false
+    single:
+      options:
+        published_at: false
+        reading_time: false
+        updated_at: false
+    share_links:
+      enabled: false
   image_sizes:
     _default:
       pagefind: "555"

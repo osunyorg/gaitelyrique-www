@@ -92,6 +92,7 @@
     .event
         .exhibition-dates,
         .event-hours,
+        .event-place,
         &-subtitle
             @include h6
         &-title
@@ -126,6 +127,15 @@
                 margin-top: 0
             .event-content > *:where(:not(.event-description))
                 margin-bottom: pxToRem(10)
+            .event-timeslot
+                // display: flex
+                // justify-content: space-between
+                // flex-wrap: wrap
+                // gap: $spacing-1
+                .event-place
+                    @include meta
+                * + * 
+                    margin-top: 0
 
 .organizations__page,
 .persons__page
