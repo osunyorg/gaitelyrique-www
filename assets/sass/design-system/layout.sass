@@ -8,7 +8,7 @@ body[class*="__section"] main
 .document-content > .blocks .block:first-child
     &[class*="--accent_background"],
     &[class*="--alt_background"]
-    margin-top: var(--grid-gutter) !important
+        margin-top: var(--grid-gutter) !important
 
 main:not(.page-with-blocks)
     margin-bottom: var(--block-space-y)
@@ -80,10 +80,13 @@ article
             padding-top: $spacing-5
 
 // no block should stick to footer
-main .blocks 
+main .blocks
+    .block[class*="--alt_background"] + .block-class-background-alt
+        margin-top: 0
+        .block-content
+            padding-top: 0
     .block:last-child:is([class*="--accent_background"], [class*="--alt_background"], .block-timeline--horizontal, .block-pages--cards)
         margin-bottom: var(--block-space-y)
-
 // page like 'infos pratiques' ending with 2 pages full width
 .page-ending-with-full-width-pages
     @include media-breakpoint-up(desktop)
