@@ -50,7 +50,7 @@ Pour afficher ces icônes, il faut éditer le bloc "fichiers" :
 
 ## Masquer l'image d'entête dans certaines pages
 
-Cas concret : [page "salle immersive"](https://www.gaitelyrique.osuny.site/infos-pratiques/le-lieu/)
+Cas concret : [page "Le Lieu"](https://www.gaitelyrique.osuny.site/infos-pratiques/le-lieu/)
 
 On souhaite utiliser l'image dans les blocs, mais ne pas l'afficher dans l'entête de la page.
 
