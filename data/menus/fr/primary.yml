@@ -49,10 +49,10 @@ items:
     path: "/pages/privatisation"
     file: content/fr/pages/privatisation/_index.html
   - title: Soutenir la Fabrique
-    target: "/soutenir-la-fabrique/"
+    target: "/ils-nous-soutiennent/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/soutenir-la-fabrique"
-    file: content/fr/pages/soutenir-la-fabrique/_index.html
+    path: "/pages/ils-nous-soutiennent"
+    file: content/fr/pages/ils-nous-soutiennent/_index.html
 
