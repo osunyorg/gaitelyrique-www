@@ -63,7 +63,7 @@
 
         figure > *
             margin-left: auto
-        
+
         &.call_to_action--without-text
             .actions
                 margin-top: 0 !important
@@ -73,3 +73,7 @@
                 > div
                     .actions a + a
                         margin-top: $spacing-2
+                    .top
+                        grid-column: 1 / 13 !important
+                        .block-title
+                            margin-bottom: $spacing-3
