@@ -47,3 +47,14 @@ Pour afficher ces icônes, il faut éditer le bloc "fichiers" :
 - cliquer sur "Réglages avancés";
 - pour l'icône avec la bouteille : ajouter la class `icon-menu`;
 - pour celle avec les personnes : ajouter la class `icon-public`.
+
+## Masquer l'image d'entête dans certaines pages
+
+Cas concret : [page "salle immersive"](https://www.gaitelyrique.osuny.site/infos-pratiques/le-lieu/)
+
+On souhaite utiliser l'image dans les blocs, mais ne pas l'afficher dans l'entête de la page.
+
+#### Comment faire ?
+
+Pour cela, il faut éditer la page et sous le slug ajouter la class `hero_without_image`.
+Pour plus de détails, se référer à l'issue [#77](https://github.com/osunyorg/gaitelyrique-www/issues/77#issuecomment-3640803013).
