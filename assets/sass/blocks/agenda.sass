@@ -1,5 +1,6 @@
 .block.block-agenda 
     &--grid
+        @include extendable-list('.events')
         .event-title
             @include h4
         .event-subtitle
@@ -11,14 +12,7 @@
                 order: -1
                 margin-top: 0
                 margin-bottom: $spacing-1
-        @include in-page-without-sidebar
-            .events
-                display: flex
-                flex-wrap: wrap
-                > li
-                    flex: 1
-                    min-width: columns(3)
-
+    
     &--list
         .events
             > li:last-child

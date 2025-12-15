@@ -87,7 +87,10 @@ params:
           desktop:  864
       posts:
         item:
-          desktop:  864
+          desktop:  894
+        layouts:
+          grid:
+            desktop:  894
       home:
         hero:
           tablet:   1200
