@@ -25,6 +25,7 @@
 
 .posts
     &--grid
+        @include extendable-list('&')
         [itemprop="abstract"]
             margin-top: $spacing-2
             order: 2
@@ -58,13 +59,19 @@
     
     &--highlight
         .list,
-        .post:not(:last-child)
+        .list > li:not(:last-child)
             border-color: rgba($color-border, .3)
             border-width: 1px
-        .list .post
-            .post-title
-                @include lead
+        .list
+            .post
+                .post-title
+                    @include body-text
+                .post-meta
+                    margin-top: $spacing-2
         @include media-breakpoint-up(desktop)
+            .list > li
+                padding-bottom: space(8) 
+                margin-bottom: space(8) 
             .highlight-post
                 position: relative
                 &::after
