@@ -39,6 +39,12 @@
     .taxonomies-single
         .terms a
             @include h4
+
+    // hide image in page (to keep it in item)
+    body.page-hero_without_image &.hero--with-image
+        .hero-content > div:first-of-type:has(figure:only-child),
+        figure
+            display: none
     
     body:not(.events__page):not(.exhibitions__page):not(.persons__page) &
         .content
