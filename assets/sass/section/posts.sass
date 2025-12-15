@@ -12,12 +12,27 @@
 
 // single
 .posts__page
+    .toc-container
+        border-top: none !important
     .hero
         .lead
             @include lead-hero
         h1
             @include h2
-    
+    .section-sidebar
+        .taxonomies-single
+            li.terms
+                display: block
+                ul
+                    text-align: left !important
+                &:not(first-child)
+                    border-top: 0
+                span, a
+                    @include meta-serif
+                li
+                    margin-left: 0
+                    &, a
+                        text-align: left !important
     @include media-breakpoint-down(desktop)
         .section-sidebar
             margin-top: -$spacing-2
