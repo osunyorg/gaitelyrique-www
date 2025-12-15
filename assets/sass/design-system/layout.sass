@@ -18,7 +18,8 @@ main:not(.page-with-blocks)
         main
             margin-bottom: space(24)
 
-// blocks
+// BLOCKS
+// title's arrow
 .block
     .block-title a::after
         content: none
@@ -43,6 +44,27 @@ main:not(.page-with-blocks)
             transition: transform 0.3s ease
         &:hover::after
             transform: translateX(10px)
+
+// remove margin between two alt/accent blocks following each other
+.block[class*="--alt_background"],
+.block-chapter--accent_background,
+.block-class-background-alt
+    + .block-class-background-alt
+        margin-top: 0
+
+// block with extendable grid (grid varies to suit item's number)
+@mixin extendable-list($list: '> ul')
+    @include in-page-without-sidebar
+        #{$list}
+            display: flex
+            flex-wrap: wrap
+            > li 
+                width: columns(4)
+
+                @each $items, $columns in (2: 6, 4: 3, 8: 3)
+                    &:first-child:nth-last-child(#{$items}),
+                    &:first-child:nth-last-child(#{$items}) ~ li
+                        width: columns($columns)
 
 // items media
 article
@@ -163,17 +185,3 @@ main .blocks
 
     &.meta
         @include h6
-
-// block with extendable grid (grid varies to suit item's number)
-@mixin extendable-list($list: '> ul')
-    @include in-page-without-sidebar
-        #{$list}
-            display: flex
-            flex-wrap: wrap
-            > li 
-                width: columns(4)
-
-                @each $items, $columns in (2: 6, 4: 3, 8: 3)
-                    &:first-child:nth-last-child(#{$items}),
-                    &:first-child:nth-last-child(#{$items}) ~ li
-                        width: columns($columns)
