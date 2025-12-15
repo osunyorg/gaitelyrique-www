@@ -129,7 +129,7 @@
             + .extendable-list
                 .event-time-slot
                     @include h5
-    
+
         .event-summary
             &, .type
                 @include h6
@@ -154,7 +154,16 @@
                     @include small
                     font-family: $body-font-family
                     font-weight: normal
-    
+        .event-slots
+            > .btn
+                @include link
+                @include h6
+                padding: 0
+                border: 0
+                background: none
+                text-transform: none
+                &::after
+                    content: ' ↓'
     .programme-btn-container
         .btn
             &, &:hover
