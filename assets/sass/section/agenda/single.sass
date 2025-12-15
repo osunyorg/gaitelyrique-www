@@ -186,12 +186,14 @@
 
     .event-practicals
         display: flex
+        align-items: start
         flex-direction: column
         gap: $vertical-space-1
         > h2
             @extend .sr-only
         .btn
-            display: block
+            @include h3
+            display: table
             order: -1
             text-transform: uppercase
             overflow: hidden
@@ -202,14 +204,15 @@
             &[target="_blank"]
                 &::after
                     display: none
-            @include media-breakpoint-down(desktop)
-                @include h2
-                --btn-padding: #{space(5)} #{space(3)}
-                text-transform: uppercase
-            @include media-breakpoint-up(desktop)
-                --btn-font-size: 4.8vw
-                --btn-line-height: 4.8vw
-                text-transform: uppercase
+            // @include media-breakpoint-up(desktop)
+                // --btn-font-size: 4.8vw
+                // --btn-line-height: 4.8vw
+        @include media-breakpoint-down(desktop)
+            .btn
+                --btn-padding: #{space(3)} #{space(3)}
+        @include media-breakpoint-up(desktop)
+            p
+                padding-right: columns(2)
 
     // .event-summary
     //     .dropdown-calendar
