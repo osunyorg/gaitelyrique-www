@@ -66,6 +66,9 @@
             .post
                 .post-title
                     @include body-text
+                    font-weight: bold
+                    ~ p 
+                        display: none
                 .post-meta
                     margin-top: $spacing-2
         @include media-breakpoint-up(desktop)
@@ -74,6 +77,8 @@
                 margin-bottom: space(8) 
             .highlight-post
                 position: relative
+                .post-title
+                    font-weight: bold
                 &::after
                     background-color: rgba($color-border, .3)
                     content: ''
