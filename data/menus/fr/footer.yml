@@ -43,4 +43,11 @@ items:
   children: []
   path: "/pages/newsletter"
   file: content/fr/pages/newsletter/_index.html
+- title: Devenez partenaire
+  target: "/devenez-partenaire/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/devenez-partenaire"
+  file: content/fr/pages/devenez-partenaire/_index.html
 
