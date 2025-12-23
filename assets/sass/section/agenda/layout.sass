@@ -83,6 +83,15 @@
             @include h3
     .event-categories a
         @include h6
+    @include media-breakpoint-down(desktop)
+        .event, .exhibition
+            &--with-image .media,
+            &-timeslot,
+            &-description
+                margin-top: 0
+            &-content > *:where(:not(.more)),
+            &-title
+                margin-bottom: space(4)
 
 .exhibitions--agenda,
 .events--agenda,
@@ -110,7 +119,7 @@
         .event-content
             display: flex
             flex-direction: column
-    
+
     @include media-breakpoint-down(desktop)
         .events-date
             padding-top: 0
@@ -119,23 +128,15 @@
             padding-bottom: $spacing-1
             + .event
                 padding-top: space(6) !important
-        .event
-            &--with-image .media
-                margin-bottom: space(4)
-            .event-hours,
-            .event-description
-                margin-top: 0
-            .event-content > *:where(:not(.event-description))
-                margin-bottom: pxToRem(10)
-            .event-timeslot
-                // display: flex
-                // justify-content: space-between
-                // flex-wrap: wrap
-                // gap: $spacing-1
-                .event-place
-                    @include meta
-                * + * 
-                    margin-top: 0
+        .event, .exhibition
+            .event, .exhibition
+                &-title
+                    @include h2
+                &-timeslot
+                    &-place
+                        @include meta
+                    * + * 
+                        margin-top: 0
     @include media-breakpoint-up(desktop)
         .event
             .event-timeslot
