@@ -1,0 +1,8 @@
+{{ $time := . }}
+{{ $format := "15h04" }}
+
+{{ if eq ( $time | time.Format "04" ) "00" }}
+  {{ $format = "15h" }}
+{{ end }}
+
+{{ return $format }}
