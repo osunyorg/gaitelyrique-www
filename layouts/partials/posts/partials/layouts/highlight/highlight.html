@@ -1,0 +1,44 @@
+{{ $options := .options }}
+{{ $heading_level := .heading_level | default 3 }}
+{{ $heading_tag := partial "GetHeadingTag" (dict 
+  "level" $heading_level 
+  "attributes" "class='post-title' itemprop='headline'"
+)}}
+
+{{ $options = merge $options (dict "with_more" true) }}
+
+<ul class="highlight">
+  {{ $highlight := index .posts 0 }}
+  {{ $highlight = site.GetPage $highlight.path }}
+  {{ $list := .posts }}
+
+  {{ with $highlight }}
+    {{ partial "posts/partials/post.html" (dict 
+      "post" .
+      "heading_level" $heading_level
+      "options" $options
+      "layout" "highlight"
+    )}}
+  {{ end }}
+
+  {{ with $list }}
+    {{ $first := true }}
+    <li>
+      <ul class="list">
+        {{ range after 1 . }}
+          {{ with site.GetPage .path }}
+            {{ $title := partial "PrepareHTML" .Title }}
+            {{ $reading_time := .Params.contents_reading_time }}
+            {{ partial "posts/partials/post.html" (dict 
+              "post" .
+              "heading_level" $heading_level
+              "options" $options
+              "layout" "list"
+            )}}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </li>
+  {{ end }}
+  </ul>
+

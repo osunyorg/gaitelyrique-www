@@ -58,37 +58,45 @@
                             @include h2
     
     &--highlight
+        --color-border: #{rgba($color-border, .3)}
         .list,
         .list > li:not(:last-child)
-            border-color: rgba($color-border, .3)
+            // border-color: rgba($color-border, .3)
             border-width: 1px
         .list
             .post
+                flex-direction: row
+                justify-content: space-between
+                gap: var(--grid-gutter)
                 .post-title
                     @include body-text
-                    font-weight: bold
-                    ~ p 
-                        display: none
+                [itemprop="abstract"]
+                    display: none
                 .post-meta
+                    text-align: left
                     margin-top: $spacing-2
+                    time::before
+                        content: '—' / ""
+                .media
+                    flex-shrink: 0
+                    width: columns(4)
+                    margin-bottom: 0
+                    order: 2
         @include media-breakpoint-up(desktop)
-            .list > li
-                padding-bottom: space(8) 
-                margin-bottom: space(8) 
+            .list
+                > li
+                    padding-bottom: space(8) 
+                    margin-bottom: space(8) 
+                    .post
+                        .media
+                            width: columns(2)
+        @include in-page-without-sidebar
             .highlight-post
                 position: relative
-                .post-title
-                    font-weight: bold
-                &::after
-                    background-color: rgba($color-border, .3)
-                    content: ''
-                    height: 100%
-                    position: absolute
-                    right: 0
-                    top: 0
-                    width: 1px
-                    transform: translateX(calc(var(--grid-gutter) / 2))
-    
+                padding-right: calc(var(--grid-gutter) / 2)
+                margin-right: calc(var(--grid-gutter-negative) / 2)
+                border-right: 1px solid var(--color-border)
+
     &--grid
         @include in-page-without-sidebar
             .posts
