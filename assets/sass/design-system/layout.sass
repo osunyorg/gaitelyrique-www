@@ -4,7 +4,6 @@
 h1, h2, h3
     word-break: auto-phrase
     hyphens: auto
-    max-width: 100%
 
 main:not(.page-with-blocks, .page-with-map),
 body[class*="__section"] main
@@ -51,6 +50,9 @@ main:not(.page-with-blocks)
             transition: transform 0.3s ease
         &:hover::after
             transform: translateX(10px)
+    [class$="-title"]
+        max-width: 100%
+
 
 // remove margin between two alt/accent blocks following each other
 .block[class*="--alt_background"],
