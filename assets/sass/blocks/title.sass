@@ -14,7 +14,7 @@
     @include in-page-without-sidebar
         max-width: 100%
 
-body:not(.posts__page, .events__page) .heading.block-title h2
+.heading.block-title h2
     max-width: 100%
 
 // heading title block with sidebar
@@ -25,21 +25,14 @@ body:not(.full-width) .block.heading
             margin-left: offset(4)
 
 // global heading block and block title
-body:not(.posts__page, .events__page) .heading.block-title h2,
+.heading.block-title h2,
 body.full-width .block .block-title
     @extend .title-with-border
 
 // block titles
-body:not(.full-width, .events__page, .posts__page)
+body:not(.full-width)
     .block .block-title
         @include lead
-
-// heading block appareance in posts
-.heading.block-title
-    body.posts__page &,
-    body.events__page &
-        h2
-            @include lead
 
 // remove arrow from titles
 .block .block-title
