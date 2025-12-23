@@ -1,4 +1,8 @@
 .block-chapter
+    &--no_background
+        margin-bottom: var(--heading-margin-bottom)
+        + .block-chapter--no_background
+            --block-space-y: var(--heading-margin-bottom)
     &--alt_background
         .top .block-title
             @include h2

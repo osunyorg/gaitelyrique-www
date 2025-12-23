@@ -26,6 +26,7 @@ params:
     index:
       archives: false
       sticky_dates: false
+      per_page: 15
       options:
         place: true
       highlight_exhibitions:
