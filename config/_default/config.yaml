@@ -28,6 +28,10 @@ params:
       sticky_dates: false
       options:
         place: true
+      highlight_exhibitions:
+        future:
+          options:
+            image: true
     single:
       time_slots:
         date_format: ":date_full"
