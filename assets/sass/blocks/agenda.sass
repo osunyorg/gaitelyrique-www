@@ -1,4 +1,7 @@
 .block.block-agenda 
+    .event
+        .more
+            margin-top: $spacing-3
     &--grid
         @include extendable-list('.events')
         .event-title
@@ -74,8 +77,6 @@
                         @include link(var(--color-text))
                         &:not(:hover)
                             text-decoration-color: transparent
-                .more
-                    margin-top: $spacing-3
             @include in-page-without-sidebar
                 align-items: flex-start
                 

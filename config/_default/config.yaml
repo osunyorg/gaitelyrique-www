@@ -33,6 +33,8 @@ params:
         date_format: ":date_full"
     share_links:
       enabled: false
+    list:
+      with_more: true
   exhibitions:
     share_links:
       enabled: false
