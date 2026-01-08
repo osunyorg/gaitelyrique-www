@@ -116,6 +116,14 @@
         @include media-breakpoint-down(desktop)
             &, .event-practicals
                 margin-top: space(7)
+        @include media-breakpoint-up(desktop)
+            .block .block-content
+                padding-left: offset(6)
+            .block.heading h2
+                margin-left: offset(6)
+            .section-sidebar
+                width: columns(6)
+                z-index: $zindex-aside
 
     .event-access
         .events-slots-title
@@ -376,16 +384,7 @@
 .events__page,
 .exhibitions__page
     @include media-breakpoint-up(desktop)
-    .document-content
-        .section-sidebar
-            width: columns(6)
-            z-index: $zindex-aside
-        > .blocks
-            // Generic
-            .block .block-content
-                padding-left: offset(6)
-            .block.heading h2
-                margin-left: offset(6)
+        .document-content > .blocks
 
             [class*="--grid"]:not(.block-links, .block-gallery)
                 .media
