@@ -4,6 +4,7 @@
             @include h5
             content: '→'
     
-    &--list
-    &--grid
-    &--cards
+    &:not(.block-links--cards)
+        gap: space(4)
+        .link-content a
+            @include h5
