@@ -2,6 +2,11 @@
     .event
         .more
             margin-top: $spacing-3
+        .event-parent
+            margin-bottom: space()
+            margin-top: 0
+        
+    
     &--grid
         @include extendable-list('.events')
         .event-title
@@ -12,9 +17,14 @@
             display: flex
             flex-direction: column
             .event-categories
-                order: -1
+                order: -2
                 margin-top: 0
                 margin-bottom: $spacing-1
+        
+        @include media-breakpoint-down(desktop)
+            .event
+                .event-schedule
+                    margin-top: 0
     
     &--list
         .events
@@ -24,7 +34,10 @@
         .event
             .event-content
                 display: flex
-                flex-direction: column
+                flex-direction: column            
+                > .event-parent
+                    margin-bottom: 0
+            
             .event-categories
                 @include h5
                 order: -1
@@ -46,14 +59,13 @@
                         margin-left: offset(2)
                         width: columns(4)
             
-            @include media-breakpoint-down(desktop)
-                .event-content
-                    > .event-parent
-                        margin-bottom: 0
-                &--with-image
-                    .media
-                        max-width: 100%
-    
+        @include media-breakpoint-down(desktop)
+            article
+                gap: 0
+            .event--with-image
+                .media
+                    max-width: 100%
+            
     &--large
         .event
             .event-content

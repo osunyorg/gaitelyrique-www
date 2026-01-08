@@ -1,7 +1,7 @@
 
 // Parent event
 .events__page
-    .event-parent
+    .document-content + .event-parent
         .event-parent__title
             @extend .title-with-border
             @include h4
@@ -378,25 +378,25 @@
 
     // specific fixes for blocks
     .blocks
+        .block-features,
+        .block-pages,
+        .block-agenda,
+        .block-projects
+            li 
+                .name,
+                [class*="-title"],
+                    @include h5
+                [class*="-subtitle"],
+                    @include h6
+
+        .block-agenda--list
+            .event-schedule
+                @include h6
+
         @include media-breakpoint-up(desktop)
             .block-key_figures
                 strong
                     font-size: $block-key_figures-number-font-size-desktop
-
-            .block-features,
-            .block-pages,
-            .block-agenda,
-            .block-projects
-                li 
-                    .name,
-                    [class*="-title"],
-                        @include h5
-                    [class*="-subtitle"],
-                        @include h6
-
-            .block-agenda--list
-                .event-schedule
-                    @include h6
 
             .block-pages
                 li
@@ -409,10 +409,13 @@
             
             [class*="--large"]
                 li
+                    article
+                        gap: var(--column-width)
                     [class*="-title"],
                     [class*="-title"] a
                         @include h4
-
+                    [class*="-content"]
+                        flex: 1
                     .media
                         width: offset(2)
 

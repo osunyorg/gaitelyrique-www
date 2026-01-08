@@ -1,29 +1,30 @@
 .block-posts,
 .posts
-    .post
-        .post-content
-            display: flex
-            flex-direction: column
-        .post-title
-            @include lead
-        .post-subtitle
-            @include body-text
-        .post-meta
-            time::before
-                content: '—' / ""
-                margin-right: space(2)
-        .post-categories
-            order: -1
-            margin-top: 0
-            a
-                @include h6
-                color: var(--color-text)
-                text-decoration: none
-                &:hover
-                    text-decoration: underline
-        .post-meta
-            time
-                @include small
+    li
+        .post
+            .post-content
+                display: flex
+                flex-direction: column
+            .post-title
+                @include lead
+            .post-subtitle
+                @include body-text
+            .post-meta
+                time::before
+                    content: '—' / ""
+                    margin-right: space(2)
+            .post-categories
+                order: -1
+                margin-top: 0
+                a
+                    @include h6
+                    color: var(--color-text)
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+            .post-meta
+                time
+                    @include small
 
 .posts
     &--grid
