@@ -153,12 +153,14 @@ main .blocks
     figure
         &:hover
             figcaption .credit p
-                font-size: var(--small-size)
-                gap: $spacing-1
+                &, a
+                    font-size: var(--small-size)
+                    gap: $spacing-1
 
         figcaption
             @include media-breakpoint-up(desktop)
                 margin-top: 0
+                position: relative
                 .credit 
                     background: var(--color-background) !important
                     bottom: 0
@@ -170,24 +172,37 @@ main .blocks
                         align-items: baseline
                         color: var(--color-text)
                         display: flex
-                        flex-direction: row-reverse
-                        font-size: 0
+                        flex-wrap: wrap
                         line-height: 1
                         padding: space() $spacing-1
+                        &, a
+                            font-size: 0
                         span
                             font-size: var(--small-size)
                             &[aria-hidden]:first-child
                                 margin-right: 0
-                > div:not(.credit)
+                                order: 3
+                
+                > div:where(:not(.credit))
                     margin-top: $spacing-1
                     + .credit
-                        bottom: $spacing-2
-                        transform: translateY(-100%)
+                        bottom: calc(100% + #{space(2)})
+            
             @include media-breakpoint-down(desktop)
                 @include meta
                 text-align: right
                 margin-top: $spacing-1
 
+    
+    &.block-gallery
+        figure
+            @include media-breakpoint-up(desktop)
+                &:hover
+                    .credit p
+                        a
+                            width: 100%
+                        span[aria-hidden]:first-child
+                            margin-left: auto
 // more
 .more
     &::after
