@@ -13,6 +13,9 @@ params:
   logo:
     header: '/assets/images/logo.svg'
     footer: '/assets/images/logo-footer.svg'
+  i18n:
+    positions:
+      - primary
   blocks:
     ignored:
       - block-class-in-hero
