@@ -356,20 +356,6 @@
                     margin-bottom: $spacing-2
                     + .block
                         margin-top: $spacing-2
-            @include media-breakpoint-up(desktop)
-                .block-gallery
-                    z-index: 1
-                .block-persons
-                    .persons
-                        @include grid(3)
-                        .avatar
-                            width: offset(1)
-                .block-organizations
-                    .organizations
-                        @include grid(4)
-                        @include grid(5, xxl)
-                        .media
-                            padding: 0
 
     @include media-breakpoint-up(desktop)
         .programme-btn-container
@@ -393,20 +379,25 @@
             .event-schedule
                 @include h6
 
-        @include media-breakpoint-up(desktop)
-            .block-key_figures
-                strong
-                    font-size: $block-key_figures-number-font-size-desktop
 
-            .block-pages
-                li
-                    .page-title + p
-                        margin-top: space()
-            
-            [class*="--grid"]:not(.block-links)
+// BLOCKS
+.events__page,
+.exhibitions__page
+    .document-content > .blocks
+        @include media-breakpoint-up(desktop)
+
+            // Generic
+
+            [class*="--grid"]:not(.block-links, .block-gallery)
                 .media
                     margin-bottom: space(4)
             
+            [class*="--alternate"]
+                .block-content
+                    > ul
+                        > li
+                            margin-top: var(--grid-gutter)
+
             [class*="--large"]
                 li
                     article
@@ -419,6 +410,44 @@
                     .media
                         width: offset(2)
 
+            // Specifics
+
+            .block-persons
+                .persons
+                    @include grid(3)
+                    .avatar
+                        width: offset(1)
+
+            .block-organizations
+                .organizations
+                    @include grid(4)
+                    @include grid(5, xxxl)
+                    .media
+                        padding: 0
+
+            .block-testimonials
+                figure
+                    width: columns(6)
+
+            .block-gallery
+                z-index: 1
+                &.block-gallery--grid
+                    .gallery
+                        @include flexbox-grid(2)
+
+            .block-key_figures
+                strong
+                    font-size: $block-key_figures-number-font-size-desktop
+
+            .block-pages
+                li
+                    .page-title + p
+                        margin-top: space()
+                &--cards
+                    .pages
+                        grid-template-columns: 1fr
+
+            // Todo : necessary ???
             .program,
             .location
                 &--grid

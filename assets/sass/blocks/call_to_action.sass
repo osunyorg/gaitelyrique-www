@@ -21,9 +21,14 @@
     
     .call_to_action
         .top
+            &:only-child
+                margin-bottom: 0
+            
             .block-title
                 @include h4
                 margin-bottom: $spacing-1
+                &:only-child
+                    margin-bottom: 0
             .description p
                 @include body-text
         
