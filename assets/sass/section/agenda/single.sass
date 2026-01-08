@@ -116,14 +116,6 @@
         @include media-breakpoint-down(desktop)
             &, .event-practicals
                 margin-top: space(7)
-        @include media-breakpoint-up(desktop)
-            .block .block-content
-                padding-left: offset(6)
-            .block.heading h2
-                margin-left: offset(6)
-            .section-sidebar
-                width: columns(6)
-                z-index: $zindex-aside
 
     .event-access
         .events-slots-title
@@ -380,13 +372,20 @@
                 @include h6
 
 
-// BLOCKS
+// BLOCKS INSIDE 6 COLUMNS
 .events__page,
 .exhibitions__page
-    .document-content > .blocks
-        @include media-breakpoint-up(desktop)
-
+    @include media-breakpoint-up(desktop)
+    .document-content
+        .section-sidebar
+            width: columns(6)
+            z-index: $zindex-aside
+        > .blocks
             // Generic
+            .block .block-content
+                padding-left: offset(6)
+            .block.heading h2
+                margin-left: offset(6)
 
             [class*="--grid"]:not(.block-links, .block-gallery)
                 .media
