@@ -2,6 +2,8 @@ header#document-header
     align-items: center
     display: flex
     justify-content: center
+    .upper-menu
+        display: none
     nav.primary-menu .header-button
         &[aria-expanded="false"]
             span:last-of-type::before
@@ -19,16 +21,38 @@ header#document-header
             display: none
     
     .additional-menu
-        align-items: baseline
-        display: flex
-        justify-content: flex-end
-        gap: space(6)
-        .search-button--primary
+        &, > ul
+            align-items: baseline
+            display: flex
+            justify-content: flex-end
+            gap: space(6)
+        
+        ul
+            list-style: none
+            padding-left: 0
+        
+        .search-button--primary,
+        .primary-i18n
             padding: 0
             width: auto
             line-height: var(--meta-line-height)
             @include media-breakpoint-down(desktop)
                 display: none
+
+        .search-button--primary,
+        .primary-i18n > span
+            align-items: baseline
+            display: flex
+            flex-direction: row-reverse
+        
+        .primary-i18n > span
+            @include icon-chevron(before)
+            text-transform: capitalize
+            gap: pxToRem(6)
+            &[aria-expanded]::before
+                font-size: 65%
+                margin-left: 0
+                font-weight: normal
         
         @include media-breakpoint-up(xxl)
             gap: space(9)
@@ -43,7 +67,8 @@ header#document-header
             @include media-breakpoint-down(xl)
                 margin-left: auto
     .search-button,
-    .change-color-mode-button
+    .change-color-mode-button,
+    .primary-i18n
         span
             @include small
             font-weight: bold

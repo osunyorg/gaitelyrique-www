@@ -18,9 +18,9 @@
     font-family: 'Icons-site'
     font-size: pxToRem(16)
 
-@mixin icon-chevron
+@mixin icon-chevron($position: after)
     &[aria-expanded]
-        &::after
+        &::#{$position}
             @include icon-site('icon-chevron')
             margin-left: 0.5em
             display: inline-block
@@ -29,7 +29,7 @@
             @include media-breakpoint-down(desktop)
                 font-size: 60%
     &[aria-expanded="true"]
-        &::after
+        &::#{$position}
             transform: rotate(180deg)
 
 @mixin meta-serif

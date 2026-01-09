@@ -1,12 +1,14 @@
 <div class="additional-menu">
-  {{ partial "commons/search/button.html" "primary" }}
-
-  {{ if in site.Params.i18n.positions "primary" }}
-    {{ partial "commons/i18n.html" (dict
-        "context" .
-        "position" "primary"
-      )}}
-  {{ end }}
+  <ul>
+    {{ partial "commons/search/button.html" "primary" }}
+  
+    {{ if in site.Params.i18n.positions "primary" }}
+      {{ partial "commons/i18n.html" (dict
+          "context" .
+          "position" "primary"
+        )}}
+    {{ end }}
+  </ul>
 
   <button class="change-color-mode-button">
     <span class="label">{{ i18n "commons.header.modes.label" }}</span>
