@@ -2,6 +2,10 @@
     &--grid
         [class$="-title"]
             @include h4
+        article:not(:has(.more))
+            [class$="-title"] a::after
+                content: '→'
+                font-family: inherit
     
     &--list
         @include in-page-without-sidebar
