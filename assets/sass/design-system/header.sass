@@ -2,8 +2,11 @@ header#document-header
     align-items: center
     display: flex
     justify-content: center
-    .upper-menu
-        display: none
+    flex-wrap: wrap
+
+    .upper-menu .nav-level-1 > li > a
+        @include meta
+    
     nav.primary-menu .header-button
         &[aria-expanded="false"]
             span:last-of-type::before
@@ -53,6 +56,14 @@ header#document-header
                 font-size: 65%
                 margin-left: 0
                 font-weight: normal
+
+        .primary-i18n 
+            cursor: pointer
+            .dropdown-languages 
+                a
+                    padding: 0
+                li + li
+                    margin-top: $spacing-1
         
         @include media-breakpoint-up(xxl)
             gap: space(9)
@@ -66,10 +77,11 @@ header#document-header
             // align additional menu on the right of the 2nd line in medium devices
             @include media-breakpoint-down(xl)
                 margin-left: auto
+    
     .search-button,
     .change-color-mode-button,
     .primary-i18n
-        span
+        span, a
             @include small
             font-weight: bold
             white-space: nowrap
@@ -151,6 +163,9 @@ header#document-header
         .nav-level-1
             > li > a
                 @include h5
+        
+        .primary-i18n .dropdown-languages
+            margin-top: $spacing-4
     
     @include media-breakpoint-down(desktop)
         nav.primary-menu
