@@ -3,12 +3,16 @@
         .person
             .person-name
                 @include h6
+            .more
+                @include meta
+
             @include media-breakpoint-up(desktop)
                 gap: $spacing-2
                 flex-direction: column
                 max-width: columns(3)
                 .description
                     margin-top: 0
+            
             @include media-breakpoint-down(desktop)
                 .description
                     margin-top: $spacing-1

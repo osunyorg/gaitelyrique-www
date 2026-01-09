@@ -23,8 +23,13 @@
                     &:hover
                         text-decoration: underline
             .post-meta
-                time
+                *
                     @include small
+            .more
+                @include meta
+            
+            &:hover .more::after
+                transform: translateX(space(1))
 
 .posts
     &--grid
@@ -42,15 +47,25 @@
                     flex-direction: column
                 .post-title a
                     @include h2
+                
                 @include media-breakpoint-up(desktop)
                     .post-categories
                         order: -1
-                        margin-top: $spacing-2
-                    .media
-                        width: columns(8)
+                
                 @include media-breakpoint-down(desktop)
                     .post-meta + div
                         margin-top: $spacing-2
+
+            @include in-page-without-sidebar
+                .post
+                    .post-title a
+                        @include h3
+            
+            @include in-page-with-sidebar
+                .post
+                    .post-title a
+                        @include h4
+            
             @include in-page-with-or-without-sidebar
                 &.without-images
                     .post
@@ -59,10 +74,17 @@
                             width: columns(8)
                         .post-title a
                             @include h2
+
+            
     
     &--highlight
         --color-border: #{rgba($color-border, .3)}
         --border-width: 1px
+        
+        .post
+            .post-categories
+                margin-bottom: space()
+        
         .list
             .post
                 flex-direction: row
@@ -75,6 +97,7 @@
                 .post-meta
                     text-align: left
                     margin-top: $spacing-2
+                    width: unset
                     time::before
                         content: '—' / ""
                 .media
@@ -82,14 +105,18 @@
                     width: columns(4)
                     margin-bottom: 0
                     order: 2
+        
         @include media-breakpoint-up(desktop)
             .list
                 > li
                     padding-bottom: space(8) 
                     margin-bottom: space(8) 
                     .post
+                        .post-title
+                            @include lead
                         .media
                             width: columns(2)
+        
         @include in-page-without-sidebar
             .highlight-post
                 position: relative

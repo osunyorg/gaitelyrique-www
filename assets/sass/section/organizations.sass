@@ -1,11 +1,10 @@
-.organizations__page
-    .document-content 
-        .organization-logo picture
-            background: $organization-background-color
-
+// item
 .organization
     .organization-title
         font-size: 0 !important
+    &-content
+        address
+            margin-top: $spacing-1
 
     .media--logo
         margin-bottom: 0 !important
@@ -14,10 +13,23 @@
         .media--logo
             padding: 0
 
+// list
 .organizations
     @include media-breakpoint-down(desktop)
-        @include grid(3)
+        &:not(.slider-list, .organizations--large)
+            @include grid(3)
 
+        &.slider-list
+            .slider-slide
+                width: columns(8)
+
+// single
+.organizations__page
+    .document-content 
+        .organization-logo picture
+            background: $organization-background-color
+
+// section
 body.full-width,
 .organizations__section
     .organizations--grid
@@ -25,7 +37,7 @@ body.full-width,
             grid-template-columns: repeat(6, 1fr) !important
 
 .block-organizations--grid.organizations--with-images
-    &:not(.with-summaries)
-        .organizations
-            @include media-breakpoint-down(desktop)
-                @include grid(3)
+    .organizations:not(.with-summaries)
+        @include media-breakpoint-down(desktop)
+            @include grid(3)
+
