@@ -1,0 +1,40 @@
+// item
+.job
+    &-content
+        display: flex
+        flex-direction: column
+        .job-categories
+            order: -1
+            margin-top: 0 !important
+    .more
+        @include meta
+
+// list
+.jobs
+    &--large
+        .job
+            .job-title
+                @include h4
+            .job-subtitle
+                @include h5
+            @include in-page-without-sidebar
+                .job-title
+                    @include h3
+                .job-subtitle
+                    @include h4
+    
+    &--grid
+        .job
+            .job-title
+                @include h4
+            .job-subtitle
+                @include h5
+            .media
+                margin-bottom: space(4)
+    
+    &--list
+        article.job
+            .job-title
+                @include h4
+            .job-subtitle
+                @include h5
