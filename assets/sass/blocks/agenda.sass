@@ -37,13 +37,18 @@
                 flex-direction: column            
                 > .event-parent
                     margin-bottom: 0
-            
+            .event-title
+                @include h4
+            .event-subtitle
+                @include h6
             .event-categories
                 @include h5
                 order: -1
                 margin-top: 0
                 margin-bottom: $spacing-2
-            
+            .event-dates
+                @include h6
+                
             @include in-page-without-sidebar
                 .event-content
                     width: columns(6)
@@ -51,8 +56,8 @@
                     position: absolute
                     left: 0
                     width: columns(2)
-                    .event-dates
-                        @include h6
+                &:not(.event--with-image)
+                    padding-left: offset(2)
                 &--with-image
                     .media
                         order: -1
