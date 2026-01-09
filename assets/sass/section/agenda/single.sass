@@ -27,19 +27,24 @@
         .event--with-image
             .media
                 order: -1
+
                 @include media-breakpoint-up(desktop)
                     width: columns(6)
+    
     @include media-breakpoint-down(desktop)
         .event-programme
             .events--agenda
                 .event--child
                     padding-left: 0
                     border-left: 0
+    
     @include media-breakpoint-up(desktop)
         .event-programme
             .events--agenda
                 .event--child
                     padding-left: offset(2)
+                    .event-timeslot
+                        width: columns(2)
                     .media
                         width: columns(4)
     
@@ -364,7 +369,6 @@
 
     // specific fixes for blocks
     .blocks
-        .block-features,
         .block-pages,
         .block-agenda,
         .block-projects
@@ -399,7 +403,7 @@
             [class*="--large"]:not(.block-persons)
                 li
                     article
-                        gap: var(--column-width)
+                        gap: calc(var(--column-width) / 2)
                     [class*="-title"],
                     [class*="-title"] a
                         @include h4
@@ -441,10 +445,23 @@
                 li
                     .page-title + p
                         margin-top: space()
+                
                 &--cards
                     .pages
                         grid-template-columns: 1fr
 
+            .block-call_to_action
+                &--no_background
+                    figure
+                        width: offset(2)
+                &--accent_background
+                    .call_to_action 
+                        > div
+                            padding: var(--grid-gutter)
+                        
+                        &.call_to_action--with-image > div
+                            padding-top: offset(1)
+                
             // Todo : necessary ???
             .program,
             .location

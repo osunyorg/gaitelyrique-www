@@ -118,6 +118,7 @@ main .blocks
             padding-top: 0
     .block:last-child:is([class*="--accent_background"], [class*="--alt_background"], .block-timeline--horizontal, .block-pages--cards)
         margin-bottom: var(--block-space-y)
+
 // page like 'infos pratiques' ending with 2 pages full width
 .page-ending-with-full-width-pages
     @include media-breakpoint-up(desktop)
@@ -149,7 +150,7 @@ main .blocks
             text-decoration: underline
 
 // ficaption on images for blocks
-.block
+.block:not(.block-testimonials, .block-features)
     figure
         &:hover
             figcaption .credit p

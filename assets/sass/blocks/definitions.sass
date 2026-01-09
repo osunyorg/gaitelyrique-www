@@ -7,11 +7,13 @@
             @include body-text
             padding-bottom: space(5)
             padding-top: space(5)
-            + div
-                padding-left: var(--grid-gutter)
             &::after
                 content: "↑"
                 font-family: $body-font-family
             &[aria-expanded="false"]
                 &::after
                     transform: rotate(180deg)
+
+            @include in-page-without-sidebar
+                summary + div
+                    padding-left: var(--grid-gutter)
