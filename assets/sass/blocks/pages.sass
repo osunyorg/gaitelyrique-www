@@ -1,11 +1,15 @@
 .page
-    .page-categories
-        order: -1
-        margin-top: 0
+    .page-content
+        display: flex
+        flex-direction: column
+        
+        .page-categories
+            order: -1
+            margin-top: 0 !important
+        .more
+            @include meta      
     .media
         order: -2
-    .more
-        @include meta      
     
 .block.block-pages
     .top .block-title,
@@ -76,8 +80,29 @@
                     @include h2
 
     &--list
+        .list
+            .page a::before
+                content: '→'
+                font-family: inherit
+        
         @include in-page-without-sidebar
             .pages:where(:not(.title-only))
                 .page
                     .page-title
                         @include h4
+            
+            &.with-description
+                .block-title::after
+                    width: columns(12)
+
+    &--alternate
+        .page
+            display: flex
+            flex-direction: column
+            .page-categories
+                order: -1
+                margin-top: 0 !important
+            .more
+                @include meta      
+            .media
+                order: -2
