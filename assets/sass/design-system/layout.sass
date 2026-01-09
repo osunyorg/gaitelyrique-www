@@ -164,11 +164,9 @@ main .blocks
                 &, a
                     font-size: var(--small-size)
                     gap: $spacing-1
-
         figcaption
             @include media-breakpoint-up(desktop)
-                margin-top: 0
-                position: relative
+                margin-top: 0 !important
                 .credit 
                     background: var(--color-background) !important
                     bottom: 0
@@ -200,17 +198,33 @@ main .blocks
                 @include meta
                 text-align: right
                 margin-top: $spacing-1
-
     
-    &.block-gallery
-        figure
-            @include media-breakpoint-up(desktop)
-                &:hover
-                    .credit p
-                        a
-                            width: 100%
-                        span[aria-hidden]:first-child
-                            margin-left: auto
+    @include media-breakpoint-up(desktop)
+        &:not(.block-call_to_action)
+            figure figcaption
+                position: relative
+        
+        &.block-call_to_action,
+        &.block-gallery
+            figure:hover
+                .credit p
+                    a
+                        width: 100%
+                    span[aria-hidden]:first-child
+                        margin-left: auto
+                        
+        &.block-call_to_action
+            figure figcaption a
+                color: var(--color-text)
+
+    @include in-page-with-sidebar
+        &.block-call_to_action
+            figure,
+                width: calc(#{columns(3)} + var(--column-width))
+                figcaption
+                    margin-left: 0
+                    .credit
+                        max-width: columns(3)
 // more
 .more
     &::after
