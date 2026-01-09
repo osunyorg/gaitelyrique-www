@@ -1,6 +1,24 @@
-.categories--grid
-    [class$="-title"]
-        @include h4
+.categories
+    &--grid
+        [class$="-title"]
+            @include h4
+    
+    &--list
+        @include in-page-without-sidebar
+            article [class$="-content"]
+                [class$="-title"]
+                    @include h4
+
+.category-item
+    .more
+        @include meta
+
+.block.block-categories--large
+    .categories
+        @include in-page-with-sidebar
+            article [class$="-content"]
+                [class*="-title"]
+                    @include h4
 
 .children-categories
     ul 
@@ -14,8 +32,10 @@
                 text-decoration: none
                 &:hover
                     text-decoration: 1px solid inherit
+                
                 @include media-breakpoint-up(desktop)
                     @include h5
+        
         @include media-breakpoint-up(desktop)
             padding-top: space(5)
             padding-bottom: space(4)
@@ -29,6 +49,7 @@
         @include small
         @include icon-chevron
         font-weight: bold
+    
     .taxonomies-list
         .dropdown
             .taxonomy-categories-list

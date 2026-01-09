@@ -149,6 +149,13 @@ main .blocks
         a:hover
             text-decoration: underline
 
+// cards title size
+.block-pages--cards .pages,
+.categories--cards
+    article
+        [class*="-title"]
+            @include h4
+
 // ficaption on images for blocks
 .block:not(.block-testimonials, .block-features)
     figure
