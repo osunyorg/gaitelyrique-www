@@ -12,24 +12,23 @@ header#document-header
             span:last-of-type::before
                 @include icon-site("icon-close")
     
-    .nav-search
-        .search-button
-            justify-content: flex-start
-            &::after
-                order: -1
+    // only use default search button for mobile
+    .nav-search .search-button
         @include media-breakpoint-up(desktop)
             display: none
-    
+
     .additional-menu
         &, > ul
             align-items: baseline
-            display: flex
             justify-content: flex-end
             gap: space(6)
+            display: flex
         
         ul
             list-style: none
             padding-left: 0
+            @include media-breakpoint-down(desktop)
+                display: none
         
         .search-button--primary,
         .primary-i18n
@@ -42,8 +41,9 @@ header#document-header
         .search-button--primary,
         .primary-i18n > span
             align-items: baseline
-            display: flex
             flex-direction: row-reverse
+            @include media-breakpoint-up(desktop)
+                display: flex
         
         .primary-i18n > span
             @include icon-chevron(before)
@@ -179,6 +179,7 @@ header#document-header
                     margin-top: 0
                     order: 1
             .menu
+                --header-menu-max-height: 70svh
                 margin-top: space(-4)
                 order: 2
 
