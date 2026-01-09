@@ -3,11 +3,20 @@
     .page .page-title,
         a::after
             display: none
+    
     &.block-class-background-alt
         background-color: var(--color-background-alt)
         .block-content
             padding-bottom: $spacing-4
             padding-top: $spacing-4
+
+    .page            
+        .page-categories
+            order: -1
+            margin-top: 0
+        .media
+            order: -2
+    
     @include in-page-without-sidebar
         .top
             display: block
@@ -17,6 +26,7 @@
                 margin-left: 0
                 p
                     @include body-text
+    
     &--grid
         .pages
             article
@@ -50,8 +60,10 @@
             .media
                 img
                     aspect-ratio: 16/9
+                
                 @include media-breakpoint-up(desktop)
                     order: 2
+
                 @include media-breakpoint-down(desktop)
                     margin-left: 0
                     margin-right: 0
@@ -60,3 +72,15 @@
                 align-items: flex-start
                 .page-title
                     @include h2
+
+    &--cards
+        .page
+            .page-title
+                @include h4
+
+    &--list
+        @include in-page-without-sidebar
+            .pages:where(:not(.title-only))
+                .page
+                    .page-title
+                        @include h4
