@@ -1,0 +1,47 @@
+.project
+    .project-description
+        display: flex
+        flex-direction: column
+    .project-categories
+        order: -1
+        margin-top: 0
+
+    .project-content
+        .project-categories
+            margin-bottom: space(4)
+        
+        @include in-page-with-or-without-sidebar
+            .project-title
+                @include h4
+            .project-subtitle
+                @include h5
+
+.projects
+    &--grid,
+    &--alternate
+        .project
+            .media
+                margin-bottom: space(4)
+    
+    &--list
+        .project-categories
+            margin-bottom: $spacing-1
+    
+    &--list,
+    &--large
+        .project
+            .project-meta
+                order: -1
+                &,
+                .project-categories
+                    margin-top: 0
+
+    &--large
+        .project
+            .more
+                @include meta        
+            @include in-page-without-sidebar
+                .project-title
+                    @include h3
+                .project-subtitle
+                    @include h4
