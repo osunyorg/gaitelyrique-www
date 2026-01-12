@@ -28,6 +28,15 @@ body.ancestor-the-place
                     .notes,
                     .rich-text
                         width: 100%
+                .block-title
+                    padding-left: 0
+                    h2
+                        @include lead
+                        margin-left: unset
+                        padding-bottom: 0
+                        &::after
+                            content: none
+    
     .chapter
         .top
             .block-title

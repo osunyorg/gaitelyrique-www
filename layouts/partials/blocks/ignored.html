@@ -1,5 +1,5 @@
 {{ $context := .context | default . }}
-{{ $templates := .templates | default (slice "chapter" "organizations") }}
+{{ $templates := .templates | default (slice "chapter" "organizations" "title") }}
 {{ $blocks := slice }}
 
 {{ range $index, $content := $context }}
