@@ -37,12 +37,12 @@ items:
   path: "/pages/faq"
   file: content/fr/pages/faq/_index.html
 - title: Rejoindre l'équipe
-  target: "/rejoindre-l-equipe/offres-d-emploi/"
+  target: "/rejoindre-l-equipe/"
   kind: page
   new_tab: false
   children: []
-  path: "/jobs"
-  file: content/fr/jobs/_index.html
+  path: "/pages/rejoindre-l-equipe"
+  file: content/fr/pages/rejoindre-l-equipe/_index.html
 - title: Newsletter
   target: "/newsletter/"
   kind: page
