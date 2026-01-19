@@ -43,6 +43,10 @@
                 &:where(:not(.event--with-image))
                     .event-content
                         flex: unset
+
+                &:not(.event--child)
+                    .event-timeslot
+                        width: columns(2)
                 
                 &--parent ~ .event-children
                     > li
@@ -51,6 +55,8 @@
                             padding-left: columns(2)
                         .media
                             width: calc(#{columns(2)} + var(--grid-gutter))
+                        .event-timeslot
+                            width: calc(#{columns(2)} - #{space(4)})
             + .event
                 border: none
                 padding-top: 0
