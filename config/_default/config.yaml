@@ -44,9 +44,6 @@ params:
     list:
       with_more: true
   exhibitions:
-    index:
-      layout: grid
-
     share_links:
       enabled: false
     single:
