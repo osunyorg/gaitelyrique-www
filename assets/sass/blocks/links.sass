@@ -14,3 +14,25 @@
             flex-direction: column
             .block-title
                 width: 100%
+
+    &--list
+        .links > li
+            .link-content
+                display: flex
+                flex-direction: column
+                gap: $spacing-2
+                a
+                    @include h2
+                    &::after
+                        content: none
+                p
+                    @include meta
+                    text-decoration: underline
+                    text-underline-offset: 2px
+                
+                @include in-page-with-or-without-sidebar
+                    gap: $spacing-1
+
+                @include in-page-without-sidebar
+                    a
+                        width: columns(8)
