@@ -13,6 +13,12 @@
 
 // for section and blocks, when available
 .exhibitions
+    .exhibition
+        [class*="-categories"]
+            a
+                @include h6
+                @include link(var(--color-text))
+                text-decoration: none
     &--grid
         .exhibition
             [class$="-content"]
@@ -28,11 +34,6 @@
             .exhibition-content
                 display: flex
                 flex-direction: column
-                [class*="-categories"]
-                    a
-                        @include h6
-                        @include link(var(--color-text))
-                        text-decoration: none
 
                 @include media-breakpoint-down(desktop)
                     .exhibition-schedule
