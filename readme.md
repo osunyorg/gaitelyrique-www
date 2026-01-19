@@ -34,6 +34,9 @@ Dans le bloc concerné (uniquement "chapitre" et "titre") :
 - cliquer sur "Réglages avancés ;
 - ajouter la class `in-hero`.
 
+<img width="991" height="384" alt="Capture d’écran 2026-01-19 à 10 19 48" src="https://github.com/user-attachments/assets/04823590-684d-476e-9b10-ec882f75fe4c" />
+
+
 ### Les événements
 
 Pour afficher un bloc chapitre ou des organisations à la suite de l'image, dans la sidebar.
