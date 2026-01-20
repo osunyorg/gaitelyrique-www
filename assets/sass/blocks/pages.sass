@@ -2,12 +2,11 @@
     .page-content
         display: flex
         flex-direction: column
-        
         .page-categories
             order: -1
             margin-top: 0 !important
         .more
-            @include meta      
+            @include meta
     .media
         order: -2
     
@@ -51,7 +50,6 @@
             @include media-breakpoint-down(desktop)
                 > li + li
                     margin-top: $spacing-4
-                    .pages__section
 
     &--large
         .page
@@ -103,6 +101,6 @@
                 order: -1
                 margin-top: 0 !important
             .more
-                @include meta      
+                @include meta
             .media
                 order: -2
