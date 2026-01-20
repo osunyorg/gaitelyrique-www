@@ -46,7 +46,7 @@
         figure
             display: none
     
-    body:not(.events__page):not(.exhibitions__page):not(.persons__page) &
+    body:not(.events__page, .exhibitions__page, .persons__page, .events_categories__term) &
         .content
             flex-direction: column
             gap: var(--grid-gutter)
