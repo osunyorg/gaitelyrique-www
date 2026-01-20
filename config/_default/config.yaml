@@ -65,6 +65,10 @@ params:
         authors: false
     share_links:
       enabled: false
+  jobs:
+    single:
+      options:
+        reading_time: false
   image_sizes:
     _default:
       pagefind: "555"
