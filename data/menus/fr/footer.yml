@@ -44,9 +44,9 @@ items:
   path: "/pages/rejoindre-l-equipe"
   file: content/fr/pages/rejoindre-l-equipe/_index.html
 - title: Newsletter
-  target: "/newsletter/"
-  kind: page
-  new_tab: false
+  target: https://page.delight-data.com/newsletter-gaite.html
+  kind: url
+  new_tab: true
   children: []
   path: "/pages/newsletter"
   file: content/fr/pages/newsletter/_index.html
