@@ -82,15 +82,14 @@ article
             margin-bottom: space(4) !important
 
 // slider with arrows on top of slides
-[class*="--carousel"]
+.block[class*="--carousel"]
     .block-content
         position: relative
     .slider-arrows
         position: absolute
-        top: 0
-        font-size: pxToRem(34)
+        top: space(-7)
         right: 0
-        transform: translateY(-$spacing-3)
+        font-size: pxToRem(34)
         .slider-arrow-previous
             padding-right: space(5)
         .slider-arrow-next
@@ -102,13 +101,20 @@ article
         .block-title
             padding-right: calc(#{columns(3)} + var(--grid-gutter))
         .slider-arrows
-            transform: translateY(space(-7))
-            width: columns(3) !important
+            top: space(-7)
 
     // to see arrows when there is no title (overflow hidden)
     &:not(.block-titled)
-        .block-content
-            padding-top: $spacing-5
+        overflow: visible
+        .slider-arrows
+            top: space(-20)
+        .container
+            overflow: hidden
+            padding-top: $spacing-4
+            @include media-breakpoint-up(desktop)
+                margin-top: -$spacing-4
+                
+
 
 // no block should stick to footer
 main .blocks
