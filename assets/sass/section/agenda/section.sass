@@ -17,9 +17,11 @@
 .exhibitions__section,
 .events_categories__term
     main,
-    .document-content > .container + .container
-        margin-bottom: 0
-
+    .document-content 
+        > .container + .container
+            margin-bottom: 0
+        > .container:only-child
+            margin-bottom: inherit
     // alignment, order and margins of elements in all cases
     .document-content
         display: flex
