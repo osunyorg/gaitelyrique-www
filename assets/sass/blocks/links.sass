@@ -16,58 +16,68 @@
                 width: 100%
 
     &--list
-        .links > li
-            + li
-                border: none
-                padding-top: 0
-                margin-top: $spacing-4
-            .link-content
-                display: flex
-                flex-direction: column
-                gap: $spacing-2
-                a
-                    @include h2
-                    &::after
-                        content: none
-                    + p 
-                        margin-top: space(4)
-                    &[target="_blank"] 
-                        span::after
-                            content: '→'
-                            display: inline-block
-                            font-family: $body-font-family
-                            font-size: 50%
-                            transform: rotate(-45deg)
-                p
-                    @include body-text
-                    strong, b
-                        @include meta
-                        text-decoration: underline
-                        text-underline-offset: 2px
+        .links 
+            > li
+                + li
+                    border: none
+                    padding-top: 0
+                    margin-top: $spacing-4
                 
-                @include in-page-with-or-without-sidebar
-                    gap: $spacing-1
+                .link-content
+                    display: flex
+                    flex-direction: column
+                    gap: 0
+                    margin: 0
+                    a
+                        @include h2
+                        &::after
+                            content: none
+                        + p 
+                            margin-top: space(4)
+                        &[target="_blank"] 
+                            span::after
+                                content: '→'
+                                display: inline-block
+                                font-family: $body-font-family
+                                font-size: 50%
+                                transform: rotate(-45deg)
+                    p
+                        @include body-text
+                        strong, b
+                            @include meta
+                            text-decoration: underline
+                            text-underline-offset: 2px
+                    
+                    @include in-page-with-or-without-sidebar
+                        gap: $spacing-1
 
-            .media:where(:not(.media--icon)) 
-                width: 100%
-                img
-                    aspect-ratio: auto
+                .media:where(:not(.media--icon)) 
+                    width: 100%
+                    img
+                        aspect-ratio: auto
             
-            @include media-breakpoint-down(desktop)
-                .media
-                    margin-bottom: space(4)
+                @include media-breakpoint-down(desktop)
+                    .media
+                        margin-bottom: space(4)
 
-            @include in-page-with-sidebar
-                .link-content a
-                    @include h3
-                .media:where(:not(.media--icon))
-                    width: columns(4)
+                @include in-page-with-sidebar
+                    .link-content
+                        a
+                            @include h3
+                    .media:where(:not(.media--icon))
+                        width: columns(4)
 
             @include in-page-without-sidebar
+                li + li
+                    padding-bottom: 0
+                
                 .link-content
+                    gap: 0
+                    margin: 0
                     a, p
                         width: columns(6)
-                &:not(:has(.media))
+                
+                li:not(:has(.media))
                     .link-content
                         a, p
                             width: columns(8)
