@@ -78,6 +78,8 @@ params:
       gallery:
         grid:
           desktop:  864
+      links:
+        desktop: 894
     sections:
       agenda:
         hero_single:
