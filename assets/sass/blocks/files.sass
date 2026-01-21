@@ -10,6 +10,7 @@
                 width: pxToRem(48)
             figcaption
                 @include small
+    
     // specific icons
     &.block-class-icon-menu,
     &.block-class-icon-public
@@ -19,11 +20,13 @@
                 border: none
                 outline: var(--border-width) solid var(--color-border)
                 outline-offset: -4px
+    
     // people icon
     &.block-class-icon-public
         .files li::before
             @include icon-site('icon-public')
             font-size: pxToRem(48)
+    
     // drink icon
     &.block-class-icon-menu
         .files
