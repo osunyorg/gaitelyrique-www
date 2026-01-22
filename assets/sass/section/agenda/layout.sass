@@ -93,6 +93,10 @@
     .event-categories a
         @include h6
     
+    @include media-breakpoint-up(desktop)
+        .more
+            padding-top: $spacing-2
+            
     @include media-breakpoint-down(desktop)
         .event, .exhibition
             &--with-image .media,
@@ -119,8 +123,6 @@
             order: -1
             margin-bottom: $spacing-2
             margin-top: 0 !important
-        .more
-            padding-top: $spacing-2
     .events-date-title
         &, &.is-down
             @include h4
