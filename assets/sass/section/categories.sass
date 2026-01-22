@@ -19,9 +19,10 @@
 
 .block.block-categories--large
     .categories
-        @include in-page-with-sidebar
-            article [class$="-content"]
-                [class*="-title"]
+        article [class$="-content"]
+            [class*="-title"]
+                @include h2
+                @include in-page-with-sidebar
                     @include h4
 
 .children-categories

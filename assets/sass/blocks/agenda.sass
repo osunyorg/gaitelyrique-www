@@ -88,10 +88,6 @@
                 .event-categories
                     order: -2
                     margin-top: 0
-                    a
-                        @include link(var(--color-text))
-                        &:not(:hover)
-                            text-decoration-color: transparent
             @include in-page-without-sidebar
                 align-items: flex-start
                 
@@ -101,6 +97,33 @@
             img
                 aspect-ratio: 16/9
 
+.block.block-exhibitions--large
+    li
+        .exhibition
+            .exhibition-content
+                display: flex
+                flex-direction: column
+                padding-right: 0
+                .exhibition-title
+                    @include h4
+                .exhibition-subtitle,
+                .exhibition-dates
+                    @include h6
+                .exhibition-schedule
+                    margin-top: space(5)
+                    margin-bottom: 0
+                    .exhibition-dates
+                        margin-top: 0
+                .event-categories
+                    order: -2
+                    margin-top: 0
+                    a
+                        @include link(var(--color-text))
+                        &:not(:hover)
+                            text-decoration-color: transparent
+            @include in-page-without-sidebar
+                align-items: flex-start
+
 // global
 .event,
 .exhibition
@@ -108,8 +131,14 @@
         img
             aspect-ratio: 16/9
             object-fit: cover
-    [class$="-categories"]
-        a
-            text-decoration: none
-            &:hover
-                @include link
+
+
+[class$="-categories"]
+    a
+        text-decoration: none
+        color: var(--color-text) !important
+        @include link(var(--color-text))
+        &:not(:hover)
+            text-decoration-color: transparent
+        &:hover
+            @include link
