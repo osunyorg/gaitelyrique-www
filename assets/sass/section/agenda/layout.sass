@@ -85,10 +85,14 @@
 .event, .exhibition
     &,
     .events--agenda &
-        &-title
+        .event-title
             @include h3
+        .event-timeslot > * + * 
+            margin-top: 0
+        
     .event-categories a
         @include h6
+    
     @include media-breakpoint-down(desktop)
         .event, .exhibition
             &--with-image .media,
@@ -137,11 +141,8 @@
             .event, .exhibition
                 &-title
                     @include h2
-                &-timeslot
-                    &-place
-                        @include meta
-                    * + * 
-                        margin-top: 0
+                .event-place
+                    @include meta
     @include media-breakpoint-up(desktop)
         .event
             .event-timeslot
