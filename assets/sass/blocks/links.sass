@@ -1,3 +1,26 @@
+@mixin big-link-style
+    .link-content
+        display: flex
+        flex-direction: column
+        gap: 0
+        margin: 0
+        a
+            @include h2
+            &::after
+                content: none
+            + p 
+                margin-top: space(4)
+        p
+            @include body-text
+            strong, b
+                @include meta
+                text-decoration: underline
+                text-underline-offset: 2px
+    .media:where(:not(.media--icon)) 
+        width: 100%
+        img
+            aspect-ratio: auto
+
 .block-links
     .links
         li a::after
@@ -8,54 +31,37 @@
         gap: space(4)
         .link-content a
             @include h5
-    
+            span
+                &::after
+                    display: none !important
+            &[target="_blank"]
+                &::after
+                    content: '→'
+                    display: inline-block
+                    font-family: $body-font-family
+                    font-size: 50%
+                    transform: rotate(-45deg)
+
     @include in-page-with-or-without-sidebar
         .top
             flex-direction: column
             .block-title
                 width: 100%
+            .description
+                margin-left: 0 !important
 
     &--list
         .links 
             > li
+                @include big-link-style
                 + li
                     border: none
                     padding-top: 0
                     margin-top: $spacing-4
-                
                 .link-content
-                    display: flex
-                    flex-direction: column
-                    gap: 0
-                    margin: 0
-                    a
-                        @include h2
-                        &::after
-                            content: none
-                        + p 
-                            margin-top: space(4)
-                        &[target="_blank"] 
-                            span::after
-                                content: '→'
-                                display: inline-block
-                                font-family: $body-font-family
-                                font-size: 50%
-                                transform: rotate(-45deg)
-                    p
-                        @include body-text
-                        strong, b
-                            @include meta
-                            text-decoration: underline
-                            text-underline-offset: 2px
-                    
                     @include in-page-with-or-without-sidebar
                         gap: $spacing-1
 
-                .media:where(:not(.media--icon)) 
-                    width: 100%
-                    img
-                        aspect-ratio: auto
-            
                 @include media-breakpoint-down(desktop)
                     .media
                         margin-bottom: space(4)
@@ -83,3 +89,10 @@
                             width: columns(8)
                 .media:where(:not(.media--icon))
                     width: columns(6)
+    &--grid
+        @include in-page-without-sidebar
+            .links:has(li:only-child)
+                display: block
+                > li
+                    @include big-link-style
+                    gap: $spacing-3
