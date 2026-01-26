@@ -113,7 +113,17 @@ article
             padding-top: $spacing-4
             @include media-breakpoint-up(desktop)
                 margin-top: -$spacing-4
-                
+
+    @include media-breakpoint-up(desktop)
+        // case with block title before
+        .block-title + &:not(.block-titled)
+            margin-top: 0
+            padding-top: var(--heading-margin-bottom)
+            .container
+                padding-top: $spacing-5
+                margin-top: space(-22)
+            .slider-arrows
+                top: space(-22)
 
 
 // no block should stick to footer
