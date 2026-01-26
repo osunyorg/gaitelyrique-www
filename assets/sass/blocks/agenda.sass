@@ -8,7 +8,8 @@
         @include extendable-list('.events')
         .event-title
             @include h4
-        .event-subtitle
+        .event-subtitle,
+        .event-schedule
             @include h6
         .event-content
             display: flex
@@ -22,6 +23,8 @@
             .event
                 .event-schedule
                     margin-top: 0
+            .meta
+                margin-top: 0
     
     &--list
         .events
