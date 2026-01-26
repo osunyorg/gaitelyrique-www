@@ -7,9 +7,6 @@
             content: '→' !important
             font-family: $heading-font-family !important
             margin-left: space()
-    @include media-breakpoint-up(desktop)
-        .media
-            margin-bottom: 0 !important
 
 // for section and blocks, when available
 .exhibitions
@@ -28,6 +25,10 @@
                     order: -1
             [class$="-subtitle"]
                 @include h5
+            
+            @include media-breakpoint-up(desktop)
+                .media
+                    margin-bottom: $spacing-2
 
     &--agenda 
         .exhibition
