@@ -15,7 +15,7 @@ items:
   children: []
   path: "/pages/privatisation"
   file: content/fr/pages/privatisation/_index.html
-- title: Ils nous soutiennent
+- title: Merci à nos soutiens
   target: "/ils-nous-soutiennent/"
   kind: page
   new_tab: false
