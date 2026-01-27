@@ -17,3 +17,9 @@ events:
   part_of: "Cet événement fait partie de :"
 posts:
   more: En savoir plus
+errors:
+  error_404:
+    text: 
+      Le lien semble erroné.<br>
+      Le site de la Gaité Lyrique a fait peau neuve !<br>
+      Découvrez notre <a href="/la-fabrique-de-lepoque/">projet</a> et <a href="/agenda/">notre programmation</a> ou retourner à l’<a href="/">accueil</a> du site
