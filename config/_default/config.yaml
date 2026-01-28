@@ -9,6 +9,9 @@ params:
     active: true
     positions:
       - primary
+  home:
+    head:
+      title: site
   logo:
     header: '/assets/images/logo.svg'
     footer: '/assets/images/logo-footer.svg'
