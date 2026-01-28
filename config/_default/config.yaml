@@ -1,8 +1,9 @@
 theme: osuny
 _merge: deep
 params:
+  additional_csp: cdn.matomo.cloud 'unsafe-inline'
   debug:
-    productionUrl: https://www.gaitelyrique.osuny.site
+    productionUrl: https://www.gaite-lyrique.net/
   summary:
     position: hero
   search:
