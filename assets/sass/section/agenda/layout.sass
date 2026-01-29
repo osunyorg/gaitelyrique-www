@@ -85,8 +85,6 @@
 .event, .exhibition
     &,
     .events--agenda &
-        .event-title
-            @include h3
         .event-timeslot > * + * 
             margin-top: 0
         
@@ -117,6 +115,7 @@
         .event-place,
         &-subtitle
             @include h6
+            margin-top: space()
         &-title
             @include h4
         &-categories
