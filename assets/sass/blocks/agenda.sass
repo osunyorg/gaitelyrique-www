@@ -3,11 +3,12 @@
         .event-parent
             margin-bottom: space()
             margin-top: 0
-    
     &--grid
         @include extendable-list('.events')
         .event-title
             @include h4
+        .event-subtitle
+            margin-top: space()
         .event-subtitle,
         .event-schedule
             @include h6
