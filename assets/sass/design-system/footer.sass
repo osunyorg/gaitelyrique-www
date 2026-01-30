@@ -23,17 +23,27 @@ footer#document-footer
         .footer-menu
             li
                 @include h6
+                a[target="_blank"]::after
+                    content: '→'
+                    display: inline-block
+                    font-family: $body-font-family
+                    transform: rotate(-45deg)
             @include media-breakpoint-up(desktop)
                 align-items: baseline
                 display: flex
                 flex-wrap: wrap
-                gap: $spacing-2 var(--grid-gutter)
+                gap: $spacing-2
                 justify-content: space-between
                 width: 100%
                 li
                     white-space: nowrap
                     + li
-                        margin-top: 0
+                            margin-top: 0
+                    
+                    @include media-breakpoint-down(xl)
+                        &:last-child
+                            margin-right: auto
+
             @include media-breakpoint-down(desktop)
                 li + li
                     margin-top: $spacing-3
