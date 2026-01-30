@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - main
+  # schedule:
+  #   - cron: '0 2 * * *'
+
+name: 'Daily W3C Validation'
+
+jobs:
+  validate:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+
+    name: 'Validate against W3C'
+    strategy:
+      matrix:
+        url:
+          - https://www.gaite-lyrique.net/
+          - https://www.gaite-lyrique.net/la-fabrique-de-lepoque/
+          - https://www.gaite-lyrique.net/agenda/
+          - https://www.gaite-lyrique.net/agenda/expositions/2026-01-14-la-ou-les-vies-se-croisent/
+          - https://www.gaite-lyrique.net/agenda/2026/festival-et-prix-des-litteratures-urbaines-2026/
+          - https://www.gaite-lyrique.net/infos-pratiques/
+          - https://www.gaite-lyrique.net/la-fabrique-de-lepoque/histoire-du-lieu/
+          - https://www.gaite-lyrique.net/la-fabrique-de-lepoque/actualites/2026-01-19-participez-a-des-actions-solidaires-1/
+          - https://www.gaite-lyrique.net/infos-pratiques/le-lieu/
+    steps:
+      - name: Send request to W3C with URL to validate
+        run: |
+          curl -G "https://validator.w3.org/nu/" --data-urlencode "doc=${{ matrix.url }}" --data-urlencode "out=json" > w3c-response.json
+      - name: Send JSON response to webhook
+        run: |
+          curl --write-out '%{http_code}' --silent --output /dev/null -X POST -H "Content-Type: application/json" -H "X-Secret-Token: ${{ secrets.W3C_CI_API_SECRET }}" -d @w3c-response.json ${{ secrets.W3C_CI_API_URL }}
