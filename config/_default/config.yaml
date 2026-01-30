@@ -92,15 +92,20 @@ params:
       events:
         children_in_agenda:
           mobile: 302
+          tablet:  400
           desktop:  575
         layouts:
           agenda:
             mobile: 302
+            tablet:  400
             desktop: 575
           grid:
+            mobile:  360
+            tablet:  360
             desktop:  864
           list:
             mobile: 327
+            tablet:  575
             desktop: 575
       pages:
         item:
@@ -108,10 +113,8 @@ params:
       posts:
         item:
           desktop:  894
-        layouts:
-          grid:
-            desktop:  894
       home:
         hero:
+          mobile:  480
           tablet:   1200
           desktop:  1792
