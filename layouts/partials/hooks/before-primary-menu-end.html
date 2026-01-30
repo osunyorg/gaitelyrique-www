@@ -1,6 +1,8 @@
 <div class="additional-menu">
   <ul>
-    {{ partial "commons/search/button.html" "primary" }}
+    <li>
+      {{ partial "commons/search/button.html" "primary" }}
+    </li>
   
     {{ if in site.Params.i18n.positions "primary" }}
       {{ partial "commons/i18n.html" (dict
