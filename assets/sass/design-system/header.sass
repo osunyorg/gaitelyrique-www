@@ -33,7 +33,11 @@ header#document-header
             @include media-breakpoint-down(desktop)
                 display: none
         
+        .search-button--secondary
+            @include icon(search-line, after)
+
         .search-button--primary,
+        .search-button--secondary,
         .primary-i18n
             padding: 0
             width: auto
@@ -42,6 +46,7 @@ header#document-header
                 display: none
 
         .search-button--primary,
+        .search-button--secondary,
         .primary-i18n > span
             align-items: baseline
             flex-direction: row-reverse

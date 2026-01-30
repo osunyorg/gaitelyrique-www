@@ -10,6 +10,7 @@ params:
     active: true
     positions:
       - primary
+      - secondary
   home:
     head:
       title: site
