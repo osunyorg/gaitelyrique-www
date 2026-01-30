@@ -151,7 +151,6 @@ header#document-header
             padding: $spacing-2 var(--grid-gutter)
             width: calc(100% + calc(var(--grid-gutter) * 2))
             span + span
-                width: columns(6.2)
                 justify-content: space-between
 
             html:not(.has-menu-opened) &
@@ -208,6 +207,10 @@ header#document-header
                     margin-top: calc(#{pxToRem(30)} - #{$spacing-1})
                 .nav-search
                     order: -1
+                    .search-button
+                        justify-content: start
+                        &::after
+                            order: -1
                 > li.has-children
                     order: 2
                 // li between borders
