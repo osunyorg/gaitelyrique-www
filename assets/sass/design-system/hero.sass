@@ -6,31 +6,7 @@
     .content
         padding-top: $spacing-3
         figure
-            figcaption
-                align-items: baseline
-                background: var(--color-background)
-                color: var(--color-text)
-                display: flex
-                flex-direction: row-reverse
-                max-width: 100%
-                &::before
-                    position: relative
-                    right: unset
-                    top: unset
-                .credit,
-                &::before
-                    @include small
-                    line-height: 1
-                    padding: space() $spacing-1
-                .credit
-                    padding-right: 0
-                    p
-                        padding: 0
-                @include media-breakpoint-up(desktop)
-                    bottom: 0
-                    left: unset
-                    position: absolute
-                    right: 0
+            @include absolute-figcaption
         .hero-text
             margin-top: 0
     .taxonomies-single

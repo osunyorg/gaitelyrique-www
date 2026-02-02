@@ -292,19 +292,8 @@
         .event-sidebar
             padding-bottom: $spacing-3
             figure
+                @include absolute-figcaption
                 margin-bottom: $spacing-3
-                position: relative
-                figcaption
-                    @include meta
-                    opacity: 0
-                    background: var(--color-background)
-                    bottom: 0
-                    margin-top: space()
-                    padding: 0 space()
-                    position: absolute
-                    right: 0
-                &:hover figcaption
-                    opacity: 1
             .blocks
                 .block-content,
                 .container
