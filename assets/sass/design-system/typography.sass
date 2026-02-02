@@ -3,9 +3,23 @@ h1, h2, h3
         word-break: auto-phrase
         hyphens: auto
 
-// \:root
-//     @include media-breakpoint-between(md, xl)
-//         --h1-size: #{pxToRem(140)}
-//         --h2-size: #{pxToRem(70)}
-//     @include media-breakpoint-between(sm, md)
-//         --h1-size: #{pxToRem(100)}
+\:root
+    @include media-breakpoint-between(sm, lg)
+        *
+            color: green
+        --h1-size: #{pxToRem(90)}
+        --h2-size: #{pxToRem(60)}
+        --h4-size: #{pxToRem(25)}
+        --h5-size: #{pxToRem(20)}
+        --lead-size: #{pxToRem(25)}
+        --body-size: #{pxToRem(18)}
+        --meta-size: #{pxToRem(14)}
+    @include media-breakpoint-between(lg, xl)
+        *
+            color: red
+        --h1-size: #{pxToRem(130)}
+        --h2-size: #{pxToRem(70)}
+        --h4-size: #{pxToRem(28)}
+        --h5-size: #{pxToRem(22)}
+        --lead-size: #{pxToRem(28)}
+        --body-size: #{pxToRem(20)}
