@@ -3,10 +3,6 @@ body.is-color-mode-changing
         transition-duration: 0s !important
 
 
-h1, h2, h3
-    word-break: auto-phrase
-    hyphens: auto
-
 main:not(.page-with-blocks, .page-with-map),
 body[class*="__section"] main
     padding-bottom: 0
@@ -71,7 +67,6 @@ main:not(.page-with-blocks)
             flex-wrap: wrap
             > li 
                 width: columns(4)
-
                 @each $items, $columns in (1: 6, 2: 6, 4: 3, 7: 3, 8: 3)
                     &:first-child:nth-last-child(#{$items}),
                     &:first-child:nth-last-child(#{$items}) ~ li
