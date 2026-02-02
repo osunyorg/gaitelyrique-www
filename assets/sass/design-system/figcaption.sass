@@ -1,0 +1,29 @@
+@mixin absolute-figcaption
+    @include collapsed-figcaption
+    figcaption
+        margin-top: 0 !important
+        align-items: baseline
+        background: var(--color-background)
+        color: var(--color-text)
+        display: flex
+        flex-direction: row-reverse
+        max-width: 100%
+        &::before
+            position: relative
+            right: unset
+            top: unset
+        .credit,
+        &::before,
+        p
+            @include small
+            padding: space() $spacing-1
+        .credit
+            padding-right: 0
+            p
+                @include small
+                padding: 0
+        @include media-breakpoint-up(desktop)
+            bottom: 0
+            left: unset
+            position: absolute
+            right: 0
