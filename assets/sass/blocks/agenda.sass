@@ -7,11 +7,11 @@
         @include extendable-list('.events')
         .event-title
             @include h4
-        .event-subtitle
-            margin-top: space()
+            margin-bottom: $spacing-1
         .event-subtitle,
         .event-schedule
-            @include h6
+            @include body-text
+            margin-top: 0
         .event-content
             display: flex
             flex-direction: column
@@ -40,16 +40,17 @@
                     margin-bottom: 0
             .event-title
                 @include h4
-            .event-subtitle
-                @include h6
+                margin-bottom: $spacing-1
+            .event-subtitle,
+            .event-schedule,
+            .event-date
+                @include body-text
+                margin-top: 0
             .event-categories
                 @include h5
                 order: -1
                 margin-top: 0
                 margin-bottom: $spacing-2
-            .event-dates
-                @include h6
-                
             @include in-page-without-sidebar
                 .event-content
                     width: columns(6)
@@ -80,9 +81,12 @@
                 padding-right: 0
                 .event-title
                     @include h4
+                    margin-bottom: $spacing-1
                 .event-subtitle,
-                .event-dates
-                    @include h6
+                .event-schedule,
+                .event-date
+                    @include body-text
+                    margin-top: 0
                 .event-schedule
                     margin-top: space(5)
                     margin-bottom: 0
@@ -100,18 +104,30 @@
             img
                 aspect-ratio: 16/9
 
-.block.block-exhibitions--large
-    li
+.block.block-exhibitions
+    &--grid
+        .exhibition
+            .exhibition-title
+                @include h4
+                margin-bottom: $spacing-1
+            .exhibition-subtitle,
+            .exhibition-schedule,
+            .exhibition-dates
+                @include body-text
+                margin-top: 0
+            .event-categories
+                a
+                    @include meta
+                    text-decoration: underline !important
+                    text-decoration-thickness: 1px
+                    text-decoration-color: black
+
+    &--large
         .exhibition
             .exhibition-content
                 display: flex
                 flex-direction: column
                 padding-right: 0
-                .exhibition-title
-                    @include h4
-                .exhibition-subtitle,
-                .exhibition-dates
-                    @include h6
                 .exhibition-schedule
                     margin-top: space(5)
                     margin-bottom: 0
