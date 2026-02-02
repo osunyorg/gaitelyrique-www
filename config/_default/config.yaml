@@ -53,6 +53,8 @@ params:
     single:
       summary:
         position: content
+    list:
+      with_more: true
   organizations:
     single:
       backlinks: true
