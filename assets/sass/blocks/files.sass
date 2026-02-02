@@ -6,13 +6,23 @@
                     width: 100%
             &::before
                 font-size: pxToRem(40)
-                line-height: pxToRem(55)
+                height: pxToRem(54)
+                line-height: pxToRem(48)
+                width: pxToRem(54)
             figure
+                line-height: 90% !important
+                margin-top: pxToRem(-7)
                 a
                     @include body-text
+                    display: inline
                 figcaption
                     @include small
+                    display: inline
                     margin-top: 0
+                    &::before
+                        content: "("
+                    &::after
+                        content: ")"
     
     // specific icons
     &.block-class-icon-menu,
