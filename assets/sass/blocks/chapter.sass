@@ -1,8 +1,18 @@
 .block-chapter
+    @include in-page-without-sidebar
+        .chapter
+            gap: var(--grid-gutter)
+            .text
+                flex: 1
+            .rich-text,
+            .notes
+                width: columns(6)
+
     &--no_background
         margin-bottom: var(--heading-margin-bottom)
         + .block-chapter--no_background
             --block-space-y: var(--heading-margin-bottom)
+
     &--alt_background
         .top .block-title
             @include h2
@@ -13,15 +23,6 @@
             @include icon(arrow-right-line, after, true)
             @include hover-translate-icon
             text-decoration-color: var(--color-text)
-
-    @include in-page-without-sidebar
-        .chapter
-            gap: var(--grid-gutter)
-            .text
-                flex: 1
-            .rich-text,
-            .notes
-                width: columns(7)
 
     // notes (ex: 'food' in 'restauration' page)
     &.block-class-notes-as-lead

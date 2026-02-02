@@ -17,7 +17,6 @@
             flex-direction: column
             .event-categories
                 order: -2
-                margin-top: 0
                 margin-bottom: $spacing-1
         
         @include media-breakpoint-down(desktop)
@@ -48,7 +47,6 @@
                 margin-top: 0
             .event-categories
                 order: -1
-                margin-top: 0
                 margin-bottom: $spacing-2
             @include in-page-without-sidebar
                 .event-content
@@ -93,15 +91,8 @@
                         margin-top: 0
                 .event-categories
                     order: -2
-                    margin-top: 0
             @include in-page-without-sidebar
                 align-items: flex-start
-                
-    // for all layouts
-    .event
-        .media
-            img
-                aspect-ratio: 16/9
 
 .block.block-exhibitions
     &--grid
