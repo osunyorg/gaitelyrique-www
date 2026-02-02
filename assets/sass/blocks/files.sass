@@ -5,11 +5,14 @@
                 picture img
                     width: 100%
             &::before
-                height: pxToRem(48)
-                line-height: pxToRem(48)
-                width: pxToRem(48)
-            figcaption
-                @include small
+                font-size: pxToRem(40)
+                line-height: pxToRem(55)
+            figure
+                a
+                    @include body-text
+                figcaption
+                    @include small
+                    margin-top: 0
     
     // specific icons
     &.block-class-icon-menu,
