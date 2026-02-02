@@ -1,24 +1,14 @@
 // exhibitions
 .exhibition
-    &-title a::after
-        content: none !important
-    .more
-        &::after
-            content: '→' !important
-            font-family: $heading-font-family !important
-            margin-left: space()
+    .exhibition-title
+        a::after
+            content: none !important
+    .exhibition-subtitle
+        @include h6
+        margin-top: $spacing-2
 
 // for section and blocks, when available
-.exhibitions
-    .exhibition
-        [class*="-categories"]
-            a
-                @include h6
-                @include link(var(--color-text))
-                text-decoration: none
-        [class*="-dates"]
-            @include h6
-        
+.exhibitions        
     &--grid
         .exhibition
             [class$="-content"]
@@ -26,8 +16,6 @@
                 flex-direction: column
                 [class$="-categories"]
                     order: -1
-            [class$="-subtitle"]
-                @include h5
             
             @include media-breakpoint-up(desktop)
                 .media
@@ -46,9 +34,6 @@
                         order: -2
                     .exhibition-subtitle
                         margin-top: $spacing-2
-                    [class*="-categories"],
-                    .meta
-                        @include h6
 
                 @include media-breakpoint-up(desktop)
                     > .exhibition-title,

@@ -11,6 +11,8 @@
             flex-direction: column
             .event-title
                 @include h4
+            .event-subtitle
+                @include h6
             .event-description
                 order: 1
             .more
@@ -62,7 +64,8 @@
         .hero-text
             h1
                 span
-                    @include lead
+                    @include h4
+                    margin-top: $spacing-3 !important
                     color: var(--color-text)
                     display: block
             .taxonomies-single
@@ -72,10 +75,6 @@
                 column-gap: $spacing-3 
                 position: relative
                 z-index: 1
-                a
-                    color: var(--color-text)
-                    &:not(:hover)
-                        text-decoration-color: transparent
         figure
             display: none
         
