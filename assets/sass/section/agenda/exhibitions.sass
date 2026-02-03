@@ -1,43 +1,54 @@
-// exhibitions
-.exhibition
-    .exhibition-title
-        a::after
-            content: none !important
-    .exhibition-subtitle
-        @include h6
-        margin-top: $spacing-2
+.exhibitions
+    .exhibition
+        .exhibition-content
+            display: flex
+            flex-direction: column
+        .exhibition-title
+            a::after
+                content: none !important
+        .exhibition-subtitle,
+        .exhibition-schedule,
+        .exhibition-dates
+            @include h6
+            margin-top: 0
+        .event-categories
+            order: -2
+            margin-bottom: $spacing-2
+        @include media-breakpoint-down(desktop)
+            hgroup
+                margin-bottom: 0
+            .exhibition-title
+                @include h2
+                margin-bottom: $spacing-2
+            .exhibition-schedule
+                order: -2 !important
+                margin-bottom: $spacing-2
 
-// for section and blocks, when available
-.exhibitions        
     &--grid
         .exhibition
-            [class$="-content"]
-                display: flex
-                flex-direction: column
-                [class$="-categories"]
-                    order: -1
-            
-            @include media-breakpoint-up(desktop)
-                .media
-                    margin-bottom: $spacing-2
+            .exhibition-subtitle,
+            .exhibition-schedule,
+            .exhibition-dates
+                @include body-text
+                margin-bottom: 0 !important
+                margin-top: 0 !important
+            .media
+                margin-bottom: $spacing-3
 
-    &--agenda 
+    &--large
         .exhibition
-            .exhibition-content
-                display: flex
-                flex-direction: column
-
-                @include media-breakpoint-down(desktop)
-                    .exhibition-schedule
-                        margin-bottom: $spacing-2
-                        margin-top: 0
-                        order: -2
-                    .exhibition-subtitle
-                        margin-top: $spacing-2
-
-                @include media-breakpoint-up(desktop)
-                    > .exhibition-title,
-                    hgroup
-                        order: -2
-                    [class*="-categories"]
-                        order: -3
+            @include in-page-without-sidebar
+                align-items: start
+                .exhibition-title
+                    @include h2
+                .exhibition-subtitle,
+                .exhibition-schedule,
+                .exhibition-dates
+                    @include h4
+            @include in-page-with-sidebar
+                .exhibition-title
+                    @include h3
+                .exhibition-subtitle,
+                .exhibition-schedule,
+                .exhibition-dates
+                    @include h5

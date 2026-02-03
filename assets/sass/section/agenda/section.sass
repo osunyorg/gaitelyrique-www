@@ -65,11 +65,6 @@
         .exhibition
             .exhibition-schedule
                 order: -1
-            .more::after
-                content: "→"
-                font-family: $heading-font-family
-                font-size: 110%
-                margin-left: space()
             
             &--with-image
                 .more
@@ -78,9 +73,6 @@
             @include media-breakpoint-up(desktop)
                 .exhibition-schedule
                     width: columns(2)
-            @include media-breakpoint-down(desktop)
-                .more
-                    font-size: $body-size-desktop
             
         @include media-breakpoint-up(desktop)
             padding-top: $spacing-4

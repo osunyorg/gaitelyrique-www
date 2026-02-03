@@ -200,12 +200,12 @@ main .blocks
                     margin-left: 0
                     .credit
                         max-width: columns(3)
-// more
+
 .more
     &::after
         content: "→" !important
         font-family: $heading-font-family !important
         margin-left: space()
-
     &.meta
+        @include meta
         text-decoration: none

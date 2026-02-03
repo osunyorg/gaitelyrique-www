@@ -1,11 +1,8 @@
 .pagination
     li
         a
-            @include h6
+            @include meta
             line-height: $spacing-4
-            @include media-breakpoint-up(desktop)
-                @include h5
-                line-height: $spacing-4
         &.active
             a
                 background: var(--color-text)
