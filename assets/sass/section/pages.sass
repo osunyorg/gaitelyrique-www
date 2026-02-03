@@ -1,3 +1,40 @@
+.pages
+    .page
+        .page-title
+            a::after
+                display: none !important
+        .page-content
+            display: flex
+            flex-direction: column
+            .page-categories
+                order: -1
+        .media
+            order: -2
+
+    &--grid
+        .page
+            .page-title
+                @include media-breakpoint-up(desktop)
+                    + p
+                        margin-top: $spacing-3
+        @include in-page-without-sidebar
+            // Liste avec des quantités d'objets qui ne tombent pas juste
+            row-gap: $spacing-6
+            display: flex
+            flex-wrap: wrap
+            > li
+                flex: 1
+                min-width: columns(4)
+        @include media-breakpoint-down(desktop)
+            > li + li
+                margin-top: $spacing-4
+
+    // &--large
+
+    // &--list
+
+    // &--alternate
+
 // page like 'infos pratiques' ending with 2 pages full width
 .page-ending-with-full-width-pages
     @include media-breakpoint-up(desktop)

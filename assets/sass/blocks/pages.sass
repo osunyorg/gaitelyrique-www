@@ -1,17 +1,8 @@
-.page
-    .page-content
-        display: flex
-        flex-direction: column
-        .page-categories
-            order: -1
-    .media
-        order: -2
-    
 .block.block-pages
-    .top .block-title,
-    .page .page-title,
-        a::after
-            display: none
+    .top
+        .block-title
+            a::after
+                display: none
     
     &.block-class-background-alt
         background-color: var(--color-background-alt)
@@ -19,63 +10,6 @@
             padding-bottom: $spacing-4
             padding-top: $spacing-4
     
-    @include in-page-without-sidebar
-        .top
-            display: block
-            .block-title
-                width: 100%
-            .description
-                margin-left: 0
-                p
-                    @include body-text
-    
-    &--grid
-        .pages
-            article
-                .page-title
-                    @include h4
-                    @include media-breakpoint-up(desktop)
-                        + p
-                            margin-top: $spacing-3
-            @include in-page-without-sidebar
-                grid-gap: $spacing-6 var(--grid-gutter)
-                display: flex
-                flex-wrap: wrap
-                > li
-                    flex: 1
-                    min-width: columns(4)
-            @include media-breakpoint-down(desktop)
-                > li + li
-                    margin-top: $spacing-4
-
-    &--large
-        .page
-            .page-content
-                flex: 1
-            .page-title
-                @include h3
-                a
-                    text-decoration: none
-            &:hover
-                .page-title
-                    a
-                        text-decoration: none
-            .media
-                img
-                    aspect-ratio: 16/9
-                
-                @include media-breakpoint-up(desktop)
-                    order: 2
-
-                @include media-breakpoint-down(desktop)
-                    margin-left: 0
-                    margin-right: 0
-
-            @include in-page-without-sidebar
-                align-items: flex-start
-                .page-title
-                    @include h2
-
     &--list
         .list.title-only
             .page
@@ -93,13 +27,12 @@
                 .block-title::after
                     width: columns(12)
 
-    &--alternate
-        .page
-            display: flex
-            flex-direction: column
-            .page-categories
-                order: -1
-            .more
-                @include meta
-            .media
-                order: -2
+    @include in-page-without-sidebar
+        .top
+            display: block
+            .block-title
+                width: 100%
+            .description
+                margin-left: 0
+                p
+                    @include body-text
