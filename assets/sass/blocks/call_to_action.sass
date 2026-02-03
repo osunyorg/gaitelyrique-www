@@ -12,11 +12,12 @@
         .call_to_action
             background-color: $block-call-to-action-accent-background
             @include in-page-without-sidebar
-                padding: columns(1)
-        
+                padding: $spacing-4 columns(1)
+        picture.is-svg
+            img
+                width: pxToRem(100)
         @include in-page-without-sidebar
             background: none
-        
         @include in-page-with-sidebar
             .call_to_action > div::after
                 content: none
