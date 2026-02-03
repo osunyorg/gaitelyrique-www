@@ -33,19 +33,16 @@
         article.page
             .page-title
                 @include h3
-                a
-                    text-decoration: none
-            &:hover .page-title a
-                text-decoration: none
             .media
                 @include media-breakpoint-up(desktop)
+                    // Image à droite
                     order: 2
                 @include media-breakpoint-down(desktop)
+                    // Marges normales
                     margin-left: 0
                     margin-right: 0
                 img
                     aspect-ratio: 16/9 !important
-
             @include in-page-without-sidebar
                 align-items: flex-start
                 .page-title
