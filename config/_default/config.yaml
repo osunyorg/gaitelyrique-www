@@ -1,6 +1,7 @@
 theme: osuny
 _merge: deep
 params:
+  plausible: www.gaite-lyrique.net
   additional_csp: cdn.matomo.cloud gaitelyrique.matomo.cloud 'unsafe-inline'
   debug:
     productionUrl: https://www.gaite-lyrique.net
