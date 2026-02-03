@@ -1,0 +1,13 @@
+
+// page like 'infos pratiques' ending with 2 pages full width
+.page-ending-with-full-width-pages
+    @include media-breakpoint-up(desktop)
+        .blocks
+            .block
+                &:last-child.block-pages
+                    background-color: var(--color-background)
+                    margin-top: $spacing-5
+                    position: relative
+                    z-index: 50
+                    .block-content
+                        padding-left: 0

@@ -1,9 +1,11 @@
 ol.breadcrumb
     li
-        &, a
+        &,
+        a
             @include small
         &:where(:not(.active))
-            a, span
+            a,
+            span
                 font-weight: bold
         &:not(:first-child)
             &::before

@@ -14,35 +14,15 @@
             --block-space-y: var(--heading-margin-bottom)
 
     &--alt_background
-        .top .block-title
-            @include h2
-            &::after
-                content: none
-        .notes p > a
-            @include meta
-            @include icon(arrow-right-line, after, true)
-            @include hover-translate-icon
-            text-decoration-color: var(--color-text)
-
-    // notes (ex: 'food' in 'restauration' page)
-    &.block-class-notes-as-lead
-        .notes p
-            @include lead
-    
-    // with a list marker and a margin
-    &.block-class-unique-list-marker
-        .rich-text > ul:first-of-type 
-            @include list-reset
-            li:first-of-type
-                align-items: baseline
-                display: flex
-                gap: space(2)
-                &::before
-                    aspect-ratio: 1
-                    content: ''
-                    background: var(--color-text)
-                    border-radius: 100%
-                    height: $body-size
-            @include media-breakpoint-up(desktop)
-                padding-top: $spacing-3
-                padding-left: $spacing-6
+        .top
+            .block-title
+                @include h2
+                &::after
+                    content: none
+        .notes
+            p
+                > a
+                    @include meta
+                    @include icon(arrow-right-line, after, true)
+                    @include hover-translate-icon
+                    text-decoration-color: var(--color-text)

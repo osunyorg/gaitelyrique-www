@@ -56,8 +56,10 @@
                 @include h3
                 a
                     text-decoration: none
-            &:hover .page-title a
-                text-decoration: none
+            &:hover
+                .page-title
+                    a
+                        text-decoration: none
             .media
                 img
                     aspect-ratio: 16/9
@@ -76,9 +78,10 @@
 
     &--list
         .list.title-only
-            .page a::before
-                content: '→'
-                font-family: inherit
+            .page
+                a::before
+                    content: '→'
+                    font-family: inherit
         
         @include in-page-without-sidebar
             .pages:where(:not(.title-only))

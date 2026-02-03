@@ -72,134 +72,25 @@ main:not(.page-with-blocks)
                     &:first-child:nth-last-child(#{$items}) ~ li
                         width: columns($columns)
 
-// items media
-article
-    @include media-breakpoint-down(desktop)
-        .media
-            margin-bottom: space(4) !important
-
-// slider with arrows on top of slides
-.block[class*="--carousel"]
-    .block-content
-        position: relative
-    .slider-arrows
-        position: absolute
-        top: space(-7)
-        right: 0
-        font-size: pxToRem(34)
-        .slider-arrow-previous
-            padding-right: space(5)
-        .slider-arrow-next
-            padding-left: space()
-            margin-right: -$spacing-3
-        .slider-progression
-            @extend .sr-only
-    @include media-breakpoint-down(desktop)
-        .block-title
-            padding-right: calc(#{columns(3)} + var(--grid-gutter))
-        .slider-arrows
-            top: space(-7)
-
-    // to see arrows when there is no title (overflow hidden)
-    &:not(.block-titled)
-        overflow: visible
-        .slider-arrows
-            top: space(-20)
-        .container
-            overflow: hidden
-            padding-top: $spacing-4
-            @include media-breakpoint-up(desktop)
-                margin-top: -$spacing-4
-
-    @include media-breakpoint-up(desktop)
-        // case with block title before
-        .block-title + &:not(.block-titled)
-            margin-top: 0
-            padding-top: var(--heading-margin-bottom)
-            .container
-                padding-top: $spacing-5
-                margin-top: space(-22)
-            .slider-arrows
-                top: space(-22)
-
-
 // no block should stick to footer
-main .blocks
-    .block[class*="--alt_background"] + .block-class-background-alt
-        margin-top: 0
-        .block-content
-            padding-top: 0
-    .block:last-child:is([class*="--accent_background"], [class*="--alt_background"], .block-timeline--horizontal, .block-pages--cards)
-        margin-bottom: var(--grid-gutter)
-
-// page like 'infos pratiques' ending with 2 pages full width
-.page-ending-with-full-width-pages
-    @include media-breakpoint-up(desktop)
-        .blocks .block
-            &:last-child.block-pages
-                background-color: var(--color-background)
-                margin-top: $spacing-5
-                position: relative
-                z-index: 50
+main
+    .blocks
+        .block[class*="--alt_background"]
+            + .block-class-background-alt
+                margin-top: 0
                 .block-content
-                    padding-left: 0
-
-// slider
-.slider
-    .slider-arrows
-        .slider-arrow-previous
-            &::before
-                content: "←"
-                font-family: $heading-font-family
-        .slider-arrow-next
-            &::before
-                content: "→"
-                font-family: $heading-font-family
+                    padding-top: 0
+        .block:last-child:is([class*="--accent_background"],
+        [class*="--alt_background"],
+        .block-timeline--horizontal,
+        .block-pages--cards)
+            margin-bottom: var(--grid-gutter)
 
 .container.children-categories
     ul
         row-gap: $spacing-1
         a:hover
             text-decoration: underline
-
-// cards title size
-.block-pages--cards .pages,
-.categories--cards
-    article
-        [class*="-title"]
-            @include h4
-
-// ficaption on images for blocks
-.block:not(.block-testimonials, .block-features, .block-files)
-    figure
-        @include absolute-figcaption
-        // &:hover
-        //     figcaption .credit p
-        //         &, a
-        //             font-size: var(--small-size)
-        //             gap: $spacing-1
-    @include media-breakpoint-up(desktop)
-        &.block-call_to_action,
-        &.block-gallery
-            figure:hover
-                .credit p
-                    a
-                        width: 100%
-                    span[aria-hidden]:first-child
-                        margin-left: auto
-                        
-        &.block-call_to_action
-            figure figcaption a
-                color: var(--color-text)
-
-    @include in-page-with-sidebar
-        &.block-call_to_action
-            figure,
-                width: calc(#{columns(3)} + var(--column-width))
-                figcaption
-                    margin-left: 0
-                    .credit
-                        max-width: columns(3)
 
 .more
     &::after

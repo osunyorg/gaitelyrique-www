@@ -12,7 +12,8 @@
                 margin-top: space(4)
         p
             @include body-text
-            strong, b
+            strong,
+            b
                 @include meta
                 text-decoration: underline
                 text-underline-offset: 2px
@@ -48,18 +49,19 @@
     
     &:not(.block-links--cards)
         gap: space(4)
-        .link-content > a
-            @include h5
-            span
-                &::after
-                    display: none !important
-            &[target="_blank"]
-                &::after
-                    content: '→'
-                    display: inline-block
-                    font-family: $body-font-family
-                    font-size: 50%
-                    transform: rotate(-45deg)
+        .link-content
+            > a
+                @include h5
+                span
+                    &::after
+                        display: none !important
+                &[target="_blank"]
+                    &::after
+                        content: '→'
+                        display: inline-block
+                        font-family: $body-font-family
+                        font-size: 50%
+                        transform: rotate(-45deg)
 
     @include in-page-with-or-without-sidebar
         .top
@@ -99,12 +101,14 @@
                 .link-content
                     gap: 0
                     margin: 0
-                    a, p
+                    a,
+                    p
                         width: columns(6)
                 
                 li:not(:has(.media))
                     .link-content
-                        a, p
+                        a,
+                        p
                             width: columns(8)
                 .media:where(:not(.media--icon))
                     width: columns(6)
@@ -112,21 +116,23 @@
     &--grid
         .links
             .link-content
-                > p a
-                    @include small
+                > p
+                    a
+                        @include small
         @include in-page-without-sidebar
             .links:has(li:only-child)
                 display: block
                 > li
                     @include big-link-style
                     gap: $spacing-3
-                    background: red
-                > p a
-                    @include body-text
+                > p
+                    a
+                        @include body-text
 
     &--cards
         .links 
             > li:hover
                 .link-content
-                    p > a
-                        @include link($block-links-card-hover-color)
+                    p 
+                        > a
+                            @include link($block-links-card-hover-color)

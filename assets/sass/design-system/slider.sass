@@ -1,0 +1,55 @@
+// slider with arrows on top of slides
+.block[class*="--carousel"]
+    .block-content
+        position: relative
+    .slider-arrows
+        position: absolute
+        top: space(-7)
+        right: 0
+        font-size: pxToRem(34)
+        .slider-arrow-previous
+            padding-right: space(5)
+        .slider-arrow-next
+            padding-left: space()
+            margin-right: -$spacing-3
+        .slider-progression
+            @extend .sr-only
+    @include media-breakpoint-down(desktop)
+        .block-title
+            padding-right: calc(#{columns(3)} + var(--grid-gutter))
+        .slider-arrows
+            top: space(-7)
+
+    // to see arrows when there is no title (overflow hidden)
+    &:not(.block-titled)
+        overflow: visible
+        .slider-arrows
+            top: space(-20)
+        .container
+            overflow: hidden
+            padding-top: $spacing-4
+            @include media-breakpoint-up(desktop)
+                margin-top: -$spacing-4
+
+    @include media-breakpoint-up(desktop)
+        // case with block title before
+        .block-title + &:not(.block-titled)
+            margin-top: 0
+            padding-top: var(--heading-margin-bottom)
+            .container
+                padding-top: $spacing-5
+                margin-top: space(-22)
+            .slider-arrows
+                top: space(-22)
+
+// slider
+.slider
+    .slider-arrows
+        .slider-arrow-previous
+            &::before
+                content: "←"
+                font-family: $heading-font-family
+        .slider-arrow-next
+            &::before
+                content: "→"
+                font-family: $heading-font-family

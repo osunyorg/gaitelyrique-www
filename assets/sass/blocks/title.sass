@@ -14,15 +14,17 @@
     @include in-page-without-sidebar
         max-width: 100%
 
-.heading.block-title h2
-    max-width: 100%
+.heading.block-title
+    h2
+        max-width: 100%
 
 // heading title block with sidebar
-body:not(.full-width) .block.heading  
-    @include media-breakpoint-up(desktop)
-        h2
-            padding-left: 0
-            margin-left: offset(4)
+body:not(.full-width)
+    .block.heading  
+        @include media-breakpoint-up(desktop)
+            h2
+                padding-left: 0
+                margin-left: offset(4)
 
 // global heading block and block title
 .heading.block-title h2,
@@ -31,8 +33,9 @@ body.full-width .block .block-title
 
 // block titles
 body:not(.full-width)
-    .block .block-title
-        @include lead
+    .block
+        .block-title
+            @include lead
 
 // remove arrow from titles
 .block .block-title

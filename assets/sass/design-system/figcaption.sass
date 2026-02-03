@@ -12,8 +12,8 @@
             position: relative
             right: unset
             top: unset
-        .credit,
         &::before,
+        .credit,
         p
             @include small
             padding: space() $spacing-1
@@ -27,3 +27,36 @@
             left: unset
             position: absolute
             right: 0
+
+
+// ficaption on images for blocks
+.block:not(.block-testimonials, .block-features, .block-files)
+    figure
+        @include absolute-figcaption
+        // &:hover
+        //     figcaption .credit p
+        //         &, a
+        //             font-size: var(--small-size)
+        //             gap: $spacing-1
+    @include media-breakpoint-up(desktop)
+        &.block-call_to_action,
+        &.block-gallery
+            figure:hover
+                .credit p
+                    a
+                        width: 100%
+                    span[aria-hidden]:first-child
+                        margin-left: auto
+                        
+        &.block-call_to_action
+            figure figcaption a
+                color: var(--color-text)
+
+    @include in-page-with-sidebar
+        &.block-call_to_action
+            figure,
+                width: calc(#{columns(3)} + var(--column-width))
+                figcaption
+                    margin-left: 0
+                    .credit
+                        max-width: columns(3)

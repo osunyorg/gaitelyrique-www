@@ -3,10 +3,12 @@
         [itemprop="name"]
             @include h5
         .contacts 
-            h3, h4
+            h3,
+            h4
                 @include small
-            .schedule-table h3
-                @include h6
-
-    .socials-list li::before
-        font-size: space(5)
+            .schedule-table
+                h3
+                    @include h6
+    .socials-list
+        li::before
+            font-size: space(5)
