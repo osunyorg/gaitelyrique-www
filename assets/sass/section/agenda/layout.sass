@@ -87,14 +87,14 @@
     .events--agenda &
         .event-timeslot > * + * 
             margin-top: 0
-        
+
     .event-categories a
         @include h6
     
     @include media-breakpoint-up(desktop)
         .more
             margin-top: $spacing-2
-            
+
     @include media-breakpoint-down(desktop)
         .event, .exhibition
             &--with-image .media,
@@ -148,15 +148,6 @@
             .event-timeslot
                 time + time
                     @include h6
-
-.organizations__page,
-.persons__page
-    &.full-width
-        .events--list
-            .event-dates
-                @include h4
-            .event-time
-                @include h6
 
 .event-programme,
 .events-programme
