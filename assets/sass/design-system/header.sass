@@ -4,29 +4,34 @@ header#document-header
     justify-content: center
     flex-wrap: wrap
 
-    .upper-menu .nav-level-1 > li > a
-        @include meta
+    .upper-menu
+        .nav-level-1
+            > li
+                > a
+                    @include meta
     
-    nav.primary-menu .header-button
-        &[aria-expanded="false"]
-            span:last-of-type::before
-                @include icon-site("icon-menu")
-        &[aria-expanded="true"]
-            span:last-of-type::before
-                @include icon-site("icon-close")
+    nav.primary-menu
+        .header-button
+            &[aria-expanded="false"]
+                span:last-of-type::before
+                    @include icon-site("icon-menu")
+            &[aria-expanded="true"]
+                span:last-of-type::before
+                    @include icon-site("icon-close")
     
     // only use default search button for mobile
-    .nav-search .search-button
-        @include media-breakpoint-up(desktop)
-            display: none
+    .nav-search
+        .search-button
+            @include media-breakpoint-up(desktop)
+                display: none
 
     .additional-menu
-        &, > ul
+        &,
+        > ul
             align-items: baseline
             justify-content: flex-end
             gap: space(6)
             display: flex
-        
         ul
             list-style: none
             padding-left: 0
@@ -53,14 +58,15 @@ header#document-header
             @include media-breakpoint-up(desktop)
                 display: flex
         
-        .primary-i18n > span
-            @include icon-chevron(before)
-            text-transform: capitalize
-            gap: pxToRem(6)
-            &[aria-expanded]::before
-                font-size: 65%
-                margin-left: 0
-                font-weight: normal
+        .primary-i18n
+            > span
+                @include icon-chevron(before)
+                text-transform: capitalize
+                gap: pxToRem(6)
+                &[aria-expanded]::before
+                    font-size: 65%
+                    margin-left: 0
+                    font-weight: normal
 
         .primary-i18n 
             cursor: pointer
@@ -86,7 +92,8 @@ header#document-header
     .search-button,
     .change-color-mode-button,
     .primary-i18n
-        span, a
+        span,
+        a
             @include small
             font-weight: bold
             white-space: nowrap

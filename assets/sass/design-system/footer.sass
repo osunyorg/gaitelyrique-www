@@ -1,52 +1,53 @@
 footer#document-footer
-    .container:first-child > div
-        border-top: 4px solid var(--color-text)
+    .container
+        &:first-child
+            > div
+                border-top: 4px solid var(--color-text)
+                width: 100%
+                display: flex
+                @include media-breakpoint-up(desktop)
+                    flex-wrap: wrap
+                    align-items: flex-end
+                    column-gap: space(18)
+        + .container
+            flex-direction: column
+            align-items: flex-start
+            padding-top: 0
+            @include media-breakpoint-down(desktop)
+                padding-top: space(7)
+                margin-top: 0
+            > div
+                width: 100%
+            .footer-menu
+                li
+                    @include h6
+                    a[target="_blank"]::after
+                        content: '→'
+                        display: inline-block
+                        font-family: $body-font-family
+                        transform: rotate(-45deg)
+                @include media-breakpoint-up(desktop)
+                    align-items: baseline
+                    display: flex
+                    flex-wrap: wrap
+                    gap: $spacing-2
+                    justify-content: space-between
+                    width: 100%
+                    li
+                        white-space: nowrap
+                        + li
+                                margin-top: 0
+                        
+                        @include media-breakpoint-down(xl)
+                            &:last-child
+                                margin-right: auto
+
+                @include media-breakpoint-down(desktop)
+                    li + li
+                        margin-top: $spacing-3
     .footer-menu
         border-bottom: 4px solid var(--color-text)
         padding-bottom: space(5)
-    .container:first-child > div
-        width: 100%
-        display: flex
-        @include media-breakpoint-up(desktop)
-            flex-wrap: wrap
-            align-items: flex-end
-            column-gap: space(18)
-    .container + .container
-        flex-direction: column
-        align-items: flex-start
-        padding-top: 0
-        @include media-breakpoint-down(desktop)
-            padding-top: space(7)
-            margin-top: 0
-        > div
-            width: 100%
-        .footer-menu
-            li
-                @include h6
-                a[target="_blank"]::after
-                    content: '→'
-                    display: inline-block
-                    font-family: $body-font-family
-                    transform: rotate(-45deg)
-            @include media-breakpoint-up(desktop)
-                align-items: baseline
-                display: flex
-                flex-wrap: wrap
-                gap: $spacing-2
-                justify-content: space-between
-                width: 100%
-                li
-                    white-space: nowrap
-                    + li
-                            margin-top: 0
-                    
-                    @include media-breakpoint-down(xl)
-                        &:last-child
-                            margin-right: auto
-
-            @include media-breakpoint-down(desktop)
-                li + li
-                    margin-top: $spacing-3
     .footer-presentation
         margin-top: space(5)
         order: 3
@@ -79,6 +80,7 @@ footer#document-footer
             flex-wrap: wrap
             gap: space(4)
             justify-content: space-between
+            padding-bottom: pxToRem(13)
             @include media-breakpoint-up(desktop)
                 justify-content: flex-end
             .tiktok
@@ -157,6 +159,7 @@ footer#document-footer
             justify-content: space-between
             .logo img
                 height: pxToRem(68)
+                padding-bottom: pxToRem(6)
             .nav-legal
                 display: flex
                 gap: space(4)

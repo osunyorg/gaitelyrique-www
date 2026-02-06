@@ -1,27 +1,22 @@
-
 .calendar-month
     caption
         a
             @include h4
-            color: var(--color-text)
-            &:hover
-                color: var(--color-text)
-                text-decoration: underline
+            @include link
     tbody
-        a, span, .btn
+        a,
+        span,
+        .btn
             line-height: space(9.5)
         a
             background: var(--color-text)
             &:hover
                 color: var(--color-text)
-                background: var(--color-background)
+                background: var(--color-background-alt)
     @include media-breakpoint-down(desktop)
-        tbody a
-            line-height: 2
+        tbody
+            a
+                line-height: 2
         th, 
         td
             min-width: unset !important
-
-.events-calendar
-    @include media-breakpoint-down(desktop)
-        grid-template-columns: repeat(1, 1fr) !important

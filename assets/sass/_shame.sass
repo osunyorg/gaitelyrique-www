@@ -1,0 +1,74 @@
+.block-chapter
+    // notes (ex: 'food' in 'restauration' page)
+    &.block-class-notes-as-lead
+        .notes p
+            @include lead
+    
+    // with a list marker and a margin
+    &.block-class-unique-list-marker
+        .rich-text > ul:first-of-type 
+            @include list-reset
+            li:first-of-type
+                align-items: baseline
+                display: flex
+                gap: space(2)
+                &::before
+                    aspect-ratio: 1
+                    content: ''
+                    background: var(--color-text)
+                    border-radius: 100%
+                    height: $body-size
+            @include media-breakpoint-up(desktop)
+                padding-top: $spacing-3
+                padding-left: $spacing-6
+.block-files
+    // specific icons
+    &.block-class-icon-menu,
+    &.block-class-icon-public
+        .files
+            li::before
+                line-height: pxToRem(48)
+                border: none
+                outline: var(--border-width) solid var(--color-border)
+                outline-offset: -4px
+    
+    // people icon
+    &.block-class-icon-public
+        .files li::before
+            @include icon-site('icon-public')
+            font-size: pxToRem(48)
+    
+    // drink icon
+    &.block-class-icon-menu
+        .files
+            li
+                align-items: center
+                &::before
+                    @include icon-site('icon-carte')
+                    font-size: pxToRem(48)
+                figure
+                    display: flex
+                    align-items: baseline
+                    gap: $spacing-1
+                    a
+                        text-decoration: underline
+                    figcaption
+                        margin-top: 0
+                        &::before
+                            content: '('
+                        &::after
+                            content: ')'
+
+.events
+    &--list
+        .events
+            > li:last-child
+                padding-bottom: 0
+                margin-bottom: 0
+
+// cards title size
+.block-pages--cards .pages,
+.categories--cards
+    article
+        [class*="-title"]
+            @include h4

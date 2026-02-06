@@ -1,3 +1,10 @@
+.event,
+.exhibition
+    .media
+        img
+            aspect-ratio: 16/9 !important
+            object-fit: cover
+
 .events__section,
 .events_categories__term,
 .events__page
@@ -80,78 +87,3 @@
                     .media
                         order: -1
                         width: 100%
-
-
-.event, .exhibition
-    &,
-    .events--agenda &
-        .event-timeslot > * + * 
-            margin-top: 0
-
-    .event-categories a
-        @include h6
-    
-    @include media-breakpoint-up(desktop)
-        .more
-            margin-top: $spacing-2
-
-    @include media-breakpoint-down(desktop)
-        .event, .exhibition
-            &--with-image .media,
-            &-timeslot,
-            &-description
-                margin-top: 0
-            &-content > *:where(:not(.more))
-                margin-bottom: space(4)
-
-.exhibitions--agenda,
-.events--agenda,
-.organizations__page,
-.persons__page
-    .exhibition,
-    .event
-        .exhibition-dates,
-        .event-hours,
-        .event-place,
-        &-subtitle
-            @include h6
-        &-title
-            @include h4
-        &-categories
-            order: -1
-            margin-bottom: $spacing-2
-            margin-top: 0 !important
-    .events-date-title
-        &, &.is-down
-            @include h4
-    .event
-        .event-content
-            display: flex
-            flex-direction: column
-
-    @include media-breakpoint-down(desktop)
-        .events-date
-            padding-top: 0
-            padding-bottom: space(18)
-        .events-date-title
-            padding-bottom: $spacing-1
-            + .event
-                padding-top: space(6) !important
-        .event, .exhibition
-            .event, .exhibition
-                &-title
-                    @include h2
-                .event-place
-                    @include meta
-    @include media-breakpoint-up(desktop)
-        .event
-            .event-timeslot
-                time + time
-                    @include h6
-
-.event-programme,
-.events-programme
-    @include media-breakpoint-down(desktop)
-        .events-date
-            .events-date-title + ol:first-of-type
-                padding-top: space(8)

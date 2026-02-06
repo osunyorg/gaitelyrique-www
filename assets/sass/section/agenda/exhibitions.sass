@@ -1,0 +1,49 @@
+.exhibitions
+    .exhibition
+        .exhibition-content
+            display: flex
+            flex-direction: column
+        .exhibition-title
+            margin-bottom: 0
+            + .exhibition-subtitle
+                margin-top: $spacing-1
+            a::after
+                content: none !important
+        .exhibition-subtitle,
+        .exhibition-schedule,
+        .exhibition-dates
+            @include h6
+        .event-categories
+            order: -2
+            margin-bottom: $spacing-2
+        @include media-breakpoint-down(desktop)
+            hgroup
+                margin-bottom: 0
+            .exhibition-title
+                @include h2
+            .exhibition-schedule
+                order: -2 !important
+                margin-bottom: $spacing-2
+
+    &--grid
+        .exhibition
+            .media
+                margin-bottom: $spacing-3
+
+    &--large
+        .exhibition
+            @include in-page-without-sidebar
+                align-items: start
+                .exhibition-title
+                    @include h2
+                .exhibition-subtitle,
+                .exhibition-schedule,
+                .exhibition-dates
+                    @include h4
+            @include in-page-with-sidebar
+                .exhibition-title
+                    @include h3
+                .exhibition-subtitle,
+                .exhibition-schedule,
+                .exhibition-dates
+                    @include h5

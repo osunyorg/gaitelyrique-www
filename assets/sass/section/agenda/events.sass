@@ -1,0 +1,97 @@
+.events
+    .event
+        .event-content
+            display: flex
+            flex-direction: column
+        .event-title
+            margin-bottom: 0
+            + .event-subtitle
+                margin-top: $spacing-1
+        .event-subtitle,
+        .event-hours,
+        .event-place,
+        .event-dates,
+        .event-schedule,
+        .event-timeslot,
+        .event-hours span time
+            @include h6
+        .event-description
+            margin-top: $spacing-2
+        .event-categories
+            order: -2
+            margin-bottom: $spacing-2
+        .event-parent
+            margin-bottom: space()
+            margin-top: 0
+        @include media-breakpoint-down(desktop)
+            hgroup
+                margin-bottom: 0
+            .event-title
+                @include h2
+            .event-timeslot
+                order: 0 !important
+                *
+                    display: inline
+
+    &--grid
+        .event
+            .media
+                margin-bottom: $spacing-3
+        
+    &--list
+        .event
+            .event-content
+                > .event-parent
+                    margin-bottom: 0
+            @include in-page-without-sidebar
+                .event-content
+                    display: flex
+                    flex-direction: column
+                    width: columns(6)
+                .event-schedule
+                    position: absolute
+                    left: 0
+                    width: columns(2)
+                    .event-dates
+                        @include h6
+                &:not(.event--with-image)
+                    padding-left: offset(2)
+                &--with-image
+                    .media
+                        order: -1
+                        margin-left: offset(2)
+                        width: columns(4)
+            
+        @include media-breakpoint-down(desktop)
+            article
+                gap: 0
+            .event--with-image
+                .media
+                    max-width: 100%
+            
+    &--large
+        .event
+            .event-content
+                display: flex
+                flex-direction: column
+                padding-right: 0
+                .event-schedule
+                    margin-bottom: 0
+            @include in-page-without-sidebar
+                align-items: flex-start
+                .event-title
+                    @include h2
+                .event-subtitle,
+                .event-schedule,
+                .event-dates
+                    @include h4
+            @include in-page-with-sidebar
+                .event-title
+                    @include h3
+                .event-subtitle,
+                .event-schedule,
+                .event-dates
+                    @include h5
+
+    // &--programme
+        

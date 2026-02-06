@@ -1,8 +1,9 @@
 .hero
     padding-bottom: 0
-    .breadcrumb-nav + .content
-        border-top: var(--border-width) solid var(--color-text)
-        padding-top: $spacing-3
+    .breadcrumb-nav
+        + .content
+            border-top: var(--border-width) solid var(--color-text)
+            padding-top: $spacing-3
     .content
         padding-top: $spacing-3
         figure
@@ -10,8 +11,9 @@
         .hero-text
             margin-top: 0
     .taxonomies-single
-        .terms a
-            @include h4
+        .terms
+            a
+                @include h4
 
     // hide image in page (to keep it in item)
     body.page-hero_without_image &.hero--with-image

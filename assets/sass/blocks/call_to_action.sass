@@ -4,17 +4,20 @@
         .block-content
             padding-bottom: 0
             padding-top: 0
-    
+        .top
+            .description
+                max-width: columns(6)
+
     &--accent_background
         .call_to_action
             background-color: $block-call-to-action-accent-background
-
             @include in-page-without-sidebar
-                padding: space(9) var(--grid-gutter)
-        
+                padding: $spacing-4 columns(1)
+        picture.is-svg
+            img
+                width: pxToRem(100)
         @include in-page-without-sidebar
             background: none
-        
         @include in-page-with-sidebar
             .call_to_action > div::after
                 content: none
@@ -23,7 +26,6 @@
         .top
             &:only-child
                 margin-bottom: 0
-            
             .block-title
                 @include h4
                 margin-bottom: $spacing-1
@@ -37,18 +39,13 @@
             flex-direction: column
             align-items: flex-start
             a
-                @include body-text
                 --btn-font-size: var(--body-font-size)
                 --btn-line-height: var(--body-line-height)
                 font-family: $sans-condensed
-                text-decoration: underline
-                text-decoration-thickness: 1px
                 &:first-child
                     --btn-padding: 0
                     --btn-min-width: 0
-                    text-decoration: underline
                     text-transform: none
-                    text-decoration-thickness: 1px
                 + a
                     margin-top: $spacing-1
                 
