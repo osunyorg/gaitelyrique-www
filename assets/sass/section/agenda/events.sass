@@ -4,7 +4,9 @@
             display: flex
             flex-direction: column
         .event-title
-            margin-bottom: $spacing-2
+            margin-bottom: 0
+            + .event-subtitle
+                margin-top: $spacing-1
         .event-subtitle,
         .event-hours,
         .event-place,
@@ -13,7 +15,6 @@
         .event-timeslot,
         .event-hours span time
             @include h6
-            margin-top: 0
         .event-description
             margin-top: $spacing-2
         .event-categories
@@ -34,11 +35,6 @@
 
     &--grid
         .event
-            .event-subtitle,
-            .event-schedule,
-            .event-dates
-                @include h6
-                margin-top: 0
             .media
                 margin-bottom: $spacing-3
         

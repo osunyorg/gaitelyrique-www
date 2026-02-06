@@ -4,14 +4,15 @@
             display: flex
             flex-direction: column
         .exhibition-title
-            margin-bottom: $spacing-2
+            margin-bottom: 0
+            + .exhibition-subtitle
+                margin-top: $spacing-1
             a::after
                 content: none !important
         .exhibition-subtitle,
         .exhibition-schedule,
         .exhibition-dates
             @include h6
-            margin-top: 0
         .event-categories
             order: -2
             margin-bottom: $spacing-2
@@ -26,12 +27,6 @@
 
     &--grid
         .exhibition
-            .exhibition-subtitle,
-            .exhibition-schedule,
-            .exhibition-dates
-                @include h6
-                margin-bottom: 0 !important
-                margin-top: 0 !important
             .media
                 margin-bottom: $spacing-3
 
