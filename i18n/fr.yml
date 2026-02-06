@@ -13,8 +13,6 @@ commons:
   search:
     placeholder: Recherche
     title: Recherche
-events:
-  part_of: "Cet événement fait partie de :"
 posts:
   more: En savoir plus
 errors:
