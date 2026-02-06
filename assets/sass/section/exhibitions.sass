@@ -18,13 +18,14 @@
                 text-decoration: none
         [class*="-dates"]
             @include h6
-        
+
     &--grid
         .exhibition
             [class$="-content"]
                 display: flex
                 flex-direction: column
                 [class$="-categories"]
+                    margin-top: 0
                     order: -1
             [class$="-subtitle"]
                 @include h5
