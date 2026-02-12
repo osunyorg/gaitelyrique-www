@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Gaîté Lyrique | Signature</title>
+
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/signature/style.css" />
+</head>
+
+<body>
+
+    <fieldset id="contact_form" class="formulaire header">
+        <h1>La Gaîté Lyrique</h1>
+        <h2>Générateur de signature mail</h2>
+    </fieldset>
+
+    <fieldset id="contact_form" class="formulaire">
+        <legend>1. Indiquez vos coordonnées</legend>
+        <label for="name"><span>Votre nom</span>
+            <input type="text" name="name" id="name" placeholder="Prénom Nom" />
+        </label>
+
+        <label for="fonction"><span>Votre fonction</span>
+            <input type="text" name="fonction" id="fonction" placeholder="Fonction" />
+        </label>
+
+        <label for="email"><span>Votre e-mail</span>
+            <input type="email" name="email" id="email" placeholder="prenom.nom@gaite-lyrique.net" />
+        </label>
+
+        <label for="phone"><span>Tél fixe</span>
+            <input type="text" name="phone" id="phone" placeholder="+33 (0)1 53 01 XX XX" />
+        </label>
+
+        <label for="phone2"><span>Tél portable (facultatif)</span>
+            <input type="text" name="phone2" id="phone2" placeholder="+33 (0)6 XX XX XX XX" />
+        </label>
+    </fieldset>
+
+    <fieldset id="contact_form" class="preview">
+        <legend>2. Aperçu</legend>
+        <div id="copytext">
+            <table
+                style="width: 500px; background-color: #ffffff; color: #000000 !important; line-height: 1.4; margin: 0;">
+                <tr>
+                    <td valign="top" style="padding-right: 20px; padding-bottom: 10px;">
+                        <span
+                            style="font-family:'Arial Black', Arial, sans-serif; font-size: 18px; color: #000000; line-height:1em; letter-spacing: -0.025em;"
+                            class="name">
+                            <strong>Prénom Nom</strong></span><br />
+
+                        <span
+                            style="font-family:Arial, sans-serif; color: #000000; line-height:1em;"><span
+                                class="fonction">Fonction</span></span><br />
+
+                        <span
+                            style="font-family:Arial, sans-serif; color: #000000; line-height:1em;"><span
+                                class="email"
+                                style="text-decoration: underline;"><u>prenom.nom@gaite-lyrique.net</u></span></span>
+                        <br />
+
+                        <span
+                            style="font-family:Arial, sans-serif; color: #000000; line-height:1em;"><span
+                                class="phone">+33 (0)1 53 01 XX XX</span></span><br />
+                        <span
+                            style="font-family:Arial, sans-serif; color: #000000; line-height:1em;"><span
+                                class="phone2">+33 (0)6 XX XX XX XX</span></span>
+                    </td>
+
+                    <td valign="top" style="padding-bottom: 10px;">
+                        <a href="http://www.gaite-lyrique.net"><img
+                                src="http://www.gaite-lyrique.net/img/signature/logo_gaitelyrique.png" height="35"
+                                width="196" style="display:block" alt="La Gaîté Lyrique" /></a>
+
+                        <span
+                            style="font-family:Arial, sans-serif; color: #000000; line-height:1em;">3
+                            bis rue Papin, 75003 Paris</span><br />
+
+                        <a href="http://www.gaite-lyrique.net">
+                            <span
+                                style="font-family:Arial, sans-serif; color: #000000; line-height:1em; text-decoration: underline;">
+                                gaite-lyrique.net</span>
+                        </a><br />
+                        <span
+                            style="font-family:Arial, sans-serif; color: #000000; line-height:1em;">
+                            @gaitelyrique</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin: 0; padding: 0;">
+                        <img src="http://www.gaite-lyrique.net/img/signature/stripes.jpg" height="4"
+                            width="500" style="display: block;" alt="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+
+    <fieldset id="contact_form" class="code">
+        <legend>3. Copiez le code HTML</legend>
+        <button id="reload">Actualiser</button>
+        <pre class="code-insert wrap"></pre>
+    </fieldset>
+
+    <fieldset id="contact_form" class="formulaire">
+        <legend>4. Collez-le dans les paramètres de votre client mail</legend>
+        <strong>Logiciels fréquents :</strong>
+        <ul>
+            <li><a href="https://support.mozilla.org/fr/kb/ajouter-une-signature-ses-messages"
+                    target="_blank">Thunderbird</a></li>
+            <li><a href="http://protuts.net/creer-signature-html-apple-mail/" target="_blank">Mail (Mac)</a></li>
+            <li><a href="http://www.arobase.org/opera/ajouter-automatiquement-signature-opera-mail.htm"
+                    target="_blank">Opera Mail</a></li>
+        </ul>
+
+        <strong>Autres :</strong>
+        <ul>
+            <li><a href="http://www.ehow.com/how_8268910_create-html-email-signature-entourage.html"
+                    target="_blank">Entourage</a></li>
+            <li>Outlook ne permet apparemment pas de créer une signature HTML.<br /><i>Optez plutôt pour un des clients
+                    mail cités plus haut !</i></li>
+        </ul>
+
+    </fieldset>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#name').on('keyup', function() {
+                var word = $(this).val();
+                $('.name').html(word);
+                return false;
+            });
+
+            $('#fonction').on('keyup', function() {
+                var word = $(this).val();
+                $('.fonction').html(word).css('italic', '');
+                return false;
+            });
+
+            $('#email').on('keyup', function() {
+                var word = $(this).val();
+                $('.email').html(word);
+                return false;
+            });
+
+            $('#phone').on('keyup', function() {
+                var word = $(this).val();
+                $('.phone').html(word).prepend();
+
+                if (word === '') {
+                    $('.phone').empty();
+                }
+                return false;
+            });
+
+            $('#phone2').on('keyup', function() {
+                var word = $(this).val();
+                $('.phone2').html(word).prepend();
+
+                if (word === '') {
+                    $('.phone2').empty();
+                }
+                return false;
+            });
+
+            $('#reload').on('click', function() {
+                $('.code-insert').text(unescape($('#copytext').html()));
+            });
+        });
+
+        $('#contact_form input, #contact_form textarea').on('keyup', function() {
+            $('#contact_form input, #contact_form textarea').css('border-color', '');
+            $('#result').slideUp();
+        });
+    </script>
+</body>
+
+</html>
