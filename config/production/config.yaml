@@ -7,6 +7,11 @@ osuny:
   website:
     id: 69d9a122-c420-4c4f-8696-86efd0ac55f1
 
+## PARAMS
+params:
+  _merge: deep
+  plausible: "gaite-lyrique.net"
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
