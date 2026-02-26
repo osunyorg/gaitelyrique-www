@@ -304,6 +304,8 @@
                         @include h6
                 .block-organizations--grid
                     margin-top: space(14) // https://www.figma.com/design/3xx5IEgr1xzqP6EM5ZAhV4/GLxMOF_crea-et-wireframes?node-id=1204-2365&t=IlNgtjtsdGVbyM4F-1
+                    &:first-child
+                        margin-top: 0 // https://www.figma.com/design/3xx5IEgr1xzqP6EM5ZAhV4/GLxMOF_crea-et-wireframes?node-id=1204-1997&t=IlNgtjtsdGVbyM4F-1
                     .top
                         margin-bottom: space()
                     .organizations
@@ -325,11 +327,11 @@
                                 width: 100%
 
             .event-practicals
+                padding-bottom: space(10)
                 p
                     @include small
             @include media-breakpoint-up(desktop)
                 .event-practicals
-                    padding-bottom: space(10)
                     p + p
                         margin-top: space(2)
                     .btn
@@ -338,8 +340,9 @@
             @include media-breakpoint-down(desktop)
                 padding-bottom: 0
                 margin-bottom: 0
-                .event-practicals p
-                    @include body-text
+                .event-practicals
+                    p
+                        @include body-text
         
         .document-content > .blocks
             .block-chapter
