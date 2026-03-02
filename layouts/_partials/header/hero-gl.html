@@ -5,7 +5,7 @@
 {{ $subtitle := .subtitle }}
 {{ $description := .description }}
 {{ if .image }}
-  {{ $direction = partial "GetImageDirection" .image }}
+  {{ $direction = partial "commons/image/helpers/GetDirection" .image }}
 {{ end }}
 
 {{ $summary := .context.Params.summary | safeHTML }}
@@ -48,7 +48,7 @@
           <div>
             {{ if .image }}
               <!-- TODO Peut etre aligner la stucture des données avec les autres cas d'images -->
-              {{ partial "commons/image-figure.html" (dict
+              {{ partial "commons/image/figure.html" (dict
                 "image"    .image
                 "sizes"    ( .sizes | default site.Params.image_sizes._default.hero )
                 "lazy"      false

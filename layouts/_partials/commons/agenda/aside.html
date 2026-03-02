@@ -1,6 +1,6 @@
 <div class="agenda-aside">
   {{ with .Params.image }}
-    {{ partial "commons/image-figure.html" (dict
+    {{ partial "commons/image/figure.html" (dict
       "image" .
       "sizes" site.Params.image_sizes.sections.agenda.hero_single
       "lazy" false
