@@ -1,15 +1,17 @@
 theme: osuny
 _merge: deep
 params:
+  plausible: www.gaite-lyrique.net
   additional_csp: cdn.matomo.cloud gaitelyrique.matomo.cloud 'unsafe-inline'
   debug:
-    productionUrl: https://www.gaite-lyrique.net/
+    productionUrl: https://www.gaite-lyrique.net
   summary:
     position: hero
   search:
     active: true
     positions:
       - primary
+      - secondary
   home:
     head:
       title: site
@@ -52,6 +54,8 @@ params:
     single:
       summary:
         position: content
+    list:
+      with_more: true
   organizations:
     single:
       backlinks: true
@@ -92,15 +96,20 @@ params:
       events:
         children_in_agenda:
           mobile: 302
+          tablet:  400
           desktop:  575
         layouts:
           agenda:
             mobile: 302
+            tablet:  400
             desktop: 575
           grid:
+            mobile:  360
+            tablet:  360
             desktop:  864
           list:
             mobile: 327
+            tablet:  575
             desktop: 575
       pages:
         item:
@@ -108,10 +117,8 @@ params:
       posts:
         item:
           desktop:  894
-        layouts:
-          grid:
-            desktop:  894
       home:
         hero:
+          mobile:  480
           tablet:   1200
           desktop:  1792

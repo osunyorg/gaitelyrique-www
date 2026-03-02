@@ -1,39 +1,12 @@
 .hero
     padding-bottom: 0
-    h1
-        word-break: break-word
-        hyphens: auto
     .breadcrumb-nav + .content
         border-top: var(--border-width) solid var(--color-text)
         padding-top: $spacing-3
     .content
         padding-top: $spacing-3
         figure
-            @include media-breakpoint-up(desktop)
-                figcaption
-                    align-items: baseline
-                    background: var(--color-background)
-                    bottom: 0
-                    color: var(--color-text)
-                    display: flex
-                    flex-direction: row-reverse
-                    left: unset
-                    max-width: 100%
-                    position: absolute
-                    right: 0
-                    &::before
-                        position: relative
-                        right: unset
-                        top: unset
-                    .credit,
-                    &::before
-                        @include small
-                        line-height: 1
-                        padding: space() $spacing-1
-                    .credit
-                        padding-right: 0
-                        p
-                            padding: 0
+            @include absolute-figcaption
         .hero-text
             margin-top: 0
     .taxonomies-single
@@ -102,7 +75,7 @@
                     font-size: 110%
                     text-decoration: none
                     right: -(space(4))
-                    
+
     @include media-breakpoint-down(desktop)
         body:not(.page__home) &
             margin-top: var(--grid-gutter)

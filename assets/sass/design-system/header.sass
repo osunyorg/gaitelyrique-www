@@ -33,7 +33,11 @@ header#document-header
             @include media-breakpoint-down(desktop)
                 display: none
         
+        .search-button--secondary
+            @include icon(search-line, after)
+
         .search-button--primary,
+        .search-button--secondary,
         .primary-i18n
             padding: 0
             width: auto
@@ -42,6 +46,7 @@ header#document-header
                 display: none
 
         .search-button--primary,
+        .search-button--secondary,
         .primary-i18n > span
             align-items: baseline
             flex-direction: row-reverse
@@ -151,7 +156,6 @@ header#document-header
             padding: $spacing-2 var(--grid-gutter)
             width: calc(100% + calc(var(--grid-gutter) * 2))
             span + span
-                width: columns(6.2)
                 justify-content: space-between
 
             html:not(.has-menu-opened) &
@@ -196,9 +200,12 @@ header#document-header
             .menu
                 --header-menu-max-height: 70svh
                 margin-top: space(-4)
+                margin-right: var(--grid-gutter-negative)
+                padding-right: var(--grid-gutter)
                 order: 2
 
             .nav-level-1
+                --h4-size: #{pxToRem(28)}
                 display: flex
                 flex-direction: column
                 > li:first-of-type,
@@ -208,15 +215,17 @@ header#document-header
                     margin-top: calc(#{pxToRem(30)} - #{$spacing-1})
                 .nav-search
                     order: -1
+                    .search-button
+                        justify-content: start
+                        &::after
+                            order: -1
                 > li.has-children
                     order: 2
                 // li between borders
                 > li:not(.has-children, .nav-search)
                     &:first-child a
                         padding-top: pxToRem(30)
-                    &:laft-child a
-                        padding-bottom: pxToRem(30)
-            
+
             .menu-socials
                 display: block
                 order: 3

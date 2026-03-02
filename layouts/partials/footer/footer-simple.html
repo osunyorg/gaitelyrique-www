@@ -8,11 +8,11 @@
       {{ partial "footer/social.html" . }}
     </div>
     <div class="footer-partners">
-      <a href="https://arty-farty.eu/" target="_blank" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Arty Farty") }}"><img src="/assets/images/partners/Logo_ArtyFarty.svg" alt="" height="72" width="138" loading="lazy"></a>
-      <a href="https://www.arte.tv/fr/" target="_blank" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Arte") }}"><img src="/assets/images/partners/Logo_Arte.svg" alt="Arte" height="30" width="117" loading="lazy"></a>
-      <a href="https://makesense.org/" target="_blank" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Make Sense") }}"><img src="/assets/images/partners/Logo_make_sense.svg" alt="Make Sense" height="31" width="191" loading="lazy"></a>
-      <a href="https://wearesinga.org/" target="_blank" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Singa") }}"><img src="/assets/images/partners/Logo_singa.svg" alt="Make Sense" height="29" width="115" loading="lazy"></a>
-      <a href="https://www.actes-sud.fr/" target="_blank" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Actes Sud") }}"><img src="/assets/images/partners/Logo_ActesSud.svg" alt="Actes Sud" height="27" width="200" loading="lazy"></a>
+      <a href="https://arty-farty.eu/" target="_blank" rel="noopener noreferrer" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Arty Farty") }}"><img src="/assets/images/partners/Logo_ArtyFarty.svg" alt="" height="72" width="138" loading="lazy"></a>
+      <a href="https://www.arte.tv/fr/" target="_blank" rel="noopener noreferrer" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Arte") }}"><img src="/assets/images/partners/Logo_Arte.svg" alt="Arte" height="30" width="117" loading="lazy"></a>
+      <a href="https://makesense.org/" target="_blank" rel="noopener noreferrer" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Make Sense") }}"><img src="/assets/images/partners/Logo_make_sense.svg" alt="Make Sense" height="31" width="191" loading="lazy"></a>
+      <a href="https://wearesinga.org/" target="_blank" rel="noopener noreferrer" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Singa") }}"><img src="/assets/images/partners/Logo_singa.svg" alt="Make Sense" height="29" width="115" loading="lazy"></a>
+      <a href="https://www.actes-sud.fr/" target="_blank" rel="noopener noreferrer" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Actes Sud") }}"><img src="/assets/images/partners/Logo_ActesSud.svg" alt="Actes Sud" height="27" width="200" loading="lazy"></a>
     </div>
   </div>
 </div>
@@ -26,7 +26,7 @@
       "stop" 1
   )}}
   <div class="footer-legals">
-    <a href="https://www.paris.fr/" target="_blank" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Ville de Paris") }}" class="logo"><img src="/assets/images/partners/logo_paris.svg" alt="" height="72" width="138" loading="lazy"></a>
+    <a href="https://www.paris.fr/" target="_blank" rel="noopener noreferrer" title="{{ i18n "commons.link.blank_aria" (dict "Title" "Ville de Paris") }}" class="logo"><img src="/assets/images/partners/logo_paris.svg" alt="" height="72" width="138" loading="lazy"></a>
     <div>
       {{ partial "footer/legals.html" . }}
       {{ if and site.Params.search.active (in site.Params.search.positions "footer") }}

@@ -4,8 +4,8 @@
       "image" .
       "sizes" site.Params.image_sizes.sections.agenda.hero_single
       "lazy" false
-      )
-    }}
+      "with_lightbox" (not site.Params.components.lightbox.in_hero.disabled)
+    ) }}
   {{ end }}
 
   {{ if or .Params.text .Params.notes .Params.header_cta }}

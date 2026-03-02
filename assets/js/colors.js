@@ -26,10 +26,10 @@ window.gaite.colorsAccent = [
 
 window.gaite.colorLocalKey = "gaite-is-colored";
 
-window.gaite.isColorMode = false;
+window.gaite.isColorMode = true; // Set as string for localStorage
 
 window.gaite.init = function () {
-  var colorMode = localStorage.getItem(window.gaite.colorLocalKey);
+  var colorMode = localStorage.getItem(window.gaite.colorLocalKey) || window.gaite.isColorMode.toString();
 
   this.button = document.querySelector('.change-color-mode-button');
 
@@ -39,8 +39,6 @@ window.gaite.init = function () {
 
   if (colorMode == "true") {
     this.toggleMode();
-  } else {
-    this.setRandomAccentColor();
   }
 };
 
@@ -53,11 +51,14 @@ window.gaite.setRandomAccentColor = function () {
 
 window.gaite.toggleMode = function () {
   var colors = ["#FFFFFF", "#000000", "#EBEBEB"];
+
+  document.body.classList.add('is-color-mode-changing'); // avoid glitch on page loading
+
   this.button.classList.remove('is-color-mode');
 
-  this.isColorMode = this.isColorMode == "true" ? "false" : "true";
+  this.isColorMode = this.isColorMode == "true" ? "false" : "true"; // Set as string for localStorage
 
-  if (this.isColorMode === "true") {
+  if (this.isColorMode == "true") {
     colors = this.getRandomColors();
     this.button.classList.add('is-color-mode');
   }
@@ -65,6 +66,10 @@ window.gaite.toggleMode = function () {
   this.setColors(colors);
 
   localStorage.setItem(window.gaite.colorLocalKey, this.isColorMode.toString());
+
+  setTimeout(function(){
+    document.body.classList.remove('is-color-mode-changing'); // avoid glitch on page loading
+  }, 10);
 };
 
 window.gaite.getRandomColors = function () {
@@ -74,9 +79,7 @@ window.gaite.getRandomColors = function () {
 
 window.gaite.setColors = function (colors) {
   document.documentElement.style.setProperty("--color-background", colors[0]);
-  if (this.isColorMode) {
-    document.documentElement.style.setProperty("--color-accent", colors[1]);
-  }
+  document.documentElement.style.setProperty("--color-accent", colors[1]);
   document.documentElement.style.setProperty("--color-background-alt", colors[2]);
 };
 

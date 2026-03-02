@@ -2,57 +2,77 @@
 title: Menu principal
 items:
 - title: Agenda
+  slug: agenda
   target: "/agenda/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/events"
   file: content/fr/events/_index.html
 - title: La Fabrique de l'époque
+  slug: la-fabrique-de-l-epoque
   target: "/la-fabrique-de-lepoque/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/la-fabrique-de-lepoque"
   file: content/fr/pages/la-fabrique-de-lepoque/_index.html
 - title: Infos pratiques
+  slug: infos-pratiques
   target: "/infos-pratiques/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/infos-pratiques"
   file: content/fr/pages/infos-pratiques/_index.html
 - title: mobile-infos
+  slug: mobile-infos
   target: ''
   kind: blank
   new_tab: false
   children:
   - title: Presse
+    slug: presse
     target: "/presse/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/presse"
     file: content/fr/pages/presse/_index.html
   - title: Rejoindre l'équipe
+    slug: rejoindre-l-equipe
     target: "/rejoindre-l-equipe/offres-d-emploi/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/jobs"
     file: content/fr/jobs/_index.html
   - title: Privatisation
+    slug: privatisation
     target: "/privatisation/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/privatisation"
     file: content/fr/pages/privatisation/_index.html
   - title: Soutenir la Fabrique
+    slug: soutenir-la-fabrique
     target: "/ils-nous-soutiennent/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/ils-nous-soutiennent"
     file: content/fr/pages/ils-nous-soutiennent/_index.html
+  descendants_targets:
+  - "/ils-nous-soutiennent/"
+  - "/presse/"
+  - "/privatisation/"
+  - "/rejoindre-l-equipe/offres-d-emploi/"
 
