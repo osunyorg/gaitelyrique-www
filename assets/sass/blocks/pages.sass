@@ -34,6 +34,7 @@
     
     &--grid
         .pages
+            @include extendable-list('&')
             article
                 .page-title
                     @include h4
@@ -42,11 +43,6 @@
                             margin-top: $spacing-3
             @include in-page-without-sidebar
                 grid-gap: $spacing-6 var(--grid-gutter)
-                display: flex
-                flex-wrap: wrap
-                > li
-                    flex: 1
-                    min-width: columns(4)
             @include media-breakpoint-down(desktop)
                 > li + li
                     margin-top: $spacing-4

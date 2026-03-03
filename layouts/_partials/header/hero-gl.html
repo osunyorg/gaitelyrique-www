@@ -49,9 +49,9 @@
             {{ if .image }}
               <!-- TODO Peut etre aligner la stucture des données avec les autres cas d'images -->
               {{ partial "commons/image/figure.html" (dict
-                "image"    .image
-                "sizes"    ( .sizes | default site.Params.image_sizes._default.hero )
-                "lazy"      false
+                "image" .image
+                "sizes" ( .sizes | default site.Params.image_sizes._default.hero )
+                "lazy" false
                 "with_lightbox" $with_lightbox
                 )
               }}
