@@ -27,7 +27,7 @@
       <ul class="list">
         {{ range after 1 . }}
           {{ with site.GetPage .path }}
-            {{ $title := partial "PrepareHTML" .Title }}
+            {{ $title := safeHTML .Title }}
             {{ $reading_time := .Params.contents_reading_time }}
             {{ partial "posts/partials/post.html" (dict 
               "post" .
