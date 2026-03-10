@@ -57,7 +57,7 @@ items:
   file: content/fr/pages/rejoindre-l-equipe/_index.html
 - title: Newsletter
   slug: newsletter
-  target: https://page.delight-data.com/newsletter-gaite.html
+  target: https://page.delight-data.com/newsletter-gaite-lyrique.html
   kind: url
   new_tab: true
   children: []
