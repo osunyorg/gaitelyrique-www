@@ -62,8 +62,6 @@ items:
   new_tab: true
   children: []
   descendants_targets: []
-  path: "/pages/newsletter"
-  file: content/fr/pages/newsletter/_index.html
 - title: Politique de confidentialité
   slug: politique-de-confidentialite
   target: "/politique-de-confidentialite-1/"
