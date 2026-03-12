@@ -1,7 +1,7 @@
 {{- partial "commons/summary/container.html" . -}}
 
 <div class="container programme-btn-container">
-  {{ $events := partial "GetObjectsFromPathSlice" .context.Params.children }}
+  {{ $events := partial "helpers/objects/GetFromPathSlice" .context.Params.children }}
   {{ if $events }}
     <a href="#programme" class="btn programme-btn">{{ i18n "events.see_programme" }}</a>
   {{ end }}
