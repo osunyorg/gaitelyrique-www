@@ -5,7 +5,7 @@
         padding-top: $spacing-3
     .content
         padding-top: $spacing-3
-        figure
+        .hero-image
             @include absolute-figcaption
         .hero-text
             margin-top: 0
@@ -16,7 +16,7 @@
     // hide image in page (to keep it in item)
     body.page-hero_without_image &.hero--with-image
         .hero-content > div:first-of-type:has(figure:only-child),
-        figure
+        .hero-image
             display: none
     
     body:not(.events__page, .exhibitions__page, .persons__page, .events_categories__term) &
@@ -33,7 +33,7 @@
                     gap: var(--grid-gutter)
                 .hero-text
                     width: 100%
-                figure
+                .hero-image
                     width: columns(6)
                 .lead
                     width: columns(6)
@@ -52,7 +52,7 @@
         
         &:not(.hero--with-summary)
             @include media-breakpoint-up(desktop)
-                figure
+                .hero-image
                     width: columns(8)
         
         .hero-actions
@@ -83,10 +83,10 @@
         &--image-portrait,
         &--image-square
             margin-bottom: $spacing-3
-            figure
+            .hero-image
                 margin-bottom: 0 !important
 
-        figure.image-landscape
+        .hero-image.image-landscape
             margin-left: 0
             margin-right: 0
 

@@ -41,3 +41,9 @@ body.full-width,
         @include media-breakpoint-down(desktop)
             @include grid(3)
 
+.block-organizations--grid.block-class-in-hero
+    @include media-breakpoint-up(desktop)
+        .organizations
+            @include grid(2)
+            figure
+                width: auto

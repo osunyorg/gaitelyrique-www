@@ -311,6 +311,7 @@
                     .organizations
                         display: flex
                         flex-wrap: wrap
+                        row-gap: 0
                         figure
                             margin-bottom: 0
                         .media
@@ -319,7 +320,6 @@
                             width: columns(3)
                             @include media-breakpoint-up(desktop)
                                 width: offset(1)
-                        
                         @include media-breakpoint-down(desktop)
                             @include grid(3)
                             .media--logo

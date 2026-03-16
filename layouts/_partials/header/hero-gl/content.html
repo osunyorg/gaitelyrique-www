@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="hero-text">
+    <h1 data-pagefind-weight="10">{{ safeHTML .title }}</h1>
+    {{ with .date }}
+      <p class="hero-complement">{{ . }}</p>
+    {{ end }}
+  </div>
+  <div class="hero-content">
+    {{ if or .image .context.Params.header_cta .share }}
+      <div>
+        {{ if .image }}
+          {{ partial "header/hero/content/image.html" (dict
+            "image" .image
+            "sizes" .sizes
+            "context" .context
+          ) }}
+        {{ end }}
+        {{ partial "header/hero/content/actions.html" . }}
+      </div>
+    {{ end }}
+    {{ with .context.Params.summary | safeHTML }}
+      <div class="lead">
+        {{ safeHTML . }}
+      </div>
+    {{ end }}
+    {{ with .context.Params.contents }}
+      {{ partial "blocks/ignored" (dict "context" .) }}
+    {{ end }}
+    {{ partial "hooks/before-hero-content-end.html" .context }}
+  </div>
+</div>
