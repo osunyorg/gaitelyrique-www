@@ -1,0 +1,15 @@
+{{ $format := "15h04" }}
+{{ if .hours.start }}
+  <p class="{{ .type }}-hours">
+    <span>
+      {{- with .hours.start -}}
+        {{ $format = partial "commons/item/schedule/GetHoursFormat" .datetime }}
+        <time datetime="{{ .time }}">{{- .datetime | time.Format $format -}}</time>
+      {{- end -}}
+      {{- with .hours.end -}}
+        {{ $format = partial "commons/item/schedule/GetHoursFormat" .datetime }}
+        <time datetime="{{ .time }}">{{- .datetime | time.Format $format -}}</time>
+      {{- end -}}
+    </span>
+  </p>
+{{ end }}

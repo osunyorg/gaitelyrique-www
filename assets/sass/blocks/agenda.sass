@@ -12,6 +12,10 @@
         .event-subtitle,
         .event-schedule
             @include h6
+            display: block
+        .event-hours
+            time
+                @include meta
         .event-content
             display: flex
             flex-direction: column
@@ -35,7 +39,7 @@
         .event
             .event-content
                 display: flex
-                flex-direction: column            
+                flex-direction: column
                 > .event-parent
                     margin-bottom: 0
             .event-title
@@ -47,9 +51,10 @@
                 order: -1
                 margin-top: 0
                 margin-bottom: $spacing-2
-            .event-dates
+            .event-dates,
+            .event-hours
                 @include h6
-                
+                margin-top: 0
             @include in-page-without-sidebar
                 .event-content
                     width: columns(6)
