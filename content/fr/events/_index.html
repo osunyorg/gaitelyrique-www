@@ -53,11 +53,11 @@ next_months:
     days:
       - day: 2026-04-01
         cwday: 3
-        current: true
+        current: false
         events: 1
       - day: 2026-04-02
         cwday: 4
-        current: false
+        current: true
         events: 0
       - day: 2026-04-03
         cwday: 5
@@ -150,11 +150,11 @@ next_months:
       - day: 2026-04-25
         cwday: 6
         current: false
-        events: 2
+        events: 3
       - day: 2026-04-26
         cwday: 7
         current: false
-        events: 0
+        events: 1
       - day: 2026-04-27
         cwday: 1
         current: false
@@ -438,6 +438,11 @@ translationKey: communication-website-page-e5393ee9-4789-4477-ba52-921300b52be7
 
 children:
   - "exhibitions/_index.html"
+child_pages:
+  - permalink: "/agenda/expositions/"
+    path: "/exhibitions"
+    slug: "expositions"
+    file: "content/fr/exhibitions/_index.html"
 
 
 header_cta:
@@ -482,7 +487,7 @@ section_taxonomies:
         file: "content/fr/events_categories/festival/_index.html"
         name: >-
           Festivals
-        count: 12
+        count: 14
       - permalink: "/agenda/solidarite/"
         path: "/events_categories/solidarite"
         slug: "solidarite"
