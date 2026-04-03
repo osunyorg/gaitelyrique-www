@@ -62,6 +62,13 @@ items:
   new_tab: true
   children: []
   descendants_targets: []
+- title: Archives
+  slug: archives
+  target: https://archives.gaite-lyrique.net/
+  kind: url
+  new_tab: true
+  children: []
+  descendants_targets: []
 - title: Politique de confidentialité
   slug: politique-de-confidentialite
   target: "/politique-de-confidentialite-1/"
