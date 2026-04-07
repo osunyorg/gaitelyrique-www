@@ -217,13 +217,12 @@ contents:
 
       quantity: 1
 
-
   - kind: block
-    template: exhibitions
+    template: agenda
     title: >-
-      À découvrir en continu
+      Aujourd'hui à la Gaîté
     slug: >-
-      a-decouvrir-en-continu
+      aujourd-hui-a-la-gaite
     ranks:
       base: 2
       self: 2
@@ -232,33 +231,56 @@ contents:
       active: true
       title: 
         value: >-
-          À découvrir en continu
+          Aujourd'hui à la Gaîté
         heading: 2
-        link: "/agenda/expositions/"
+        link: "/agenda/"
 
     data:
       mode: all
+      kinds:
+        parent: false
+        child: true
+        recurring: true
       options:
-        categories: true
+        categories: false
         dates: true
         image: true
         subtitle: true
         summary: false
         status: false
 
-      layout: grid
+      layout: list
 
 
-      title_link: "/agenda/expositions/"
-      exhibitions:
-        - permalink: "/agenda/expositions/2026-03-24-architecture-et-hospitalite-accueillir-la-vulnerabilite-psychique-en-plein-coeur-de-paris/"
-          path: "/exhibitions/2026-03-24-architecture-et-hospitalite-accueillir-la-vulnerabilite-psychique-en-plein-coeur-de-paris"
-          slug: "architecture-et-hospitalite-accueillir-la-vulnerabilite-psychique-en-plein-coeur-de-paris"
-          file: "content/fr/exhibitions/2026-03-24-architecture-et-hospitalite-accueillir-la-vulnerabilite-psychique-en-plein-coeur-de-paris.html"
+      title_link: "/agenda/"
+      events:
+        - permalink: "/agenda/2026/art-and-food/"
+          path: "/events/2026/04/07-09-00-art-and-food"
+          slug: "art-and-food"
+          file: "content/fr/events/2026/04/07-09-00-art-and-food.html"
           name: >-
-            Architecture et hospitalité
+            Art&Food
+        - permalink: "/agenda/2026/ping-therapie/"
+          path: "/events/2026/04/07-12-00-ping-therapie"
+          slug: "ping-therapie"
+          file: "content/fr/events/2026/04/07-12-00-ping-therapie.html"
+          name: >-
+            Pingthérapie
+        - permalink: "/agenda/2026/session-decoute-arte-radio/"
+          path: "/events/2026/04/07-19-00-session-decoute-arte-radio"
+          slug: "session-decoute-arte-radio"
+          file: "content/fr/events/2026/04/07-19-00-session-decoute-arte-radio.html"
+          name: >-
+            Allo Maman Bobo
+        - permalink: "/agenda/2026/passe-moi-le-sel-penelope-bagieu/"
+          path: "/events/2026/04/07-19-00-passe-moi-le-sel-penelope-bagieu"
+          slug: "passe-moi-le-sel-penelope-bagieu"
+          file: "content/fr/events/2026/04/07-19-00-passe-moi-le-sel-penelope-bagieu.html"
+          name: >-
+            Passe-moi le sel Pénélope (Bagieu)
 
-      quantity: 1
+      quantity: 4
+
 
   - kind: block
     template: title
@@ -314,18 +336,6 @@ contents:
         slug: "rencontres"
         file: "content/fr/events_categories/rencontres/_index.html"
       events:
-        - permalink: "/agenda/2026/passe-moi-le-sel-penelope-bagieu/"
-          path: "/events/2026/04/07-19-00-passe-moi-le-sel-penelope-bagieu"
-          slug: "passe-moi-le-sel-penelope-bagieu"
-          file: "content/fr/events/2026/04/07-19-00-passe-moi-le-sel-penelope-bagieu.html"
-          name: >-
-            Passe-moi le sel Pénélope (Bagieu)
-        - permalink: "/agenda/2026/session-decoute-arte-radio/"
-          path: "/events/2026/04/07-19-00-session-decoute-arte-radio"
-          slug: "session-decoute-arte-radio"
-          file: "content/fr/events/2026/04/07-19-00-session-decoute-arte-radio.html"
-          name: >-
-            Allo Maman Bobo
         - permalink: "/agenda/2026/photogramme-algorithme-enregistrement/"
           path: "/events/2026/04/08-18-45-photogramme-algorithme-enregistrement"
           slug: "photogramme-algorithme-enregistrement"
@@ -338,6 +348,18 @@ contents:
           file: "content/fr/events/2026/04/08-19-00-ils-nous-ruinent-la-sante.html"
           name: >-
             Ils nous ruinent la santé
+        - permalink: "/agenda/2026/rage-against-the-mainstream/"
+          path: "/events/2026/04/09-rage-against-the-mainstream"
+          slug: "rage-against-the-mainstream"
+          file: "content/fr/events/2026/04/09-rage-against-the-mainstream.html"
+          name: >-
+            Rage Against the Mainstream
+        - permalink: "/agenda/2026/sumer/"
+          path: "/events/2026/04/09-19-00-sumer"
+          slug: "sumer"
+          file: "content/fr/events/2026/04/09-19-00-sumer.html"
+          name: >-
+            SUMER
 
       quantity: 4
 
