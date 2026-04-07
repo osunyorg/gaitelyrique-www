@@ -26,6 +26,6 @@
     {{ with .context.Params.contents }}
       {{ partial "blocks/ignored" (dict "context" .) }}
     {{ end }}
-    {{ partial "hooks/before-hero-content-end.html" .context }}
+    {{ partial "header/hero/hooks/before-content-end.html" .context }}
   </div>
 </div>
