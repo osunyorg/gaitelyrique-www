@@ -128,8 +128,9 @@ main .blocks
         margin-top: 0
         .block-content
             padding-top: 0
-    .block:last-child:is([class*="--accent_background"], [class*="--alt_background"], .block-timeline--horizontal, .block-pages--cards)
-        margin-bottom: var(--grid-gutter)
+    @include in-page-with-or-without-sidebar
+        .block:last-child:is([class*="--accent_background"], [class*="--alt_background"], .block-timeline--horizontal, .block-pages--cards)
+            margin-bottom: var(--grid-gutter)
 
 // page like 'infos pratiques' ending with 2 pages full width
 .page-ending-with-full-width-pages
