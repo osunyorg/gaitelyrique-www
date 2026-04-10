@@ -65,8 +65,6 @@
                 &--parent
                     .event-title
                         @include h2
-                    .event-categories
-                        margin-bottom: space(4)
                     .media
                         margin-left: 0
                         margin-right: 0
@@ -87,10 +85,19 @@
     .events--agenda &
         .event-timeslot > * + * 
             margin-top: 0
-
-    .event-categories a
+    &-categories
+        order: -1
+        margin-bottom: space() !important
+        margin-top: 0 !important
+        li
+            line-height: 1
+        a
+            @include h6
+    &-subtitle
         @include h6
-    
+        margin-top: space()
+    &-parent
+        margin-bottom: space()
     @include media-breakpoint-up(desktop)
         .more
             margin-top: $spacing-2
@@ -119,10 +126,7 @@
             @include h6
         &-title
             @include h4
-        &-categories
-            order: -1
-            margin-bottom: $spacing-2
-            margin-top: 0 !important
+
     .events-date-title
         &, &.is-down
             @include h4
