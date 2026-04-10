@@ -36,7 +36,8 @@
         .pages
             @include extendable-list('&')
             article
-                .page-title
+                .page-title,
+                .page-subtitle
                     @include h4
                     @include media-breakpoint-up(desktop)
                         + p
@@ -51,7 +52,8 @@
         .page
             .page-content
                 flex: 1
-            .page-title
+            .page-title,
+            .page-subtitle
                 @include h3
                 a
                     text-decoration: none
@@ -100,3 +102,7 @@
                 @include meta
             .media
                 order: -2
+    &--cards
+        .page-categories
+            a
+                color: inherit !important
