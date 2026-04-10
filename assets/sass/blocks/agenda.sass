@@ -7,9 +7,6 @@
         @include extendable-list('.events')
         .event-title
             @include h4
-        .event-subtitle
-            margin-top: space()
-        .event-subtitle,
         .event-schedule
             @include h6
             display: block
@@ -19,10 +16,6 @@
         .event-content
             display: flex
             flex-direction: column
-            .event-categories
-                order: -2
-                margin-top: 0
-                margin-bottom: $spacing-1
         
         @include media-breakpoint-down(desktop)
             .event
@@ -42,13 +35,6 @@
                 flex-direction: column
             .event-title
                 @include h4
-            .event-subtitle
-                @include h6
-            .event-categories
-                @include h5
-                order: -1
-                margin-top: 0
-                margin-bottom: $spacing-2
             .event-dates,
             .event-hours
                 @include h6
@@ -83,7 +69,6 @@
                 padding-right: 0
                 .event-title
                     @include h4
-                .event-subtitle,
                 .event-dates
                     @include h6
                 .event-schedule
@@ -91,9 +76,6 @@
                     margin-bottom: 0
                     .event-dates
                         margin-top: 0
-                .event-categories
-                    order: -2
-                    margin-top: 0
             @include in-page-without-sidebar
                 align-items: flex-start
                 
@@ -120,13 +102,6 @@
                     margin-bottom: 0
                     .exhibition-dates
                         margin-top: 0
-                .event-categories
-                    order: -2
-                    margin-top: 0
-                    a
-                        @include link(var(--color-text))
-                        &:not(:hover)
-                            text-decoration-color: transparent
             @include in-page-without-sidebar
                 align-items: flex-start
 

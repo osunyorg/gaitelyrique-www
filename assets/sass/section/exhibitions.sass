@@ -11,11 +11,6 @@
 // for section and blocks, when available
 .exhibitions
     .exhibition
-        [class*="-categories"]
-            a
-                @include h6
-                @include link(var(--color-text))
-                text-decoration: none
         [class*="-dates"]
             @include h6
 
@@ -24,12 +19,6 @@
             [class$="-content"]
                 display: flex
                 flex-direction: column
-                [class$="-categories"]
-                    margin-top: 0
-                    order: -1
-            [class$="-subtitle"]
-                @include h5
-            
             @include media-breakpoint-up(desktop)
                 .media
                     margin-bottom: $spacing-2
@@ -47,7 +36,6 @@
                         order: -2
                     .exhibition-subtitle
                         margin-top: $spacing-2
-                    [class*="-categories"],
                     .meta
                         @include h6
 
