@@ -159,6 +159,48 @@ contents:
       layout: classic
 
 
+  - kind: block
+    template: agenda
+
+
+    ranks:
+      base: 3
+      children: 3
+    top:
+      active: false
+
+    data:
+      mode: category
+      kinds:
+        parent: true
+        child: true
+        recurring: true
+      options:
+        categories: false
+        dates: true
+        image: true
+        subtitle: true
+        summary: false
+        status: false
+
+      layout: grid
+
+
+      title_link: "/agenda/lieu/atelier-1/"
+      category:
+        permalink: "/agenda/lieu/atelier-1/"
+        path: "/events_categories/lieu/atelier-1"
+        slug: "lieu/atelier-1"
+        file: "content/fr/events_categories/lieu/atelier-1/_index.html"
+      events:
+        - permalink: "/agenda/2026/atelier/"
+          path: "/events/2026/04/24-18-30-atelier"
+          slug: "atelier"
+          file: "content/fr/events/2026/04/24-18-30-atelier.html"
+          name: >-
+            Atelier Fresque du Climat
+
+      quantity: 1
 
   - kind: block
     template: title
