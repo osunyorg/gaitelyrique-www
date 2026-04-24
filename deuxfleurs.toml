@@ -15,674 +15,674 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/agenda/2024-1/07/"
+from = "/agenda/2024-1/07/index.html"
 to = "/agenda/2024/07/"
 
 [[redirects]]
-from = "/offres-d-emploi/contrat/cdd/"
+from = "/offres-d-emploi/contrat/cdd/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/cdd/"
 
 [[redirects]]
-from = "/agenda/2024-1/"
+from = "/agenda/2024-1/index.html"
 to = "/agenda/2024/"
 
 [[redirects]]
-from = "/actualites/2025-04-15-faites-vivre-les-liens-avec-le-quartier/"
+from = "/actualites/2025-04-15-faites-vivre-les-liens-avec-le-quartier/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-15-faites-vivre-les-liens-avec-le-quartier/"
 
 [[redirects]]
-from = "/agenda/2026/evenement-simple-audito-1/"
+from = "/agenda/2026/evenement-simple-audito-1/index.html"
 to = "/agenda/2026/comment-apprivoiser-nos-fantomes/"
 
 [[redirects]]
-from = "/agenda/2025-1/12/"
+from = "/agenda/2025-1/12/index.html"
 to = "/agenda/2025/12/"
 
 [[redirects]]
-from = "/emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
+from = "/emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
 
 [[redirects]]
-from = "/le-manifeste/"
+from = "/le-manifeste/index.html"
 to = "/la-fabrique-de-lepoque/manifeste/"
 
 [[redirects]]
-from = "/plein-ecran/contenu/contes-a-paillettes-en-cas-dattaque/"
+from = "/plein-ecran/contenu/contes-a-paillettes-en-cas-dattaque/index.html"
 to = "/agenda/2026/les-contes-a-paillettes/"
 
 [[redirects]]
-from = "/agenda/2024-1/01/"
+from = "/agenda/2024-1/01/index.html"
 to = "/agenda/2024/01/"
 
 [[redirects]]
-from = "/actualites/acteur-de-l-epoque/"
+from = "/actualites/acteur-de-l-epoque/index.html"
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
-from = "/agenda/2025-1/08/"
+from = "/agenda/2025-1/08/index.html"
 to = "/agenda/2025/08/"
 
 [[redirects]]
-from = "/agenda/2025/views-cine-club/2025-06-04-views-cine-club-1/"
+from = "/agenda/2025/views-cine-club/2025-06-04-views-cine-club-1/index.html"
 to = "/agenda/2025/views-cine-club/views-cine-club-1/"
 
 [[redirects]]
-from = "/actualites/"
+from = "/actualites/index.html"
 to = "/personnes/agathe-manach/actualites/"
 
 [[redirects]]
-from = "/expositions/archives-expositions/"
+from = "/expositions/archives-expositions/index.html"
 to = "/agenda/expositions/archives-expositions/"
 
 [[redirects]]
-from = "/agenda/2025/arte-concert-festival-1/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/"
+from = "/agenda/2025/arte-concert-festival-1/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/index.html"
 to = "/agenda/2025/arte-concert-festival/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/"
 
 [[redirects]]
-from = "/actualites/quest-ce-que-tu-fabriques/"
+from = "/actualites/quest-ce-que-tu-fabriques/index.html"
 to = "/la-fabrique-de-lepoque/actualites/partageons-nos-outils/"
 
 [[redirects]]
-from = "/fabrique-de-lepoque/histoire/"
+from = "/fabrique-de-lepoque/histoire/index.html"
 to = "/la-fabrique-de-lepoque/histoire-du-lieu/"
 
 [[redirects]]
-from = "/agenda/2024-1/05/"
+from = "/agenda/2024-1/05/index.html"
 to = "/agenda/2024/05/"
 
 [[redirects]]
-from = "/agenda/2025-1/"
+from = "/agenda/2025-1/index.html"
 to = "/agenda/2025/"
 
 [[redirects]]
-from = "/agenda/2025/rencontres-internationales-paris-berlin/2025-05-21-les-fantomes-de-la-liberte/"
+from = "/agenda/2025/rencontres-internationales-paris-berlin/2025-05-21-les-fantomes-de-la-liberte/index.html"
 to = "/agenda/2025/rencontres-internationales-paris-berlin/les-fantomes-de-la-liberte/"
 
 [[redirects]]
-from = "/agenda/2024-1/09/"
+from = "/agenda/2024-1/09/index.html"
 to = "/agenda/2024/09/"
 
 [[redirects]]
-from = "/agenda/2024-1/03/"
+from = "/agenda/2024-1/03/index.html"
 to = "/agenda/2024/03/"
 
 [[redirects]]
-from = "/emploi/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
+from = "/emploi/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
 
 [[redirects]]
-from = "/evenement/pop-the-vote/"
+from = "/evenement/pop-the-vote/index.html"
 to = "/agenda/2026/voter-est-ce-encore-utile/"
 
 [[redirects]]
-from = "/actualites/2025-10-27-une-checklist-pour-assurer-des-evenements-ecoresponsables/"
+from = "/actualites/2025-10-27-une-checklist-pour-assurer-des-evenements-ecoresponsables/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-14-une-checklist-pour-assurer-des-evenements-ecoresponsables/"
 
 [[redirects]]
-from = "/infos-pratiques/le-lieu/galerie/"
+from = "/infos-pratiques/le-lieu/galerie/index.html"
 to = "/infos-pratiques/le-lieu/galerie-studio-13-16/"
 
 [[redirects]]
-from = "/lieu-culturel-regeneratif/"
+from = "/lieu-culturel-regeneratif/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-vers-un-lieu-culturel-regeneratif/"
 
 [[redirects]]
-from = "/agenda/2021/voguing-on-tour/"
+from = "/agenda/2021/voguing-on-tour/index.html"
 to = "/agenda/2026/voguing-on-tour/"
 
 [[redirects]]
-from = "/grande-galerie/"
+from = "/grande-galerie/index.html"
 to = "/infos-pratiques/le-lieu/grande-galerie/"
 
 [[redirects]]
-from = "/recrutements/"
+from = "/recrutements/index.html"
 to = "/rejoindre-l-equipe/"
 
 [[redirects]]
-from = "/actualites/2025-04-15-reservez-vos-bureaux-devenez-residente/"
+from = "/actualites/2025-04-15-reservez-vos-bureaux-devenez-residente/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail-devenez-residente/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-04-28-vers-un-lieu-culturel-regeneratif/"
+from = "/la-fabrique-de-lepoque/actualites/2025-04-28-vers-un-lieu-culturel-regeneratif/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-vers-un-lieu-culturel-regeneratif/"
 
 [[redirects]]
-from = "/agenda/2024-1/06/"
+from = "/agenda/2024-1/06/index.html"
 to = "/agenda/2024/06/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-07-31-participez-a-des-actions-solidaires-1/"
+from = "/la-fabrique-de-lepoque/actualites/2025-07-31-participez-a-des-actions-solidaires-1/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-19-participez-a-des-actions-solidaires-1/"
 
 [[redirects]]
-from = "/actualites/2025-04-28-vers-un-lieu-culturel-regeneratif/"
+from = "/actualites/2025-04-28-vers-un-lieu-culturel-regeneratif/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-vers-un-lieu-culturel-regeneratif/"
 
 [[redirects]]
-from = "/actualites/devenez-acteurice-de-l-epoque/"
+from = "/actualites/devenez-acteurice-de-l-epoque/index.html"
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
-from = "/evenement/la-culture-en-vrai/"
+from = "/evenement/la-culture-en-vrai/index.html"
 to = "/agenda/2026/la-culture-en-vrai/"
 
 [[redirects]]
-from = "/soutenir-la-fabrique/"
+from = "/soutenir-la-fabrique/index.html"
 to = "/ils-nous-soutiennent/"
 
 [[redirects]]
-from = "/agenda/expositions/2026-04-17-tetes-daffiches/"
+from = "/agenda/expositions/2026-04-17-tetes-daffiches/index.html"
 to = "/agenda/expositions/2026-04-18-tetes-daffiches/"
 
 [[redirects]]
-from = "/agenda/2025/views-cine-club/2025-06-04-views-cine-club/"
+from = "/agenda/2025/views-cine-club/2025-06-04-views-cine-club/index.html"
 to = "/agenda/2025/views-cine-club/views-cine-club-1/"
 
 [[redirects]]
-from = "/index.php/evenement/arch-club/"
+from = "/index.php/evenement/arch-club/index.html"
 to = "/agenda/2026/arch-club/"
 
 [[redirects]]
-from = "/agenda/2026/ping-therapie-1/"
+from = "/agenda/2026/ping-therapie-1/index.html"
 to = "/agenda/2026/yadu-yoga/"
 
 [[redirects]]
-from = "/personnes/david-suchestow/"
+from = "/personnes/david-suchestow/index.html"
 to = "/david-suchestow/"
 
 [[redirects]]
-from = "/agenda/2026/la-vie-d-hawa-1/"
+from = "/agenda/2026/la-vie-d-hawa-1/index.html"
 to = "/agenda/2026/hors-cadre-sandrine-chenivesse/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/le-manifeste/"
+from = "/la-fabrique-de-lepoque/le-manifeste/index.html"
 to = "/la-fabrique-de-lepoque/manifeste/"
 
 [[redirects]]
-from = "/evenement/les-emotions-des-animaux/"
+from = "/evenement/les-emotions-des-animaux/index.html"
 to = "/agenda/2026/les-emotions-des-animaux/"
 
 [[redirects]]
-from = "/offres-d-emploi/cdd/"
+from = "/offres-d-emploi/cdd/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/cdd/"
 
 [[redirects]]
-from = "/index.php/evenement/ouai-stephane/"
+from = "/index.php/evenement/ouai-stephane/index.html"
 to = "/agenda/2026/ouai-stephane/"
 
 [[redirects]]
-from = "/agenda/evenements-solidaires/"
+from = "/agenda/evenements-solidaires/index.html"
 to = "/agenda/solidarite/"
 
 [[redirects]]
-from = "/agenda/2025-1/06/"
+from = "/agenda/2025-1/06/index.html"
 to = "/agenda/2025/06/"
 
 [[redirects]]
-from = "/evenement/ping-therapie/"
+from = "/evenement/ping-therapie/index.html"
 to = "/agenda/2026/ping-therapie/"
 
 [[redirects]]
-from = "/agenda/2024/arte-concert-festival/2024-10-24-lala-ce-bikoko-marem-ladson/"
+from = "/agenda/2024/arte-concert-festival/2024-10-24-lala-ce-bikoko-marem-ladson/index.html"
 to = "/agenda/2024/arte-concert-festival/lala-ce-bikoko-marem-ladson/"
 
 [[redirects]]
-from = "/recrutements/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
+from = "/recrutements/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
 
 [[redirects]]
-from = "/evenement/les-contes-a-paillettes-2/"
+from = "/evenement/les-contes-a-paillettes-2/index.html"
 to = "/agenda/2026/les-contes-a-paillettes/"
 
 [[redirects]]
-from = "/evenement/municipales-les-voix-quon-nentend-pas/"
+from = "/evenement/municipales-les-voix-quon-nentend-pas/index.html"
 to = "/agenda/2026/voter-est-ce-encore-utile/"
 
 [[redirects]]
-from = "/events/2026/03/04-les-vies-quon-mene/"
+from = "/events/2026/03/04-les-vies-quon-mene/index.html"
 to = "/agenda/2026/les-vies-quon-mene/"
 
 [[redirects]]
-from = "/agenda/2025-1/07/"
+from = "/agenda/2025-1/07/index.html"
 to = "/agenda/2025/07/"
 
 [[redirects]]
-from = "/personnes/caroline-baldeyrou/"
+from = "/personnes/caroline-baldeyrou/index.html"
 to = "/caroline-baldeyrou/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-04-15-louez-nos-espaces-de-travail-devenez-residente/"
+from = "/la-fabrique-de-lepoque/actualites/2025-04-15-louez-nos-espaces-de-travail-devenez-residente/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail-devenez-residente/"
 
 [[redirects]]
-from = "/agenda/2025/distributions-etudiantes/"
+from = "/agenda/2025/distributions-etudiantes/index.html"
 to = "/agenda/2026/distributions-etudiantes/"
 
 [[redirects]]
-from = "/agenda/2025/arte-concert-festival-1/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/"
+from = "/agenda/2025/arte-concert-festival-1/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/index.html"
 to = "/agenda/2025/arte-concert-festival/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/"
 
 [[redirects]]
-from = "/agenda/concert/"
+from = "/agenda/concert/index.html"
 to = "/agenda/concerts/"
 
 [[redirects]]
-from = "/agenda/2025-05-21-rencontres-internationales-paris-berlin/"
+from = "/agenda/2025-05-21-rencontres-internationales-paris-berlin/index.html"
 to = "/agenda/2025/rencontres-internationales-paris-berlin/"
 
 [[redirects]]
-from = "/offres-d-emploi/contrat/alternance/"
+from = "/offres-d-emploi/contrat/alternance/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/alternance/"
 
 [[redirects]]
-from = "/agenda/2025-1/11/"
+from = "/agenda/2025-1/11/index.html"
 to = "/agenda/2025/11/"
 
 [[redirects]]
-from = "/actualites/2025-05-28-participe-a-un-programme-dincubation-engage/"
+from = "/actualites/2025-05-28-participe-a-un-programme-dincubation-engage/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-17-participe-a-un-programme-dincubation-engage/"
 
 [[redirects]]
-from = "/agathe-manach/"
+from = "/agathe-manach/index.html"
 to = "/personnes/agathe-manach/"
 
 [[redirects]]
-from = "/offres-d-emploi/contrat/"
+from = "/offres-d-emploi/contrat/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/"
 
 [[redirects]]
-from = "/agenda/2025/views-cine-club/views-cine-club/"
+from = "/agenda/2025/views-cine-club/views-cine-club/index.html"
 to = "/agenda/2025/views-cine-club/views-cine-club-1/"
 
 [[redirects]]
-from = "/emploi/offres-d-emploi/"
+from = "/emploi/offres-d-emploi/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/"
 
 [[redirects]]
-from = "/actualites/2025-07-31-participez-a-des-actions-solidaires-1/"
+from = "/actualites/2025-07-31-participez-a-des-actions-solidaires-1/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-19-participez-a-des-actions-solidaires-1/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-12-11-concilier-lieu-ouvert-et-lieu-sur/"
+from = "/la-fabrique-de-lepoque/actualites/2025-12-11-concilier-lieu-ouvert-et-lieu-sur/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-concilier-lieu-ouvert-et-lieu-sur/"
 
 [[redirects]]
-from = "/agenda/2024-1/08/"
+from = "/agenda/2024-1/08/index.html"
 to = "/agenda/2024/08/"
 
 [[redirects]]
-from = "/actualites/thematiques/"
+from = "/actualites/thematiques/index.html"
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
-from = "/evenement/hors-cadre-avec-sandrine-chenivesse/"
+from = "/evenement/hors-cadre-avec-sandrine-chenivesse/index.html"
 to = "/agenda/2026/hors-cadre-sandrine-chenivesse/"
 
 [[redirects]]
-from = "/agenda/atelier/"
+from = "/agenda/atelier/index.html"
 to = "/agenda/ateliers/"
 
 [[redirects]]
-from = "/agenda/2025/rencontres-internationales-paris-berlin/2025-05-21-resistance-fondamentale/"
+from = "/agenda/2025/rencontres-internationales-paris-berlin/2025-05-21-resistance-fondamentale/index.html"
 to = "/agenda/2025/rencontres-internationales-paris-berlin/resistance-fondamentale/"
 
 [[redirects]]
-from = "/offres-d-emploi/"
+from = "/offres-d-emploi/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/"
 
 [[redirects]]
-from = "/agenda/2024/contes-a-paillettes/"
+from = "/agenda/2024/contes-a-paillettes/index.html"
 to = "/agenda/2025/contes-a-paillettes/"
 
 [[redirects]]
-from = "/agenda/2025/reporte-delocalise-klangphonics/"
+from = "/agenda/2025/reporte-delocalise-klangphonics/index.html"
 to = "/agenda/2025/klangphonics-2/"
 
 [[redirects]]
-from = "/expositions/2024-12-14-pulse/"
+from = "/expositions/2024-12-14-pulse/index.html"
 to = "/agenda/expositions/2024-12-14-pulse/"
 
 [[redirects]]
-from = "/evenement/melissa-laveaux/"
+from = "/evenement/melissa-laveaux/index.html"
 to = "/agenda/2026/melissa-laveaux/"
 
 [[redirects]]
-from = "/events/2026/04/25-susurre-festival/"
+from = "/events/2026/04/25-susurre-festival/index.html"
 to = "/agenda/2026/susurre-festival/"
 
 [[redirects]]
-from = "/en/event/infinity-song/"
+from = "/en/event/infinity-song/index.html"
 to = "/agenda/2026/infinity-song/"
 
 [[redirects]]
-from = "/actualites/2025-04-15-triple-comptabilite/"
+from = "/actualites/2025-04-15-triple-comptabilite/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-04-15-triple-comptabilite/"
 
 [[redirects]]
-from = "/actualites/partageons-nos-outils/"
+from = "/actualites/partageons-nos-outils/index.html"
 to = "/la-fabrique-de-lepoque/actualites/partageons-nos-outils/"
 
 [[redirects]]
-from = "/agenda/2025/arte-concert-festival-2025/"
+from = "/agenda/2025/arte-concert-festival-2025/index.html"
 to = "/agenda/2025/arte-concert-festival/"
 
 [[redirects]]
-from = "/en/event/les-grands-yeux/"
+from = "/en/event/les-grands-yeux/index.html"
 to = "/agenda/2026/festival-les-grands-yeux-2026/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-10-27-une-checklist-pour-assurer-des-evenements-ecoresponsables/"
+from = "/la-fabrique-de-lepoque/actualites/2025-10-27-une-checklist-pour-assurer-des-evenements-ecoresponsables/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-14-une-checklist-pour-assurer-des-evenements-ecoresponsables/"
 
 [[redirects]]
-from = "/agenda/evenements-solidaire/"
+from = "/agenda/evenements-solidaire/index.html"
 to = "/agenda/solidarite/"
 
 [[redirects]]
-from = "/infos-pratiques/le-lieu/kiblind-atelier/"
+from = "/infos-pratiques/le-lieu/kiblind-atelier/index.html"
 to = "/infos-pratiques/le-lieu/espace-atelier/"
 
 [[redirects]]
-from = "/en/event/halina-rice/"
+from = "/en/event/halina-rice/index.html"
 to = "/agenda/2026/halina-rice/"
 
 [[redirects]]
-from = "/agenda/2025-1/04/"
+from = "/agenda/2025-1/04/index.html"
 to = "/agenda/2025/04/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-04-15-faites-vivre-les-liens-avec-le-quartier/"
+from = "/la-fabrique-de-lepoque/actualites/2025-04-15-faites-vivre-les-liens-avec-le-quartier/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-15-faites-vivre-les-liens-avec-le-quartier/"
 
 [[redirects]]
-from = "/agenda/2025/evenement-template/"
+from = "/agenda/2025/evenement-template/index.html"
 to = "/agenda/2025/biosphere-25/"
 
 [[redirects]]
-from = "/infos-pratiques/restauration/"
+from = "/infos-pratiques/restauration/index.html"
 to = "/infos-pratiques/boiremanger/"
 
 [[redirects]]
-from = "/actualites/fabrique-de-lepoque/partageons-nos-outils/"
+from = "/actualites/fabrique-de-lepoque/partageons-nos-outils/index.html"
 to = "/la-fabrique-de-lepoque/actualites/partageons-nos-outils/"
 
 [[redirects]]
-from = "/actualites/2025-10-27-concilier-lieu-ouvert-et-lieu-sur/"
+from = "/actualites/2025-10-27-concilier-lieu-ouvert-et-lieu-sur/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-concilier-lieu-ouvert-et-lieu-sur/"
 
 [[redirects]]
-from = "/evenement/festival-et-prix-des-litteratures-urbaines-2026-samedi/"
+from = "/evenement/festival-et-prix-des-litteratures-urbaines-2026-samedi/index.html"
 to = "/agenda/2026/festival-et-prix-des-litteratures-urbaines-2026/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-12-23-organiser-un-evenement-vraiment-inclusif/"
+from = "/la-fabrique-de-lepoque/actualites/2025-12-23-organiser-un-evenement-vraiment-inclusif/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-12-organiser-un-evenement-vraiment-inclusif/"
 
 [[redirects]]
-from = "/agenda/2025/evenement-simple-audito-1/"
+from = "/agenda/2025/evenement-simple-audito-1/index.html"
 to = "/agenda/2026/comment-apprivoiser-nos-fantomes/"
 
 [[redirects]]
-from = "/personnes/david-suchestow/actualites/"
+from = "/personnes/david-suchestow/actualites/index.html"
 to = "/david-suchestow/actualites/"
 
 [[redirects]]
-from = "/agenda/2025/evenement-template-1/"
+from = "/agenda/2025/evenement-template-1/index.html"
 to = "/agenda/2025/etre-femme-l-histoire-de-nos-vies/"
 
 [[redirects]]
-from = "/evenement/frontieres-traversees-resistances/"
+from = "/evenement/frontieres-traversees-resistances/index.html"
 to = "/agenda/2026/frontieres-traversees-resistances/"
 
 [[redirects]]
-from = "/agenda/rencontre/"
+from = "/agenda/rencontre/index.html"
 to = "/agenda/rencontres/"
 
 [[redirects]]
-from = "/personnes/boutcha-bwa/"
+from = "/personnes/boutcha-bwa/index.html"
 to = "/boutcha-bwa/"
 
 [[redirects]]
-from = "/offres-d-emploi/contrat/cdi/"
+from = "/offres-d-emploi/contrat/cdi/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/cdi/"
 
 [[redirects]]
-from = "/agenda/2025/marathon-apparat-dylan-dylan-cabaret-contemporain/"
+from = "/agenda/2025/marathon-apparat-dylan-dylan-cabaret-contemporain/index.html"
 to = "/agenda/2025/changement-de-lieu-marathon-apparat-dylan-dylan-cabaret-contemporain/"
 
 [[redirects]]
-from = "/actualites/2025-10-27-sortie-du-plastique-a-usage-unique/"
+from = "/actualites/2025-10-27-sortie-du-plastique-a-usage-unique/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-10-27-sortie-du-plastique-a-usage-unique/"
 
 [[redirects]]
-from = "/agenda/2025/evenement-de-david-1/"
+from = "/agenda/2025/evenement-de-david-1/index.html"
 to = "/agenda/2025/tracks-live/"
 
 [[redirects]]
-from = "/agenda/2026/evenement-simple-audito-1-1/"
+from = "/agenda/2026/evenement-simple-audito-1-1/index.html"
 to = "/agenda/2026/la-vie-d-hawa/"
 
 [[redirects]]
-from = "/en/event/romsii/"
+from = "/en/event/romsii/index.html"
 to = "/agenda/2026/romsii/"
 
 [[redirects]]
-from = "/actualites/qu-est-ce-que-tu-fabriques/"
+from = "/actualites/qu-est-ce-que-tu-fabriques/index.html"
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-12-23-lutter-contre-les-violences-sexistes-et-sexuelles-vss/"
+from = "/la-fabrique-de-lepoque/actualites/2025-12-23-lutter-contre-les-violences-sexistes-et-sexuelles-vss/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-15-lutter-contre-les-violences-sexistes-et-sexuelles-vss/"
 
 [[redirects]]
-from = "/agenda/2026/distributions-etudiantes-1/"
+from = "/agenda/2026/distributions-etudiantes-1/index.html"
 to = "/agenda/2026/art-and-food/"
 
 [[redirects]]
-from = "/expositions/"
+from = "/expositions/index.html"
 to = "/agenda/expositions/"
 
 [[redirects]]
-from = "/offres-d-emploi/contrat/stage/"
+from = "/offres-d-emploi/contrat/stage/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/stage/"
 
 [[redirects]]
-from = "/festival/festival-et-prix-des-litteratures-urbaines-2026/"
+from = "/festival/festival-et-prix-des-litteratures-urbaines-2026/index.html"
 to = "/agenda/2026/festival-et-prix-des-litteratures-urbaines-2026/"
 
 [[redirects]]
-from = "/emploi/"
+from = "/emploi/index.html"
 to = "/rejoindre-l-equipe/"
 
 [[redirects]]
-from = "/agenda/2024-1/04/"
+from = "/agenda/2024-1/04/index.html"
 to = "/agenda/2024/04/"
 
 [[redirects]]
-from = "/agenda/2025-1/10/"
+from = "/agenda/2025-1/10/index.html"
 to = "/agenda/2025/10/"
 
 [[redirects]]
-from = "/agenda/2024/arte-concert-festival/2024-10-24-kompromat-kelly-lee-owens-aili/"
+from = "/agenda/2024/arte-concert-festival/2024-10-24-kompromat-kelly-lee-owens-aili/index.html"
 to = "/agenda/2024/arte-concert-festival/kompromat-kelly-lee-owens-aili/"
 
 [[redirects]]
-from = "/equipe/equipe-editoriale/"
+from = "/equipe/equipe-editoriale/index.html"
 to = "/personnes/equipe-editoriale/"
 
 [[redirects]]
-from = "/agenda/2025/biosphere-25-1/"
+from = "/agenda/2025/biosphere-25-1/index.html"
 to = "/agenda/2025/evenementgaite-25-1/"
 
 [[redirects]]
-from = "/actualites/2025-12-11-concilier-lieu-ouvert-et-lieu-sur/"
+from = "/actualites/2025-12-11-concilier-lieu-ouvert-et-lieu-sur/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-concilier-lieu-ouvert-et-lieu-sur/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-05-28-participe-a-un-programme-dincubation-engage/"
+from = "/la-fabrique-de-lepoque/actualites/2025-05-28-participe-a-un-programme-dincubation-engage/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-17-participe-a-un-programme-dincubation-engage/"
 
 [[redirects]]
-from = "/equipe/"
+from = "/equipe/index.html"
 to = "/personnes/"
 
 [[redirects]]
-from = "/agenda/expositions/solidarite/"
+from = "/agenda/expositions/solidarite/index.html"
 to = "/agenda/solidarite/"
 
 [[redirects]]
-from = "/evenement/yadu-yoga/"
+from = "/evenement/yadu-yoga/index.html"
 to = "/agenda/2026/yadu-yoga/"
 
 [[redirects]]
-from = "/actualites/2025-06-03-venez-habiter-la-gaite-lyrique-en-journee-1/"
+from = "/actualites/2025-06-03-venez-habiter-la-gaite-lyrique-en-journee-1/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-06-03-venez-habiter-la-gaite-lyrique-en-journee-1/"
 
 [[redirects]]
-from = "/personnes/kukii/"
+from = "/personnes/kukii/index.html"
 to = "/kukii/"
 
 [[redirects]]
-from = "/agenda/2026/emprise-algorithmique-a-la-recherche-de-lesprit-critique-1/"
+from = "/agenda/2026/emprise-algorithmique-a-la-recherche-de-lesprit-critique-1/index.html"
 to = "/agenda/2026/les-emotions-des-animaux/"
 
 [[redirects]]
-from = "/agenda/2025-1/09/"
+from = "/agenda/2025-1/09/index.html"
 to = "/agenda/2025/09/"
 
 [[redirects]]
-from = "/agenda/2024-1/11/"
+from = "/agenda/2024-1/11/index.html"
 to = "/agenda/2024/11/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2026-01-20-un-site-web-eco-et-socio-concu/"
+from = "/la-fabrique-de-lepoque/actualites/2026-01-20-un-site-web-eco-et-socio-concu/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-12-06-un-site-web-eco-et-socio-concu/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2026-01-29-faire-tourner-lexposition-pulse-de-1024-architecture/"
+from = "/la-fabrique-de-lepoque/actualites/2026-01-29-faire-tourner-lexposition-pulse-de-1024-architecture/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-11-03-faire-tourner-lexposition-pulse-de-1024-architecture/"
 
 [[redirects]]
-from = "/actualites/2025-04-08-prenez-la-parole-en-creant-votre-podcast/"
+from = "/actualites/2025-04-08-prenez-la-parole-en-creant-votre-podcast/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-04-08-prenez-la-parole-en-creant-votre-podcast/"
 
 [[redirects]]
-from = "/agenda/2024/arte-concert-festival-1/"
+from = "/agenda/2024/arte-concert-festival-1/index.html"
 to = "/agenda/2025/arte-concert-festival/"
 
 [[redirects]]
-from = "/galerie/"
+from = "/galerie/index.html"
 to = "/infos-pratiques/le-lieu/galerie-studio-13-16/"
 
 [[redirects]]
-from = "/evenement/festival-et-prix-des-litteratures-urbaines-2026/"
+from = "/evenement/festival-et-prix-des-litteratures-urbaines-2026/index.html"
 to = "/agenda/2026/festival-et-prix-des-litteratures-urbaines-2026/"
 
 [[redirects]]
-from = "/agenda/2024/arte-concert-festival/2024-10-24-st-vincent-porridge-radio-bill-ryder-jones/"
+from = "/agenda/2024/arte-concert-festival/2024-10-24-st-vincent-porridge-radio-bill-ryder-jones/index.html"
 to = "/agenda/2024/arte-concert-festival/st-vincent-porridge-radio-bill-ryder-jones/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2026-01-14-animer-une-gouvernance-collective/"
+from = "/la-fabrique-de-lepoque/actualites/2026-01-14-animer-une-gouvernance-collective/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-19-animer-une-gouvernance-collective/"
 
 [[redirects]]
-from = "/agenda/2025/arte-concert-festival-1/"
+from = "/agenda/2025/arte-concert-festival-1/index.html"
 to = "/agenda/2025/arte-concert-festival/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-06-03-voguing-exprimez-votre-identite-sur-scene/"
+from = "/la-fabrique-de-lepoque/actualites/2025-06-03-voguing-exprimez-votre-identite-sur-scene/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-voguing-exprimez-votre-identite-sur-scene/"
 
 [[redirects]]
-from = "/agenda/2025-1/05/"
+from = "/agenda/2025-1/05/index.html"
 to = "/agenda/2025/05/"
 
 [[redirects]]
-from = "/actualites/2025-06-03-voguing-exprimez-votre-identite-sur-scene/"
+from = "/actualites/2025-06-03-voguing-exprimez-votre-identite-sur-scene/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-voguing-exprimez-votre-identite-sur-scene/"
 
 [[redirects]]
-from = "/agenda/2025-1/01/"
+from = "/agenda/2025-1/01/index.html"
 to = "/agenda/2025/01/"
 
 [[redirects]]
-from = "/en/event/hippoh-dance-bar/"
+from = "/en/event/hippoh-dance-bar/index.html"
 to = "/agenda/2026/hippoh-dance-bar/"
 
 [[redirects]]
-from = "/agenda/2025-1/02/"
+from = "/agenda/2025-1/02/index.html"
 to = "/agenda/2025/02/"
 
 [[redirects]]
-from = "/evenement/fata-morgana/"
+from = "/evenement/fata-morgana/index.html"
 to = "/agenda/2026/fata-morgana/"
 
 [[redirects]]
-from = "/events/2026/03/28-le-voyage-en-ukraine/"
+from = "/events/2026/03/28-le-voyage-en-ukraine/index.html"
 to = "/agenda/2026/les-vies-quon-mene/gentrifier-votre-quartier-leur-projet/"
 
 [[redirects]]
-from = "/agenda/2025/arte-concert-festival-1/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue/"
+from = "/agenda/2025/arte-concert-festival-1/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue/index.html"
 to = "/agenda/2025/arte-concert-festival/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue/"
 
 [[redirects]]
-from = "/www.gaite-lyrique.net/evenement/hippoh-dance-bar/"
+from = "/www.gaite-lyrique.net/evenement/hippoh-dance-bar/index.html"
 to = "/agenda/2026/hippoh-dance-bar/"
 
 [[redirects]]
-from = "/agenda/2025-1/03/"
+from = "/agenda/2025-1/03/index.html"
 to = "/agenda/2025/03/"
 
 [[redirects]]
-from = "/agenda/2024-1/12/"
+from = "/agenda/2024-1/12/index.html"
 to = "/agenda/2024/12/"
 
 [[redirects]]
-from = "/agenda/2024-1/10/"
+from = "/agenda/2024-1/10/index.html"
 to = "/agenda/2024/10/"
 
 [[redirects]]
-from = "/infos-pratiques/le-lieu/studio-13-16/"
+from = "/infos-pratiques/le-lieu/studio-13-16/index.html"
 to = "/infos-pratiques/le-lieu/galerie-studio-13-16/"
 
 [[redirects]]
-from = "/agenda/2024-1/02/"
+from = "/agenda/2024-1/02/index.html"
 to = "/agenda/2024/02/"
 
 [[redirects]]
-from = "/agenda/grande-salle/"
+from = "/agenda/grande-salle/index.html"
 to = "/agenda/lieu/grande-salle/"
 
 [[redirects]]
-from = "/agathe-manach/actualites/"
+from = "/agathe-manach/actualites/index.html"
 to = "/personnes/agathe-manach/actualites/"
 
 [[redirects]]
-from = "/actualites/fabrique-de-lepoque/devenez-acteurice-de-l-epoque/"
+from = "/actualites/fabrique-de-lepoque/devenez-acteurice-de-l-epoque/index.html"
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
-from = "/la-fabrique-de-lepoque/actualites/2025-04-15-reservez-vos-bureaux-devenez-residente/"
+from = "/la-fabrique-de-lepoque/actualites/2025-04-15-reservez-vos-bureaux-devenez-residente/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail-devenez-residente/"
 
 [[redirects]]
-from = "/espaces/"
+from = "/espaces/index.html"
 to = "/lieu/"
 
 [[redirects]]
-from = "/en/event/anne-paceo/"
+from = "/en/event/anne-paceo/index.html"
 to = "/agenda/2026/anne-paceo/"
 
 [[redirects]]
-from = "/personnes/negros-tou-moria/"
+from = "/personnes/negros-tou-moria/index.html"
 to = "/negros-tou-moria/"
 
 [[redirects]]
-from = "/infos-pratiques/le-lieu/espace-ateliers/"
+from = "/infos-pratiques/le-lieu/espace-ateliers/index.html"
 to = "/infos-pratiques/le-lieu/espace-atelier/"
 
 [[redirects]]
-from = "/en/event/romane-santarelli/"
+from = "/en/event/romane-santarelli/index.html"
 to = "/agenda/2026/romane-santarelli/"
 
