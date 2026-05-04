@@ -1,5 +1,23 @@
 .block-features
-    li > div
-        .name
-            @include h5
-            margin-bottom: $spacing-1
+    @include in-page-without-sidebar
+        .top
+            width: columns(12)
+    
+    .features
+        .feature
+            .name
+                @include h5
+                margin-bottom: $spacing-1
+
+.events__page
+    .block-features--list
+        @include media-breakpoint-up(desktop)
+            .features
+                .feature
+                    .feature-content
+                        display: block !important
+                        .feature-description
+                            margin-left: 0 !important
+                        &:only-child
+                            > *
+                                width: columns(6) !important
