@@ -211,6 +211,10 @@ from = "/index.php/evenement/ouai-stephane/index.html"
 to = "/agenda/2026/ouai-stephane/"
 
 [[redirects]]
+from = "/agenda/2026/hors-cadre/rencontre-avec-laurent-guide/index.html"
+to = "/agenda/2026/hors-cadre/rencontre-avec-laurent-gaude/"
+
+[[redirects]]
 from = "/agenda/evenements-solidaires/index.html"
 to = "/agenda/solidarite/"
 
