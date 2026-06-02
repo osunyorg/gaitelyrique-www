@@ -65,6 +65,12 @@ params:
       options:
         subtitle: false
     single:
+      meta:
+        options:
+          published_at: false
+          reading_time: false
+          updated_at: false
+          authors: false
       options:
         published_at: false
         reading_time: false

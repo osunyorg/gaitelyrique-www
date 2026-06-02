@@ -67,9 +67,10 @@
                     @include h4
                     color: var(--color-text)
                     display: block
-            .taxonomies-single
-                margin-top: 0
-                margin-bottom: $spacing-2
+            .single-meta
+                margin-top: $spacing-2
+                margin-bottom: 0
+                padding-bottom: 0 !important
                 order: -1 !important
                 column-gap: $spacing-3 
                 position: relative
@@ -91,7 +92,8 @@
                 .hero-text > h1
                     width: columns(12)
             .hero-text
-                .taxonomies-single
+                .single-meta
+                    margin-top: 0
                     margin-bottom: 0
                 h1 
                     span
@@ -112,7 +114,6 @@
                     span
                         margin-top: var(--hero-spacing)
                 .taxonomies-single
-                    margin-bottom: 0
                     a
                         @include h6
     
