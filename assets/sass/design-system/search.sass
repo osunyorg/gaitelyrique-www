@@ -6,6 +6,17 @@
             display: none
         input
             @include h3
+    .pf-results
+        .pf-result-content
+            a
+                text-decoration: none !important
+                @include icon(arrow-right-line, after, true)
+                    font-size: 80%
+                    opacity: 0
+                &:hover
+                    &::after
+                        opacity: 1
+
     @include media-breakpoint-up(desktop)
         .pf-result-image
             width: columns(4) !important
@@ -16,6 +27,8 @@
             display: block !important
             margin-bottom: $spacing-1
             width: columns(6)
+
+
 //     height: 100svh
 //     .search__close
 //         @include small
