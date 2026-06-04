@@ -125,6 +125,10 @@ params:
           desktop:  894
       home:
         hero:
-          mobile:  480
-          tablet:   1200
-          desktop:  1792
+          mobile: 480
+          tablet: 1200
+          desktop: 1400
+          additionnal:
+            - rule: "min-width: 1560px"
+              size: 1792
+
