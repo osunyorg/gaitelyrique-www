@@ -323,6 +323,10 @@ from = "/evenement/hors-cadre-avec-sandrine-chenivesse/index.html"
 to = "/agenda/2026/hors-cadre-sandrine-chenivesse/"
 
 [[redirects]]
+from = "/agenda/2026/studio-1316-tetes-daffiches-1/index.html"
+to = "/agenda/2026/studio-1316-summergreen/"
+
+[[redirects]]
 from = "/agenda/atelier/index.html"
 to = "/agenda/ateliers/"
 
