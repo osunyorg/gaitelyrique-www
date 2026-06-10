@@ -231,6 +231,10 @@ from = "/evenement/ping-therapie/index.html"
 to = "/agenda/2026/ping-therapie/"
 
 [[redirects]]
+from = "/agenda/2026/echappees-inattendues-du-cnrs/index.html"
+to = "/agenda/2026/ateliers-du-vivant/"
+
+[[redirects]]
 from = "/agenda/2024/arte-concert-festival/2024-10-24-lala-ce-bikoko-marem-ladson/index.html"
 to = "/agenda/2024/arte-concert-festival/lala-ce-bikoko-marem-ladson/"
 
