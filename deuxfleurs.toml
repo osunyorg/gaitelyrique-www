@@ -411,6 +411,10 @@ from = "/la-fabrique-de-lepoque/actualites/2025-04-15-faites-vivre-les-liens-ave
 to = "/la-fabrique-de-lepoque/actualites/2026-01-15-faites-vivre-les-liens-avec-le-quartier/"
 
 [[redirects]]
+from = "/agenda/2026/jah-jah-sound-system-x-anticipation-festival/index.html"
+to = "/agenda/2026/fete-de-la-musique/"
+
+[[redirects]]
 from = "/agenda/2025/evenement-template/index.html"
 to = "/agenda/2025/biosphere-25/"
 
