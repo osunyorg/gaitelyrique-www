@@ -372,6 +372,48 @@ contents:
       layout: classic
 
 
+  - kind: block
+    template: agenda
+
+
+    ranks:
+      base: 3
+      children: 3
+    top:
+      active: false
+
+    data:
+      mode: category
+      kinds:
+        parent: true
+        child: false
+        recurring: true
+      options:
+        categories: false
+        dates: true
+        image: true
+        subtitle: false
+        summary: false
+        status: false
+
+      layout: grid
+
+
+      title_link: "/agenda/rencontres/"
+      category:
+        permalink: "/agenda/rencontres/"
+        path: "/events_categories/rencontres"
+        slug: "rencontres"
+        file: "content/fr/events_categories/rencontres/_index.html"
+      events:
+        - permalink: "/agenda/2026/la-revue-feministe-gaze-fete-son-nouveau-numero/"
+          path: "/events/2026/07/01-18-30-la-revue-feministe-gaze-fete-son-nouveau-numero"
+          slug: "la-revue-feministe-gaze-fete-son-nouveau-numero"
+          file: "content/fr/events/2026/07/01-18-30-la-revue-feministe-gaze-fete-son-nouveau-numero.html"
+          name: >-
+            La revue Féministe Gaze fête son nouveau numéro !
+
+      quantity: 1
 
   - kind: block
     template: title
