@@ -1,0 +1,9 @@
+.single-meta
+    @include media-breakpoint-down(desktop)
+        &,
+        .taxonomies > ul
+            > li
+                flex-direction: column
+                row-gap: 0 !important
+                > :last-child
+                    text-align: left !important
