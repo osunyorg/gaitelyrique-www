@@ -29,8 +29,6 @@
                 text-align: left !important
                 ul
                     text-align: left !important
-                &:not(first-child)
-                    border-top: 0
                 span, a
                     @include meta-serif
                 li
@@ -38,8 +36,6 @@
                     &, a
                         text-align: left !important
     @include media-breakpoint-down(desktop)
-        .section-sidebar
-            margin-top: -$spacing-2
         &.full-width
             .post-infos
                 padding-left: var(--grid-gutter)
