@@ -25,10 +25,8 @@
         .event--with-image
             .media
                 order: -1
-
                 @include media-breakpoint-up(desktop)
                     width: columns(6)
-    
     @include media-breakpoint-down(desktop)
         .event-programme
             .events--agenda
@@ -77,6 +75,7 @@
                 z-index: 1
                 a
                     color: var(--color-text)
+                    @include meta
                     &:not(:hover)
                         text-decoration-color: transparent
         figure

@@ -1,11 +1,13 @@
 .single-meta
-    @include media-breakpoint-down(desktop)
-        &,
-        .taxonomies > ul
-            > li
+    &,
+    .taxonomies > ul
+        > li
+            @include meta-serif
+            span, a
+                @include meta-serif
+            @include media-breakpoint-down(desktop)
+                --border-width: 0
                 flex-direction: column
                 row-gap: 0 !important
                 > :last-child
                     text-align: left !important
-            a
-                @include body-text
