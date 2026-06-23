@@ -543,6 +543,10 @@ from = "/equipe/index.html"
 to = "/personnes/"
 
 [[redirects]]
+from = "/agenda/2026/ateliers-du-vivant/fresque-du-climat-1-1-1-1-1/index.html"
+to = "/agenda/2026/ateliers-du-vivant/fresque-du-climat-5/"
+
+[[redirects]]
 from = "/agenda/expositions/solidarite/index.html"
 to = "/agenda/solidarite/"
 
