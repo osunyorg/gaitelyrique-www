@@ -107,6 +107,10 @@ from = "/agenda/2024-1/09/index.html"
 to = "/agenda/2024/09/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-3-1/index.html"
+to = "/agenda/2026/cheers/cheers-6/"
+
+[[redirects]]
 from = "/agenda/2024-1/03/index.html"
 to = "/agenda/2024/03/"
 
@@ -175,12 +179,20 @@ from = "/soutenir-la-fabrique/index.html"
 to = "/ils-nous-soutiennent/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-4-1/index.html"
+to = "/agenda/2026/cheers/cheers-5/"
+
+[[redirects]]
 from = "/agenda/expositions/2026-04-17-tetes-daffiches/index.html"
 to = "/agenda/expositions/2026-04-18-tetes-daffiches/"
 
 [[redirects]]
 from = "/agenda/2025/views-cine-club/2025-06-04-views-cine-club/index.html"
 to = "/agenda/2025/views-cine-club/views-cine-club-1/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-8-1/index.html"
+to = "/agenda/2026/cheers/cheers-9/"
 
 [[redirects]]
 from = "/index.php/evenement/arch-club/index.html"
@@ -235,6 +247,10 @@ from = "/evenement/ping-therapie/index.html"
 to = "/agenda/2026/ping-therapie/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-7-1/index.html"
+to = "/agenda/2026/cheers/cheers-8/"
+
+[[redirects]]
 from = "/agenda/2024/arte-concert-festival/2024-10-24-lala-ce-bikoko-marem-ladson/index.html"
 to = "/agenda/2024/arte-concert-festival/lala-ce-bikoko-marem-ladson/"
 
@@ -281,6 +297,10 @@ to = "/agenda/concerts/"
 [[redirects]]
 from = "/agenda/2025-05-21-rencontres-internationales-paris-berlin/index.html"
 to = "/agenda/2025/rencontres-internationales-paris-berlin/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-6-1/index.html"
+to = "/agenda/2026/cheers/cheers-7/"
 
 [[redirects]]
 from = "/offres-d-emploi/contrat/alternance/index.html"
@@ -425,6 +445,10 @@ to = "/infos-pratiques/boiremanger/"
 [[redirects]]
 from = "/actualites/fabrique-de-lepoque/partageons-nos-outils/index.html"
 to = "/la-fabrique-de-lepoque/actualites/partageons-nos-outils/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-2-1/index.html"
+to = "/agenda/2026/cheers/cheers-3/"
 
 [[redirects]]
 from = "/actualites/2025-10-27-concilier-lieu-ouvert-et-lieu-sur/index.html"
@@ -645,6 +669,10 @@ to = "/agenda/2026/fata-morgana/"
 [[redirects]]
 from = "/events/2026/03/28-le-voyage-en-ukraine/index.html"
 to = "/agenda/2026/les-vies-quon-mene/gentrifier-votre-quartier-leur-projet/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-1-1/index.html"
+to = "/agenda/2026/cheers/cheers-2/"
 
 [[redirects]]
 from = "/agenda/2025/arte-concert-festival-1/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue/index.html"
