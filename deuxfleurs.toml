@@ -119,6 +119,10 @@ from = "/emploi/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fh
 to = "/rejoindre-l-equipe/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
 
 [[redirects]]
+from = "/agenda/2026/le-kiosque-du-vivant-1/index.html"
+to = "/agenda/2026/bestialement-photogenique/"
+
+[[redirects]]
 from = "/evenement/pop-the-vote/index.html"
 to = "/agenda/2026/voter-est-ce-encore-utile/"
 
