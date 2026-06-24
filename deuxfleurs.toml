@@ -611,6 +611,10 @@ from = "/la-fabrique-de-lepoque/actualites/2026-01-20-un-site-web-eco-et-socio-c
 to = "/la-fabrique-de-lepoque/actualites/2025-12-06-un-site-web-eco-et-socio-concu/"
 
 [[redirects]]
+from = "/agenda/2026/ateliers-du-vivant/balades-dans-les-squares-de-paris-1-1-1/index.html"
+to = "/agenda/2026/ateliers-du-vivant/balades-dans-les-squares-de-paris-3/"
+
+[[redirects]]
 from = "/la-fabrique-de-lepoque/actualites/2026-01-29-faire-tourner-lexposition-pulse-de-1024-architecture/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-11-03-faire-tourner-lexposition-pulse-de-1024-architecture/"
 
