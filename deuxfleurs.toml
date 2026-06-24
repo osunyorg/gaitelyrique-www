@@ -207,6 +207,10 @@ from = "/evenement/les-emotions-des-animaux/index.html"
 to = "/agenda/2026/les-emotions-des-animaux/"
 
 [[redirects]]
+from = "/agenda/jeune-public/index.html"
+to = "/agenda/jeunesse/"
+
+[[redirects]]
 from = "/offres-d-emploi/cdd/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/cdd/"
 
