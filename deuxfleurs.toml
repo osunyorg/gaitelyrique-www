@@ -527,6 +527,10 @@ from = "/agenda/2026/distributions-etudiantes-1/index.html"
 to = "/agenda/2026/art-and-food/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/index.html"
+to = "/agenda/2026/cheers-10/"
+
+[[redirects]]
 from = "/expositions/index.html"
 to = "/agenda/expositions/"
 
