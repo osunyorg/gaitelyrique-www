@@ -15,6 +15,10 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-5/index.html"
+to = "/agenda/2026/cheers-10/cheers-5/"
+
+[[redirects]]
 from = "/agenda/2024-1/07/index.html"
 to = "/agenda/2024/07/"
 
@@ -91,12 +95,20 @@ from = "/fabrique-de-lepoque/histoire/index.html"
 to = "/la-fabrique-de-lepoque/histoire-du-lieu/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-9/index.html"
+to = "/agenda/2026/cheers-10/cheers-9/"
+
+[[redirects]]
 from = "/agenda/2024-1/05/index.html"
 to = "/agenda/2024/05/"
 
 [[redirects]]
 from = "/agenda/2025-1/index.html"
 to = "/agenda/2025/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-6/index.html"
+to = "/agenda/2026/cheers-10/cheers-6/"
 
 [[redirects]]
 from = "/agenda/2025/rencontres-internationales-paris-berlin/2025-05-21-les-fantomes-de-la-liberte/index.html"
@@ -108,7 +120,7 @@ to = "/agenda/2024/09/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-3-1/index.html"
-to = "/agenda/2026/cheers/cheers-6/"
+to = "/agenda/2026/cheers-10/cheers-6/"
 
 [[redirects]]
 from = "/agenda/2024-1/03/index.html"
@@ -155,6 +167,10 @@ from = "/actualites/2025-04-15-reservez-vos-bureaux-devenez-residente/index.html
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail-devenez-residente/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-3/index.html"
+to = "/agenda/2026/cheers-10/cheers-3/"
+
+[[redirects]]
 from = "/la-fabrique-de-lepoque/actualites/2025-04-28-vers-un-lieu-culturel-regeneratif/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-vers-un-lieu-culturel-regeneratif/"
 
@@ -184,7 +200,11 @@ to = "/ils-nous-soutiennent/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-4-1/index.html"
-to = "/agenda/2026/cheers/cheers-5/"
+to = "/agenda/2026/cheers-10/cheers-5/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers/index.html"
+to = "/agenda/2026/cheers-10/cheers/"
 
 [[redirects]]
 from = "/agenda/expositions/2026-04-17-tetes-daffiches/index.html"
@@ -196,7 +216,7 @@ to = "/agenda/2025/views-cine-club/views-cine-club-1/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-8-1/index.html"
-to = "/agenda/2026/cheers/cheers-9/"
+to = "/agenda/2026/cheers-10/cheers-9/"
 
 [[redirects]]
 from = "/index.php/evenement/arch-club/index.html"
@@ -252,7 +272,7 @@ to = "/agenda/2026/ping-therapie/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-7-1/index.html"
-to = "/agenda/2026/cheers/cheers-8/"
+to = "/agenda/2026/cheers-10/cheers-8/"
 
 [[redirects]]
 from = "/agenda/2024/arte-concert-festival/2024-10-24-lala-ce-bikoko-marem-ladson/index.html"
@@ -304,7 +324,7 @@ to = "/agenda/2025/rencontres-internationales-paris-berlin/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-6-1/index.html"
-to = "/agenda/2026/cheers/cheers-7/"
+to = "/agenda/2026/cheers-10/cheers-7/"
 
 [[redirects]]
 from = "/offres-d-emploi/contrat/alternance/index.html"
@@ -351,8 +371,16 @@ from = "/actualites/thematiques/index.html"
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-2/index.html"
+to = "/agenda/2026/cheers-10/cheers-2/"
+
+[[redirects]]
 from = "/evenement/hors-cadre-avec-sandrine-chenivesse/index.html"
 to = "/agenda/2026/hors-cadre-sandrine-chenivesse/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-8/index.html"
+to = "/agenda/2026/cheers-10/cheers-8/"
 
 [[redirects]]
 from = "/agenda/2026/studio-1316-tetes-daffiches-1/index.html"
@@ -452,7 +480,7 @@ to = "/la-fabrique-de-lepoque/actualites/partageons-nos-outils/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-2-1/index.html"
-to = "/agenda/2026/cheers/cheers-3/"
+to = "/agenda/2026/cheers-10/cheers-3/"
 
 [[redirects]]
 from = "/actualites/2025-10-27-concilier-lieu-ouvert-et-lieu-sur/index.html"
@@ -495,6 +523,10 @@ from = "/offres-d-emploi/contrat/cdi/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/contrat/cdi/"
 
 [[redirects]]
+from = "/agenda/2026/cheers/cheers-4/index.html"
+to = "/agenda/2026/cheers-10/cheers-4/"
+
+[[redirects]]
 from = "/agenda/2025/marathon-apparat-dylan-dylan-cabaret-contemporain/index.html"
 to = "/agenda/2025/changement-de-lieu-marathon-apparat-dylan-dylan-cabaret-contemporain/"
 
@@ -533,6 +565,10 @@ to = "/agenda/2026/cheers-10/"
 [[redirects]]
 from = "/expositions/index.html"
 to = "/agenda/expositions/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-1/index.html"
+to = "/agenda/2026/cheers-10/cheers-1/"
 
 [[redirects]]
 from = "/offres-d-emploi/contrat/stage/index.html"
@@ -684,7 +720,7 @@ to = "/agenda/2026/les-vies-quon-mene/gentrifier-votre-quartier-leur-projet/"
 
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-1-1/index.html"
-to = "/agenda/2026/cheers/cheers-2/"
+to = "/agenda/2026/cheers-10/cheers-2/"
 
 [[redirects]]
 from = "/agenda/2025/arte-concert-festival-1/mac-demarco-baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue/index.html"
@@ -717,6 +753,10 @@ to = "/agenda/2024/02/"
 [[redirects]]
 from = "/agenda/grande-salle/index.html"
 to = "/agenda/lieu/grande-salle/"
+
+[[redirects]]
+from = "/agenda/2026/cheers/cheers-7/index.html"
+to = "/agenda/2026/cheers-10/cheers-7/"
 
 [[redirects]]
 from = "/agathe-manach/actualites/index.html"
