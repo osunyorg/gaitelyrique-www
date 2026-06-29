@@ -1,5 +1,7 @@
 window.gaite = window.gaite || {};
 
+// Default colors
+
 window.gaite.colorsBackground = [
   "#F7AAFF",
   "#F6FD05",
@@ -23,6 +25,18 @@ window.gaite.colorsAccent = [
   "#006778",
   "#216f01"
 ];
+
+// Summer colors
+
+window.gaite.colorsBackground = [
+  "#B7CCD9",
+  "#DF8FA8",
+  "#98CDA6",
+  "#FFED00",
+  "#BD85E6"
+];
+
+window.gaite.colorsBackgroundAlt = window.gaite.colorsBackground;
 
 window.gaite.colorLocalKey = "gaite-is-colored";
 
