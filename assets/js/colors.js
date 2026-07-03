@@ -31,7 +31,7 @@ window.gaite.colorsAccent = [
 window.gaite.colorsBackground = [
   "#B7CCD9",
   "#DF8FA8",
-  "#98CDA6",
+  "#50c878",
   "#FFED00",
   "#BD85E6"
 ];
