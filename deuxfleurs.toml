@@ -223,10 +223,6 @@ from = "/index.php/evenement/arch-club/index.html"
 to = "/agenda/2026/arch-club/"
 
 [[redirects]]
-from = "/agenda/2026/ping-therapie-1/index.html"
-to = "/agenda/2026/yadu-yoga/"
-
-[[redirects]]
 from = "/personnes/david-suchestow/index.html"
 to = "/david-suchestow/"
 
