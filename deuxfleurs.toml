@@ -775,6 +775,10 @@ from = "/personnes/negros-tou-moria/index.html"
 to = "/negros-tou-moria/"
 
 [[redirects]]
+from = "/agenda/2026/journee-nationale-des-artistes/index.html"
+to = "/agenda/2026/journees-nationales-des-artistes/"
+
+[[redirects]]
 from = "/infos-pratiques/le-lieu/espace-ateliers/index.html"
 to = "/infos-pratiques/le-lieu/espace-atelier/"
 
