@@ -159,6 +159,10 @@ from = "/grande-galerie/index.html"
 to = "/infos-pratiques/le-lieu/grande-galerie/"
 
 [[redirects]]
+from = "/agenda/2024/cine-club-gaze-1/index.html"
+to = "/agenda/2026/cine-club-gaze-1-1/"
+
+[[redirects]]
 from = "/recrutements/index.html"
 to = "/rejoindre-l-equipe/"
 
