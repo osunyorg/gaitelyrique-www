@@ -208,7 +208,7 @@ to = "/agenda/2026/cheers-10/cheers/"
 
 [[redirects]]
 from = "/agenda/expositions/2026-04-17-tetes-daffiches/index.html"
-to = "/agenda/expositions/2026-04-18-tetes-daffiches/"
+to = "/agenda/expositions/2026-09-02-tetes-daffiches/"
 
 [[redirects]]
 from = "/agenda/2025/views-cine-club/2025-06-04-views-cine-club/index.html"
@@ -521,6 +521,10 @@ to = "/rejoindre-l-equipe/offres-d-emploi/contrat/cdi/"
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-4/index.html"
 to = "/agenda/2026/cheers-10/cheers-4/"
+
+[[redirects]]
+from = "/agenda/expositions/2026-04-18-tetes-daffiches/index.html"
+to = "/agenda/expositions/2026-09-02-tetes-daffiches/"
 
 [[redirects]]
 from = "/agenda/2025/marathon-apparat-dylan-dylan-cabaret-contemporain/index.html"
