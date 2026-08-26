@@ -767,6 +767,10 @@ from = "/actualites/fabrique-de-lepoque/devenez-acteurice-de-l-epoque/index.html
 to = "/la-fabrique-de-lepoque/actualites/devenez-acteurice-de-l-epoque/"
 
 [[redirects]]
+from = "/https:/www.gaite-lyrique.net/agenda/2026/the-divin0-experience/index.html"
+to = "/agenda/2026/the-divin0-experience-1/"
+
+[[redirects]]
 from = "/la-fabrique-de-lepoque/actualites/2025-04-15-reservez-vos-bureaux-devenez-residente/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail-devenez-residente/"
 
