@@ -627,6 +627,10 @@ from = "/agenda/expositions/solidarite/index.html"
 to = "/agenda/solidarite/"
 
 [[redirects]]
+from = "/fichiers/2026/index.html"
+to = "/fichiers/2026/pulse-cartel-portfolio-2pdf/"
+
+[[redirects]]
 from = "/evenement/yadu-yoga/index.html"
 to = "/agenda/2026/yadu-yoga/"
 
