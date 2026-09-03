@@ -395,6 +395,10 @@ from = "/agenda/2025/rencontres-internationales-paris-berlin/2025-05-21-resistan
 to = "/agenda/2025/rencontres-internationales-paris-berlin/resistance-fondamentale/"
 
 [[redirects]]
+from = "/https:/www.gaite-lyrique.net/agenda/2026/antitrust-le-festival-pour-resister-aux-monopoles/index.html"
+to = "/agenda/2026/antitrust-le-festival-pour-resister-aux-monopoles/"
+
+[[redirects]]
 from = "/offres-d-emploi/index.html"
 to = "/rejoindre-l-equipe/offres-d-emploi/"
 
