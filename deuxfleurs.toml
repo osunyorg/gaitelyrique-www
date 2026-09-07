@@ -39,6 +39,10 @@ from = "/agenda/2026/evenement-simple-audito-1/index.html"
 to = "/agenda/2026/comment-apprivoiser-nos-fantomes/"
 
 [[redirects]]
+from = "/agenda/2026/le-camp-du-bien-un-essai-qui-unit-feminisme-et-antiracisme-radicaux/index.html"
+to = "/agenda/2026/le-camp-du-bien-un-essai-feministe-et-antiraciste/"
+
+[[redirects]]
 from = "/agenda/2025-1/12/index.html"
 to = "/agenda/2025/12/"
 
@@ -121,6 +125,10 @@ to = "/agenda/2024/09/"
 [[redirects]]
 from = "/agenda/2026/cheers/cheers-3-1/index.html"
 to = "/agenda/2026/cheers-10/cheers-6/"
+
+[[redirects]]
+from = "/agenda/2026/nous-sommes-le-camp-du-bien/index.html"
+to = "/agenda/2026/le-camp-du-bien-un-essai-feministe-et-antiraciste/"
 
 [[redirects]]
 from = "/agenda/2024-1/03/index.html"
@@ -597,6 +605,10 @@ to = "/agenda/2024/04/"
 [[redirects]]
 from = "/agenda/2025-1/10/index.html"
 to = "/agenda/2025/10/"
+
+[[redirects]]
+from = "/https:/www.gaite-lyrique.net/agenda/2026/le-camp-du-bien-un-essai-qui-unit-feminisme-et-antiracisme-radicaux/index.html"
+to = "/agenda/2026/le-camp-du-bien-un-essai-feministe-et-antiraciste/"
 
 [[redirects]]
 from = "/agenda/2024/arte-concert-festival/2024-10-24-kompromat-kelly-lee-owens-aili/index.html"
