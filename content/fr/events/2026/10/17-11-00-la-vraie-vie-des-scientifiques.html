@@ -28,7 +28,7 @@ search:
   summary: >-
     <p>Des scientifiques prennent la parole, dans une mise en scène de Sonia Kronlund (France Culture) et Delphine Saltel (ARTE Radio)</p>
   body: >-
-    <p>  <br>Six grands chercheures et chercheurs soutenus par l’Agence nationale de la recherche (ANR) partagent un moment particulier de leur vie de scientifique dans une mise en scène originale imaginée par Sonia Kronlund, productrice de l’émission Les Pieds sur terre sur France Culture,) et Delphine Saltel (autrice du podcast Vivons heureux avant la fin du monde sur ARTE Radio).  Six récits rares et inédits, qui révèlent à quel point la science peut être vivante, diverse et surprenante. Les récits des scientifiques sont illustrés par les étudiants en graphisme de l’Ecole Estienne. </p>  <p> Avec </p>  <p>Stéphanie Debette <br>Neurologue et épidémiologiste, directrice de l’Institut du Cerveau</p>  <p>Julien Leclaire <br>Chercheur en biochimie, professeur de chimie à l'université de Lyon, fondateur de la société Mecaware</p>  <p>Marie-Hélène Moncel <br>Docteure en préhistoire, directrice de recherche CNRS au laboratoire d’Histoire naturelle de l'homme préhistorique au Muséum national d'histoire naturelle</p>  <p>Alessandro Morbidelli <br>Planétologue à l'Observatoire de la Côte d'Azur, laboratoire J.-L. Lagrange, et professeur au Collège de France</p>  <p>Camille Parmesan <br>Biologiste spécialiste du changement climatique, directrice de recherche, directrice adjointe de la Station d’écologie théorique et expérimentale (SETE)</p>  <p>Dinh-Thuy Phan-Huy <br>Ingénieure-chercheuse chez l’opérateur Orange</p>
+    <p>  <br>Six grands chercheures et chercheurs soutenus par l’Agence nationale de la recherche (ANR) partagent un moment particulier de leur vie de scientifique dans une mise en scène originale imaginée par Sonia Kronlund, productrice de l’émission Les Pieds sur terre sur France Culture,) et Delphine Saltel (autrice du podcast Vivons heureux avant la fin du monde sur ARTE Radio).  Six récits rares et inédits, qui révèlent à quel point la science peut être vivante, diverse et surprenante. Les récits des scientifiques sont illustrés par les étudiants en graphisme de l’Ecole Estienne. </p>  <p> Avec  <br>  </p>  <p>Stéphanie Debette <br>Neurologue et épidémiologiste, directrice de l’Institut du Cerveau</p>  <p>Julien Leclaire <br>Chercheur en biochimie, professeur de chimie à l'université de Lyon, fondateur de la société Mecaware</p>  <p>Marie-Hélène Moncel <br>Docteure en préhistoire, directrice de recherche CNRS au laboratoire d’Histoire naturelle de l'homme préhistorique au Muséum national d'histoire naturelle</p>  <p>Alessandro Morbidelli <br>Planétologue à l'Observatoire de la Côte d'Azur, laboratoire J.-L. Lagrange, et professeur au Collège de France</p>  <p>Camille Parmesan <br>Biologiste spécialiste du changement climatique, directrice de recherche, directrice adjointe de la Station d’écologie théorique et expérimentale (SETE)</p>  <p>Dinh-Thuy Phan-Huy <br>Ingénieure-chercheuse chez l’opérateur Orange</p>  <p> En partenariat avec </p>
 
 date: "2026-10-17T11:00:00+02:00"
 dates:
@@ -188,7 +188,7 @@ contents:
 
 
   - kind: block
-    template: features
+    template: title
     title: >-
       Avec
     slug: >-
@@ -196,13 +196,26 @@ contents:
     ranks:
       base: 2
       self: 2
-      children: 3
     top:
       active: true
       title: 
         value: >-
           Avec
         heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: features
+
+
+    ranks:
+      base: 3
+      children: 3
+    top:
+      active: false
 
     data:
       layout: grid
@@ -259,6 +272,43 @@ contents:
 
 
 
+
+
+  - kind: block
+    template: organizations
+    title: >-
+      En partenariat avec
+    slug: >-
+      en-partenariat-avec
+    ranks:
+      base: 3
+      self: 3
+      children: 4
+    html_class: "block-class-in-hero"
+    top:
+      active: true
+      title: 
+        value: >-
+          En partenariat avec
+        heading: 3
+
+    data:
+      layout: grid
+
+      options:
+        link: true
+        logo: true
+        summary: false
+        address: false
+        filters: false
+
+      organizations:
+        - permalink: "/organisations/agence-nationale-de-la-recherche/"
+          path: "/organizations/agence-nationale-de-la-recherche"
+          slug: "agence-nationale-de-la-recherche"
+          file: "content/fr/organizations/agence-nationale-de-la-recherche.html"
+
+      quantity: 1
 
 
 
