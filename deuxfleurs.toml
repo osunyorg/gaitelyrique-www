@@ -511,6 +511,10 @@ from = "/agenda/2025/evenement-simple-audito-1/index.html"
 to = "/agenda/2026/comment-apprivoiser-nos-fantomes/"
 
 [[redirects]]
+from = "/agenda/cycles/index.html"
+to = "/agenda/rencontres/cycles/"
+
+[[redirects]]
 from = "/personnes/david-suchestow/actualites/index.html"
 to = "/david-suchestow/actualites/"
 
@@ -609,6 +613,10 @@ to = "/agenda/2025/10/"
 [[redirects]]
 from = "/https:/www.gaite-lyrique.net/agenda/2026/le-camp-du-bien-un-essai-qui-unit-feminisme-et-antiracisme-radicaux/index.html"
 to = "/agenda/2026/le-camp-du-bien-un-essai-feministe-et-antiraciste/"
+
+[[redirects]]
+from = "/agenda/2026/khalil-epi-presente-tuqus/index.html"
+to = "/agenda/2026/et-maintenant/khalil-epi-presente-tuqus/"
 
 [[redirects]]
 from = "/agenda/2024/arte-concert-festival/2024-10-24-kompromat-kelly-lee-owens-aili/index.html"
