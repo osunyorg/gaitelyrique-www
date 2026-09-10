@@ -28,7 +28,7 @@ search:
   summary: >-
     <p>Pour sa troisième édition, Plateau graphique plonge dans le vivant. Qu’ils créent avec de la matière organique, engagent le corps ou s’inspirent de la nature, les graphistes développent de tout temps des approches alternatives. </p>
   body: >-
-    <p>  <br>À l’occasion de sa prochaine exposition à la Gaîté Lyrique, Stefan Sagmeister témoigne de ses nombreuses expériences animales et végétales, Alice Savoie revient sur la genèse de sa typographie « faune », le bio-designer Alec Vivier-Reynaud raconte son travail à base de mycélium et la bibliothèque Forney sort de ses réserves une grammaire ornementale Art nouveau.</p>  <p> Au programme  <br>   <br>Démonstration de biodesign, par Alec Vivier-Reynaud ➜  18h  Atelier Summer Green ➜ 18h   L'illustratrice Florence Gendre et l'Atelier Leherpeur proposent d'inventer des jardins imaginaires, verts et luxuriants, à travers le dessin et la couleur, et mettent à disposition un outil de création hybride, entre bas-reliefs modulables et tampons végétaux. Intervention des invité·es et échanges  ➜  19h Avec Marie-Hélène Gatto, Stefan Sagmeister, Alice Savoie, Alec Vivier-Reynaud, la péniche-librairie L'eau et les rêves et les étudiants de l'école supérieure d'art et de communication de Cambrai.</p>
+    <p>  <br>À l’occasion de sa prochaine exposition à la Gaîté Lyrique, Stefan Sagmeister témoigne de ses nombreuses expériences animales et végétales, Alice Savoie revient sur la genèse de sa typographie « faune », le bio-designer Alec Vivier-Reynaud raconte son travail à base de mycélium et la bibliothèque Forney sort de ses réserves une grammaire ornementale Art nouveau.</p>  <p> Au programme  <br>   <br>Démonstration de biodesign, par Alec Vivier-Reynaud ➜  18h  Atelier Summer Green ➜ 18h   L'illustratrice Florence Gendre et l'Atelier Leherpeur proposent d'inventer des jardins imaginaires, verts et luxuriants, à travers le dessin et la couleur, et mettent à disposition un outil de création hybride, entre bas-reliefs modulables et tampons végétaux. Intervention des invité·es et échanges  ➜  19h Avec Marie-Hélène Gatto, Stefan Sagmeister, Alice Savoie, Alec Vivier-Reynaud, la péniche-librairie L'eau et les rêves et les étudiants de l'école supérieure d'art et de communication de Cambrai.</p>  <p> Co-organisé avec  </p>
 
 date: "2026-10-07T18:00:00+02:00"
 dates:
@@ -221,12 +221,21 @@ contents:
 
   - kind: block
     template: organizations
-
-
+    title: >-
+      Co-organisé avec
+    slug: >-
+      co-organise-avec
     ranks:
       base: 3
+      self: 3
+      children: 4
+    html_class: "block-class-in-hero"
     top:
-      active: false
+      active: true
+      title: 
+        value: >-
+          Co-organisé avec
+        heading: 3
 
     data:
       layout: grid
@@ -239,7 +248,17 @@ contents:
         filters: false
 
       organizations:
-      quantity: 0
+        - permalink: "/organisations/bpi/"
+          path: "/organizations/bpi"
+          slug: "bpi"
+          file: "content/fr/organizations/bpi.html"
+
+        - permalink: "/organisations/cnap/"
+          path: "/organizations/cnap"
+          slug: "cnap"
+          file: "content/fr/organizations/cnap.html"
+
+      quantity: 2
 
 
 
