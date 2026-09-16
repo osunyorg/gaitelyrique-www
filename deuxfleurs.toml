@@ -99,6 +99,10 @@ from = "/fabrique-de-lepoque/histoire/index.html"
 to = "/la-fabrique-de-lepoque/histoire-du-lieu/"
 
 [[redirects]]
+from = "/agenda/rencontres/cycles/index.html"
+to = "/agenda/cycles/"
+
+[[redirects]]
 from = "/agenda/2026/cheers/cheers-9/index.html"
 to = "/agenda/2026/cheers-10/cheers-9/"
 
@@ -509,10 +513,6 @@ to = "/la-fabrique-de-lepoque/actualites/2026-01-12-organiser-un-evenement-vraim
 [[redirects]]
 from = "/agenda/2025/evenement-simple-audito-1/index.html"
 to = "/agenda/2026/comment-apprivoiser-nos-fantomes/"
-
-[[redirects]]
-from = "/agenda/cycles/index.html"
-to = "/agenda/rencontres/cycles/"
 
 [[redirects]]
 from = "/personnes/david-suchestow/actualites/index.html"
