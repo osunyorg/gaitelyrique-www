@@ -395,10 +395,6 @@ from = "/agenda/2026/cheers/cheers-8/index.html"
 to = "/agenda/2026/cheers-10/cheers-8/"
 
 [[redirects]]
-from = "/agenda/2026/studio-1316-tetes-daffiches-1/index.html"
-to = "/agenda/2026/studio-1316-summergreen/"
-
-[[redirects]]
 from = "/agenda/atelier/index.html"
 to = "/agenda/ateliers/"
 
