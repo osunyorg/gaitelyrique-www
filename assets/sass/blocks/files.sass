@@ -32,12 +32,19 @@
         .files
             li
                 align-items: center
-                &::before
-                    @include icon-site('icon-carte')
-                    font-size: pxToRem(48)
-                figure
+                .file
+                    align-items: center
                     display: flex
+                    &::before
+                        @include icon-site('icon-carte')
+                        border: none
+                        font-size: calc(var(--icon-frame-size) + 1px)
+                    &:hover::before
+                        border: none
+                figure
                     align-items: baseline
+                    display: flex
+                    flex-wrap: wrap
                     gap: $spacing-1
                     a
                         text-decoration: underline
