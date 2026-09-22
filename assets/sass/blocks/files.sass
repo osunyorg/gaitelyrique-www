@@ -32,10 +32,15 @@
         .files
             li
                 align-items: center
-                .file::before
-                    @include icon-site('icon-carte')
-                    border: none
-                    font-size: pxToRem(48)
+                .file
+                    align-items: center
+                    display: flex
+                    &::before
+                        @include icon-site('icon-carte')
+                        border: none
+                        font-size: calc(var(--icon-frame-size) + 1px)
+                    &:hover::before
+                        border: none
                 figure
                     align-items: baseline
                     display: flex
