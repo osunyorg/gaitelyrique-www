@@ -11,29 +11,29 @@ window.gaite.colorsBackground = [
 ];
 
 window.gaite.colorsBackgroundAlt = [
-  "#EB9DEB",
-  "#E3EB01",
-  "#EBA40C",
   "#19D5EB",
   "#70EB3D",
+  "#EBA40C",
+  "#E3EB01",
+  "#EB9DEB"
 ];
 
 window.gaite.colorsAccent = [
-  "#870095",
-  "#575a01",
-  "#593f03",
   "#006778",
-  "#216f01"
+  "#216f01",
+  "#593f03",
+  "#575a01",
+  "#870095",
 ];
 
 // Summer colors
 
 window.gaite.colorsBackground = [
   "#B7CCD9",
-  "#DF8FA8",
   "#50c878",
+  "#DF8FA8",
   "#FFED00",
-  "#BD85E6"
+  "#BD85E6",
 ];
 
 window.gaite.colorsBackgroundAlt = window.gaite.colorsBackground;
@@ -74,6 +74,7 @@ window.gaite.toggleMode = function () {
 
   if (this.isColorMode == "true") {
     colors = this.getRandomColors();
+    console.log(this.getRandomColors())
     this.button.classList.add('is-color-mode');
   }
 
