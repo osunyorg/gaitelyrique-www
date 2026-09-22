@@ -74,7 +74,6 @@ window.gaite.toggleMode = function () {
 
   if (this.isColorMode == "true") {
     colors = this.getRandomColors();
-    console.log(this.getRandomColors())
     this.button.classList.add('is-color-mode');
   }
 
