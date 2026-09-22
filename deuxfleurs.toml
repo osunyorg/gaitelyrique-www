@@ -99,10 +99,6 @@ from = "/fabrique-de-lepoque/histoire/index.html"
 to = "/la-fabrique-de-lepoque/histoire-du-lieu/"
 
 [[redirects]]
-from = "/agenda/rencontres/cycles/index.html"
-to = "/agenda/cycles/"
-
-[[redirects]]
 from = "/agenda/2026/cheers/cheers-9/index.html"
 to = "/agenda/2026/cheers-10/cheers-9/"
 
