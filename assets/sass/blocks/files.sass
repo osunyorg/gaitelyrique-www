@@ -32,8 +32,9 @@
         .files
             li
                 align-items: center
-                &::before
+                .file::before
                     @include icon-site('icon-carte')
+                    border: none
                     font-size: pxToRem(48)
                 figure
                     align-items: baseline
