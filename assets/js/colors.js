@@ -23,7 +23,7 @@ window.gaite.colorsAccent = [
   "#216f01",
   "#593f03",
   "#575a01",
-  "#870095",
+  "#870095"
 ];
 
 // Summer colors
@@ -33,7 +33,7 @@ window.gaite.colorsBackground = [
   "#50c878",
   "#DF8FA8",
   "#FFED00",
-  "#BD85E6",
+  "#BD85E6"
 ];
 
 window.gaite.colorsBackgroundAlt = window.gaite.colorsBackground;
