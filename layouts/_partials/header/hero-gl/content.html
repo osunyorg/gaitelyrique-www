@@ -1,6 +1,17 @@
+{{ $subtitle := .context.Params.subtitle }}
+{{ $title_attribute := "" | safeHTMLAttr }}
+{{ if site.Params.search.active }}
+  {{ $title_attribute = "data-pagefind-weight='10'" | safeHTMLAttr }}
+{{ end }}
+
 <div class="content">
   <div class="hero-text">
-    <h1 data-pagefind-weight="10">{{ safeHTML .title }}</h1>
+      <h1 {{ $title_attribute }}>
+        {{ safeHTML .title }}
+        {{ with $subtitle }}
+          <span>{{ safeHTML . }}</span>
+        {{ end }}
+      </h1>
     {{ with .date }}
       <p class="hero-complement">{{ . }}</p>
     {{ end }}
