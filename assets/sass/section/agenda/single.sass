@@ -140,6 +140,7 @@
         > div:last-child
             border-bottom-color: $color-text
             padding-bottom: $spacing-1
+
         .event-time-slot,
         .event-summary
             .dropdown-calendar
@@ -150,6 +151,7 @@
                     @include small
                     font-family: $body-font-family
                     font-weight: normal
+
         .event-slots
             > .btn
                 @include link
@@ -160,6 +162,9 @@
                 text-transform: none
                 &::after
                     content: ' ↓'
+            .event-time-slot--archive
+                display: none
+
     .programme-btn-container
         .btn
             &, &:hover

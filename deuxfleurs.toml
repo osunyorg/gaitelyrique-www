@@ -551,6 +551,10 @@ from = "/agenda/2025/evenement-de-david-1/index.html"
 to = "/agenda/2025/tracks-live/"
 
 [[redirects]]
+from = "/vivre-lexposition-finally-something-good-en-prive/index.html"
+to = "/privatisation/vivre-lexposition-finally-something-good-en-prive/"
+
+[[redirects]]
 from = "/agenda/2026/evenement-simple-audito-1-1/index.html"
 to = "/agenda/2026/la-vie-d-hawa/"
 
