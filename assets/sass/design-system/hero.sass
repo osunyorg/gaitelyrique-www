@@ -1,14 +1,22 @@
 .hero
     padding-bottom: 0
+    h1
+        span
+            @include h4
+            color: var(--color-text)
+            display: block
+
     .breadcrumb-nav + .content
         border-top: var(--border-width) solid var(--color-text)
         padding-top: $spacing-3
+
     .content
         padding-top: $spacing-3
         .hero-image
             @include absolute-figcaption
         .hero-text
             margin-top: 0
+
     .taxonomies-single
         .terms a
             @include h4
@@ -76,9 +84,19 @@
                     text-decoration: none
                     right: -(space(4))
 
+    @include media-breakpoint-up(desktop)
+        h1 
+            span
+                margin-top: $spacing-1
+
     @include media-breakpoint-down(desktop)
+        --hero-spacing: #{pxToRem(30)}
         body:not(.page__home) &
             margin-top: var(--grid-gutter)
+
+        h1
+            span
+                margin-top: var(--hero-spacing)
 
         &--image-portrait,
         &--image-square
