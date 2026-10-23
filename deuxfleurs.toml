@@ -811,6 +811,10 @@ from = "/la-fabrique-de-lepoque/actualites/2025-04-15-reservez-vos-bureaux-deven
 to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail-devenez-residente/"
 
 [[redirects]]
+from = "/agenda/2026/docteur-love/docteure-love-le-talk-du-coeur-sur-la-table-1/index.html"
+to = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table-1/"
+
+[[redirects]]
 from = "/espaces/index.html"
 to = "/lieu/"
 
