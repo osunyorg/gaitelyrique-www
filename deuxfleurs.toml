@@ -775,6 +775,10 @@ from = "/agenda/2024-1/02/index.html"
 to = "/agenda/2024/02/"
 
 [[redirects]]
+from = "/agenda/2026/docteur-love/docteure-love-le-talk-du-coeur-sur-la-table/index.html"
+to = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table/"
+
+[[redirects]]
 from = "/agenda/grande-salle/index.html"
 to = "/agenda/lieu/grande-salle/"
 
