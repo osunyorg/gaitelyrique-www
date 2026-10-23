@@ -547,6 +547,10 @@ from = "/actualites/2025-10-27-sortie-du-plastique-a-usage-unique/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2025-10-27-sortie-du-plastique-a-usage-unique/"
 
 [[redirects]]
+from = "/agenda/2026/paris-surf-skate-board-film-festival-11/jour-1/index.html"
+to = "/agenda/2026/paris-surf-skate-board-film-festival-11/projection-de-courts-metrages-1/"
+
+[[redirects]]
 from = "/agenda/2025/evenement-de-david-1/index.html"
 to = "/agenda/2025/tracks-live/"
 
