@@ -767,6 +767,10 @@ from = "/agenda/2024-1/10/index.html"
 to = "/agenda/2024/10/"
 
 [[redirects]]
+from = "/agenda/2026/docteur-love/index.html"
+to = "/agenda/2026/docteure-love/"
+
+[[redirects]]
 from = "/infos-pratiques/le-lieu/studio-13-16/index.html"
 to = "/infos-pratiques/le-lieu/galerie-studio-13-16/"
 
