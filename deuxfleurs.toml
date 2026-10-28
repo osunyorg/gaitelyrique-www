@@ -291,6 +291,10 @@ from = "/recrutements/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/index.h
 to = "/rejoindre-l-equipe/offres-d-emploi/cdi-adjointe-chef-machiniste-et-regie-plateau-fhnb/"
 
 [[redirects]]
+from = "/agenda/2026/algorithme-de-profilage-denoncer-la-chasse-aux-pauvres/index.html"
+to = "/agenda/2026/ne-nous-reprimez-pas-rejoignez-nous/"
+
+[[redirects]]
 from = "/evenement/les-contes-a-paillettes-2/index.html"
 to = "/agenda/2026/les-contes-a-paillettes/"
 
@@ -501,6 +505,10 @@ to = "/agenda/2026/festival-et-prix-des-litteratures-urbaines-2026/"
 [[redirects]]
 from = "/la-fabrique-de-lepoque/actualites/2025-12-23-organiser-un-evenement-vraiment-inclusif/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-12-organiser-un-evenement-vraiment-inclusif/"
+
+[[redirects]]
+from = "/https:/www.gaite-lyrique.net/agenda/2026/algorithme-de-profilage-denoncer-la-chasse-aux-pauvres/index.html"
+to = "/agenda/2026/ne-nous-reprimez-pas-rejoignez-nous/"
 
 [[redirects]]
 from = "/agenda/2025/evenement-simple-audito-1/index.html"
