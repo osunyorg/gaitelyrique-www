@@ -639,6 +639,10 @@ from = "/actualites/2025-12-11-concilier-lieu-ouvert-et-lieu-sur/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-concilier-lieu-ouvert-et-lieu-sur/"
 
 [[redirects]]
+from = "/agenda/2026/paris-surf-skate-board-film-festival-11/projection-de-courts-metrages-1/index.html"
+to = "/agenda/2026/paris-surf-skate-board-film-festival-11/projection-de-moyens-metrages-1/"
+
+[[redirects]]
 from = "/caroline-baldeyrou/index.html"
 to = "/personnes/caroline-baldeyrou/"
 
