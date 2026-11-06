@@ -171,6 +171,10 @@ from = "/grande-galerie/index.html"
 to = "/infos-pratiques/le-lieu/grande-galerie/"
 
 [[redirects]]
+from = "/https:/www.gaite-lyrique.net/agenda/2026/lg/ensemble-pour-que-lecoute-ne-sarrete-jamais/index.html"
+to = "/agenda/2026/lg/ensemble-pour-que-lecoute-ne-sarrete-jamais/"
+
+[[redirects]]
 from = "/agenda/2024/cine-club-gaze-1/index.html"
 to = "/agenda/2026/cine-club-gaze-1-1/"
 
