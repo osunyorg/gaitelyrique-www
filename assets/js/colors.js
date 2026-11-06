@@ -44,7 +44,15 @@ window.gaite.colorsBackground = [
   "#BD85E6"
 ];
 
-window.gaite.colorsBackgroundAlt = window.gaite.colorsBackground;
+window.gaite.colorsBackgroundAlt = [
+  "#a8bbc8",
+  "#4bbc71",
+  "#c98097",
+  "#f1e103",
+  "#b27cda"
+];
+
+// window.gaite.colorsBackgroundAlt = window.gaite.colorsBackground;
 
 window.gaite.colorLocalKey = "gaite-is-colored";
 
