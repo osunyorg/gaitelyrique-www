@@ -743,6 +743,10 @@ from = "/actualites/2025-06-03-voguing-exprimez-votre-identite-sur-scene/index.h
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-voguing-exprimez-votre-identite-sur-scene/"
 
 [[redirects]]
+from = "/agenda/2026/mon-ventre-est-un-volcan-1/index.html"
+to = "/agenda/2026/mon-ventre-est-un-volcan-cycle/"
+
+[[redirects]]
 from = "/agenda/2025-1/01/index.html"
 to = "/agenda/2025/01/"
 
