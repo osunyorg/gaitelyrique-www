@@ -203,6 +203,10 @@ from = "/agenda/2024-1/06/index.html"
 to = "/agenda/2024/06/"
 
 [[redirects]]
+from = "/agenda/2026/mon-ventre-est-un-vo/index.html"
+to = "/agenda/2026/mon-ventre-est-un-volcan-cycle/"
+
+[[redirects]]
 from = "/la-fabrique-de-lepoque/actualites/2025-07-31-participez-a-des-actions-solidaires-1/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-19-participez-a-des-actions-solidaires-1/"
 
@@ -748,7 +752,7 @@ to = "/la-fabrique-de-lepoque/actualites/2026-01-18-voguing-exprimez-votre-ident
 
 [[redirects]]
 from = "/agenda/2026/mon-ventre-est-un-volcan-1/index.html"
-to = "/agenda/2026/mon-ventre-est-un-vo/"
+to = "/agenda/2026/mon-ventre-est-un-volcan-cycle/"
 
 [[redirects]]
 from = "/agenda/2025-1/01/index.html"
@@ -841,10 +845,6 @@ to = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table-1/"
 [[redirects]]
 from = "/espaces/index.html"
 to = "/lieu/"
-
-[[redirects]]
-from = "/agenda/2026/mon-ventre-est-un-volcan-cycle/index.html"
-to = "/agenda/2026/mon-ventre-est-un-vo/"
 
 [[redirects]]
 from = "/en/event/anne-paceo/index.html"
