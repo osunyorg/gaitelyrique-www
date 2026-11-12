@@ -59,6 +59,10 @@ from = "/plein-ecran/contenu/contes-a-paillettes-en-cas-dattaque/index.html"
 to = "/agenda/2026/les-contes-a-paillettes/"
 
 [[redirects]]
+from = "/agenda/2026/mon-ventre-est-un-volcan/index.html"
+to = "/agenda/2026/mon-ventre-est-un-volcan-rencontre/"
+
+[[redirects]]
 from = "/agenda/2024-1/01/index.html"
 to = "/agenda/2024/01/"
 
@@ -744,7 +748,7 @@ to = "/la-fabrique-de-lepoque/actualites/2026-01-18-voguing-exprimez-votre-ident
 
 [[redirects]]
 from = "/agenda/2026/mon-ventre-est-un-volcan-1/index.html"
-to = "/agenda/2026/mon-ventre-est-un-volcan-cycle/"
+to = "/agenda/2026/mon-ventre-est-un-vo/"
 
 [[redirects]]
 from = "/agenda/2025-1/01/index.html"
@@ -837,6 +841,10 @@ to = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table-1/"
 [[redirects]]
 from = "/espaces/index.html"
 to = "/lieu/"
+
+[[redirects]]
+from = "/agenda/2026/mon-ventre-est-un-volcan-cycle/index.html"
+to = "/agenda/2026/mon-ventre-est-un-vo/"
 
 [[redirects]]
 from = "/en/event/anne-paceo/index.html"
