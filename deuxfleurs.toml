@@ -703,6 +703,10 @@ from = "/agenda/2025-1/09/index.html"
 to = "/agenda/2025/09/"
 
 [[redirects]]
+from = "/agenda/2026/controverse-dutilite-publique-peut-on-vivre-ensemble-avec-toutes-les-differences/le-nucleaire-est-il-redevenu-une-energie-davenir/index.html"
+to = "/agenda/2026/le-nucleaire-est-il-redevenu-une-energie-davenir/"
+
+[[redirects]]
 from = "/agenda/2024-1/11/index.html"
 to = "/agenda/2024/11/"
 
