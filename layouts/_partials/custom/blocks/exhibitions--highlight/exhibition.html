@@ -1,0 +1,28 @@
+{{ $block := .block }}
+{{ $block_class := partial "blocks/helpers/GetClass" .block }}
+{{ with .block.data }}
+  {{ $id := printf "exhibition-highlight-%s" $block.slug }}
+  {{ $options := .options }}
+  <div class="block block-custom-exhibitions--highlight popup dismissible" data-dismissible-id="{{ $id }}" aria-hidden="true">
+      {{ with $block.top }}
+        <div class="top">
+          {{ with .title }}
+            <h2>{{ .value }}</h2>
+          {{ end }}
+          {{- safeHTML .description -}}
+        </div>
+      {{ end }}
+      {{ if .exhibitions }}
+        {{ $exhibitions := partial "helpers/objects/GetFromPathSlice" .exhibitions }}
+        {{ range $exhibitions.Limit 1 }}
+          {{ partial "exhibitions/partials/exhibition.html" (dict
+            "exhibition" .
+            "heading_level" 3
+            "options" $options
+            "with_more" true
+          ) }}
+        {{ end }}
+      {{ end }}
+      <button class="close" type="button" aria-label="{{ i18n "commons.close" }}" aria-expanded="false" aria-controls="{{ $id }}"></button>
+  </div>
+{{ end }}

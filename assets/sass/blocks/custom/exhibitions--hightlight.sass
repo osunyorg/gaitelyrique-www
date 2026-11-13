@@ -1,0 +1,60 @@
+.block-custom-exhibitions--highlight
+    background: var(--color-background)
+    border: var(--border-width) solid var(--color-border)
+    padding: $spacing-2
+    margin: $spacing-2
+
+    position: fixed
+    bottom: 0
+    right: 0
+
+    z-index: 51
+    
+    // dismissible
+    display: none
+    &:not([aria-hidden="true"])
+        display: block
+
+    .top
+        margin-bottom: $spacing-2
+        h2
+            @include body-text
+        p
+            @include small
+
+    .exhibition, .event
+        display: flex
+        gap: $spacing-2
+        a
+            @include stretched-link
+            text-decoration: none
+        &-title
+            @include h6
+        &-subtitle
+            font-size: 0.8em
+        &-dates
+            display: none !important
+        .media
+            order: -1
+
+    @include media-breakpoint-down(md)
+        max-width: 90%
+        .media
+            display: none
+
+    @include media-breakpoint-up(md)
+        width: pxToRem(300)
+        .exhibition, .event
+            flex-direction: column
+            &-title
+                @include h5
+
+    .close
+        @include button-reset
+        @include icon-block(close-line, before)
+        position: absolute
+        padding: 0
+        right: 0
+        top: 0
+        pointer-events: cursor
+        z-index: 2 
