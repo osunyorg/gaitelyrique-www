@@ -335,6 +335,10 @@ from = "/agenda/2025/distributions-etudiantes/index.html"
 to = "/agenda/2026/distributions-etudiantes/"
 
 [[redirects]]
+from = "/agenda/2026/lg/ensemble-contre-les-violences-de-genre-sociales-et-detat/index.html"
+to = "/agenda/2026/pour-la-justice-et-lemancipation-de-tous/ensemble-contre-les-violences-de-genre-sociales-et-detat/"
+
+[[redirects]]
 from = "/agenda/2025/arte-concert-festival-1/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/index.html"
 to = "/agenda/2025/arte-concert-festival/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/"
 
