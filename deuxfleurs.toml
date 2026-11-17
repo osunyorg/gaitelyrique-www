@@ -447,6 +447,10 @@ from = "/agenda/2025/reporte-delocalise-klangphonics/index.html"
 to = "/agenda/2025/klangphonics-2/"
 
 [[redirects]]
+from = "/agenda/2026/paris-surf-skate-board-film-festival-11-off/avant-premiere-parisienne-du-film-de-come-unity/index.html"
+to = "/agenda/2026/paris-surf-skate-board-film-festival-11-off/avant-premiere-parisienne-du-film-come-unity/"
+
+[[redirects]]
 from = "/expositions/2024-12-14-pulse/index.html"
 to = "/agenda/expositions/2024-12-14-pulse/"
 
