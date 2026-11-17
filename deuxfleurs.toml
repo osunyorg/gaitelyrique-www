@@ -127,6 +127,10 @@ from = "/agenda/2024-1/09/index.html"
 to = "/agenda/2024/09/"
 
 [[redirects]]
+from = "/agenda/2026/afro-poetry-portrait-dune-france-aux-reves-illimites/index.html"
+to = "/agenda/2026/boeuf-sans-viande-invite-christelle-bakima-poundza/"
+
+[[redirects]]
 from = "/agenda/2026/cheers/cheers-3-1/index.html"
 to = "/agenda/2026/cheers-10/cheers-6/"
 
