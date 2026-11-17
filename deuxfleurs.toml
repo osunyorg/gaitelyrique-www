@@ -176,7 +176,7 @@ to = "/infos-pratiques/le-lieu/grande-galerie/"
 
 [[redirects]]
 from = "/https:/www.gaite-lyrique.net/agenda/2026/lg/ensemble-pour-que-lecoute-ne-sarrete-jamais/index.html"
-to = "/agenda/2026/lg/ensemble-pour-que-lecoute-ne-sarrete-jamais/"
+to = "/agenda/2026/pour-la-justice-et-lemancipation-de-tous/ensemble-pour-que-lecoute-ne-sarrete-jamais/"
 
 [[redirects]]
 from = "/agenda/2024/cine-club-gaze-1/index.html"
@@ -677,6 +677,10 @@ to = "/la-fabrique-de-lepoque/actualites/2026-01-17-participe-a-un-programme-din
 [[redirects]]
 from = "/equipe/index.html"
 to = "/personnes/"
+
+[[redirects]]
+from = "/agenda/2026/lg/ensemble-pour-que-lecoute-ne-sarrete-jamais/index.html"
+to = "/agenda/2026/pour-la-justice-et-lemancipation-de-tous/ensemble-pour-que-lecoute-ne-sarrete-jamais/"
 
 [[redirects]]
 from = "/agenda/expositions/solidarite/index.html"
