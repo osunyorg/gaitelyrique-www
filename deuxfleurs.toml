@@ -340,7 +340,7 @@ to = "/agenda/2026/distributions-etudiantes/"
 
 [[redirects]]
 from = "/agenda/2026/lg/ensemble-contre-les-violences-de-genre-sociales-et-detat/index.html"
-to = "/agenda/2026/pour-la-justice-et-lemancipation-de-tous/ensemble-contre-les-violences-de-genre-sociales-et-detat/"
+to = "/agenda/2026/ensemble-contre-les-violences-de-genre-sociales-et-detat/"
 
 [[redirects]]
 from = "/agenda/2025/arte-concert-festival-1/baxter-dury-sudan-archives-wu-lyf-camille-yembe-et-silly-boy-blue-1/index.html"
@@ -673,6 +673,10 @@ to = "/agenda/2025/evenementgaite-25-1/"
 [[redirects]]
 from = "/actualites/2025-12-11-concilier-lieu-ouvert-et-lieu-sur/index.html"
 to = "/la-fabrique-de-lepoque/actualites/2026-01-18-concilier-lieu-ouvert-et-lieu-sur/"
+
+[[redirects]]
+from = "/agenda/2026/pour-la-justice-et-lemancipation-de-tous/ensemble-contre-les-violences-de-genre-sociales-et-detat/index.html"
+to = "/agenda/2026/ensemble-contre-les-violences-de-genre-sociales-et-detat/"
 
 [[redirects]]
 from = "/caroline-baldeyrou/index.html"
