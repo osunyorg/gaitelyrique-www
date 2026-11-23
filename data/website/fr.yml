@@ -1,7 +1,51 @@
 default:
 contents_reading_time:
-  seconds: 0
+  seconds: 2
   text: >-
     moins d'une minute
 contents:
+  - kind: block
+    template: exhibitions
+    title: >-
+      Exposition
+    slug: >-
+      exposition
+    ranks:
+      base: 2
+      self: 2
+      children: 3
+    html_class: "block-class-highlight"
+    top:
+      active: true
+      title: 
+        value: >-
+          Exposition
+        heading: 2
+      description: >-
+        <p>En ce moment du mardi au dimanche</p>
+    data:
+      mode: selection
+      options:
+        categories: false
+        dates: true
+        image: true
+        subtitle: true
+        summary: false
+        status: false
+
+      layout: grid
+      description: >-
+        <p>En ce moment du mardi au dimanche</p>
+
+      title_link: ""
+      exhibitions:
+        - permalink: "/agenda/expositions/2026-10-15-finally-something-good/"
+          path: "/exhibitions/2026-10-15-finally-something-good"
+          slug: "finally-something-good"
+          file: "content/fr/exhibitions/2026-10-15-finally-something-good.html"
+          name: >-
+            Finally, Something Good.
+
+      quantity: 1
+
 
