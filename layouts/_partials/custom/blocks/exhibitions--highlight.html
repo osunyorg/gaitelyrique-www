@@ -1,0 +1,5 @@
+{{ if eq .context.Section "events" }}
+  {{ if or .context.Params.is_year .context.Params.is_month }}
+    {{ partial "custom/blocks/exhibitions--highlight/exhibition.html" . }}
+  {{ end }}
+{{ end }}
