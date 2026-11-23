@@ -3,7 +3,10 @@
 {{ with .block.data }}
   {{ $id := printf "exhibition-highlight-%s" $block.slug }}
   {{ $options := .options }}
-  <div class="block block-custom-exhibitions--highlight popup dismissible" data-dismissible-id="{{ $id }}" aria-hidden="true">
+  <div class="block block-custom-exhibitions--highlight popup dismissible"
+      data-dismissible-id="{{ $id }}"
+      data-dismissible-expiration="1"
+      aria-hidden="true">
       {{ with $block.top }}
         <div class="top">
           {{ with .title }}
