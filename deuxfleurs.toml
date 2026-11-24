@@ -615,6 +615,10 @@ from = "/la-fabrique-de-lepoque/actualites/2025-12-23-lutter-contre-les-violence
 to = "/la-fabrique-de-lepoque/actualites/2026-01-15-lutter-contre-les-violences-sexistes-et-sexuelles-vss/"
 
 [[redirects]]
+from = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table/index.html"
+to = "/agenda/2026/docteure-love-le-talk-du-coeur-sur-la-table/"
+
+[[redirects]]
 from = "/agenda/2026/distributions-etudiantes-1/index.html"
 to = "/agenda/2026/art-and-food/"
 
@@ -783,6 +787,10 @@ from = "/agenda/2026/mon-ventre-est-un-volcan-1/index.html"
 to = "/agenda/2026/mon-ventre-est-un-volcan-rencontre-1/"
 
 [[redirects]]
+from = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table-1/index.html"
+to = "/agenda/2026/docteure-love-le-talk-du-coeur-sur-la-table-1/"
+
+[[redirects]]
 from = "/agenda/2025-1/01/index.html"
 to = "/agenda/2025/01/"
 
@@ -840,7 +848,7 @@ to = "/agenda/2024/02/"
 
 [[redirects]]
 from = "/agenda/2026/docteur-love/docteure-love-le-talk-du-coeur-sur-la-table/index.html"
-to = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table/"
+to = "/agenda/2026/docteure-love-le-talk-du-coeur-sur-la-table/"
 
 [[redirects]]
 from = "/agenda/grande-salle/index.html"
@@ -868,7 +876,7 @@ to = "/la-fabrique-de-lepoque/actualites/2026-01-16-louez-nos-espaces-de-travail
 
 [[redirects]]
 from = "/agenda/2026/docteur-love/docteure-love-le-talk-du-coeur-sur-la-table-1/index.html"
-to = "/agenda/2026/docteure-love/docteure-love-le-talk-du-coeur-sur-la-table-1/"
+to = "/agenda/2026/docteure-love-le-talk-du-coeur-sur-la-table-1/"
 
 [[redirects]]
 from = "/espaces/index.html"
