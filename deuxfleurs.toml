@@ -283,6 +283,10 @@ from = "/index.php/evenement/ouai-stephane/index.html"
 to = "/agenda/2026/ouai-stephane/"
 
 [[redirects]]
+from = "/agenda/2027/effraction-2027/index.html"
+to = "/agenda/2027/effractions-2027/"
+
+[[redirects]]
 from = "/agenda/2026/hors-cadre/rencontre-avec-laurent-guide/index.html"
 to = "/agenda/2026/hors-cadre/rencontre-avec-laurent-gaude/"
 
