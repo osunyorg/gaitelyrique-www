@@ -28,7 +28,7 @@ search:
   summary: >-
     <p>Le Ciné Club Gaze, le rendez-vous féministe de la Gaîté est de retour  ! Chaque séance met à l'honneur une invitée qui partage un film réalisé par une femme qui l'a marquée. </p>
   body: >-
-    <p>  <br>Programmation à venir.</p>  <p> Co-organisé avec  </p>
+    <p>  <br>Programmation à venir.</p>  <p> Avec  <br>   <br>Mariana Benenge chorégraphe, movement director, co-fondatrice de la PULSE un espace festif réservé aux femmes, aux personnes non-binaires et transmascs et fondatrice du fever Jazz Club. Elle est notamment connue pour ses chorégraphies mêlant waacking et voguing à la performance contemporaine, ainsi que pour ses collaborations avec des artistes musicaux comme Aya Nakamura, Theodora, Ghali, Tshegue et Yseult. Membre active de la scène ballroom parisienne, elle s'engage également dans les luttes féministes et LGBTQIA+, notamment pour la visibilité des communautés noires et queer, contre le harcèlement sexiste et pour la création d'espaces affranchis du regard masculin.</p>  <p> Co-organisé avec  </p>
 
 date: "2026-12-09T19:00:00+01:00"
 dates:
@@ -156,7 +156,7 @@ header_cta:
     Réserver
 
 contents_reading_time:
-  seconds: 1
+  seconds: 28
   text: >-
     moins d'une minute
 contents:
@@ -177,22 +177,58 @@ contents:
 
 
   - kind: block
+    template: title
+    title: >-
+      Avec
+    slug: >-
+      avec
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Avec
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>Mariana Benenge<br></b>chorégraphe, movement director, co-fondatrice de la PULSE un espace festif réservé aux femmes, aux personnes non-binaires et transmascs et fondatrice du fever Jazz Club. Elle est notamment connue pour ses chorégraphies mêlant waacking et voguing à la performance contemporaine, ainsi que pour ses collaborations avec des artistes musicaux comme Aya Nakamura, Theodora, Ghali, Tshegue et Yseult. Membre active de la scène ballroom parisienne, elle s'engage également dans les luttes féministes et LGBTQIA+, notamment pour la visibilité des communautés noires et queer, contre le harcèlement sexiste et pour la création d'espaces affranchis du regard masculin.</p>
+
+
+
+  - kind: block
     template: organizations
     title: >-
       Co-organisé avec
     slug: >-
       co-organise-avec
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     html_class: "block-class-in-hero"
     top:
       active: true
       title: 
         value: >-
           Co-organisé avec
-        heading: 2
+        heading: 3
 
     data:
       layout: grid
